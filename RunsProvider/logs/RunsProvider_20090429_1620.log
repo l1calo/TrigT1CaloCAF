@@ -1,7 +1,0 @@
-2009-04-29 16:20 - RunsProvider - INFO: ========================================
-2009-04-29 16:20 - RunsProvider - INFO: RunsProvider in init
-2009-04-29 16:20 - RunsProvider - INFO: init file RunsProviderConfig.py was found
-2009-04-29 16:20 - RunsProvider - INFO: creating run listeners from RunsProviderConfig.py file
-2009-04-29 16:20 - RunsProvider - INFO: TileCalibL1Calo added to the list of run listeners
-2009-04-29 16:20 - RunsProvider - INFO: L1CaloStandalone added to the list of run listeners
-2009-04-29 16:20 - RunsProvider - INFO: LArCalibL1Calo added to the list of run listeners
