@@ -1,0 +1,76 @@
+2009-04-02 18:55 - JobManager - INFO: ========================================
+2009-04-02 18:55 - JobManager - INFO: JobManager in init
+2009-04-02 18:55 - JobManager - INFO: init file JobOrganizerConfig.py was found
+2009-04-02 18:55 - JobManager - INFO: retrieveing Db parameters from JobOrganizerConfig.py file
+2009-04-02 18:55 - JobManager - INFO: JobManager initialized
+2009-04-02 18:55 - JobManager - INFO: ========================================
+2009-04-02 18:55 - JobManager - INFO: Adding new jobs from Db:
+2009-04-02 18:57 - JobManager - INFO: Adding new jobs:
+2009-04-02 18:57 - JobManager - DEBUG: from processJobs
+2009-04-02 18:57 - JobManager - DEBUG: end of processJobs
+2009-04-02 18:59 - JobManager - INFO: Adding new jobs:
+2009-04-02 18:59 - JobManager - DEBUG: from processJobs
+2009-04-02 18:59 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:01 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:01 - JobManager - DEBUG: from processJobs
+2009-04-02 19:01 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:03 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:03 - JobManager - DEBUG: from processJobs
+2009-04-02 19:03 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:05 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:05 - JobManager - DEBUG: from processJobs
+2009-04-02 19:05 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:07 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:07 - JobManager - DEBUG: from processJobs
+2009-04-02 19:07 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:09 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:09 - JobManager - DEBUG: from processJobs
+2009-04-02 19:09 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:11 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:11 - JobManager - DEBUG: from processJobs
+2009-04-02 19:11 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:13 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:13 - JobManager - DEBUG: from processJobs
+2009-04-02 19:13 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:15 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:15 - JobManager - DEBUG: from processJobs
+2009-04-02 19:15 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:17 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:17 - JobManager - DEBUG: from processJobs
+2009-04-02 19:17 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:19 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:19 - JobManager - DEBUG: from processJobs
+2009-04-02 19:19 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:21 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:21 - JobManager - DEBUG: from processJobs
+2009-04-02 19:21 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:23 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:23 - JobManager - DEBUG: from processJobs
+2009-04-02 19:23 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:25 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:25 - JobManager - DEBUG: from processJobs
+2009-04-02 19:25 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:27 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:27 - JobManager - DEBUG: from processJobs
+2009-04-02 19:27 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:29 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:29 - JobManager - DEBUG: from processJobs
+2009-04-02 19:29 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:31 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:31 - JobManager - DEBUG: from processJobs
+2009-04-02 19:31 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:33 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:33 - JobManager - DEBUG: from processJobs
+2009-04-02 19:33 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:35 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:35 - JobManager - DEBUG: from processJobs
+2009-04-02 19:35 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:37 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:37 - JobManager - DEBUG: from processJobs
+2009-04-02 19:37 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:39 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:39 - JobManager - DEBUG: from processJobs
+2009-04-02 19:39 - JobManager - DEBUG: end of processJobs
+2009-04-02 19:41 - JobManager - INFO: Adding new jobs:
+2009-04-02 19:41 - JobManager - DEBUG: from processJobs
+2009-04-02 19:41 - JobManager - DEBUG: end of processJobs

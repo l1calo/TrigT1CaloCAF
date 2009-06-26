@@ -1,0 +1,9 @@
+2009-04-29 16:00 - RunsProvider - INFO: ========================================
+2009-04-29 16:00 - RunsProvider - INFO: RunsProvider in init
+2009-04-29 16:00 - RunsProvider - INFO: init file RunsProviderConfigTest.py was found
+2009-04-29 16:00 - RunsProvider - INFO: creating run listeners from RunsProviderConfigTest.py file
+2009-04-29 16:00 - RunsProvider - INFO: TileCalibL1Calo added to the list of run listeners
+2009-04-29 16:00 - RunsProvider - INFO: retrieveing Db parameters from RunsProviderConfigTest.py file
+2009-04-29 16:00 - RunsProvider - INFO: RunsProvider initialized
+2009-04-29 16:00 - RunsProvider - INFO: ========================================
+2009-04-29 16:00 - RunsProvider - DEBUG: listening...

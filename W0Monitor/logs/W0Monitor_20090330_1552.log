@@ -1,0 +1,71 @@
+2009-03-30 15:52 - W0Monitor - INFO: ========================================
+2009-03-30 15:52 - W0Monitor - INFO: W0Monitor in init
+2009-03-30 15:52 - W0Monitor - INFO: init file W0MonitorConfig.py was found
+2009-03-30 15:52 - W0Monitor - INFO: Watching at: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs
+2009-03-30 15:52 - W0Monitor - INFO: Purge threshold: 75%
+2009-03-30 15:52 - W0Monitor - INFO: RemovalOk: False
+2009-03-30 15:52 - W0Monitor - INFO: current usage : 9%
+2009-03-30 15:52 - W0Monitor - INFO: W0Monitor initialized
+2009-03-30 15:52 - W0Monitor - INFO: ========================================
+2009-03-30 15:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 16:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 17:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 18:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:33 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:38 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:43 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:48 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:53 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 19:58 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:03 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:08 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:13 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:18 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:23 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:28 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:33 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:38 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:43 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:48 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:53 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 20:58 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%
+2009-03-30 21:03 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 9%

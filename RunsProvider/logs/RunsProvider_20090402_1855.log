@@ -1,0 +1,14 @@
+2009-04-02 18:55 - RunsProvider - INFO: ========================================
+2009-04-02 18:55 - RunsProvider - INFO: RunsProvider in init
+2009-04-02 18:55 - RunsProvider - INFO: init file RunsProviderConfig.py was found
+2009-04-02 18:55 - RunsProvider - INFO: creating run listeners from RunsProviderConfig.py file
+2009-04-02 18:55 - RunsProvider - INFO: TileCalibL1Calo added to the list of run listeners
+2009-04-02 18:55 - RunsProvider - INFO: L1CaloStandalone added to the list of run listeners
+2009-04-02 18:55 - RunsProvider - INFO: LArCalibL1Calo added to the list of run listeners
+2009-04-02 18:55 - RunsProvider - INFO: retrieveing Db parameters from RunsProviderConfig.py file
+2009-04-02 18:55 - RunsProvider - INFO: RunsProvider initialized
+2009-04-02 18:55 - RunsProvider - INFO: ========================================
+2009-04-02 19:05 - RunsProvider - DEBUG: listening...
+2009-04-02 19:19 - RunsProvider - DEBUG: listening...
+2009-04-02 19:29 - RunsProvider - DEBUG: listening...
+2009-04-02 19:39 - RunsProvider - DEBUG: listening...

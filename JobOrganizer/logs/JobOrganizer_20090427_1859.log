@@ -1,0 +1,11 @@
+2009-04-27 18:59 - JobOrganizer - INFO: ========================================
+2009-04-27 18:59 - JobOrganizer - INFO: JobOrganizer in init
+2009-04-27 18:59 - JobOrganizer - INFO: init file JobOrganizerConfig.py was found
+2009-04-27 18:59 - JobOrganizer - INFO: retrieveing Db parameters from JobOrganizerConfig.py file
+2009-04-27 18:59 - JobOrganizer - INFO: creating job configurations from JobOrganizerConfig.py file
+2009-04-27 18:59 - JobOrganizer - INFO: JobOrganizer initialized
+2009-04-27 18:59 - JobOrganizer - INFO: ========================================
+2009-04-27 19:01 - JobOrganizer - INFO: Updating jobInformation list
+2009-04-27 19:03 - JobOrganizer - INFO: Updating jobInformation list
+2009-04-27 19:05 - JobOrganizer - INFO: Updating jobInformation list
+2009-04-27 19:07 - JobOrganizer - INFO: Updating jobInformation list

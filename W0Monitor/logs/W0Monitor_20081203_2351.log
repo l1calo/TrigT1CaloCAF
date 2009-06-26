@@ -1,0 +1,9 @@
+2008-12-03 23:51 - W0Monitor - INFO: ========================================
+2008-12-03 23:51 - W0Monitor - INFO: W0Monitor in init
+2008-12-03 23:51 - W0Monitor - INFO: init file W0MonitorConfig.py was found
+2008-12-03 23:51 - W0Monitor - INFO: Watching at: /afs/cern.ch/user/l/l1ccalib/w0/reconstruction/calibration
+2008-12-03 23:51 - W0Monitor - INFO: Purge threshold: 60%
+2008-12-03 23:51 - W0Monitor - INFO: RemovalOk: False
+2008-12-03 23:51 - W0Monitor - INFO: current usage : 68%
+2008-12-03 23:51 - W0Monitor - INFO: W0Monitor initialized
+2008-12-03 23:51 - W0Monitor - INFO: ========================================

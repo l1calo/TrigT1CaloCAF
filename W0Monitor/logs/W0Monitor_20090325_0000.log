@@ -1,0 +1,541 @@
+2009-03-25 00:00 - W0Monitor - INFO: ========================================
+2009-03-25 00:00 - W0Monitor - INFO: W0Monitor in init
+2009-03-25 00:00 - W0Monitor - INFO: init file W0MonitorConfig.py was found
+2009-03-25 00:00 - W0Monitor - INFO: Watching at: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs
+2009-03-25 00:00 - W0Monitor - INFO: Purge threshold: 75%
+2009-03-25 00:00 - W0Monitor - INFO: RemovalOk: False
+2009-03-25 00:00 - W0Monitor - INFO: current usage : 99%
+2009-03-25 00:00 - W0Monitor - INFO: W0Monitor initialized
+2009-03-25 00:00 - W0Monitor - INFO: ========================================
+2009-03-25 00:05 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 99%
+2009-03-25 00:05 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103099_CBNT removed. New quota: 99%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103102_CBNT removed. New quota: 99%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103103_CBNT removed. New quota: 99%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103123_CBNT removed. New quota: 97%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103128_CBNT removed. New quota: 96%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103132_CBNT removed. New quota: 96%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103133_CBNT removed. New quota: 96%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103135_CBNT removed. New quota: 95%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103139_CBNT removed. New quota: 94%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103130_CBNT removed. New quota: 92%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103137_CBNT removed. New quota: 90%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103079_L1CaloStandalone removed. New quota: 89%
+2009-03-25 00:05 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/103068_L1CaloStandalone removed. New quota: 88%
+2009-03-25 00:05 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:10 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:10 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:10 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:15 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:15 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:15 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:20 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:20 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:20 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:25 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:25 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:25 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:30 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:30 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:30 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:35 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:35 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:35 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:40 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:40 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:40 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:45 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:45 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:45 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:50 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:50 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:50 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 00:55 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 00:55 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 00:55 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:00 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:00 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:00 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:05 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:05 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:05 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:10 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:10 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:10 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:15 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:15 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:15 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:20 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:20 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:20 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:25 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:25 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:25 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:30 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:30 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:30 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:35 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:35 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:35 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:40 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:40 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:40 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:45 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:45 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:45 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:50 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:50 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:50 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 01:55 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 01:55 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 01:55 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:00 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:00 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:00 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:05 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:05 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:05 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:10 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:10 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:10 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:15 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:15 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:15 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:20 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:20 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:20 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:25 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:25 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:25 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:30 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:30 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:30 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:35 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:35 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:35 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:40 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:40 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:40 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:45 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:45 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:45 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:50 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:50 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:50 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 02:55 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 02:55 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 02:55 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:00 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:00 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:00 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:05 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:05 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:05 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:10 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:10 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:10 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:15 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:15 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:15 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:20 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:20 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:20 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:25 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:25 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:25 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:30 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:30 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:30 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:35 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:35 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:35 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:40 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:40 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:40 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:45 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:45 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:45 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:50 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:50 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:50 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 03:55 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 03:55 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 03:55 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:00 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:00 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:00 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:05 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:05 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:05 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:10 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:10 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:10 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:15 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:15 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:15 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:20 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:20 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:20 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:25 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:25 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:25 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:30 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:30 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:30 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:35 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:35 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:35 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:40 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:40 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:40 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:46 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:46 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:51 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:51 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 04:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 04:56 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 04:56 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:01 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:01 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:06 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:06 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:11 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:11 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:16 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:16 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:21 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:21 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:26 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:26 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:31 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:31 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:36 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:36 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:41 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:41 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:46 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:46 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:51 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:51 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 05:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 05:56 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 05:56 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:01 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:01 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:06 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:06 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:11 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:11 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:16 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:16 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:21 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:21 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:26 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:26 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:31 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:31 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:36 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:36 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:41 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:41 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:46 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:46 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:51 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:51 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 06:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 06:56 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 06:56 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:01 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:01 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:06 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:06 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:11 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:11 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:16 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:16 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:21 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:21 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:26 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:26 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:31 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:31 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:36 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:36 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:41 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:41 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:46 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:46 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:51 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:51 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 07:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 07:56 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 07:56 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:01 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:01 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:06 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:06 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:11 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:11 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:16 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:16 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:21 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:21 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:26 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:26 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:31 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:31 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:36 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:36 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:41 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:41 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:46 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:46 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:51 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:51 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 08:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 08:56 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 08:56 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 09:01 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 09:01 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 09:06 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 09:06 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 09:11 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 09:11 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 09:16 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 09:16 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 09:21 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 09:21 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 09:26 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 09:26 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 09:31 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 09:31 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 09:36 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 09:36 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 88%
+2009-03-25 09:41 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2009-03-25 09:41 - W0Monitor - INFO: No more folders to remove but quota is still above threshold: 88% (75%)
+2009-03-25 09:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 09:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 09:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 10:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 11:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 12:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 13:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:21 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:26 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:31 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:36 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:41 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:46 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:51 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 14:56 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:01 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:06 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:11 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:16 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 15:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 16:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 17:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 18:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 19:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 20:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 21:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 22:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%
+2009-03-25 23:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 0%

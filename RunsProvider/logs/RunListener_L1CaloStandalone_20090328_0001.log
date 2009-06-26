@@ -1,0 +1,932 @@
+2009-03-28 00:01 - L1CaloStandalone - INFO: ========================================
+2009-03-28 00:01 - L1CaloStandalone - INFO: RunListener in init
+2009-03-28 00:01 - L1CaloStandalone - INFO: RunListener initialized
+2009-03-28 00:01 - L1CaloStandalone - INFO: ========================================
+2009-03-28 00:01 - L1CaloStandalone - INFO: ===> from initRunListener <===
+2009-03-28 00:01 - L1CaloStandalone - INFO: 
+RunListener L1CaloStandaloneinitialised with the following parameters:
+TDAQ DB: COOLONL_TDAQ/COMP200
+TRIG DB: COOLONL_TRIGGER/COMP200
+Status DB: COOLONL_TDAQ/COMP200
+log level: 0
+oracle: False
+rec. only: True
+det. mask: 0
+run type: Physics
+det. status: 2
+det. status tag: HEAD
+daq partition: L1CaloStandalone
+tag: 
+format: acertd
+reverse: False
+stoptimestamp: True
+cleanstop: True
+hasevents: True
+last valid run known: 0
+
+2009-03-28 00:07 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:07 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:07 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:07 - L1CaloStandalone - INFO: last valid run: 94427
+2009-03-28 00:07 - L1CaloStandalone - INFO: searching for new runs from 94428 to 2147483647
+2009-03-28 00:07 - L1CaloStandalone - DEBUG: new last known run: 104178
+2009-03-28 00:07 - L1CaloStandalone - DEBUG: 
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94482        0      1  2008-11-12:16:39:18  2008-11-12:16:41:54     1280        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=125  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94484        0      1  2008-11-12:16:43:24  2008-11-12:16:45:29     1264        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=125  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94587        0      1  2008-11-13:12:11:10  2008-11-13:12:15:35     2732        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=125  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94589        0      1  2008-11-13:12:23:02  2008-11-13:12:27:47      288        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=125  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94590        0      1  2008-11-13:12:29:15  2008-11-13:12:31:14      112        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=125  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94823        0      1  2008-11-14:10:11:18  2008-11-14:10:13:57     1288        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94826        0      1  2008-11-14:10:18:42  2008-11-14:10:20:48     1260        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94846        0      1  2008-11-14:11:10:46  2008-11-14:11:13:23     1284        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94876        0      1  2008-11-14:13:43:27  2008-11-14:13:46:05     1280        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94911        0      1  2008-11-14:15:09:30  2008-11-14:15:11:36     1264        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94921        0      1  2008-11-14:16:06:09  2008-11-14:16:08:14     1264        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94922        0      1  2008-11-14:16:12:04  2008-11-14:16:14:10     1264        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94923        0      1  2008-11-14:16:15:22  2008-11-14:16:18:00     1280        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94925        0      1  2008-11-14:16:21:08  2008-11-14:16:22:20      652        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   94927        0      1  2008-11-14:16:24:40  2008-11-14:16:26:46     1264        0        0    0  No Yes Physics                    7c00000000 Schema=115:Data=160  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95374        0      1  2008-11-18:09:03:28  2008-11-18:09:06:06     1280        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=11   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95379        0      1  2008-11-18:09:07:17  2008-11-18:09:09:23     1264        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=11   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95387        0      1  2008-11-18:09:16:30  2008-11-18:09:18:36     1264        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=11   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95388        0      1  2008-11-18:09:20:22  2008-11-18:09:23:00     1252        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=11   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95417        0      1  2008-11-18:10:18:47  2008-11-18:10:21:25     1280        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=11   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95425        0      1  2008-11-18:10:31:45  2008-11-18:10:33:51     1265        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=11   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95445        0      1  2008-11-18:12:11:50  2008-11-18:12:13:56     1260        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=11   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95469        0      1  2008-11-18:14:14:56  2008-11-18:14:17:31    26493        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=17   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95471        0      1  2008-11-18:14:21:14  2008-11-18:14:22:06    11287        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=17   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95472        0      1  2008-11-18:14:24:53  2008-11-18:14:26:58     1260        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=11   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95474        0      1  2008-11-18:14:36:40  2008-11-18:14:37:22    11550        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=17   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95515        0      1  2008-11-20:11:19:46  2008-11-20:11:22:35     1292        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=22   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95517        0      1  2008-11-20:11:24:14  2008-11-20:11:26:25     1260        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=22   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95574        0      1  2008-11-20:15:17:32  2008-11-20:15:19:37     1264        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=22   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95584        0      1  2008-11-20:15:31:33  2008-11-20:15:34:18     1300        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=22   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95824        0      1  2008-11-21:14:42:07  2008-11-21:14:42:42       28        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   95826        0      1  2008-11-21:14:50:27  2008-11-21:14:51:07       36        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=22   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   96748        0      1  2008-11-28:10:03:58  2008-11-28:10:06:41     1388        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=185  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   96764        0      1  2008-11-28:10:31:07  2008-11-28:10:33:54     1365        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=185  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   96798        0      1  2008-11-28:12:20:13  2008-11-28:12:22:19     1321        0        0    0  No Yes Physics                    7c00000000 Schema=116:Data=185  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97278        0      1  2008-12-03:14:31:02  2008-12-03:14:33:44     1284        0        0    0  No Yes Physics                    7c00000000 Schema=117:Data=42   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97287        0      1  2008-12-03:15:52:24  2008-12-03:15:54:30     1264        0        0    0  No Yes Physics                    7c00000000 Schema=117:Data=42   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97362        0      1  2008-12-04:08:02:53  2008-12-04:08:03:20       20        0        0    0  No Yes Physics                    7c00000000 Schema=118:Data=6    L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97363        0      1  2008-12-04:08:06:48  2008-12-04:08:07:35       44        0        0    0  No Yes Physics                    7c00000000 Schema=118:Data=6    L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97364        0      1  2008-12-04:08:11:18  2008-12-04:08:11:33       44        0        0    0  No Yes Physics                    7c00000000 Schema=118:Data=6    L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97365        0      1  2008-12-04:08:13:46  2008-12-04:08:13:57       24        0        0    0  No Yes Physics                    7c00000000 Schema=118:Data=6    L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97366        0      1  2008-12-04:08:26:33  2008-12-04:08:26:45       14        0        0    0  No Yes Physics                    7c00000000 Schema=118:Data=6    L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97367        0      1  2008-12-04:08:34:51  2008-12-04:08:35:03       16        0        0    0  No Yes Physics                    7c00000000 Schema=118:Data=11   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97372        0      1  2008-12-04:08:45:50  2008-12-04:08:46:07       26        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97374        0      1  2008-12-04:08:51:19  2008-12-04:08:53:11     1120        0        0    0  No Yes Physics                    7c00000000 Schema=118:Data=6    L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97377        0      1  2008-12-04:08:58:20  2008-12-04:08:59:08      452        0        0    0  No Yes Physics                    7c00000000 Schema=118:Data=6    L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   97450        0      1  2008-12-04:14:56:13  2008-12-04:14:59:21     1928        0        0    0  No Yes Physics                    7c00000000 Schema=118:Data=6    L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   98891        0      1  2008-12-12:16:18:35  2008-12-12:16:20:41     1272        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=70   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   98895        0      1  2008-12-12:16:36:53  2008-12-12:16:37:12       39        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   98899        0      1  2008-12-12:17:25:40  2008-12-12:17:28:37     1304        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=70   L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99519       84      1  2008-12-17:15:37:13  2008-12-17:15:37:26       84        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99525      404      1  2008-12-17:16:27:28  2008-12-17:16:28:12      404        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99531      216      1  2008-12-17:16:39:27  2008-12-17:16:39:52      216        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99535      232      1  2008-12-17:16:44:48  2008-12-17:16:45:16      232        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99539      100      1  2008-12-17:16:52:15  2008-12-17:16:52:43      100        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99541      268      1  2008-12-17:16:57:10  2008-12-17:16:57:41      268        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99542      288      1  2008-12-17:16:58:56  2008-12-17:16:59:29      288        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99613        0      1  2008-12-18:10:18:06  2008-12-18:10:20:04     6454        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=133  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99623        0      1  2008-12-18:10:40:23  2008-12-18:10:42:11    52150        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=133  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99653        0      1  2008-12-18:13:07:15  2008-12-18:13:07:34     1404        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99654        0      1  2008-12-18:13:18:29  2008-12-18:13:18:45     8306        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99655        0      1  2008-12-18:13:22:53  2008-12-18:13:23:06    39645        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99656        0      1  2008-12-18:13:27:45  2008-12-18:13:27:53    16131        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99659        0      1  2008-12-18:13:56:23  2008-12-18:13:58:17    59896        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=133  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99937        0      1  2009-01-09:08:51:43  2009-01-09:08:52:14      268        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99939        0      1  2009-01-09:09:00:21  2009-01-09:09:00:52      272        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99981        0      1  2009-01-09:15:34:18  2009-01-09:15:36:03     1044        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99982        0      1  2009-01-09:15:36:15  2009-01-09:15:38:24     1296        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99984        0      1  2009-01-09:15:40:26  2009-01-09:15:43:13     1284        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+   99988        0      1  2009-01-09:16:00:01  2009-01-09:16:02:50     1300        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100153        0      1  2009-01-13:16:54:09  2009-01-13:16:54:39    51059        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100155        0      1  2009-01-13:17:27:53  2009-01-13:17:29:59     1280        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100312        0      1  2009-01-15:13:01:20  2009-01-15:13:07:18      372        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100314        0      1  2009-01-15:13:10:19  2009-01-15:13:16:34      388        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100380        0      1  2009-01-16:08:36:56  2009-01-16:08:44:22      464        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=200  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100382        0      1  2009-01-16:08:48:51  2009-01-16:08:51:42     1304        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=200  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100385        0      1  2009-01-16:08:53:52  2009-01-16:08:55:58     1264        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=200  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100393        0      1  2009-01-16:09:39:26  2009-01-16:09:41:32     1264        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=200  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100408        0      1  2009-01-16:10:31:25  2009-01-16:10:33:01     9367        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=200  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100417        0      1  2009-01-16:11:15:53  2009-01-16:11:20:24      276        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=200  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100418        0      1  2009-01-16:11:23:00  2009-01-16:11:30:20       32        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=200  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100438        0      1  2009-01-16:13:28:22  2009-01-16:13:36:32      508        0        0    0  No Yes Physics                    7c00000000 Schema=119:Data=200  L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100446        0      1  2009-01-16:13:45:59  2009-01-16:13:46:23       40        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100448        0      1  2009-01-16:13:51:13  2009-01-16:13:51:46       60        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100452        0      1  2009-01-16:14:00:25  2009-01-16:14:00:40       20        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100456        0      1  2009-01-16:14:08:08  2009-01-16:14:08:25     1140        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone data_test           
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100900        0      1  2009-01-22:16:36:13  2009-01-22:16:36:29      132        0        0    0  No Yes Physics                    7800000000 Schema=120:Data=177  L1CaloStandalone                     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  100911        0      1  2009-01-22:17:55:25  2009-01-22:17:55:38       84        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101008        0      1  2009-01-23:15:10:24  2009-01-23:15:10:42      104        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101010        0      1  2009-01-23:15:16:02  2009-01-23:15:20:12      320        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101126        0      1  2009-01-26:17:09:50  2009-01-26:17:12:39     1304        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=205  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101141        0      1  2009-01-26:17:54:16  2009-01-26:17:56:22     1264        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=205  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101148        0      1  2009-01-26:18:05:07  2009-01-26:18:06:53     1052        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=205  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101155        0      1  2009-01-26:18:16:24  2009-01-26:18:25:00      536        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=205  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101171        0      1  2009-01-26:18:46:25  2009-01-26:18:48:31     1264        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=205  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101411        0      1  2009-01-28:15:49:53  2009-01-28:15:50:29      320        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=225  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101498        0      1  2009-01-29:14:17:55  2009-01-29:14:21:53     2456        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=251  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101529        0      1  2009-01-29:16:19:29  2009-01-29:16:30:41      696        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=251  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101543        0      1  2009-01-29:17:03:48  2009-01-29:17:06:32     1296        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=251  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101561        0      1  2009-01-30:08:49:22  2009-01-30:08:52:11     1312        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=277  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101567        0      1  2009-01-30:09:25:34  2009-01-30:09:27:39     1264        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=277  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101575        0      1  2009-01-30:09:55:13  2009-01-30:09:55:31       30        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=277  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101577        0      1  2009-01-30:09:58:03  2009-01-30:09:58:20       26        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101578        0      1  2009-01-30:09:59:01  2009-01-30:09:59:56      110        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=277  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101579        0      1  2009-01-30:10:00:48  2009-01-30:10:01:03       22        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=277  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101582        0      1  2009-01-30:10:03:50  2009-01-30:10:04:11       34        0        0    0  No Yes Physics                    7c00000000 Schema=120:Data=277  L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101783        0      1  2009-02-03:08:28:51  2009-02-03:08:31:43     1296        0        0    0  No Yes Physics                    7c00000000 Schema=122:Data=45   L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101788        0      1  2009-02-03:08:53:38  2009-02-03:08:55:44     1206        0        0    0  No Yes Physics                    7c00000000 Schema=122:Data=45   L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101792        0      1  2009-02-03:09:10:54  2009-02-03:09:12:59     1204        0        0    0  No Yes Physics                    7c00000000 Schema=122:Data=45   L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101954        0      1  2009-02-04:12:59:10  2009-02-04:12:59:24       18        0        0    0  No Yes Physics                    7c00000000 Schema=122:Data=77   L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101955        0      1  2009-02-04:13:02:42  2009-02-04:13:02:59       22        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101956        0      1  2009-02-04:13:06:21  2009-02-04:13:06:43       38        0        0    0  No Yes Physics                    7c00000000 Schema=122:Data=77   L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  103061        0      1  2009-03-18:08:22:05  2009-03-18:08:24:51     1296        0        0    0  No Yes Physics                    7c00000000 Schema=124:Data=32   L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  103068        0      1  2009-03-18:08:57:28  2009-03-18:09:00:31     1868        0        0    0  No Yes Physics                    7c00000000 Schema=124:Data=32   L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  103079        0      1  2009-03-18:09:26:04  2009-03-18:09:28:10     1260        0        0    0  No Yes Physics                    7c00000000 Schema=124:Data=32   L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  103303        0      1  2009-03-19:14:58:44  2009-03-19:14:59:19      308        0        0    0  No Yes Physics                    7c00000000 unknown              L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  103455        0      1  2009-03-20:13:34:58  2009-03-20:13:37:04     1266        0        0    0  No Yes Physics                    7c00000000 Schema=125:Data=1    L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  104172        0      1  2009-03-27:10:46:32  2009-03-27:10:46:54     1620        0        0    0  No Yes Physics                    7c00000000 Schema=127:Data=47   L1CaloStandalone l1calo              
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  104178        0      1  2009-03-27:10:52:28  2009-03-27:10:55:12     1312        0        0    0  No Yes Physics                    7c00000000 Schema=127:Data=47   L1CaloStandalone l1calo              
+
+2009-03-28 00:15 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:15 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:15 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:15 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 00:15 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 00:15 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 00:20 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:20 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:20 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:20 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 00:20 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 00:20 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 00:25 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:25 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:25 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:25 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 00:25 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 00:25 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 00:30 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:30 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:30 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:30 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 00:30 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 00:30 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 00:35 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:35 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:35 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:35 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 00:35 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 00:35 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 00:41 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:41 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:41 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:41 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 00:41 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 00:41 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 00:46 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:46 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:46 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:46 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 00:46 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 00:46 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 00:51 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:51 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:51 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:51 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 00:51 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 00:51 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 00:56 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 00:56 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 00:56 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 00:56 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 00:56 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 00:56 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:01 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:01 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:01 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:01 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:01 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:01 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:07 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:07 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:07 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:07 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:07 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:07 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:12 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:12 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:12 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:12 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:12 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:12 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:17 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:17 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:17 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:17 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:17 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:17 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:22 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:22 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:22 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:22 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:22 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:22 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:27 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:27 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:27 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:27 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:27 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:27 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:33 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:33 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:33 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:33 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:33 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:33 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:38 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:38 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:38 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:38 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:38 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:38 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:43 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:43 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:43 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:43 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:43 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:43 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:48 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:48 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:48 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:48 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:48 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:48 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:53 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:53 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:53 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:53 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:53 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:53 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 01:59 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 01:59 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 01:59 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 01:59 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 01:59 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 01:59 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:04 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:04 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:04 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:04 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:04 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:04 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:09 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:09 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:09 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:09 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:09 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:09 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:14 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:14 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:14 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:14 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:14 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:14 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:19 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:19 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:19 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:19 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:19 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:19 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:24 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:24 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:24 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:24 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:24 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:25 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:30 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:30 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:30 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:30 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:30 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:30 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:35 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:35 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:35 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:35 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:35 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:35 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:40 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:40 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:40 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:40 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:40 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:40 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:45 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:45 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:45 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:45 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:45 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:45 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:50 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:50 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:50 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:50 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:50 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:51 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 02:56 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 02:56 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 02:56 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 02:56 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 02:56 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 02:56 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:01 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:01 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:01 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:01 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:01 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:01 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:06 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:06 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:06 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:06 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:06 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:06 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:11 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:11 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:11 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:11 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:11 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:11 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:16 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:16 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:16 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:16 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:16 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:16 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:22 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:22 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:22 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:22 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:22 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:22 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:27 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:27 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:27 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:27 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:27 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:27 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:32 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:32 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:32 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:32 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:32 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:32 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:37 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:37 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:37 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:37 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:37 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:37 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:42 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:42 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:42 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:42 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:42 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:42 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:48 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:48 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:48 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:48 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:48 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:48 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:53 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:53 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:53 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:53 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:53 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:53 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 03:58 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 03:58 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 03:58 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 03:58 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 03:58 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 03:58 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:03 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:03 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:03 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:03 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:03 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:03 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:08 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:08 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:08 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:08 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:08 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:08 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:14 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:14 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:14 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:14 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:14 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:14 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:19 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:19 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:19 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:19 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:19 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:19 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:24 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:24 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:24 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:24 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:24 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:24 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:29 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:29 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:29 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:29 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:29 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:29 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:34 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:34 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:34 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:34 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:34 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:34 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:40 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:40 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:40 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:40 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:40 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:40 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:45 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:45 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:45 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:45 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:45 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:45 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:50 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:50 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:50 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:50 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:50 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:50 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 04:55 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 04:55 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 04:55 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 04:55 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 04:55 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 04:55 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:00 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:00 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:00 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:00 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:00 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:00 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:06 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:06 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:06 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:06 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:06 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:06 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:11 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:11 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:11 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:11 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:11 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:11 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:16 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:16 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:16 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:16 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:16 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:16 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:21 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:21 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:21 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:21 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:21 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:21 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:26 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:26 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:26 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:26 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:26 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:26 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:32 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:32 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:32 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:32 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:32 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:32 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:37 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:37 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:37 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:37 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:37 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:37 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:42 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:42 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:42 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:42 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:42 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:42 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:47 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:47 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:47 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:47 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:47 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:47 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:52 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:52 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:52 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:52 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:52 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:52 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 05:58 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 05:58 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 05:58 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 05:58 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 05:58 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 05:58 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:03 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:03 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:03 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:03 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:03 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:03 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:08 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:08 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:08 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:08 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:08 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:08 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:13 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:13 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:13 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:13 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:13 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:13 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:18 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:18 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:18 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:18 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:18 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:18 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:24 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:24 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:24 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:24 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:24 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:24 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:29 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:29 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:29 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:29 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:29 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:29 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:34 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:34 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:34 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:34 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:34 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:34 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:39 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:39 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:39 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:39 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:39 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:39 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:44 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:44 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:44 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:44 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:44 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:44 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:49 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:49 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:50 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:50 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:50 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:50 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 06:55 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 06:55 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 06:55 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 06:55 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 06:55 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 06:55 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:00 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:00 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:00 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:00 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:00 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:00 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:05 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:05 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:05 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:05 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:05 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:05 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:10 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:10 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:10 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:10 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:10 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:10 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:15 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:15 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:15 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:15 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:15 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:16 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:21 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:21 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:21 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:21 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:21 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:21 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:26 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:26 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:26 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:26 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:26 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:26 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:31 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:31 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:31 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:31 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:31 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:31 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:36 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:36 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:36 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:36 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:36 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:36 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:41 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:41 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:41 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:41 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:41 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:42 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:47 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:47 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:47 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:47 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:47 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:47 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:52 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:52 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:52 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:52 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:52 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:52 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 07:57 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 07:57 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 07:57 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 07:57 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 07:57 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 07:57 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:02 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:02 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:02 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:02 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:02 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:02 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:07 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:07 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:07 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:07 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:07 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:08 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:13 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:13 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:13 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:13 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:13 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:13 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:18 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:18 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:18 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:18 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:18 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:18 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:23 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:23 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:23 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:23 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:23 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:23 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:28 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:28 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:28 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:28 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:28 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:28 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:33 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:33 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:33 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:33 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:33 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:33 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:39 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:39 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:39 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:39 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:39 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:39 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:44 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:44 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:44 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:44 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:44 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:44 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:49 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:49 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:49 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:49 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:49 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:49 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:54 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:54 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:54 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:54 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:54 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:54 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 08:59 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 08:59 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 08:59 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 08:59 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 08:59 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 08:59 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 09:05 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 09:05 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 09:05 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 09:05 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 09:05 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 09:05 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 09:10 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 09:10 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 09:10 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 09:10 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 09:10 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 09:10 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 09:15 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 09:15 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 09:15 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 09:15 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 09:15 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 09:15 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 09:20 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 09:20 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 09:20 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 09:20 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 09:20 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 09:20 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 09:25 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 09:25 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 09:25 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 09:25 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 09:25 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 09:25 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 09:31 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 09:31 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 09:31 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 09:31 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 09:31 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 09:31 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 09:36 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 09:36 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 09:36 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 09:36 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 09:36 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 09:36 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178
+2009-03-28 09:41 - L1CaloStandalone - INFO: ===> listening for new valid runs <===
+2009-03-28 09:41 - L1CaloStandalone - DEBUG: initialising coolRunLister
+2009-03-28 09:41 - L1CaloStandalone - DEBUG: applying selections to coolRunLister
+2009-03-28 09:41 - L1CaloStandalone - INFO: last valid run: 104178
+2009-03-28 09:41 - L1CaloStandalone - INFO: searching for new runs from 104179 to 2147483647
+2009-03-28 09:41 - L1CaloStandalone - DEBUG:  No new valid run. Last known valid run still: 104178

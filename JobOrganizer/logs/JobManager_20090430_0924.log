@@ -1,0 +1,7 @@
+2009-04-30 09:24 - JobManager - INFO: ========================================
+2009-04-30 09:24 - JobManager - INFO: JobManager in init
+2009-04-30 09:24 - JobManager - INFO: init file JobOrganizerConfig.py was found
+2009-04-30 09:24 - JobManager - INFO: retrieveing Db parameters from JobOrganizerConfig.py file
+2009-04-30 09:24 - JobManager - INFO: JobManager initialized
+2009-04-30 09:24 - JobManager - INFO: ========================================
+2009-04-30 09:25 - JobManager - INFO: Adding new jobs from Db:

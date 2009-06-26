@@ -1,0 +1,166 @@
+2008-12-17 15:17 - W0Monitor - INFO: ========================================
+2008-12-17 15:17 - W0Monitor - INFO: W0Monitor in init
+2008-12-17 15:17 - W0Monitor - INFO: init file W0MonitorConfig.py was found
+2008-12-17 15:17 - W0Monitor - INFO: Watching at: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs
+2008-12-17 15:17 - W0Monitor - INFO: Purge threshold: 75%
+2008-12-17 15:17 - W0Monitor - INFO: RemovalOk: False
+2008-12-17 15:17 - W0Monitor - INFO: current usage : 92%
+2008-12-17 15:17 - W0Monitor - INFO: W0Monitor initialized
+2008-12-17 15:17 - W0Monitor - INFO: ========================================
+2008-12-17 15:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 92%
+2008-12-17 15:22 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/98464_CBNT removed. New quota: 90%
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/98466_CBNT removed. New quota: 89%
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/98449_CBNT removed. New quota: 87%
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/98895_L1CaloStandalone removed. New quota: 87%
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/98899_L1CaloStandalone removed. New quota: 87%
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/98891_L1CaloStandalone removed. New quota: 86%
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/98374_CBNT removed. New quota: 82%
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/98375_CBNT removed. New quota: 78%
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94474_CBNT removed. New quota: 76%
+2008-12-17 15:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94468_CBNT removed. New quota: 74%
+2008-12-17 15:27 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 74%
+2008-12-17 15:32 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 74%
+2008-12-17 15:37 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 74%
+2008-12-17 15:42 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 74%
+2008-12-17 15:47 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 74%
+2008-12-17 15:52 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 74%
+2008-12-17 15:57 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 74%
+2008-12-17 16:02 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 74%
+2008-12-17 16:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 76%
+2008-12-17 16:07 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 16:07 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94454_CBNT removed. New quota: 73%
+2008-12-17 16:12 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 75%
+2008-12-17 16:17 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 80%
+2008-12-17 16:17 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 16:17 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96304_CBNT removed. New quota: 78%
+2008-12-17 16:17 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94469_CBNT removed. New quota: 75%
+2008-12-17 16:22 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 92%
+2008-12-17 16:22 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 16:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96343_CBNT removed. New quota: 89%
+2008-12-17 16:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94456_CBNT removed. New quota: 86%
+2008-12-17 16:22 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94470_CBNT removed. New quota: 83%
+2008-12-17 16:23 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94428_CBNT removed. New quota: 79%
+2008-12-17 16:23 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96303_CBNT removed. New quota: 75%
+2008-12-17 16:28 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 84%
+2008-12-17 16:28 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 16:28 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94448_CBNT removed. New quota: 81%
+2008-12-17 16:28 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96315_CBNT removed. New quota: 77%
+2008-12-17 16:28 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96339_CBNT removed. New quota: 72%
+2008-12-17 16:33 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 78%
+2008-12-17 16:33 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 16:33 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94450_CBNT removed. New quota: 78%
+2008-12-17 16:33 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/94457_CBNT removed. New quota: 78%
+2008-12-17 16:33 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96324_CBNT removed. New quota: 78%
+2008-12-17 16:33 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96344_CBNT removed. New quota: 78%
+2008-12-17 16:33 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96345_CBNT removed. New quota: 78%
+2008-12-17 16:33 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96971_CBNT removed. New quota: 76%
+2008-12-17 16:33 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96972_CBNT removed. New quota: 69%
+2008-12-17 16:38 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 76%
+2008-12-17 16:38 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 16:38 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/97038_CBNT removed. New quota: 75%
+2008-12-17 16:43 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 91%
+2008-12-17 16:43 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 16:43 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/97045_CBNT removed. New quota: 90%
+2008-12-17 16:43 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/97155_CBNT removed. New quota: 89%
+2008-12-17 16:43 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96983_CBNT removed. New quota: 87%
+2008-12-17 16:43 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96975_CBNT removed. New quota: 84%
+2008-12-17 16:43 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96977_CBNT removed. New quota: 82%
+2008-12-17 16:43 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96980_CBNT removed. New quota: 80%
+2008-12-17 16:43 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/97150_CBNT removed. New quota: 78%
+2008-12-17 16:43 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/97043_CBNT removed. New quota: 75%
+2008-12-17 16:48 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 75%
+2008-12-17 16:53 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 75%
+2008-12-17 16:58 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 75%
+2008-12-17 17:03 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 75%
+2008-12-17 17:08 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 75%
+2008-12-17 17:13 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 77%
+2008-12-17 17:13 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 17:14 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/97149_CBNT removed. New quota: 76%
+2008-12-17 17:14 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/97145_CBNT removed. New quota: 76%
+2008-12-17 17:14 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/97041_CBNT removed. New quota: 75%
+2008-12-17 17:19 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 79%
+2008-12-17 17:19 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 17:19 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96270_CBNT removed. New quota: 73%
+2008-12-17 17:24 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 76%
+2008-12-17 17:24 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs ...
+2008-12-17 17:24 - W0Monitor - INFO: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/96976_CBNT removed. New quota: 68%
+2008-12-17 17:29 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 17:34 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 17:39 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 17:44 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 17:49 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 17:54 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 17:59 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:04 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:09 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:14 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:19 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:24 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:29 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:34 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:39 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:44 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 68%
+2008-12-17 18:49 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 18:54 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 18:59 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:04 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:09 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:14 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:19 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:24 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:29 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:34 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:39 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:44 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:49 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:54 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 19:59 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:04 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:09 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:14 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:19 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:24 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:29 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:34 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:39 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:44 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:49 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:54 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 20:59 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:04 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:09 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:14 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:19 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:24 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:29 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:34 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:39 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:44 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:49 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:54 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 21:59 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:04 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:09 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:14 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:19 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:24 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:29 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:34 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:39 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:44 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:49 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:54 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 22:59 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:04 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:09 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:14 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:19 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:24 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:29 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:34 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:39 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:44 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:49 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:54 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%
+2008-12-17 23:59 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs: 69%

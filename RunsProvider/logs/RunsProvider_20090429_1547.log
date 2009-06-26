@@ -1,0 +1,19 @@
+2009-04-29 15:47 - RunsProvider - INFO: ========================================
+2009-04-29 15:47 - RunsProvider - INFO: RunsProvider in init
+2009-04-29 15:47 - RunsProvider - INFO: init file RunsProviderConfigTest.py was found
+2009-04-29 15:47 - RunsProvider - INFO: creating run listeners from RunsProviderConfigTest.py file
+2009-04-29 15:47 - RunsProvider - INFO: TileCalibL1Calo added to the list of run listeners
+2009-04-29 15:47 - RunsProvider - INFO: retrieveing Db parameters from RunsProviderConfigTest.py file
+2009-04-29 15:47 - RunsProvider - INFO: RunsProvider initialized
+2009-04-29 15:47 - RunsProvider - INFO: ========================================
+2009-04-29 15:47 - RunsProvider - DEBUG: listening...
+2009-04-29 15:47 - RunsProvider - INFO: new runs found and stored into the Db:
+2009-04-29 15:47 - RunsProvider - INFO:  * run: 113384, runListener: TileCalibL1Calo, validated: False
+2009-04-29 15:47 - RunsProvider - INFO:  * run: 113386, runListener: TileCalibL1Calo, validated: False
+2009-04-29 15:47 - RunsProvider - INFO:  * run: 113389, runListener: TileCalibL1Calo, validated: False
+2009-04-29 15:47 - RunsProvider - INFO:  * run: 113390, runListener: TileCalibL1Calo, validated: False
+2009-04-29 15:47 - RunsProvider - INFO:  * run: 113391, runListener: TileCalibL1Calo, validated: False
+2009-04-29 15:47 - RunsProvider - INFO:  * run: 113392, runListener: TileCalibL1Calo, validated: False
+2009-04-29 15:47 - RunsProvider - INFO:  * run: 113394, runListener: TileCalibL1Calo, validated: False
+2009-04-29 15:47 - RunsProvider - INFO:  * run: 113410, runListener: TileCalibL1Calo, validated: False
+2009-04-29 15:47 - RunsProvider - INFO:  * run: 113412, runListener: TileCalibL1Calo, validated: False

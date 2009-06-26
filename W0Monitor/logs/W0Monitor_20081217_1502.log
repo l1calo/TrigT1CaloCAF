@@ -1,0 +1,11 @@
+2008-12-17 15:02 - W0Monitor - INFO: ========================================
+2008-12-17 15:02 - W0Monitor - INFO: W0Monitor in init
+2008-12-17 15:02 - W0Monitor - INFO: init file W0MonitorConfig.py was found
+2008-12-17 15:02 - W0Monitor - INFO: Watching at: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs 
+2008-12-17 15:02 - W0Monitor - INFO: Purge threshold: 75%
+2008-12-17 15:02 - W0Monitor - INFO: RemovalOk: False
+2008-12-17 15:02 - W0Monitor - INFO: current usage : 91%
+2008-12-17 15:02 - W0Monitor - INFO: W0Monitor initialized
+2008-12-17 15:02 - W0Monitor - INFO: ========================================
+2008-12-17 15:07 - W0Monitor - INFO: current usage of /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs : 93%
+2008-12-17 15:07 - W0Monitor - INFO: purging /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs  ...

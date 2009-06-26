@@ -1,0 +1,2454 @@
+2009-05-19 00:01 - JobManager - INFO: ========================================
+2009-05-19 00:01 - JobManager - INFO: JobManager in init
+2009-05-19 00:01 - JobManager - INFO: init file JobOrganizerConfig.py was found
+2009-05-19 00:01 - JobManager - INFO: retrieveing Db parameters from JobOrganizerConfig.py file
+2009-05-19 00:01 - JobManager - INFO: JobManager initialized
+2009-05-19 00:01 - JobManager - INFO: ========================================
+2009-05-19 00:01 - JobManager - INFO: Adding new jobs from Db:
+2009-05-19 00:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:03 - JobManager - DEBUG: from processJobs
+2009-05-19 00:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:05 - JobManager - DEBUG: from processJobs
+2009-05-19 00:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:07 - JobManager - DEBUG: from processJobs
+2009-05-19 00:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:09 - JobManager - DEBUG: from processJobs
+2009-05-19 00:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:11 - JobManager - DEBUG: from processJobs
+2009-05-19 00:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:13 - JobManager - DEBUG: from processJobs
+2009-05-19 00:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:15 - JobManager - DEBUG: from processJobs
+2009-05-19 00:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:17 - JobManager - DEBUG: from processJobs
+2009-05-19 00:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:19 - JobManager - DEBUG: from processJobs
+2009-05-19 00:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:21 - JobManager - DEBUG: from processJobs
+2009-05-19 00:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:23 - JobManager - DEBUG: from processJobs
+2009-05-19 00:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:25 - JobManager - DEBUG: from processJobs
+2009-05-19 00:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:27 - JobManager - DEBUG: from processJobs
+2009-05-19 00:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:29 - JobManager - DEBUG: from processJobs
+2009-05-19 00:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:31 - JobManager - DEBUG: from processJobs
+2009-05-19 00:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:33 - JobManager - DEBUG: from processJobs
+2009-05-19 00:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:35 - JobManager - DEBUG: from processJobs
+2009-05-19 00:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:37 - JobManager - DEBUG: from processJobs
+2009-05-19 00:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:39 - JobManager - DEBUG: from processJobs
+2009-05-19 00:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:41 - JobManager - DEBUG: from processJobs
+2009-05-19 00:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:43 - JobManager - DEBUG: from processJobs
+2009-05-19 00:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:45 - JobManager - DEBUG: from processJobs
+2009-05-19 00:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:47 - JobManager - DEBUG: from processJobs
+2009-05-19 00:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:49 - JobManager - DEBUG: from processJobs
+2009-05-19 00:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:52 - JobManager - DEBUG: from processJobs
+2009-05-19 00:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:54 - JobManager - DEBUG: from processJobs
+2009-05-19 00:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:56 - JobManager - DEBUG: from processJobs
+2009-05-19 00:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 00:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 00:58 - JobManager - DEBUG: from processJobs
+2009-05-19 00:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:00 - JobManager - DEBUG: from processJobs
+2009-05-19 01:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:02 - JobManager - DEBUG: from processJobs
+2009-05-19 01:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:04 - JobManager - DEBUG: from processJobs
+2009-05-19 01:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:06 - JobManager - DEBUG: from processJobs
+2009-05-19 01:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:08 - JobManager - DEBUG: from processJobs
+2009-05-19 01:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:10 - JobManager - DEBUG: from processJobs
+2009-05-19 01:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:12 - JobManager - DEBUG: from processJobs
+2009-05-19 01:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:14 - JobManager - DEBUG: from processJobs
+2009-05-19 01:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:16 - JobManager - DEBUG: from processJobs
+2009-05-19 01:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:18 - JobManager - DEBUG: from processJobs
+2009-05-19 01:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:20 - JobManager - DEBUG: from processJobs
+2009-05-19 01:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:22 - JobManager - DEBUG: from processJobs
+2009-05-19 01:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:24 - JobManager - DEBUG: from processJobs
+2009-05-19 01:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:26 - JobManager - DEBUG: from processJobs
+2009-05-19 01:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:28 - JobManager - DEBUG: from processJobs
+2009-05-19 01:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:30 - JobManager - DEBUG: from processJobs
+2009-05-19 01:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:32 - JobManager - DEBUG: from processJobs
+2009-05-19 01:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:34 - JobManager - DEBUG: from processJobs
+2009-05-19 01:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:36 - JobManager - DEBUG: from processJobs
+2009-05-19 01:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:38 - JobManager - DEBUG: from processJobs
+2009-05-19 01:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:40 - JobManager - DEBUG: from processJobs
+2009-05-19 01:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:42 - JobManager - DEBUG: from processJobs
+2009-05-19 01:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:44 - JobManager - DEBUG: from processJobs
+2009-05-19 01:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:46 - JobManager - DEBUG: from processJobs
+2009-05-19 01:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:48 - JobManager - DEBUG: from processJobs
+2009-05-19 01:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:50 - JobManager - DEBUG: from processJobs
+2009-05-19 01:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:52 - JobManager - DEBUG: from processJobs
+2009-05-19 01:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:54 - JobManager - DEBUG: from processJobs
+2009-05-19 01:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:56 - JobManager - DEBUG: from processJobs
+2009-05-19 01:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 01:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 01:58 - JobManager - DEBUG: from processJobs
+2009-05-19 01:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:00 - JobManager - DEBUG: from processJobs
+2009-05-19 02:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:02 - JobManager - DEBUG: from processJobs
+2009-05-19 02:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:04 - JobManager - DEBUG: from processJobs
+2009-05-19 02:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:06 - JobManager - DEBUG: from processJobs
+2009-05-19 02:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:08 - JobManager - DEBUG: from processJobs
+2009-05-19 02:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:10 - JobManager - DEBUG: from processJobs
+2009-05-19 02:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:12 - JobManager - DEBUG: from processJobs
+2009-05-19 02:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:14 - JobManager - DEBUG: from processJobs
+2009-05-19 02:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:16 - JobManager - DEBUG: from processJobs
+2009-05-19 02:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:18 - JobManager - DEBUG: from processJobs
+2009-05-19 02:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:20 - JobManager - DEBUG: from processJobs
+2009-05-19 02:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:22 - JobManager - DEBUG: from processJobs
+2009-05-19 02:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:24 - JobManager - DEBUG: from processJobs
+2009-05-19 02:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:26 - JobManager - DEBUG: from processJobs
+2009-05-19 02:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:28 - JobManager - DEBUG: from processJobs
+2009-05-19 02:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:30 - JobManager - DEBUG: from processJobs
+2009-05-19 02:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:32 - JobManager - DEBUG: from processJobs
+2009-05-19 02:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:34 - JobManager - DEBUG: from processJobs
+2009-05-19 02:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:36 - JobManager - DEBUG: from processJobs
+2009-05-19 02:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:38 - JobManager - DEBUG: from processJobs
+2009-05-19 02:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:40 - JobManager - DEBUG: from processJobs
+2009-05-19 02:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:42 - JobManager - DEBUG: from processJobs
+2009-05-19 02:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:44 - JobManager - DEBUG: from processJobs
+2009-05-19 02:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:46 - JobManager - DEBUG: from processJobs
+2009-05-19 02:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:48 - JobManager - DEBUG: from processJobs
+2009-05-19 02:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:50 - JobManager - DEBUG: from processJobs
+2009-05-19 02:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:52 - JobManager - DEBUG: from processJobs
+2009-05-19 02:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:54 - JobManager - DEBUG: from processJobs
+2009-05-19 02:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:56 - JobManager - DEBUG: from processJobs
+2009-05-19 02:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 02:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 02:58 - JobManager - DEBUG: from processJobs
+2009-05-19 02:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:00 - JobManager - DEBUG: from processJobs
+2009-05-19 03:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:02 - JobManager - DEBUG: from processJobs
+2009-05-19 03:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:04 - JobManager - DEBUG: from processJobs
+2009-05-19 03:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:06 - JobManager - DEBUG: from processJobs
+2009-05-19 03:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:08 - JobManager - DEBUG: from processJobs
+2009-05-19 03:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:10 - JobManager - DEBUG: from processJobs
+2009-05-19 03:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:12 - JobManager - DEBUG: from processJobs
+2009-05-19 03:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:14 - JobManager - DEBUG: from processJobs
+2009-05-19 03:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:16 - JobManager - DEBUG: from processJobs
+2009-05-19 03:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:18 - JobManager - DEBUG: from processJobs
+2009-05-19 03:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:20 - JobManager - DEBUG: from processJobs
+2009-05-19 03:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:22 - JobManager - DEBUG: from processJobs
+2009-05-19 03:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:24 - JobManager - DEBUG: from processJobs
+2009-05-19 03:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:26 - JobManager - DEBUG: from processJobs
+2009-05-19 03:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:28 - JobManager - DEBUG: from processJobs
+2009-05-19 03:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:30 - JobManager - DEBUG: from processJobs
+2009-05-19 03:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:32 - JobManager - DEBUG: from processJobs
+2009-05-19 03:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:34 - JobManager - DEBUG: from processJobs
+2009-05-19 03:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:36 - JobManager - DEBUG: from processJobs
+2009-05-19 03:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:38 - JobManager - DEBUG: from processJobs
+2009-05-19 03:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:40 - JobManager - DEBUG: from processJobs
+2009-05-19 03:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:42 - JobManager - DEBUG: from processJobs
+2009-05-19 03:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:44 - JobManager - DEBUG: from processJobs
+2009-05-19 03:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:46 - JobManager - DEBUG: from processJobs
+2009-05-19 03:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:48 - JobManager - DEBUG: from processJobs
+2009-05-19 03:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:50 - JobManager - DEBUG: from processJobs
+2009-05-19 03:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:52 - JobManager - DEBUG: from processJobs
+2009-05-19 03:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:54 - JobManager - DEBUG: from processJobs
+2009-05-19 03:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:56 - JobManager - DEBUG: from processJobs
+2009-05-19 03:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 03:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 03:58 - JobManager - DEBUG: from processJobs
+2009-05-19 03:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:00 - JobManager - DEBUG: from processJobs
+2009-05-19 04:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:02 - JobManager - DEBUG: from processJobs
+2009-05-19 04:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:04 - JobManager - DEBUG: from processJobs
+2009-05-19 04:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:06 - JobManager - DEBUG: from processJobs
+2009-05-19 04:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:08 - JobManager - DEBUG: from processJobs
+2009-05-19 04:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:10 - JobManager - DEBUG: from processJobs
+2009-05-19 04:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:12 - JobManager - DEBUG: from processJobs
+2009-05-19 04:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:14 - JobManager - DEBUG: from processJobs
+2009-05-19 04:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:16 - JobManager - DEBUG: from processJobs
+2009-05-19 04:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:18 - JobManager - DEBUG: from processJobs
+2009-05-19 04:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:20 - JobManager - DEBUG: from processJobs
+2009-05-19 04:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:22 - JobManager - DEBUG: from processJobs
+2009-05-19 04:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:24 - JobManager - DEBUG: from processJobs
+2009-05-19 04:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:26 - JobManager - DEBUG: from processJobs
+2009-05-19 04:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:28 - JobManager - DEBUG: from processJobs
+2009-05-19 04:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:30 - JobManager - DEBUG: from processJobs
+2009-05-19 04:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:32 - JobManager - DEBUG: from processJobs
+2009-05-19 04:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:34 - JobManager - DEBUG: from processJobs
+2009-05-19 04:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:36 - JobManager - DEBUG: from processJobs
+2009-05-19 04:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:38 - JobManager - DEBUG: from processJobs
+2009-05-19 04:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:40 - JobManager - DEBUG: from processJobs
+2009-05-19 04:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:42 - JobManager - DEBUG: from processJobs
+2009-05-19 04:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:44 - JobManager - DEBUG: from processJobs
+2009-05-19 04:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:46 - JobManager - DEBUG: from processJobs
+2009-05-19 04:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:48 - JobManager - DEBUG: from processJobs
+2009-05-19 04:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:50 - JobManager - DEBUG: from processJobs
+2009-05-19 04:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:53 - JobManager - DEBUG: from processJobs
+2009-05-19 04:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:55 - JobManager - DEBUG: from processJobs
+2009-05-19 04:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:57 - JobManager - DEBUG: from processJobs
+2009-05-19 04:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 04:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 04:59 - JobManager - DEBUG: from processJobs
+2009-05-19 04:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:01 - JobManager - DEBUG: from processJobs
+2009-05-19 05:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:03 - JobManager - DEBUG: from processJobs
+2009-05-19 05:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:05 - JobManager - DEBUG: from processJobs
+2009-05-19 05:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:07 - JobManager - DEBUG: from processJobs
+2009-05-19 05:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:09 - JobManager - DEBUG: from processJobs
+2009-05-19 05:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:11 - JobManager - DEBUG: from processJobs
+2009-05-19 05:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:13 - JobManager - DEBUG: from processJobs
+2009-05-19 05:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:15 - JobManager - DEBUG: from processJobs
+2009-05-19 05:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:17 - JobManager - DEBUG: from processJobs
+2009-05-19 05:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:19 - JobManager - DEBUG: from processJobs
+2009-05-19 05:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:21 - JobManager - DEBUG: from processJobs
+2009-05-19 05:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:23 - JobManager - DEBUG: from processJobs
+2009-05-19 05:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:25 - JobManager - DEBUG: from processJobs
+2009-05-19 05:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:27 - JobManager - DEBUG: from processJobs
+2009-05-19 05:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:29 - JobManager - DEBUG: from processJobs
+2009-05-19 05:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:31 - JobManager - DEBUG: from processJobs
+2009-05-19 05:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:33 - JobManager - DEBUG: from processJobs
+2009-05-19 05:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:35 - JobManager - DEBUG: from processJobs
+2009-05-19 05:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:37 - JobManager - DEBUG: from processJobs
+2009-05-19 05:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:39 - JobManager - DEBUG: from processJobs
+2009-05-19 05:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:41 - JobManager - DEBUG: from processJobs
+2009-05-19 05:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:43 - JobManager - DEBUG: from processJobs
+2009-05-19 05:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:45 - JobManager - DEBUG: from processJobs
+2009-05-19 05:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:47 - JobManager - DEBUG: from processJobs
+2009-05-19 05:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:49 - JobManager - DEBUG: from processJobs
+2009-05-19 05:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:51 - JobManager - DEBUG: from processJobs
+2009-05-19 05:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:53 - JobManager - DEBUG: from processJobs
+2009-05-19 05:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:55 - JobManager - DEBUG: from processJobs
+2009-05-19 05:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:57 - JobManager - DEBUG: from processJobs
+2009-05-19 05:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 05:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 05:59 - JobManager - DEBUG: from processJobs
+2009-05-19 05:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:01 - JobManager - DEBUG: from processJobs
+2009-05-19 06:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:03 - JobManager - DEBUG: from processJobs
+2009-05-19 06:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:05 - JobManager - DEBUG: from processJobs
+2009-05-19 06:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:07 - JobManager - DEBUG: from processJobs
+2009-05-19 06:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:09 - JobManager - DEBUG: from processJobs
+2009-05-19 06:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:11 - JobManager - DEBUG: from processJobs
+2009-05-19 06:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:13 - JobManager - DEBUG: from processJobs
+2009-05-19 06:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:15 - JobManager - DEBUG: from processJobs
+2009-05-19 06:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:17 - JobManager - DEBUG: from processJobs
+2009-05-19 06:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:19 - JobManager - DEBUG: from processJobs
+2009-05-19 06:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:21 - JobManager - DEBUG: from processJobs
+2009-05-19 06:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:23 - JobManager - DEBUG: from processJobs
+2009-05-19 06:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:25 - JobManager - DEBUG: from processJobs
+2009-05-19 06:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:27 - JobManager - DEBUG: from processJobs
+2009-05-19 06:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:29 - JobManager - DEBUG: from processJobs
+2009-05-19 06:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:31 - JobManager - DEBUG: from processJobs
+2009-05-19 06:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:33 - JobManager - DEBUG: from processJobs
+2009-05-19 06:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:35 - JobManager - DEBUG: from processJobs
+2009-05-19 06:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:37 - JobManager - DEBUG: from processJobs
+2009-05-19 06:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:39 - JobManager - DEBUG: from processJobs
+2009-05-19 06:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:41 - JobManager - DEBUG: from processJobs
+2009-05-19 06:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:43 - JobManager - DEBUG: from processJobs
+2009-05-19 06:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:45 - JobManager - DEBUG: from processJobs
+2009-05-19 06:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:47 - JobManager - DEBUG: from processJobs
+2009-05-19 06:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:49 - JobManager - DEBUG: from processJobs
+2009-05-19 06:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:51 - JobManager - DEBUG: from processJobs
+2009-05-19 06:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:53 - JobManager - DEBUG: from processJobs
+2009-05-19 06:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:55 - JobManager - DEBUG: from processJobs
+2009-05-19 06:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:57 - JobManager - DEBUG: from processJobs
+2009-05-19 06:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 06:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 06:59 - JobManager - DEBUG: from processJobs
+2009-05-19 06:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:01 - JobManager - DEBUG: from processJobs
+2009-05-19 07:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:03 - JobManager - DEBUG: from processJobs
+2009-05-19 07:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:05 - JobManager - DEBUG: from processJobs
+2009-05-19 07:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:07 - JobManager - DEBUG: from processJobs
+2009-05-19 07:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:09 - JobManager - DEBUG: from processJobs
+2009-05-19 07:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:11 - JobManager - DEBUG: from processJobs
+2009-05-19 07:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:13 - JobManager - DEBUG: from processJobs
+2009-05-19 07:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:15 - JobManager - DEBUG: from processJobs
+2009-05-19 07:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:17 - JobManager - DEBUG: from processJobs
+2009-05-19 07:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:19 - JobManager - DEBUG: from processJobs
+2009-05-19 07:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:21 - JobManager - DEBUG: from processJobs
+2009-05-19 07:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:23 - JobManager - DEBUG: from processJobs
+2009-05-19 07:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:25 - JobManager - DEBUG: from processJobs
+2009-05-19 07:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:27 - JobManager - DEBUG: from processJobs
+2009-05-19 07:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:29 - JobManager - DEBUG: from processJobs
+2009-05-19 07:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:31 - JobManager - DEBUG: from processJobs
+2009-05-19 07:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:33 - JobManager - DEBUG: from processJobs
+2009-05-19 07:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:35 - JobManager - DEBUG: from processJobs
+2009-05-19 07:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:37 - JobManager - DEBUG: from processJobs
+2009-05-19 07:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:39 - JobManager - DEBUG: from processJobs
+2009-05-19 07:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:41 - JobManager - DEBUG: from processJobs
+2009-05-19 07:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:43 - JobManager - DEBUG: from processJobs
+2009-05-19 07:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:45 - JobManager - DEBUG: from processJobs
+2009-05-19 07:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:47 - JobManager - DEBUG: from processJobs
+2009-05-19 07:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:49 - JobManager - DEBUG: from processJobs
+2009-05-19 07:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:51 - JobManager - DEBUG: from processJobs
+2009-05-19 07:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:53 - JobManager - DEBUG: from processJobs
+2009-05-19 07:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:55 - JobManager - DEBUG: from processJobs
+2009-05-19 07:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:57 - JobManager - DEBUG: from processJobs
+2009-05-19 07:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 07:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 07:59 - JobManager - DEBUG: from processJobs
+2009-05-19 07:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:01 - JobManager - DEBUG: from processJobs
+2009-05-19 08:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:03 - JobManager - DEBUG: from processJobs
+2009-05-19 08:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:05 - JobManager - DEBUG: from processJobs
+2009-05-19 08:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:07 - JobManager - DEBUG: from processJobs
+2009-05-19 08:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:09 - JobManager - DEBUG: from processJobs
+2009-05-19 08:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:11 - JobManager - DEBUG: from processJobs
+2009-05-19 08:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:13 - JobManager - DEBUG: from processJobs
+2009-05-19 08:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:15 - JobManager - DEBUG: from processJobs
+2009-05-19 08:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:17 - JobManager - DEBUG: from processJobs
+2009-05-19 08:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:19 - JobManager - DEBUG: from processJobs
+2009-05-19 08:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:21 - JobManager - DEBUG: from processJobs
+2009-05-19 08:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:23 - JobManager - DEBUG: from processJobs
+2009-05-19 08:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:25 - JobManager - DEBUG: from processJobs
+2009-05-19 08:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:27 - JobManager - DEBUG: from processJobs
+2009-05-19 08:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:29 - JobManager - DEBUG: from processJobs
+2009-05-19 08:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:31 - JobManager - DEBUG: from processJobs
+2009-05-19 08:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:33 - JobManager - DEBUG: from processJobs
+2009-05-19 08:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:35 - JobManager - DEBUG: from processJobs
+2009-05-19 08:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:37 - JobManager - DEBUG: from processJobs
+2009-05-19 08:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:39 - JobManager - DEBUG: from processJobs
+2009-05-19 08:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:41 - JobManager - DEBUG: from processJobs
+2009-05-19 08:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:43 - JobManager - DEBUG: from processJobs
+2009-05-19 08:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:45 - JobManager - DEBUG: from processJobs
+2009-05-19 08:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:47 - JobManager - DEBUG: from processJobs
+2009-05-19 08:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:49 - JobManager - DEBUG: from processJobs
+2009-05-19 08:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:51 - JobManager - DEBUG: from processJobs
+2009-05-19 08:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:53 - JobManager - DEBUG: from processJobs
+2009-05-19 08:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:55 - JobManager - DEBUG: from processJobs
+2009-05-19 08:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 08:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 08:58 - JobManager - DEBUG: from processJobs
+2009-05-19 08:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:00 - JobManager - DEBUG: from processJobs
+2009-05-19 09:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:02 - JobManager - DEBUG: from processJobs
+2009-05-19 09:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:04 - JobManager - DEBUG: from processJobs
+2009-05-19 09:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:06 - JobManager - DEBUG: from processJobs
+2009-05-19 09:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:08 - JobManager - DEBUG: from processJobs
+2009-05-19 09:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:10 - JobManager - DEBUG: from processJobs
+2009-05-19 09:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:12 - JobManager - DEBUG: from processJobs
+2009-05-19 09:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:14 - JobManager - DEBUG: from processJobs
+2009-05-19 09:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:16 - JobManager - DEBUG: from processJobs
+2009-05-19 09:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:18 - JobManager - DEBUG: from processJobs
+2009-05-19 09:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:20 - JobManager - DEBUG: from processJobs
+2009-05-19 09:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:22 - JobManager - DEBUG: from processJobs
+2009-05-19 09:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:24 - JobManager - DEBUG: from processJobs
+2009-05-19 09:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:26 - JobManager - DEBUG: from processJobs
+2009-05-19 09:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:28 - JobManager - DEBUG: from processJobs
+2009-05-19 09:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:30 - JobManager - DEBUG: from processJobs
+2009-05-19 09:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:32 - JobManager - DEBUG: from processJobs
+2009-05-19 09:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:34 - JobManager - DEBUG: from processJobs
+2009-05-19 09:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:36 - JobManager - DEBUG: from processJobs
+2009-05-19 09:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:38 - JobManager - DEBUG: from processJobs
+2009-05-19 09:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:40 - JobManager - DEBUG: from processJobs
+2009-05-19 09:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:42 - JobManager - DEBUG: from processJobs
+2009-05-19 09:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:44 - JobManager - DEBUG: from processJobs
+2009-05-19 09:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:46 - JobManager - DEBUG: from processJobs
+2009-05-19 09:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:48 - JobManager - DEBUG: from processJobs
+2009-05-19 09:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:50 - JobManager - DEBUG: from processJobs
+2009-05-19 09:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:52 - JobManager - DEBUG: from processJobs
+2009-05-19 09:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:54 - JobManager - DEBUG: from processJobs
+2009-05-19 09:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:56 - JobManager - DEBUG: from processJobs
+2009-05-19 09:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 09:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 09:58 - JobManager - DEBUG: from processJobs
+2009-05-19 09:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:00 - JobManager - DEBUG: from processJobs
+2009-05-19 10:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:02 - JobManager - DEBUG: from processJobs
+2009-05-19 10:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:04 - JobManager - DEBUG: from processJobs
+2009-05-19 10:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:06 - JobManager - DEBUG: from processJobs
+2009-05-19 10:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:08 - JobManager - DEBUG: from processJobs
+2009-05-19 10:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:10 - JobManager - DEBUG: from processJobs
+2009-05-19 10:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:12 - JobManager - DEBUG: from processJobs
+2009-05-19 10:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:14 - JobManager - DEBUG: from processJobs
+2009-05-19 10:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:16 - JobManager - DEBUG: from processJobs
+2009-05-19 10:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:18 - JobManager - DEBUG: from processJobs
+2009-05-19 10:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:20 - JobManager - DEBUG: from processJobs
+2009-05-19 10:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:22 - JobManager - DEBUG: from processJobs
+2009-05-19 10:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:24 - JobManager - DEBUG: from processJobs
+2009-05-19 10:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:26 - JobManager - DEBUG: from processJobs
+2009-05-19 10:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:28 - JobManager - DEBUG: from processJobs
+2009-05-19 10:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:30 - JobManager - DEBUG: from processJobs
+2009-05-19 10:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:32 - JobManager - DEBUG: from processJobs
+2009-05-19 10:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:34 - JobManager - DEBUG: from processJobs
+2009-05-19 10:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:36 - JobManager - DEBUG: from processJobs
+2009-05-19 10:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:38 - JobManager - DEBUG: from processJobs
+2009-05-19 10:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:40 - JobManager - DEBUG: from processJobs
+2009-05-19 10:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:42 - JobManager - DEBUG: from processJobs
+2009-05-19 10:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:44 - JobManager - DEBUG: from processJobs
+2009-05-19 10:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:46 - JobManager - DEBUG: from processJobs
+2009-05-19 10:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:48 - JobManager - DEBUG: from processJobs
+2009-05-19 10:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:50 - JobManager - DEBUG: from processJobs
+2009-05-19 10:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:52 - JobManager - DEBUG: from processJobs
+2009-05-19 10:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:54 - JobManager - DEBUG: from processJobs
+2009-05-19 10:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:56 - JobManager - DEBUG: from processJobs
+2009-05-19 10:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 10:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 10:58 - JobManager - DEBUG: from processJobs
+2009-05-19 10:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:00 - JobManager - DEBUG: from processJobs
+2009-05-19 11:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:02 - JobManager - DEBUG: from processJobs
+2009-05-19 11:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:04 - JobManager - DEBUG: from processJobs
+2009-05-19 11:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:06 - JobManager - DEBUG: from processJobs
+2009-05-19 11:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:08 - JobManager - DEBUG: from processJobs
+2009-05-19 11:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:10 - JobManager - DEBUG: from processJobs
+2009-05-19 11:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:12 - JobManager - DEBUG: from processJobs
+2009-05-19 11:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:14 - JobManager - DEBUG: from processJobs
+2009-05-19 11:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:16 - JobManager - DEBUG: from processJobs
+2009-05-19 11:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:18 - JobManager - DEBUG: from processJobs
+2009-05-19 11:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:20 - JobManager - DEBUG: from processJobs
+2009-05-19 11:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:22 - JobManager - DEBUG: from processJobs
+2009-05-19 11:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:24 - JobManager - DEBUG: from processJobs
+2009-05-19 11:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:26 - JobManager - DEBUG: from processJobs
+2009-05-19 11:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:28 - JobManager - DEBUG: from processJobs
+2009-05-19 11:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:30 - JobManager - DEBUG: from processJobs
+2009-05-19 11:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:32 - JobManager - DEBUG: from processJobs
+2009-05-19 11:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:34 - JobManager - DEBUG: from processJobs
+2009-05-19 11:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:36 - JobManager - DEBUG: from processJobs
+2009-05-19 11:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:38 - JobManager - DEBUG: from processJobs
+2009-05-19 11:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:40 - JobManager - DEBUG: from processJobs
+2009-05-19 11:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:42 - JobManager - DEBUG: from processJobs
+2009-05-19 11:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:44 - JobManager - DEBUG: from processJobs
+2009-05-19 11:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:46 - JobManager - DEBUG: from processJobs
+2009-05-19 11:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:48 - JobManager - DEBUG: from processJobs
+2009-05-19 11:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:50 - JobManager - DEBUG: from processJobs
+2009-05-19 11:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:52 - JobManager - DEBUG: from processJobs
+2009-05-19 11:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:54 - JobManager - DEBUG: from processJobs
+2009-05-19 11:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:56 - JobManager - DEBUG: from processJobs
+2009-05-19 11:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 11:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 11:58 - JobManager - DEBUG: from processJobs
+2009-05-19 11:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:00 - JobManager - DEBUG: from processJobs
+2009-05-19 12:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:02 - JobManager - DEBUG: from processJobs
+2009-05-19 12:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:04 - JobManager - DEBUG: from processJobs
+2009-05-19 12:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:06 - JobManager - DEBUG: from processJobs
+2009-05-19 12:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:08 - JobManager - DEBUG: from processJobs
+2009-05-19 12:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:10 - JobManager - DEBUG: from processJobs
+2009-05-19 12:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:12 - JobManager - DEBUG: from processJobs
+2009-05-19 12:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:14 - JobManager - DEBUG: from processJobs
+2009-05-19 12:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:16 - JobManager - DEBUG: from processJobs
+2009-05-19 12:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:18 - JobManager - DEBUG: from processJobs
+2009-05-19 12:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:20 - JobManager - DEBUG: from processJobs
+2009-05-19 12:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:22 - JobManager - DEBUG: from processJobs
+2009-05-19 12:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:24 - JobManager - DEBUG: from processJobs
+2009-05-19 12:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:26 - JobManager - DEBUG: from processJobs
+2009-05-19 12:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:28 - JobManager - DEBUG: from processJobs
+2009-05-19 12:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:30 - JobManager - DEBUG: from processJobs
+2009-05-19 12:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:32 - JobManager - DEBUG: from processJobs
+2009-05-19 12:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:34 - JobManager - DEBUG: from processJobs
+2009-05-19 12:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:36 - JobManager - DEBUG: from processJobs
+2009-05-19 12:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:38 - JobManager - DEBUG: from processJobs
+2009-05-19 12:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:40 - JobManager - DEBUG: from processJobs
+2009-05-19 12:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:42 - JobManager - DEBUG: from processJobs
+2009-05-19 12:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:44 - JobManager - DEBUG: from processJobs
+2009-05-19 12:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:46 - JobManager - DEBUG: from processJobs
+2009-05-19 12:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:49 - JobManager - DEBUG: from processJobs
+2009-05-19 12:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:51 - JobManager - DEBUG: from processJobs
+2009-05-19 12:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:53 - JobManager - DEBUG: from processJobs
+2009-05-19 12:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:55 - JobManager - DEBUG: from processJobs
+2009-05-19 12:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:57 - JobManager - DEBUG: from processJobs
+2009-05-19 12:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 12:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 12:59 - JobManager - DEBUG: from processJobs
+2009-05-19 12:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:01 - JobManager - DEBUG: from processJobs
+2009-05-19 13:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:03 - JobManager - DEBUG: from processJobs
+2009-05-19 13:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:05 - JobManager - DEBUG: from processJobs
+2009-05-19 13:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:07 - JobManager - DEBUG: from processJobs
+2009-05-19 13:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:09 - JobManager - DEBUG: from processJobs
+2009-05-19 13:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:11 - JobManager - DEBUG: from processJobs
+2009-05-19 13:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:13 - JobManager - DEBUG: from processJobs
+2009-05-19 13:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:15 - JobManager - DEBUG: from processJobs
+2009-05-19 13:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:17 - JobManager - DEBUG: from processJobs
+2009-05-19 13:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:19 - JobManager - DEBUG: from processJobs
+2009-05-19 13:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:21 - JobManager - DEBUG: from processJobs
+2009-05-19 13:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:23 - JobManager - DEBUG: from processJobs
+2009-05-19 13:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:25 - JobManager - DEBUG: from processJobs
+2009-05-19 13:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:27 - JobManager - DEBUG: from processJobs
+2009-05-19 13:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:29 - JobManager - DEBUG: from processJobs
+2009-05-19 13:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:31 - JobManager - DEBUG: from processJobs
+2009-05-19 13:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:33 - JobManager - DEBUG: from processJobs
+2009-05-19 13:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:35 - JobManager - DEBUG: from processJobs
+2009-05-19 13:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:37 - JobManager - DEBUG: from processJobs
+2009-05-19 13:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:39 - JobManager - DEBUG: from processJobs
+2009-05-19 13:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:41 - JobManager - DEBUG: from processJobs
+2009-05-19 13:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:43 - JobManager - DEBUG: from processJobs
+2009-05-19 13:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:45 - JobManager - DEBUG: from processJobs
+2009-05-19 13:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:47 - JobManager - DEBUG: from processJobs
+2009-05-19 13:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:49 - JobManager - DEBUG: from processJobs
+2009-05-19 13:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:51 - JobManager - DEBUG: from processJobs
+2009-05-19 13:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:53 - JobManager - DEBUG: from processJobs
+2009-05-19 13:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:55 - JobManager - DEBUG: from processJobs
+2009-05-19 13:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:57 - JobManager - DEBUG: from processJobs
+2009-05-19 13:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 13:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 13:59 - JobManager - DEBUG: from processJobs
+2009-05-19 13:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:01 - JobManager - DEBUG: from processJobs
+2009-05-19 14:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:03 - JobManager - DEBUG: from processJobs
+2009-05-19 14:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:05 - JobManager - DEBUG: from processJobs
+2009-05-19 14:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:07 - JobManager - DEBUG: from processJobs
+2009-05-19 14:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:09 - JobManager - DEBUG: from processJobs
+2009-05-19 14:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:11 - JobManager - DEBUG: from processJobs
+2009-05-19 14:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:13 - JobManager - DEBUG: from processJobs
+2009-05-19 14:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:15 - JobManager - DEBUG: from processJobs
+2009-05-19 14:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:17 - JobManager - DEBUG: from processJobs
+2009-05-19 14:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:19 - JobManager - DEBUG: from processJobs
+2009-05-19 14:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:21 - JobManager - DEBUG: from processJobs
+2009-05-19 14:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:23 - JobManager - DEBUG: from processJobs
+2009-05-19 14:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:25 - JobManager - DEBUG: from processJobs
+2009-05-19 14:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:27 - JobManager - DEBUG: from processJobs
+2009-05-19 14:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:29 - JobManager - DEBUG: from processJobs
+2009-05-19 14:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:31 - JobManager - DEBUG: from processJobs
+2009-05-19 14:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:33 - JobManager - DEBUG: from processJobs
+2009-05-19 14:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:35 - JobManager - DEBUG: from processJobs
+2009-05-19 14:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:37 - JobManager - DEBUG: from processJobs
+2009-05-19 14:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:39 - JobManager - DEBUG: from processJobs
+2009-05-19 14:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:41 - JobManager - DEBUG: from processJobs
+2009-05-19 14:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:43 - JobManager - DEBUG: from processJobs
+2009-05-19 14:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:45 - JobManager - DEBUG: from processJobs
+2009-05-19 14:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:47 - JobManager - DEBUG: from processJobs
+2009-05-19 14:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:49 - JobManager - DEBUG: from processJobs
+2009-05-19 14:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:51 - JobManager - DEBUG: from processJobs
+2009-05-19 14:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:53 - JobManager - DEBUG: from processJobs
+2009-05-19 14:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:55 - JobManager - DEBUG: from processJobs
+2009-05-19 14:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:57 - JobManager - INFO: 115679_CBNT
+2009-05-19 14:57 - JobManager - DEBUG: from processJobs
+2009-05-19 14:57 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 14:57 - JobManager - INFO: preparing job for submission
+2009-05-19 14:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 14:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 14:59 - JobManager - DEBUG: from processJobs
+2009-05-19 14:59 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 14:59 - JobManager - INFO: preparing job for submission
+2009-05-19 14:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:02 - JobManager - DEBUG: from processJobs
+2009-05-19 15:02 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:02 - JobManager - INFO: job is prepared - changing status to: PREPARED
+2009-05-19 15:02 - JobManager - INFO: bacth slots available - submitting job
+2009-05-19 15:02 - JobManager - INFO: job successfully submitted - new status: SUBMITTED
+2009-05-19 15:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:04 - JobManager - DEBUG: from processJobs
+2009-05-19 15:04 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:04 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:06 - JobManager - DEBUG: from processJobs
+2009-05-19 15:06 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:06 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:08 - JobManager - DEBUG: from processJobs
+2009-05-19 15:08 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:08 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:10 - JobManager - DEBUG: from processJobs
+2009-05-19 15:10 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:10 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:12 - JobManager - DEBUG: from processJobs
+2009-05-19 15:12 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:12 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:14 - JobManager - DEBUG: from processJobs
+2009-05-19 15:14 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:14 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:16 - JobManager - DEBUG: from processJobs
+2009-05-19 15:16 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:16 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:18 - JobManager - DEBUG: from processJobs
+2009-05-19 15:18 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:18 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:20 - JobManager - DEBUG: from processJobs
+2009-05-19 15:20 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:20 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:22 - JobManager - DEBUG: from processJobs
+2009-05-19 15:22 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:22 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:24 - JobManager - DEBUG: from processJobs
+2009-05-19 15:24 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:24 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:26 - JobManager - DEBUG: from processJobs
+2009-05-19 15:26 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:26 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:28 - JobManager - DEBUG: from processJobs
+2009-05-19 15:28 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:28 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:30 - JobManager - DEBUG: from processJobs
+2009-05-19 15:30 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:30 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 15:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:32 - JobManager - DEBUG: from processJobs
+2009-05-19 15:32 - JobManager - INFO: => job: 115679_CBNT
+2009-05-19 15:32 - JobManager - INFO: job already submitted - current status: DONE
+2009-05-19 15:32 - JobManager - INFO: job is 'DONE' 
+2009-05-19 15:32 - JobManager - INFO: checkProcessedOk()
+2009-05-19 15:32 - JobManager - INFO: posProcessing()
+2009-05-19 15:32 - JobManager - INFO: cleaning working area
+2009-05-19 15:32 - JobManager - INFO: backup to castor
+2009-05-19 15:32 - JobManager - DEBUG: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/115679_CBNT -> /castor/cern.ch/grid/atlas/caf/atlcal/perm/l1calo/elecCalib/reconstruction/115679
+2009-05-19 15:33 - JobManager - INFO: removing job 115679_CBNT with status: DONE
+2009-05-19 15:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:35 - JobManager - DEBUG: from processJobs
+2009-05-19 15:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:37 - JobManager - DEBUG: from processJobs
+2009-05-19 15:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:39 - JobManager - DEBUG: from processJobs
+2009-05-19 15:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:41 - JobManager - DEBUG: from processJobs
+2009-05-19 15:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:43 - JobManager - DEBUG: from processJobs
+2009-05-19 15:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:45 - JobManager - DEBUG: from processJobs
+2009-05-19 15:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:47 - JobManager - DEBUG: from processJobs
+2009-05-19 15:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:49 - JobManager - DEBUG: from processJobs
+2009-05-19 15:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:51 - JobManager - DEBUG: from processJobs
+2009-05-19 15:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:53 - JobManager - DEBUG: from processJobs
+2009-05-19 15:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:55 - JobManager - DEBUG: from processJobs
+2009-05-19 15:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:57 - JobManager - DEBUG: from processJobs
+2009-05-19 15:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 15:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 15:59 - JobManager - DEBUG: from processJobs
+2009-05-19 15:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:01 - JobManager - DEBUG: from processJobs
+2009-05-19 16:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:03 - JobManager - DEBUG: from processJobs
+2009-05-19 16:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:05 - JobManager - DEBUG: from processJobs
+2009-05-19 16:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:07 - JobManager - DEBUG: from processJobs
+2009-05-19 16:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:09 - JobManager - DEBUG: from processJobs
+2009-05-19 16:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:11 - JobManager - DEBUG: from processJobs
+2009-05-19 16:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:13 - JobManager - INFO: 115697_CBNT
+2009-05-19 16:13 - JobManager - INFO: 115700_CBNT
+2009-05-19 16:13 - JobManager - DEBUG: from processJobs
+2009-05-19 16:13 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:13 - JobManager - INFO: preparing job for submission
+2009-05-19 16:13 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:13 - JobManager - INFO: preparing job for submission
+2009-05-19 16:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:15 - JobManager - DEBUG: from processJobs
+2009-05-19 16:15 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:15 - JobManager - INFO: preparing job for submission
+2009-05-19 16:15 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:15 - JobManager - INFO: preparing job for submission
+2009-05-19 16:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:17 - JobManager - DEBUG: from processJobs
+2009-05-19 16:17 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:17 - JobManager - INFO: job is prepared - changing status to: PREPARED
+2009-05-19 16:17 - JobManager - INFO: bacth slots available - submitting job
+2009-05-19 16:17 - JobManager - INFO: job successfully submitted - new status: SUBMITTED
+2009-05-19 16:17 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:17 - JobManager - INFO: job is prepared - changing status to: PREPARED
+2009-05-19 16:17 - JobManager - INFO: bacth slots available - submitting job
+2009-05-19 16:17 - JobManager - INFO: job successfully submitted - new status: SUBMITTED
+2009-05-19 16:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:19 - JobManager - DEBUG: from processJobs
+2009-05-19 16:19 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:19 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:19 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:19 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:21 - JobManager - DEBUG: from processJobs
+2009-05-19 16:21 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:21 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:21 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:21 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:23 - JobManager - DEBUG: from processJobs
+2009-05-19 16:23 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:23 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:23 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:23 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:25 - JobManager - DEBUG: from processJobs
+2009-05-19 16:25 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:25 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:25 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:25 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:27 - JobManager - DEBUG: from processJobs
+2009-05-19 16:27 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:27 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:27 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:27 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:29 - JobManager - INFO: 115703_CBNT
+2009-05-19 16:29 - JobManager - INFO: 115704_CBNT
+2009-05-19 16:29 - JobManager - INFO: 115706_CBNT
+2009-05-19 16:29 - JobManager - DEBUG: from processJobs
+2009-05-19 16:29 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:29 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:29 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:29 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:29 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:29 - JobManager - INFO: preparing job for submission
+2009-05-19 16:29 - JobManager - INFO: => job: 115704_CBNT
+2009-05-19 16:29 - JobManager - INFO: preparing job for submission
+2009-05-19 16:29 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:29 - JobManager - INFO: preparing job for submission
+2009-05-19 16:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:32 - JobManager - DEBUG: from processJobs
+2009-05-19 16:32 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:32 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:32 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:32 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:32 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:32 - JobManager - INFO: preparing job for submission
+2009-05-19 16:32 - JobManager - INFO: => job: 115704_CBNT
+2009-05-19 16:32 - JobManager - INFO: preparing job for submission
+2009-05-19 16:32 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:32 - JobManager - INFO: preparing job for submission
+2009-05-19 16:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:34 - JobManager - DEBUG: from processJobs
+2009-05-19 16:34 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:34 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:34 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:34 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:34 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:34 - JobManager - INFO: job is prepared - changing status to: PREPARED
+2009-05-19 16:34 - JobManager - INFO: bacth slots available - submitting job
+2009-05-19 16:34 - JobManager - INFO: job successfully submitted - new status: SUBMITTED
+2009-05-19 16:34 - JobManager - INFO: => job: 115704_CBNT
+2009-05-19 16:34 - JobManager - INFO: job is prepared - changing status to: PREPARED
+2009-05-19 16:34 - JobManager - INFO: bacth slots available - submitting job
+2009-05-19 16:34 - JobManager - INFO: job successfully submitted - new status: SUBMITTED
+2009-05-19 16:34 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:34 - JobManager - INFO: job is prepared - changing status to: PREPARED
+2009-05-19 16:34 - JobManager - INFO: bacth slots available - submitting job
+2009-05-19 16:34 - JobManager - INFO: job successfully submitted - new status: SUBMITTED
+2009-05-19 16:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:36 - JobManager - DEBUG: from processJobs
+2009-05-19 16:36 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:36 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:36 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:36 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:36 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:36 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:36 - JobManager - INFO: => job: 115704_CBNT
+2009-05-19 16:36 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:36 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:36 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:38 - JobManager - DEBUG: from processJobs
+2009-05-19 16:38 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:38 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:38 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:38 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:38 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:38 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:38 - JobManager - INFO: => job: 115704_CBNT
+2009-05-19 16:38 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:38 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:38 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:40 - JobManager - DEBUG: from processJobs
+2009-05-19 16:40 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:40 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:40 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:40 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:40 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:40 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:40 - JobManager - INFO: => job: 115704_CBNT
+2009-05-19 16:40 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:40 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:40 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:42 - JobManager - DEBUG: from processJobs
+2009-05-19 16:42 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:42 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:42 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:42 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:42 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:42 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:42 - JobManager - INFO: => job: 115704_CBNT
+2009-05-19 16:42 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:42 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:42 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:44 - JobManager - DEBUG: from processJobs
+2009-05-19 16:44 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:44 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:44 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:44 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:44 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:44 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:44 - JobManager - INFO: => job: 115704_CBNT
+2009-05-19 16:44 - JobManager - INFO: job already submitted - current status: DONE
+2009-05-19 16:44 - JobManager - INFO: job is 'DONE' 
+2009-05-19 16:44 - JobManager - INFO: checkProcessedOk()
+2009-05-19 16:44 - JobManager - INFO: posProcessing()
+2009-05-19 16:44 - JobManager - INFO: cleaning working area
+2009-05-19 16:44 - JobManager - INFO: backup to castor
+2009-05-19 16:44 - JobManager - DEBUG: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/115704_CBNT -> /castor/cern.ch/grid/atlas/caf/atlcal/perm/l1calo/elecCalib/reconstruction/115704
+2009-05-19 16:44 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:44 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:44 - JobManager - INFO: removing job 115704_CBNT with status: DONE
+2009-05-19 16:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:46 - JobManager - DEBUG: from processJobs
+2009-05-19 16:46 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:46 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:46 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:46 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:46 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:46 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:46 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:46 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:48 - JobManager - DEBUG: from processJobs
+2009-05-19 16:48 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:48 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:48 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:48 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:48 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:48 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:48 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:48 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:50 - JobManager - DEBUG: from processJobs
+2009-05-19 16:50 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:50 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:50 - JobManager - INFO: => job: 115700_CBNT
+2009-05-19 16:50 - JobManager - INFO: job already submitted - current status: DONE
+2009-05-19 16:50 - JobManager - INFO: job is 'DONE' 
+2009-05-19 16:50 - JobManager - INFO: checkProcessedOk()
+2009-05-19 16:50 - JobManager - INFO: posProcessing()
+2009-05-19 16:50 - JobManager - INFO: cleaning working area
+2009-05-19 16:50 - JobManager - INFO: backup to castor
+2009-05-19 16:50 - JobManager - DEBUG: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/115700_CBNT -> /castor/cern.ch/grid/atlas/caf/atlcal/perm/l1calo/elecCalib/reconstruction/115700
+2009-05-19 16:51 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:51 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:51 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:51 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:51 - JobManager - INFO: removing job 115700_CBNT with status: DONE
+2009-05-19 16:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:53 - JobManager - DEBUG: from processJobs
+2009-05-19 16:53 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:53 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:53 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:53 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:53 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:53 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:55 - JobManager - DEBUG: from processJobs
+2009-05-19 16:55 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:55 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:55 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:55 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:55 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:55 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:57 - JobManager - DEBUG: from processJobs
+2009-05-19 16:57 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:57 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:57 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:57 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:57 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:57 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 16:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 16:59 - JobManager - DEBUG: from processJobs
+2009-05-19 16:59 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 16:59 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:59 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 16:59 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:59 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 16:59 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 16:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:01 - JobManager - DEBUG: from processJobs
+2009-05-19 17:01 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 17:01 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:01 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 17:01 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:01 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:01 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:03 - JobManager - DEBUG: from processJobs
+2009-05-19 17:03 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 17:03 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:03 - JobManager - INFO: => job: 115703_CBNT
+2009-05-19 17:03 - JobManager - INFO: job already submitted - current status: DONE
+2009-05-19 17:03 - JobManager - INFO: job is 'DONE' 
+2009-05-19 17:03 - JobManager - INFO: checkProcessedOk()
+2009-05-19 17:03 - JobManager - INFO: posProcessing()
+2009-05-19 17:03 - JobManager - INFO: cleaning working area
+2009-05-19 17:03 - JobManager - INFO: backup to castor
+2009-05-19 17:03 - JobManager - DEBUG: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/115703_CBNT -> /castor/cern.ch/grid/atlas/caf/atlcal/perm/l1calo/elecCalib/reconstruction/115703
+2009-05-19 17:03 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:03 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:03 - JobManager - INFO: removing job 115703_CBNT with status: DONE
+2009-05-19 17:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:05 - JobManager - DEBUG: from processJobs
+2009-05-19 17:05 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 17:05 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:05 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:05 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:07 - JobManager - DEBUG: from processJobs
+2009-05-19 17:07 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 17:07 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:07 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:07 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:09 - JobManager - DEBUG: from processJobs
+2009-05-19 17:09 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 17:09 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:09 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:09 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:11 - JobManager - DEBUG: from processJobs
+2009-05-19 17:11 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 17:11 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:11 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:11 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:13 - JobManager - DEBUG: from processJobs
+2009-05-19 17:13 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 17:13 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:13 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:13 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:15 - JobManager - DEBUG: from processJobs
+2009-05-19 17:15 - JobManager - INFO: => job: 115697_CBNT
+2009-05-19 17:15 - JobManager - INFO: job already submitted - current status: DONE
+2009-05-19 17:15 - JobManager - INFO: job is 'DONE' 
+2009-05-19 17:15 - JobManager - INFO: checkProcessedOk()
+2009-05-19 17:15 - JobManager - INFO: posProcessing()
+2009-05-19 17:15 - JobManager - INFO: cleaning working area
+2009-05-19 17:15 - JobManager - INFO: backup to castor
+2009-05-19 17:15 - JobManager - DEBUG: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/115697_CBNT -> /castor/cern.ch/grid/atlas/caf/atlcal/perm/l1calo/elecCalib/reconstruction/115697
+2009-05-19 17:16 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:16 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:16 - JobManager - INFO: removing job 115697_CBNT with status: DONE
+2009-05-19 17:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:18 - JobManager - DEBUG: from processJobs
+2009-05-19 17:18 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:18 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:20 - JobManager - DEBUG: from processJobs
+2009-05-19 17:20 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:20 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:22 - JobManager - DEBUG: from processJobs
+2009-05-19 17:22 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:22 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:24 - JobManager - DEBUG: from processJobs
+2009-05-19 17:24 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:24 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:26 - JobManager - DEBUG: from processJobs
+2009-05-19 17:26 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:26 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:29 - JobManager - DEBUG: from processJobs
+2009-05-19 17:29 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:29 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:31 - JobManager - DEBUG: from processJobs
+2009-05-19 17:31 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:31 - JobManager - INFO: job already submitted - current status: RUN
+2009-05-19 17:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:33 - JobManager - DEBUG: from processJobs
+2009-05-19 17:33 - JobManager - INFO: => job: 115706_CBNT
+2009-05-19 17:33 - JobManager - INFO: job already submitted - current status: DONE
+2009-05-19 17:33 - JobManager - INFO: job is 'DONE' 
+2009-05-19 17:33 - JobManager - INFO: checkProcessedOk()
+2009-05-19 17:33 - JobManager - INFO: posProcessing()
+2009-05-19 17:33 - JobManager - INFO: cleaning working area
+2009-05-19 17:33 - JobManager - INFO: backup to castor
+2009-05-19 17:33 - JobManager - DEBUG: /afs/cern.ch/user/l/l1ccalib/w0/DaemonData/jobs/115706_CBNT -> /castor/cern.ch/grid/atlas/caf/atlcal/perm/l1calo/elecCalib/reconstruction/115706
+2009-05-19 17:34 - JobManager - INFO: removing job 115706_CBNT with status: DONE
+2009-05-19 17:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:36 - JobManager - DEBUG: from processJobs
+2009-05-19 17:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:38 - JobManager - DEBUG: from processJobs
+2009-05-19 17:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:40 - JobManager - DEBUG: from processJobs
+2009-05-19 17:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:42 - JobManager - DEBUG: from processJobs
+2009-05-19 17:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:44 - JobManager - DEBUG: from processJobs
+2009-05-19 17:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:46 - JobManager - DEBUG: from processJobs
+2009-05-19 17:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:48 - JobManager - DEBUG: from processJobs
+2009-05-19 17:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:50 - JobManager - DEBUG: from processJobs
+2009-05-19 17:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:52 - JobManager - DEBUG: from processJobs
+2009-05-19 17:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:54 - JobManager - DEBUG: from processJobs
+2009-05-19 17:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:56 - JobManager - DEBUG: from processJobs
+2009-05-19 17:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 17:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 17:58 - JobManager - DEBUG: from processJobs
+2009-05-19 17:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:00 - JobManager - DEBUG: from processJobs
+2009-05-19 18:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:02 - JobManager - DEBUG: from processJobs
+2009-05-19 18:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:04 - JobManager - DEBUG: from processJobs
+2009-05-19 18:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:06 - JobManager - DEBUG: from processJobs
+2009-05-19 18:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:08 - JobManager - DEBUG: from processJobs
+2009-05-19 18:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:10 - JobManager - DEBUG: from processJobs
+2009-05-19 18:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:12 - JobManager - DEBUG: from processJobs
+2009-05-19 18:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:14 - JobManager - DEBUG: from processJobs
+2009-05-19 18:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:16 - JobManager - DEBUG: from processJobs
+2009-05-19 18:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:18 - JobManager - DEBUG: from processJobs
+2009-05-19 18:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:20 - JobManager - DEBUG: from processJobs
+2009-05-19 18:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:22 - JobManager - DEBUG: from processJobs
+2009-05-19 18:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:24 - JobManager - DEBUG: from processJobs
+2009-05-19 18:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:26 - JobManager - DEBUG: from processJobs
+2009-05-19 18:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:28 - JobManager - DEBUG: from processJobs
+2009-05-19 18:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:30 - JobManager - DEBUG: from processJobs
+2009-05-19 18:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:32 - JobManager - DEBUG: from processJobs
+2009-05-19 18:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:34 - JobManager - DEBUG: from processJobs
+2009-05-19 18:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:36 - JobManager - DEBUG: from processJobs
+2009-05-19 18:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:38 - JobManager - DEBUG: from processJobs
+2009-05-19 18:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:40 - JobManager - DEBUG: from processJobs
+2009-05-19 18:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:42 - JobManager - DEBUG: from processJobs
+2009-05-19 18:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:44 - JobManager - DEBUG: from processJobs
+2009-05-19 18:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:46 - JobManager - DEBUG: from processJobs
+2009-05-19 18:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:48 - JobManager - DEBUG: from processJobs
+2009-05-19 18:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:50 - JobManager - DEBUG: from processJobs
+2009-05-19 18:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:52 - JobManager - DEBUG: from processJobs
+2009-05-19 18:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:55 - JobManager - DEBUG: from processJobs
+2009-05-19 18:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:57 - JobManager - DEBUG: from processJobs
+2009-05-19 18:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 18:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 18:59 - JobManager - DEBUG: from processJobs
+2009-05-19 18:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:01 - JobManager - DEBUG: from processJobs
+2009-05-19 19:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:03 - JobManager - DEBUG: from processJobs
+2009-05-19 19:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:05 - JobManager - DEBUG: from processJobs
+2009-05-19 19:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:07 - JobManager - DEBUG: from processJobs
+2009-05-19 19:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:09 - JobManager - DEBUG: from processJobs
+2009-05-19 19:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:11 - JobManager - DEBUG: from processJobs
+2009-05-19 19:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:13 - JobManager - DEBUG: from processJobs
+2009-05-19 19:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:15 - JobManager - DEBUG: from processJobs
+2009-05-19 19:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:17 - JobManager - DEBUG: from processJobs
+2009-05-19 19:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:19 - JobManager - DEBUG: from processJobs
+2009-05-19 19:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:21 - JobManager - DEBUG: from processJobs
+2009-05-19 19:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:23 - JobManager - DEBUG: from processJobs
+2009-05-19 19:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:25 - JobManager - DEBUG: from processJobs
+2009-05-19 19:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:27 - JobManager - DEBUG: from processJobs
+2009-05-19 19:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:29 - JobManager - DEBUG: from processJobs
+2009-05-19 19:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:31 - JobManager - DEBUG: from processJobs
+2009-05-19 19:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:33 - JobManager - DEBUG: from processJobs
+2009-05-19 19:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:35 - JobManager - DEBUG: from processJobs
+2009-05-19 19:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:37 - JobManager - DEBUG: from processJobs
+2009-05-19 19:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:39 - JobManager - DEBUG: from processJobs
+2009-05-19 19:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:41 - JobManager - DEBUG: from processJobs
+2009-05-19 19:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:43 - JobManager - DEBUG: from processJobs
+2009-05-19 19:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:45 - JobManager - DEBUG: from processJobs
+2009-05-19 19:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:47 - JobManager - DEBUG: from processJobs
+2009-05-19 19:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:49 - JobManager - DEBUG: from processJobs
+2009-05-19 19:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:51 - JobManager - DEBUG: from processJobs
+2009-05-19 19:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:53 - JobManager - DEBUG: from processJobs
+2009-05-19 19:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:55 - JobManager - DEBUG: from processJobs
+2009-05-19 19:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:57 - JobManager - DEBUG: from processJobs
+2009-05-19 19:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 19:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 19:59 - JobManager - DEBUG: from processJobs
+2009-05-19 19:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:01 - JobManager - DEBUG: from processJobs
+2009-05-19 20:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:03 - JobManager - DEBUG: from processJobs
+2009-05-19 20:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:05 - JobManager - DEBUG: from processJobs
+2009-05-19 20:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:07 - JobManager - DEBUG: from processJobs
+2009-05-19 20:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:09 - JobManager - DEBUG: from processJobs
+2009-05-19 20:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:11 - JobManager - DEBUG: from processJobs
+2009-05-19 20:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:13 - JobManager - DEBUG: from processJobs
+2009-05-19 20:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:15 - JobManager - DEBUG: from processJobs
+2009-05-19 20:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:17 - JobManager - DEBUG: from processJobs
+2009-05-19 20:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:19 - JobManager - DEBUG: from processJobs
+2009-05-19 20:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:21 - JobManager - DEBUG: from processJobs
+2009-05-19 20:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:23 - JobManager - DEBUG: from processJobs
+2009-05-19 20:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:25 - JobManager - DEBUG: from processJobs
+2009-05-19 20:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:27 - JobManager - DEBUG: from processJobs
+2009-05-19 20:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:29 - JobManager - DEBUG: from processJobs
+2009-05-19 20:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:31 - JobManager - DEBUG: from processJobs
+2009-05-19 20:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:33 - JobManager - DEBUG: from processJobs
+2009-05-19 20:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:35 - JobManager - DEBUG: from processJobs
+2009-05-19 20:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:37 - JobManager - DEBUG: from processJobs
+2009-05-19 20:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:39 - JobManager - DEBUG: from processJobs
+2009-05-19 20:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:41 - JobManager - DEBUG: from processJobs
+2009-05-19 20:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:43 - JobManager - DEBUG: from processJobs
+2009-05-19 20:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:45 - JobManager - DEBUG: from processJobs
+2009-05-19 20:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:47 - JobManager - DEBUG: from processJobs
+2009-05-19 20:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:49 - JobManager - DEBUG: from processJobs
+2009-05-19 20:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:51 - JobManager - DEBUG: from processJobs
+2009-05-19 20:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:53 - JobManager - DEBUG: from processJobs
+2009-05-19 20:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:55 - JobManager - DEBUG: from processJobs
+2009-05-19 20:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:57 - JobManager - DEBUG: from processJobs
+2009-05-19 20:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 20:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 20:59 - JobManager - DEBUG: from processJobs
+2009-05-19 20:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:01 - JobManager - DEBUG: from processJobs
+2009-05-19 21:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:03 - JobManager - DEBUG: from processJobs
+2009-05-19 21:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:05 - JobManager - DEBUG: from processJobs
+2009-05-19 21:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:07 - JobManager - DEBUG: from processJobs
+2009-05-19 21:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:09 - JobManager - DEBUG: from processJobs
+2009-05-19 21:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:11 - JobManager - DEBUG: from processJobs
+2009-05-19 21:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:13 - JobManager - DEBUG: from processJobs
+2009-05-19 21:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:15 - JobManager - DEBUG: from processJobs
+2009-05-19 21:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:17 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:17 - JobManager - DEBUG: from processJobs
+2009-05-19 21:17 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:19 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:19 - JobManager - DEBUG: from processJobs
+2009-05-19 21:19 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:21 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:21 - JobManager - DEBUG: from processJobs
+2009-05-19 21:21 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:23 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:23 - JobManager - DEBUG: from processJobs
+2009-05-19 21:23 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:25 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:25 - JobManager - DEBUG: from processJobs
+2009-05-19 21:25 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:27 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:27 - JobManager - DEBUG: from processJobs
+2009-05-19 21:27 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:29 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:29 - JobManager - DEBUG: from processJobs
+2009-05-19 21:29 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:31 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:31 - JobManager - DEBUG: from processJobs
+2009-05-19 21:31 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:33 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:33 - JobManager - DEBUG: from processJobs
+2009-05-19 21:33 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:35 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:35 - JobManager - DEBUG: from processJobs
+2009-05-19 21:35 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:37 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:37 - JobManager - DEBUG: from processJobs
+2009-05-19 21:37 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:39 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:39 - JobManager - DEBUG: from processJobs
+2009-05-19 21:39 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:41 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:41 - JobManager - DEBUG: from processJobs
+2009-05-19 21:41 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:43 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:43 - JobManager - DEBUG: from processJobs
+2009-05-19 21:43 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:45 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:45 - JobManager - DEBUG: from processJobs
+2009-05-19 21:45 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:47 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:47 - JobManager - DEBUG: from processJobs
+2009-05-19 21:47 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:49 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:49 - JobManager - DEBUG: from processJobs
+2009-05-19 21:49 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:51 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:51 - JobManager - DEBUG: from processJobs
+2009-05-19 21:51 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:53 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:53 - JobManager - DEBUG: from processJobs
+2009-05-19 21:53 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:55 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:55 - JobManager - DEBUG: from processJobs
+2009-05-19 21:55 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:57 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:57 - JobManager - DEBUG: from processJobs
+2009-05-19 21:57 - JobManager - DEBUG: end of processJobs
+2009-05-19 21:59 - JobManager - INFO: Adding new jobs:
+2009-05-19 21:59 - JobManager - DEBUG: from processJobs
+2009-05-19 21:59 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:01 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:01 - JobManager - DEBUG: from processJobs
+2009-05-19 22:01 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:03 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:03 - JobManager - DEBUG: from processJobs
+2009-05-19 22:03 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:05 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:05 - JobManager - DEBUG: from processJobs
+2009-05-19 22:05 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:07 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:07 - JobManager - DEBUG: from processJobs
+2009-05-19 22:07 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:09 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:09 - JobManager - DEBUG: from processJobs
+2009-05-19 22:09 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:11 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:11 - JobManager - DEBUG: from processJobs
+2009-05-19 22:11 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:13 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:13 - JobManager - DEBUG: from processJobs
+2009-05-19 22:13 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:15 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:15 - JobManager - DEBUG: from processJobs
+2009-05-19 22:15 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:18 - JobManager - DEBUG: from processJobs
+2009-05-19 22:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:20 - JobManager - DEBUG: from processJobs
+2009-05-19 22:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:22 - JobManager - DEBUG: from processJobs
+2009-05-19 22:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:24 - JobManager - DEBUG: from processJobs
+2009-05-19 22:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:26 - JobManager - DEBUG: from processJobs
+2009-05-19 22:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:28 - JobManager - DEBUG: from processJobs
+2009-05-19 22:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:30 - JobManager - DEBUG: from processJobs
+2009-05-19 22:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:32 - JobManager - DEBUG: from processJobs
+2009-05-19 22:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:34 - JobManager - DEBUG: from processJobs
+2009-05-19 22:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:36 - JobManager - DEBUG: from processJobs
+2009-05-19 22:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:38 - JobManager - DEBUG: from processJobs
+2009-05-19 22:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:40 - JobManager - DEBUG: from processJobs
+2009-05-19 22:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:42 - JobManager - DEBUG: from processJobs
+2009-05-19 22:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:44 - JobManager - DEBUG: from processJobs
+2009-05-19 22:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:46 - JobManager - DEBUG: from processJobs
+2009-05-19 22:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:48 - JobManager - DEBUG: from processJobs
+2009-05-19 22:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:50 - JobManager - DEBUG: from processJobs
+2009-05-19 22:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:52 - JobManager - DEBUG: from processJobs
+2009-05-19 22:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:54 - JobManager - DEBUG: from processJobs
+2009-05-19 22:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:56 - JobManager - DEBUG: from processJobs
+2009-05-19 22:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 22:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 22:58 - JobManager - DEBUG: from processJobs
+2009-05-19 22:58 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:00 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:00 - JobManager - DEBUG: from processJobs
+2009-05-19 23:00 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:02 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:02 - JobManager - DEBUG: from processJobs
+2009-05-19 23:02 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:04 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:04 - JobManager - DEBUG: from processJobs
+2009-05-19 23:04 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:06 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:06 - JobManager - DEBUG: from processJobs
+2009-05-19 23:06 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:08 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:08 - JobManager - DEBUG: from processJobs
+2009-05-19 23:08 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:10 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:10 - JobManager - DEBUG: from processJobs
+2009-05-19 23:10 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:12 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:12 - JobManager - DEBUG: from processJobs
+2009-05-19 23:12 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:14 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:14 - JobManager - DEBUG: from processJobs
+2009-05-19 23:14 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:16 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:16 - JobManager - DEBUG: from processJobs
+2009-05-19 23:16 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:18 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:18 - JobManager - DEBUG: from processJobs
+2009-05-19 23:18 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:20 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:20 - JobManager - DEBUG: from processJobs
+2009-05-19 23:20 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:22 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:22 - JobManager - DEBUG: from processJobs
+2009-05-19 23:22 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:24 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:24 - JobManager - DEBUG: from processJobs
+2009-05-19 23:24 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:26 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:26 - JobManager - DEBUG: from processJobs
+2009-05-19 23:26 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:28 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:28 - JobManager - DEBUG: from processJobs
+2009-05-19 23:28 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:30 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:30 - JobManager - DEBUG: from processJobs
+2009-05-19 23:30 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:32 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:32 - JobManager - DEBUG: from processJobs
+2009-05-19 23:32 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:34 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:34 - JobManager - DEBUG: from processJobs
+2009-05-19 23:34 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:36 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:36 - JobManager - DEBUG: from processJobs
+2009-05-19 23:36 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:38 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:38 - JobManager - DEBUG: from processJobs
+2009-05-19 23:38 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:40 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:40 - JobManager - DEBUG: from processJobs
+2009-05-19 23:40 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:42 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:42 - JobManager - DEBUG: from processJobs
+2009-05-19 23:42 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:44 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:44 - JobManager - DEBUG: from processJobs
+2009-05-19 23:44 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:46 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:46 - JobManager - DEBUG: from processJobs
+2009-05-19 23:46 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:48 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:48 - JobManager - DEBUG: from processJobs
+2009-05-19 23:48 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:50 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:50 - JobManager - DEBUG: from processJobs
+2009-05-19 23:50 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:52 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:52 - JobManager - DEBUG: from processJobs
+2009-05-19 23:52 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:54 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:54 - JobManager - DEBUG: from processJobs
+2009-05-19 23:54 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:56 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:56 - JobManager - DEBUG: from processJobs
+2009-05-19 23:56 - JobManager - DEBUG: end of processJobs
+2009-05-19 23:58 - JobManager - INFO: Adding new jobs:
+2009-05-19 23:58 - JobManager - DEBUG: from processJobs
+2009-05-19 23:58 - JobManager - DEBUG: end of processJobs
+2009-05-20 00:00 - JobManager - INFO: Adding new jobs:
+2009-05-20 00:00 - JobManager - DEBUG: from processJobs
+2009-05-20 00:00 - JobManager - DEBUG: end of processJobs

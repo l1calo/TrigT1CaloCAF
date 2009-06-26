@@ -1,0 +1,32 @@
+2009-04-29 15:16 - TileCalibL1Calo - INFO: ========================================
+2009-04-29 15:16 - TileCalibL1Calo - INFO: RunListener in init
+2009-04-29 15:16 - TileCalibL1Calo - INFO: RunListener initialized
+2009-04-29 15:16 - TileCalibL1Calo - INFO: ========================================
+2009-04-29 15:16 - TileCalibL1Calo - INFO: ===> from initRunListener <===
+2009-04-29 15:16 - TileCalibL1Calo - INFO: 
+RunListener TileCalibL1Caloinitialised with the following parameters:
+TDAQ DB: COOLONL_TDAQ/COMP200
+TRIG DB: COOLONL_TRIGGER/COMP200
+Status DB: COOLONL_TDAQ/COMP200
+log level: 0
+oracle: False
+rec. only: True
+det. mask: 0
+run type: cismono
+det. status: 2
+det. status tag: HEAD
+daq partition: Tile-TTC2LAN
+tag: 
+format: acertd
+reverse: False
+stoptimestamp: True
+cleanstop: True
+hasevents: True
+last valid run known: 0
+
+2009-04-29 15:16 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-04-29 15:16 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-04-29 15:16 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-04-29 15:16 - TileCalibL1Calo - INFO: last valid run: 113232
+2009-04-29 15:16 - TileCalibL1Calo - INFO: searching for new runs from 113233 to 2147483647
+2009-04-29 15:16 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 113232

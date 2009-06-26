@@ -1,0 +1,649 @@
+2009-05-13 00:01 - TileCalibL1Calo - INFO: ========================================
+2009-05-13 00:01 - TileCalibL1Calo - INFO: RunListener in init
+2009-05-13 00:01 - TileCalibL1Calo - INFO: RunListener initialized
+2009-05-13 00:01 - TileCalibL1Calo - INFO: ========================================
+2009-05-13 00:01 - TileCalibL1Calo - INFO: ===> from initRunListener <===
+2009-05-13 00:01 - TileCalibL1Calo - INFO: 
+RunListener TileCalibL1Caloinitialised with the following parameters:
+TDAQ DB: COOLONL_TDAQ/COMP200
+TRIG DB: COOLONL_TRIGGER/COMP200
+Status DB: COOLONL_TDAQ/COMP200
+log level: 0
+oracle: False
+rec. only: True
+det. mask: 0
+run type: cismono
+det. status: 2
+det. status tag: HEAD
+daq partition: 
+ * L1Calo-TTC2LAN
+ * Tile-TTC2LAN
+ * TileL1Calo-TTC2LAN
+tag: 
+format: acertd
+reverse: False
+stoptimestamp: True
+cleanstop: True
+hasevents: True
+last valid run known: 0
+
+2009-05-13 00:16 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 00:16 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 00:16 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 00:16 - TileCalibL1Calo - INFO: last valid run: 104000
+2009-05-13 00:16 - TileCalibL1Calo - INFO: searching for new runs from 104001 to 2147483647
+2009-05-13 00:17 - TileCalibL1Calo - DEBUG: new last known run: 115019
+2009-05-13 00:17 - TileCalibL1Calo - DEBUG: 
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  105072     4508      3  2009-04-02:13:28:56  2009-04-02:13:30:15     4508     4508     4508    0  No Yes cismono                    7c00f00000 Schema=127:Data=150  Tile-TTC2LAN                         
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  113384      414      1  2009-04-28:09:25:36  2009-04-28:09:27:25      776      776      414    0  No Yes cismono                    7c00600000 Schema=136:Data=77   L1Calo-TTC2LAN   data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  113386      259      1  2009-04-28:09:27:46  2009-04-28:09:31:30      515      515      259    0  No Yes cismono                    7c00600000 Schema=136:Data=77   L1Calo-TTC2LAN   data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  113389      263      1  2009-04-28:09:32:26  2009-04-28:09:34:10      517      517      263    0  No Yes cismono                    7c00600000 Schema=136:Data=77   L1Calo-TTC2LAN   data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  113390      256      1  2009-04-28:09:34:44  2009-04-28:09:36:59      512      512      256    0  No Yes cismono                    7c00600000 Schema=136:Data=77   L1Calo-TTC2LAN   data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  113391      253      1  2009-04-28:09:37:22  2009-04-28:09:39:06      519      519      253    0  No Yes cismono                    7c00600000 Schema=136:Data=77   L1Calo-TTC2LAN   data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  113392      256      1  2009-04-28:09:39:15  2009-04-28:09:40:58      513      513      256    0  No Yes cismono                    7c00600000 Schema=136:Data=77   L1Calo-TTC2LAN   data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  113394      260      1  2009-04-28:09:41:28  2009-04-28:09:43:12      512      512      260    0  No Yes cismono                    7c00600000 Schema=136:Data=77   L1Calo-TTC2LAN   data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  113410      571      1  2009-04-28:10:36:32  2009-04-28:10:38:44     1158     1158      571    0  No Yes cismono                    7c00600000 Schema=136:Data=81   L1Calo-TTC2LAN   data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  113412       24      1  2009-04-28:10:42:55  2009-04-28:10:44:04       33       33       24    0  No Yes cismono                    7c00600000 Schema=136:Data=81   L1Calo-TTC2LAN   data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  114989     2200      2  2009-05-12:13:33:37  2009-05-12:13:35:09        0     2200     2200    0  No Yes cismono                    7c00f00000 Schema=142:Data=17   TileL1Calo-TTC2LAN data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  114993     2188      2  2009-05-12:13:40:36  2009-05-12:13:42:06        0     2188     2188    0  No Yes cismono                    7c00f00000 Schema=142:Data=17   TileL1Calo-TTC2LAN data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  115018     2164      2  2009-05-12:15:47:26  2009-05-12:15:48:55     2164     2164     2164    0  No Yes cismono                    7c00f00000 Schema=142:Data=26   TileL1Calo-TTC2LAN data09_calocomm     
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  115019     5292      5  2009-05-12:15:54:31  2009-05-12:15:57:43     5292     5292     5292    0  No Yes cismono                    7c00f00000 Schema=142:Data=26   TileL1Calo-TTC2LAN data09_calocomm     
+
+2009-05-13 00:32 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 00:32 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 00:32 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 00:32 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 00:32 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 00:32 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 00:47 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 00:47 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 00:47 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 00:47 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 00:47 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 00:47 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 01:02 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 01:02 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 01:02 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 01:02 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 01:02 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 01:02 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 01:17 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 01:17 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 01:17 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 01:17 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 01:17 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 01:17 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 01:33 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 01:33 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 01:33 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 01:33 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 01:33 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 01:33 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 01:48 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 01:48 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 01:48 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 01:48 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 01:48 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 01:48 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 02:03 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 02:03 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 02:03 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 02:03 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 02:03 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 02:03 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 02:18 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 02:18 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 02:18 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 02:18 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 02:18 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 02:18 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 02:33 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 02:33 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 02:33 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 02:33 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 02:33 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 02:33 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 02:48 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 02:48 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 02:48 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 02:48 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 02:48 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 02:48 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 03:03 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 03:03 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 03:03 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 03:03 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 03:03 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 03:03 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 03:18 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 03:18 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 03:18 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 03:18 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 03:18 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 03:18 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 03:33 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 03:33 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 03:33 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 03:33 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 03:33 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 03:33 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 03:48 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 03:48 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 03:48 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 03:48 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 03:48 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 03:48 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 04:04 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 04:04 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 04:04 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 04:04 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 04:04 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 04:04 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 04:19 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 04:19 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 04:19 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 04:19 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 04:19 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 04:19 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 04:34 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 04:34 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 04:34 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 04:34 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 04:34 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 04:34 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 04:49 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 04:49 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 04:49 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 04:49 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 04:49 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 04:49 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 05:04 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 05:04 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 05:04 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 05:04 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 05:04 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 05:04 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 05:19 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 05:19 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 05:19 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 05:19 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 05:19 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 05:19 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 05:34 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 05:34 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 05:34 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 05:34 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 05:34 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 05:34 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 05:49 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 05:49 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 05:49 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 05:49 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 05:49 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 05:49 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 06:04 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 06:04 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 06:04 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 06:04 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 06:04 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 06:04 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 06:19 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 06:19 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 06:19 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 06:19 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 06:19 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 06:19 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 06:34 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 06:34 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 06:34 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 06:34 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 06:34 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 06:34 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 06:50 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 06:50 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 06:50 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 06:50 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 06:50 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 06:50 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 07:05 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 07:05 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 07:05 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 07:05 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 07:05 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 07:05 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 07:20 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 07:20 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 07:20 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 07:20 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 07:20 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 07:20 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 07:35 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 07:35 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 07:35 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 07:35 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 07:35 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 07:35 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 07:50 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 07:50 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 07:50 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 07:50 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 07:50 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 07:50 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 08:05 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 08:05 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 08:05 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 08:05 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 08:05 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 08:05 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 08:20 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 08:20 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 08:20 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 08:20 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 08:20 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 08:20 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 08:35 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 08:35 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 08:35 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 08:35 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 08:35 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 08:35 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 08:50 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 08:50 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 08:50 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 08:50 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 08:50 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 08:50 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 09:05 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 09:05 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 09:05 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 09:05 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 09:05 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 09:05 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 09:21 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 09:21 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 09:21 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 09:21 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 09:21 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 09:21 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 09:36 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 09:36 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 09:36 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 09:36 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 09:36 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 09:36 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 09:51 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 09:51 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 09:51 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 09:51 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 09:51 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 09:51 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 10:06 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 10:06 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 10:06 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 10:06 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 10:06 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 10:06 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 10:21 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 10:21 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 10:21 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 10:21 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 10:21 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 10:21 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 10:36 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 10:36 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 10:36 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 10:36 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 10:36 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 10:36 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 10:51 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 10:51 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 10:51 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 10:51 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 10:51 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 10:51 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 11:06 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 11:06 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 11:06 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 11:06 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 11:06 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 11:06 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 11:21 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 11:21 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 11:21 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 11:21 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 11:21 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 11:21 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 11:36 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 11:36 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 11:36 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 11:36 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 11:36 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 11:36 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 11:52 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 11:52 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 11:52 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 11:52 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 11:52 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 11:52 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 12:07 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 12:07 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 12:07 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 12:07 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 12:07 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 12:07 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 12:22 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 12:22 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 12:22 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 12:22 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 12:22 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 12:22 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 12:37 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 12:37 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 12:37 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 12:37 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 12:37 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 12:37 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 12:52 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 12:52 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 12:52 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 12:52 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 12:52 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 12:52 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 13:07 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 13:07 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 13:07 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 13:07 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 13:07 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 13:07 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 13:22 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 13:22 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 13:22 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 13:22 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 13:22 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 13:22 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 13:37 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 13:37 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 13:37 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 13:37 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 13:37 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 13:38 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 13:53 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 13:53 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 13:53 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 13:53 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 13:53 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 13:53 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 14:08 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 14:08 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 14:08 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 14:08 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 14:08 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 14:08 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 14:23 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 14:23 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 14:23 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 14:23 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 14:23 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 14:23 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115019
+2009-05-13 14:38 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 14:38 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 14:38 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 14:38 - TileCalibL1Calo - INFO: last valid run: 115019
+2009-05-13 14:38 - TileCalibL1Calo - INFO: searching for new runs from 115020 to 2147483647
+2009-05-13 14:38 - TileCalibL1Calo - DEBUG: new last known run: 115088
+2009-05-13 14:38 - TileCalibL1Calo - DEBUG: 
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  115088      908      1  2009-05-13:12:26:15  2009-05-13:12:29:38      908      908      908    0  No Yes cismono                    7c00f00000 Schema=142:Data=56   TileL1Calo-TTC2LAN data09_calocomm     
+
+2009-05-13 14:53 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 14:53 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 14:53 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 14:53 - TileCalibL1Calo - INFO: last valid run: 115088
+2009-05-13 14:53 - TileCalibL1Calo - INFO: searching for new runs from 115089 to 2147483647
+2009-05-13 14:53 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115088
+2009-05-13 15:08 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 15:08 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 15:08 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 15:08 - TileCalibL1Calo - INFO: last valid run: 115088
+2009-05-13 15:08 - TileCalibL1Calo - INFO: searching for new runs from 115089 to 2147483647
+2009-05-13 15:09 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115088
+2009-05-13 15:24 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 15:24 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 15:24 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 15:24 - TileCalibL1Calo - INFO: last valid run: 115088
+2009-05-13 15:24 - TileCalibL1Calo - INFO: searching for new runs from 115089 to 2147483647
+2009-05-13 15:24 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115088
+2009-05-13 15:39 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 15:39 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 15:39 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 15:39 - TileCalibL1Calo - INFO: last valid run: 115088
+2009-05-13 15:39 - TileCalibL1Calo - INFO: searching for new runs from 115089 to 2147483647
+2009-05-13 15:39 - TileCalibL1Calo - DEBUG: new last known run: 115102
+2009-05-13 15:39 - TileCalibL1Calo - DEBUG: 
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  115102      920      1  2009-05-13:13:29:53  2009-05-13:13:33:14      920      920      920    0  No Yes cismono                    7c00f00000 Schema=142:Data=63   TileL1Calo-TTC2LAN data09_calocomm     
+
+2009-05-13 15:54 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 15:54 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 15:54 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 15:54 - TileCalibL1Calo - INFO: last valid run: 115102
+2009-05-13 15:54 - TileCalibL1Calo - INFO: searching for new runs from 115103 to 2147483647
+2009-05-13 15:54 - TileCalibL1Calo - DEBUG: new last known run: 115103
+2009-05-13 15:54 - TileCalibL1Calo - DEBUG: 
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  115103      944      1  2009-05-13:13:42:45  2009-05-13:13:45:58      944      944      944    0  No Yes cismono                    7c00f00000 Schema=142:Data=63   TileL1Calo-TTC2LAN data09_calocomm     
+
+2009-05-13 16:09 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 16:09 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 16:09 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 16:09 - TileCalibL1Calo - INFO: last valid run: 115103
+2009-05-13 16:09 - TileCalibL1Calo - INFO: searching for new runs from 115104 to 2147483647
+2009-05-13 16:09 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115103
+2009-05-13 16:24 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 16:24 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 16:24 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 16:24 - TileCalibL1Calo - INFO: last valid run: 115103
+2009-05-13 16:24 - TileCalibL1Calo - INFO: searching for new runs from 115104 to 2147483647
+2009-05-13 16:24 - TileCalibL1Calo - DEBUG: new last known run: 115117
+2009-05-13 16:24 - TileCalibL1Calo - DEBUG: 
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  115117     2310      3  2009-05-13:14:10:13  2009-05-13:14:15:58     2310     2310     2310    0  No Yes cismono                    7c00f00000 Schema=142:Data=65   TileL1Calo-TTC2LAN data09_calocomm     
+
+2009-05-13 16:39 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 16:39 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 16:39 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 16:39 - TileCalibL1Calo - INFO: last valid run: 115117
+2009-05-13 16:39 - TileCalibL1Calo - INFO: searching for new runs from 115118 to 2147483647
+2009-05-13 16:39 - TileCalibL1Calo - DEBUG: new last known run: 115120
+2009-05-13 16:39 - TileCalibL1Calo - DEBUG: 
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  115120     3109      3  2009-05-13:14:20:53  2009-05-13:14:28:12     3109     3109     3109    0  No Yes cismono                    7c00f00000 Schema=142:Data=65   TileL1Calo-TTC2LAN data09_calocomm     
+
+2009-05-13 16:54 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 16:54 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 16:54 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 16:54 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 16:54 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 16:54 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 17:09 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 17:09 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 17:09 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 17:09 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 17:09 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 17:10 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 17:25 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 17:25 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 17:25 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 17:25 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 17:25 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 17:25 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 17:40 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 17:40 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 17:40 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 17:40 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 17:40 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 17:40 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 17:55 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 17:55 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 17:55 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 17:55 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 17:55 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 17:55 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 18:10 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 18:10 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 18:10 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 18:10 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 18:10 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 18:10 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 18:25 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 18:25 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 18:25 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 18:25 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 18:25 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 18:25 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 18:40 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 18:40 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 18:40 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 18:40 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 18:40 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 18:40 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 18:55 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 18:55 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 18:55 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 18:55 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 18:55 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 18:55 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 19:10 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 19:10 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 19:10 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 19:10 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 19:10 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 19:10 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 19:26 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 19:26 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 19:26 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 19:26 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 19:26 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 19:26 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 19:41 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 19:41 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 19:41 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 19:41 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 19:41 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 19:41 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 19:56 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 19:56 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 19:56 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 19:56 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 19:56 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 19:56 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 20:11 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 20:11 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 20:11 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 20:11 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 20:11 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 20:11 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 20:26 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 20:26 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 20:26 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 20:26 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 20:26 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 20:26 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 20:41 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 20:41 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 20:41 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 20:41 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 20:41 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 20:41 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 20:56 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 20:56 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 20:56 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 20:56 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 20:56 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 20:56 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 21:11 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 21:11 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 21:11 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 21:11 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 21:11 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 21:11 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 21:26 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 21:26 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 21:26 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 21:26 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 21:26 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 21:26 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 21:42 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 21:42 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 21:42 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 21:42 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 21:42 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 21:42 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 21:57 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 21:57 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 21:57 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 21:57 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 21:57 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 21:57 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 22:12 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 22:12 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 22:12 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 22:12 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 22:12 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 22:12 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 22:27 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 22:27 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 22:27 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 22:27 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 22:27 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 22:27 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 22:42 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 22:42 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 22:42 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 22:42 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 22:42 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 22:42 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 22:57 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 22:57 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 22:57 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 22:57 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 22:57 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 22:57 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 23:12 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 23:12 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 23:12 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 23:12 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 23:12 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 23:12 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 23:27 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 23:27 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 23:27 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 23:27 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 23:27 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 23:27 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 23:43 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 23:43 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 23:43 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 23:43 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 23:43 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 23:43 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120
+2009-05-13 23:58 - TileCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-05-13 23:58 - TileCalibL1Calo - DEBUG: initialising coolRunLister
+2009-05-13 23:58 - TileCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-05-13 23:58 - TileCalibL1Calo - INFO: last valid run: 115120
+2009-05-13 23:58 - TileCalibL1Calo - INFO: searching for new runs from 115121 to 2147483647
+2009-05-13 23:58 - TileCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 115120

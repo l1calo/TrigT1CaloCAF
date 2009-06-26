@@ -1,0 +1,1712 @@
+2009-03-15 00:01 - LArCalibL1Calo - INFO: ========================================
+2009-03-15 00:01 - LArCalibL1Calo - INFO: RunListener in init
+2009-03-15 00:01 - LArCalibL1Calo - INFO: RunListener initialized
+2009-03-15 00:01 - LArCalibL1Calo - INFO: ========================================
+2009-03-15 00:01 - LArCalibL1Calo - INFO: ===> from initRunListener <===
+2009-03-15 00:01 - LArCalibL1Calo - INFO: 
+RunListener LArCalibL1Caloinitialised with the following parameters:
+TDAQ DB: COOLONL_TDAQ/COMP200
+TRIG DB: COOLONL_TRIGGER/COMP200
+Status DB: COOLONL_TDAQ/COMP200
+log level: 0
+oracle: False
+rec. only: True
+det. mask: 0
+run type: LarCalibL1Calo
+det. status: 
+det. status tag: HEAD
+daq partition: LArgL1Calo-TTC2LAN
+tag: 
+format: acertd
+reverse: False
+stoptimestamp: True
+cleanstop: True
+hasevents: False
+last valid run known: 0
+
+2009-03-15 00:09 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:09 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:09 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:09 - LArCalibL1Calo - INFO: last valid run: 101000
+2009-03-15 00:09 - LArCalibL1Calo - INFO: searching for new runs from 101001 to 2147483647
+2009-03-15 00:09 - LArCalibL1Calo - DEBUG: new last known run: 101209
+2009-03-15 00:09 - LArCalibL1Calo - DEBUG: 
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101205        0      1  2009-01-27:11:06:20  2009-01-27:11:09:11        0        0        0    0  No Yes LarCalibL1Calo             7c00007000 Schema=120:Data=211  LArgL1Calo-TTC2LAN L1Calib             
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101206        0      1  2009-01-27:11:14:15  2009-01-27:11:16:57        0        0        0    0  No Yes LarCalibL1Calo             7c00007000 Schema=120:Data=211  LArgL1Calo-TTC2LAN L1Calib             
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101207        0      1  2009-01-27:11:18:41  2009-01-27:11:21:39        0        0        0    0  No Yes LarCalibL1Calo             7c00007000 Schema=120:Data=211  LArgL1Calo-TTC2LAN L1Calib             
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101208        0      1  2009-01-27:11:23:27  2009-01-27:11:27:57        0        0        0    0  No Yes LarCalibL1Calo             7c00007000 Schema=120:Data=211  LArgL1Calo-TTC2LAN L1Calib             
+     Run   Events  LumiB            StartTime             StopTime L1Events L2Events EFEvents ErrC Rec Cln RunType                  DetectorMask DAQConfiguration     PartitionName    FilenameTag         
+  101209        0      1  2009-01-27:11:31:46  2009-01-27:11:35:53        0        0        0    0  No Yes LarCalibL1Calo             7c00007000 Schema=120:Data=211  LArgL1Calo-TTC2LAN L1Calib             
+
+2009-03-15 00:14 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:14 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:14 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:14 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 00:14 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 00:14 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 00:19 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:19 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:19 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:19 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 00:19 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 00:19 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 00:24 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:24 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:24 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:24 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 00:24 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 00:24 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 00:29 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:29 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:29 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:29 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 00:29 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 00:29 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 00:34 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:34 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:34 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:34 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 00:34 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 00:34 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 00:39 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:39 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:39 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:39 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 00:39 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 00:40 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 00:45 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:45 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:45 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:45 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 00:45 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 00:45 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 00:50 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:50 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:50 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:50 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 00:50 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 00:50 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 00:55 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 00:55 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 00:55 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 00:55 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 00:55 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 00:55 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:00 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:00 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:00 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:00 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:00 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:00 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:05 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:05 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:05 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:05 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:05 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:05 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:10 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:10 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:10 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:10 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:10 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:10 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:15 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:15 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:15 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:15 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:15 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:15 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:21 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:21 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:21 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:21 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:21 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:21 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:26 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:26 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:26 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:26 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:26 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:26 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:31 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:31 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:31 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:31 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:31 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:31 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:36 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:36 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:36 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:36 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:36 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:36 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:41 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:41 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:41 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:41 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:41 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:41 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:46 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:46 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:46 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:46 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:46 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:46 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:51 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:51 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:51 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:51 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:51 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:51 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 01:57 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 01:57 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 01:57 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 01:57 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 01:57 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 01:57 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:02 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:02 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:02 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:02 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:02 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:02 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:07 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:07 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:07 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:07 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:07 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:07 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:12 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:12 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:12 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:12 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:12 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:12 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:17 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:17 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:17 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:17 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:17 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:17 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:22 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:22 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:22 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:22 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:22 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:22 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:27 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:27 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:27 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:27 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:27 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:27 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:33 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:33 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:33 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:33 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:33 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:33 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:38 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:38 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:38 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:38 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:38 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:38 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:43 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:43 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:43 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:43 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:43 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:43 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:48 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:48 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:48 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:48 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:48 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:48 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:53 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:53 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:53 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:53 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:53 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:53 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 02:58 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 02:58 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 02:58 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 02:58 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 02:58 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 02:58 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:03 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:03 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:03 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:03 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:03 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:03 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:09 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:09 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:09 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:09 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:09 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:09 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:14 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:14 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:14 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:14 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:14 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:14 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:19 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:19 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:19 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:19 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:19 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:19 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:24 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:24 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:24 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:24 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:24 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:24 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:29 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:29 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:29 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:29 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:29 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:29 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:34 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:34 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:34 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:34 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:34 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:34 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:39 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:39 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:39 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:39 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:39 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:39 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:45 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:45 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:45 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:45 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:45 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:45 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:50 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:50 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:50 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:50 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:50 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:50 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 03:55 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 03:55 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 03:55 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 03:55 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 03:55 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 03:55 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:00 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:00 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:00 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:00 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:00 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:00 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:05 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:05 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:05 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:05 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:05 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:05 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:10 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:10 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:10 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:10 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:10 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:10 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:15 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:15 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:15 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:15 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:15 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:15 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:21 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:21 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:21 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:21 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:21 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:21 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:26 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:26 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:26 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:26 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:26 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:26 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:31 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:31 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:31 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:31 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:31 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:31 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:36 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:36 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:36 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:36 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:36 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:36 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:41 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:41 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:41 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:41 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:41 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:41 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:46 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:46 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:46 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:46 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:46 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:46 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:51 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:51 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:51 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:51 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:51 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:51 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 04:57 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 04:57 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 04:57 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 04:57 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 04:57 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 04:57 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:02 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:02 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:02 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:02 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:02 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:02 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:07 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:07 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:07 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:07 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:07 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:07 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:12 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:12 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:12 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:12 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:12 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:12 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:17 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:17 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:17 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:17 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:17 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:17 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:22 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:22 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:22 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:22 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:22 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:22 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:27 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:27 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:27 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:27 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:27 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:27 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:33 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:33 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:33 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:33 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:33 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:33 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:38 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:38 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:38 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:38 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:38 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:38 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:43 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:43 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:43 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:43 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:43 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:43 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:48 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:48 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:48 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:48 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:48 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:48 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:53 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:53 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:53 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:53 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:53 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:53 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 05:58 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 05:58 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 05:58 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 05:58 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 05:58 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 05:58 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:03 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:03 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:03 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:03 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:03 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:03 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:09 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:09 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:09 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:09 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:09 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:09 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:14 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:14 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:14 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:14 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:14 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:14 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:19 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:19 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:19 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:19 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:19 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:19 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:24 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:24 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:24 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:24 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:24 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:24 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:29 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:29 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:29 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:29 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:29 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:29 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:34 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:34 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:34 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:34 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:34 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:34 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:39 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:39 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:39 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:39 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:39 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:39 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:45 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:45 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:45 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:45 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:45 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:45 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:50 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:50 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:50 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:50 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:50 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:50 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 06:55 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 06:55 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 06:55 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 06:55 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 06:55 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 06:55 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:00 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:00 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:00 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:00 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:00 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:00 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:05 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:05 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:05 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:05 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:05 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:05 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:10 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:10 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:10 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:10 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:10 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:10 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:15 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:15 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:15 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:15 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:15 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:15 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:21 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:21 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:21 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:21 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:21 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:21 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:26 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:26 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:26 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:26 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:26 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:26 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:31 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:31 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:31 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:31 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:31 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:31 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:36 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:36 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:36 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:36 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:36 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:36 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:41 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:41 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:41 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:41 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:41 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:41 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:46 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:46 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:46 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:46 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:46 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:46 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:51 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:51 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:51 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:51 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:51 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:51 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 07:57 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 07:57 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 07:57 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 07:57 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 07:57 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 07:57 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:02 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:02 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:02 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:02 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:02 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:02 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:07 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:07 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:07 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:07 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:07 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:07 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:12 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:12 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:12 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:12 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:12 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:12 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:17 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:17 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:17 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:17 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:17 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:17 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:22 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:22 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:22 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:22 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:22 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:22 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:27 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:27 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:27 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:27 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:27 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:27 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:32 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:32 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:32 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:32 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:32 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:33 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:38 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:38 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:38 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:38 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:38 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:38 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:43 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:43 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:43 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:43 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:43 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:43 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:48 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:48 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:48 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:48 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:48 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:48 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:53 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:53 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:53 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:53 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:53 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:53 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 08:58 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 08:58 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 08:58 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 08:58 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 08:58 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 08:58 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:03 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:03 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:03 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:03 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:03 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:03 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:08 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:08 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:08 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:08 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:08 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:08 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:14 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:14 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:14 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:14 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:14 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:14 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:19 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:19 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:19 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:19 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:19 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:19 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:24 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:24 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:24 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:24 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:24 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:24 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:29 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:29 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:29 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:29 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:29 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:29 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:34 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:34 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:34 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:34 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:34 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:34 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:39 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:39 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:39 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:39 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:39 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:39 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:44 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:44 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:44 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:44 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:44 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:44 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:50 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:50 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:50 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:50 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:50 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:50 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 09:55 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 09:55 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 09:55 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 09:55 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 09:55 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 09:55 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:00 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:00 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:00 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:00 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:00 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:00 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:05 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:05 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:05 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:05 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:05 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:05 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:10 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:10 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:10 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:10 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:10 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:10 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:15 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:15 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:15 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:15 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:15 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:15 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:20 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:20 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:20 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:20 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:20 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:20 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:26 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:26 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:26 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:26 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:26 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:26 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:31 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:31 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:31 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:31 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:31 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:31 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:36 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:36 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:36 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:36 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:36 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:36 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:41 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:41 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:41 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:41 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:41 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:41 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:46 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:46 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:46 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:46 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:46 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:46 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:51 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:51 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:51 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:51 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:51 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:51 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 10:56 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 10:56 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 10:56 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 10:56 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 10:56 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 10:56 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:02 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:02 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:02 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:02 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:02 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:02 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:07 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:07 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:07 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:07 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:07 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:07 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:12 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:12 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:12 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:12 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:12 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:12 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:17 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:17 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:17 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:17 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:17 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:17 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:22 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:22 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:22 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:22 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:22 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:22 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:27 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:27 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:27 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:27 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:27 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:27 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:32 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:32 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:32 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:32 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:32 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:32 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:37 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:37 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:37 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:37 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:37 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:38 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:43 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:43 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:43 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:43 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:43 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:43 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:48 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:48 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:48 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:48 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:48 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:48 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:53 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:53 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:53 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:53 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:53 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:53 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 11:58 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 11:58 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 11:58 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 11:58 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 11:58 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 11:58 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:03 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:03 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:03 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:03 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:03 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:03 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:08 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:08 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:08 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:08 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:08 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:08 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:13 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:13 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:13 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:13 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:13 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:14 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:19 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:19 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:19 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:19 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:19 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:19 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:24 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:24 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:24 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:24 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:24 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:24 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:29 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:29 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:29 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:29 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:29 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:29 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:34 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:34 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:34 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:34 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:34 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:34 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:39 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:39 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:39 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:39 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:39 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:39 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:44 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:44 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:44 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:44 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:44 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:44 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:49 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:49 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:49 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:49 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:49 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:49 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 12:55 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 12:55 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 12:55 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 12:55 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 12:55 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 12:55 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:00 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:00 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:00 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:00 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:00 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:00 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:05 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:05 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:05 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:05 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:05 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:05 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:10 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:10 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:10 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:10 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:10 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:10 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:15 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:15 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:15 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:15 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:15 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:15 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:20 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:20 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:20 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:20 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:20 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:20 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:25 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:25 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:25 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:25 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:25 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:25 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:31 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:31 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:31 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:31 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:31 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:31 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:36 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:36 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:36 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:36 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:36 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:36 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:41 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:41 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:41 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:41 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:41 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:41 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:46 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:46 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:46 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:46 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:46 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:46 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:51 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:51 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:51 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:51 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:51 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:51 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 13:56 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 13:56 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 13:56 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 13:56 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 13:56 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 13:56 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:01 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:01 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:01 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:01 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:01 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:01 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:07 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:07 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:07 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:07 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:07 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:07 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:12 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:12 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:12 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:12 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:12 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:12 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:17 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:17 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:17 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:17 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:17 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:17 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:22 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:22 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:22 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:22 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:22 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:22 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:27 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:27 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:27 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:27 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:27 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:27 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:32 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:32 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:32 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:32 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:32 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:32 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:37 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:37 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:37 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:37 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:37 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:37 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:42 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:42 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:42 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:42 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:42 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:43 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:48 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:48 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:48 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:48 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:48 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:48 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:53 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:53 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:53 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:53 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:53 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:53 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 14:58 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 14:58 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 14:58 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 14:58 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 14:58 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 14:58 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:03 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:03 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:03 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:03 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:03 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:03 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:08 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:08 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:08 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:08 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:08 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:08 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:13 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:13 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:13 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:13 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:13 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:13 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:18 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:18 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:18 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:18 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:18 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:19 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:24 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:24 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:24 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:24 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:24 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:24 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:29 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:29 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:29 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:29 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:29 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:29 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:34 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:34 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:34 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:34 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:34 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:34 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:39 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:39 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:39 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:39 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:39 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:39 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:44 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:44 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:44 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:44 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:44 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:44 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:49 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:49 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:49 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:49 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:49 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:49 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 15:54 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 15:54 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 15:54 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 15:54 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 15:54 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 15:54 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:00 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:00 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:00 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:00 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:00 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:00 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:05 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:05 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:05 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:05 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:05 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:05 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:10 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:10 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:10 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:10 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:10 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:10 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:15 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:15 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:15 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:15 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:15 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:15 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:20 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:20 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:20 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:20 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:20 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:20 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:25 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:25 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:25 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:25 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:25 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:25 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:30 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:30 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:30 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:30 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:30 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:30 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:36 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:36 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:36 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:36 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:36 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:36 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:41 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:41 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:41 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:41 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:41 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:41 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:46 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:46 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:46 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:46 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:46 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:46 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:51 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:51 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:51 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:51 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:51 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:51 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 16:56 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 16:56 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 16:56 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 16:56 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 16:56 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 16:56 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:01 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:01 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:01 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:01 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:01 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:01 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:06 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:06 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:06 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:06 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:06 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:06 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:12 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:12 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:12 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:12 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:12 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:12 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:17 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:17 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:17 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:17 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:17 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:17 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:22 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:22 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:22 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:22 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:22 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:22 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:27 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:27 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:27 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:27 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:27 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:27 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:32 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:32 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:32 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:32 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:32 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:32 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:37 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:37 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:37 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:37 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:37 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:37 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:42 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:42 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:42 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:42 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:42 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:42 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:47 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:47 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:47 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:47 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:47 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:48 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:53 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:53 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:53 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:53 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:53 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:53 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 17:58 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 17:58 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 17:58 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 17:58 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 17:58 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 17:58 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:03 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:03 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:03 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:03 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:03 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:03 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:08 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:08 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:08 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:08 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:08 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:08 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:13 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:13 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:13 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:13 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:13 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:13 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:18 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:18 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:18 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:18 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:18 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:18 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:23 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:23 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:23 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:23 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:23 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:24 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:29 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:29 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:29 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:29 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:29 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:29 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:34 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:34 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:34 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:34 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:34 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:34 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:39 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:39 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:39 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:39 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:39 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:39 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:44 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:44 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:44 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:44 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:44 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:44 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:49 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:49 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:49 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:49 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:49 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:49 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:54 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:54 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:54 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:54 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:54 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:54 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 18:59 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 18:59 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 18:59 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 18:59 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 18:59 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 18:59 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:05 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:05 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:05 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:05 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:05 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:05 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:10 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:10 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:10 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:10 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:10 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:10 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:15 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:15 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:15 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:15 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:15 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:15 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:20 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:20 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:20 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:20 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:20 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:20 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:25 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:25 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:25 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:25 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:25 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:25 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:30 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:30 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:30 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:30 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:30 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:30 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:35 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:35 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:35 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:35 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:35 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:35 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:41 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:41 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:41 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:41 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:41 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:41 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:46 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:46 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:46 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:46 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:46 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:46 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:51 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:51 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:51 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:51 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:51 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:51 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 19:56 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 19:56 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 19:56 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 19:56 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 19:56 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 19:56 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:01 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:01 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:01 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:01 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:01 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:01 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:06 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:06 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:06 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:06 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:06 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:06 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:11 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:11 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:11 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:11 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:11 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:11 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:17 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:17 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:17 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:17 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:17 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:17 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:22 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:22 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:22 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:22 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:22 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:22 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:27 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:27 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:27 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:27 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:27 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:27 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:32 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:32 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:32 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:32 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:32 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:32 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:37 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:37 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:37 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:37 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:37 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:37 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:42 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:42 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:42 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:42 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:42 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:42 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:47 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:47 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:47 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:47 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:47 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:47 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:52 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:52 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:52 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:52 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:52 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:53 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 20:58 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 20:58 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 20:58 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 20:58 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 20:58 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 20:58 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:03 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:03 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:03 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:03 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:03 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:03 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:08 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:08 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:08 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:08 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:08 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:08 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:13 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:13 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:13 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:13 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:13 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:13 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:18 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:18 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:18 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:18 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:18 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:18 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:23 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:23 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:23 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:23 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:23 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:23 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:28 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:28 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:28 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:28 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:28 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:29 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:34 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:34 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:34 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:34 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:34 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:34 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:39 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:39 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:39 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:39 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:39 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:39 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:44 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:44 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:44 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:44 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:44 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:44 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:49 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:49 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:49 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:49 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:49 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:49 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:54 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:54 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:54 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:54 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:54 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:54 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 21:59 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 21:59 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 21:59 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 21:59 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 21:59 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 21:59 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:04 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:04 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:04 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:04 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:04 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:04 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:10 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:10 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:10 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:10 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:10 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:10 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:15 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:15 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:15 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:15 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:15 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:15 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:20 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:20 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:20 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:20 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:20 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:20 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:25 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:25 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:25 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:25 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:25 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:25 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:30 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:30 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:30 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:30 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:30 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:30 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:35 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:35 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:35 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:35 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:35 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:35 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:40 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:40 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:40 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:40 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:40 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:40 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:46 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:46 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:46 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:46 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:46 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:46 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:51 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:51 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:51 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:51 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:51 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:51 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 22:56 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 22:56 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 22:56 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 22:56 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 22:56 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 22:56 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:01 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:01 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:01 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:01 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:01 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:01 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:06 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:06 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:06 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:06 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:06 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:06 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:11 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:11 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:11 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:11 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:11 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:11 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:16 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:16 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:16 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:16 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:16 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:16 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:22 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:22 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:22 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:22 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:22 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:22 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:27 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:27 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:27 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:27 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:27 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:27 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:32 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:32 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:32 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:32 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:32 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:32 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:37 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:37 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:37 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:37 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:37 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:37 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:42 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:42 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:42 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:42 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:42 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:42 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:47 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:47 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:47 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:47 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:47 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:47 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:52 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:52 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:52 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:52 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:52 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:52 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
+2009-03-15 23:57 - LArCalibL1Calo - INFO: ===> listening for new valid runs <===
+2009-03-15 23:57 - LArCalibL1Calo - DEBUG: initialising coolRunLister
+2009-03-15 23:57 - LArCalibL1Calo - DEBUG: applying selections to coolRunLister
+2009-03-15 23:57 - LArCalibL1Calo - INFO: last valid run: 101209
+2009-03-15 23:57 - LArCalibL1Calo - INFO: searching for new runs from 101210 to 2147483647
+2009-03-15 23:58 - LArCalibL1Calo - DEBUG:  No new valid run. Last known valid run still: 101209
