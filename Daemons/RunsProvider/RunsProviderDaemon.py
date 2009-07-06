@@ -23,14 +23,8 @@ class RunsProviderDaemon(Daemon):
         #sys.stderr.flush()
 
         while True:
-            time.sleep(900)
-            #time.sleep(120)
-            #time.sleep(30)
-            
             self.runsProvider.listen()
-
-            #sys.stdout.flush()
-            #sys.stderr.flush()
+            time.sleep(900)
 
 if __name__ == "__main__":
     daemon = RunsProviderDaemon(os.environ["PWD"]+'/runsproviderdaemon.pid')
@@ -41,6 +35,8 @@ if __name__ == "__main__":
             daemon.stop()
         elif 'restart' == sys.argv[1]:
             daemon.restart()
+        elif 'foreground' == sys.argv[1]:
+            daemon.run()
         else:
             print "Unknown command"
             sys.exit(2)

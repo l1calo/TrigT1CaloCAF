@@ -1,4 +1,4 @@
-dbConnection = "/afs/cern.ch/user/l/l1ccalib/Daemons/db/rundb.db"
+dbConnection = "/afs/cern.ch/user/l/l1ccalib/testarea/15.2.0/Trigger/TrigT1/TrigT1CaloCAF/Daemons/db/rundb.db"
 
 MailingList = ["prieur@cern.ch"]
 
