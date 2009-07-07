@@ -10,4 +10,4 @@ RemovalOk=False
 #------------------------------------------------------------------------------------
 # Mailing list
 
-MailingList=["prieur@cern.ch"]
+MailingList=["prieur@cern.ch", "martin.wessels@cern.ch", "john.morris@cern.ch", "veit.scharf@kip.uni-heidelberg.de"]
