@@ -16,8 +16,8 @@ include('RecJobTransforms/UseOracle.py')
 
 rec.readRDO=True
 globalflags.InputFormat.set_Value_and_Lock('bytestream')
-athenaCommonFlags.BSRDOInput.set_Value_and_Lock(['rfio:/castor/cern.ch/grid/atlas/DAQ/l1calo/00115926/data09_calocomm.00115926.calibration_LarCalibL1Calo.daq.RAW._lb0000._SFI-LVL1-1._0001.data'])
-#athenaCommonFlags.BSRDOInput.set_Value_and_Lock(['rfio:/castor/cern.ch/grid/atlas/DAQ/tile/2009/daq/data09_tilecomm.00118508.calibration_tile.daq.RAW._lb0000._TileREB-ROS._0001.data'])
+
+#RAW_DATA_SETS#
 
 globalflags.ConditionsTag.set_Value_and_Lock(ConditionsTag)
 del ConditionsTag

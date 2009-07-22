@@ -158,10 +158,12 @@ class Job:
 			bStatus = True
 			# find data files
 			bStatus &= self.findRawDataFiles()
-			print self.inputRawDataFiles
+			if not bStatus: self.logger.warning("FindRawDataFiles failed.")
+			self.logger.debug(self.inputRawDataFiles)
 
 			# prepare area and copy files
 			bStatus &= self.setupWorkingArea()
+			if not bStatus: self.logger.warning("SetupWorkingArea failed.")
 
 			if bStatus:
 				self.logger.debug("work area prepared")
@@ -217,12 +219,13 @@ class Job:
 
 
 	def copyFiles(self):
-
+		self.logger.debug("copying files for working area")
 		bStatus = True
 
 		athenaSetupDir = self.jobInformation.jobConfigModule.DaemonBackEndsDir+'/'+self.jobInformation.jobConfigModule.BackEnd+'/'+self.jobInformation.jobConfigModule.AtlasRelease
-		print athenaSetupDir+'/requirements', self.jobInformation.jobConfigModule.JobConfigDir
+
 		bStatus &= Tools.copyFile(athenaSetupDir+'/requirements', self.jobInformation.jobConfigModule.JobConfigDir)
+		if not bStatus: self.logger.warning("Copying files from %s to %s failed." % (athenaSetupDir+'/requirements', self.jobInformation.jobConfigModule.JobConfigDir))
 
 		# add a few tag required by localAthena_setup.sh
 		atlasRelease = self.jobInformation.jobConfigModule.AtlasRelease
@@ -236,20 +239,34 @@ class Job:
 		self.jobInformation.placeHolders["#JOB_LOG_NAME#"]       = str(self.jobInformation.jobConfigModule.AthenaJobLogFile)
 
 		bStatus &= Tools.replaceTag(athenaSetupDir+'/'+self.jobInformation.jobConfigModule.AthenaLauncher, self.jobInformation.jobConfigModule.JobConfigDir, self.jobInformation.placeHolders)
+		if not bStatus: self.logger.warning("Replacing tags for athena launcher %s to file %s with dictionary %s failed." %\
+						    (athenaSetupDir+'/'+self.jobInformation.jobConfigModule.AthenaLauncher,\
+						     self.jobInformation.jobConfigModule.JobConfigDir,\
+						     self.jobInformation.placeHolders))
 
 		#copy jobConfiguration
 		bStatus &= Tools.copyFile(self.jobInformation.jobConfigModulePath, self.jobInformation.jobConfigModule.JobConfigDir)
+		if not bStatus: self.logger.warning("Copying jobConfiguration from %s to %s failed." %\
+						    (self.jobInformation.jobConfigModulePath, self.jobInformation.jobConfigModule.JobConfigDir))
 
 		#copy jobOptions
 		self.jobInformation.placeHolders["#RAW_DATA_SETS#"]=self.makeRAWDATASETS()
 		bStatus &= Tools.replaceTag(self.jobInformation.jobConfigModule.JobOptionTemplate, self.jobInformation.jobConfigModule.JobConfigDir+'/'+self.jobInformation.jobConfigModule.JobOptionName, self.jobInformation.placeHolders)
-
+		if not bStatus: self.logger.warning("Replacing tags for jobOptions file %s to file %s with dictionary %s failed." %\
+						    (self.jobInformation.jobConfigModule.JobOptionTemplate,\
+						     self.jobInformation.jobConfigModule.JobConfigDir+'/'+self.jobInformation.jobConfigModule.JobOptionName,\
+						     self.jobInformation.placeHolders))
+						    
 		#copy scripts
 		self.jobInformation.placeHolders["#JOB_CONFIGURATION_LOCAL#"]=self.jobInformation.jobConfigModule.JobConfigDir.rstrip('/')+'/'+os.path.split(self.jobInformation.jobConfigModulePath)[1]
 
 		#replace tag submit script
 		bStatus &= Tools.replaceTag(self.jobInformation.jobConfigModule.DaemonScriptsDir.rstrip('/')+'/'+self.jobInformation.jobConfigModule.JobScript, self.jobInformation.jobConfigModule.JobConfigDir, self.jobInformation.placeHolders)
 		os.chmod(self.jobInformation.jobConfigModule.JobConfigDir+'/'+self.jobInformation.jobConfigModule.JobScript,stat.S_IRWXG |stat.S_IRWXO |stat.S_IRWXU )
+		if not bStatus: self.logger.warning("Replacing tags for submit script %s to %s with %s failed." %\
+						    (self.jobInformation.jobConfigModule.DaemonScriptsDir.rstrip('/')+'/'+self.jobInformation.jobConfigModule.JobScript,\
+						     self.jobInformation.jobConfigModule.JobConfigDir,
+						     self.jobInformation.placeHolders))
 
 		#copy additionnal input files (like other sub-joboptions)
 		#self.jobInformation.jobConfigModule.AdditionalInputFiles
