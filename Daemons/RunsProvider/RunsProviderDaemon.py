@@ -24,7 +24,7 @@ class RunsProviderDaemon(Daemon):
 
         while True:
             self.runsProvider.listen()
-            time.sleep(900)
+            time.sleep(600)
 
 if __name__ == "__main__":
     daemon = RunsProviderDaemon(os.environ["PWD"]+'/runsproviderdaemon.pid')

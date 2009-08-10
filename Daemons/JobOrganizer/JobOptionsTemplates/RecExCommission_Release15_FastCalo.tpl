@@ -5,7 +5,7 @@ from AthenaCommon.AthenaCommonFlags import athenaCommonFlags
 from AthenaCommon.GlobalFlags import globalflags
 
 rec.AutoConfiguration=["FieldAndGeo"]
-jobproperties.Beam.beamType = 'cosmics'
+#jobproperties.Beam.beamType = 'cosmics'
 ConditionsTag='COMCOND-ES1C-000-00'
 
 from TriggerJobOpts.TriggerFlags import TriggerFlags as tf
@@ -40,7 +40,8 @@ rec.doTile.set_Value_and_Lock(True)
 rec.doLArg.set_Value_and_Lock(True)
 rec.doCBNT.set_Value_and_Lock(True)
 
-include("RecExCommission/RecExCommissionRepro.py")                
+include("RecExCommission/RecExCommissionRepro.py")
+globalflags.DetGeo = 'atlas'
 
 ATLASCosmicFlags.doFilteredESD=False
 ATLASCosmicFlags.doCalibFillNt = False
@@ -103,3 +104,6 @@ disabledCBNTAlgs = ('CBNTAA_CaloCell/CBNT_LArCell',
 for x in disabledCBNTAlgs:
     topSequence.CBNT_AthenaAware.Members.remove(x)
 del disabledCBNTAlgs
+
+# disable high gain
+ToolSvc.LArOFPeakRecoTool.forceHighGain = False
