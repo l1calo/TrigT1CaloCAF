@@ -39,12 +39,12 @@ jobConfigurations = {
     "LArL1CaloRampMaker" : {
         "listeners":             ["LArCalibL1Calo"],
         "configurationTemplate": "jcTpl_LArL1CaloRampMaker.py",
-        "validateJob":           False
+        "validateJob":           True
         },
     "TileL1CaloRampMaker" : {
         "listeners":             ["TileCalibL1Calo"],
         "configurationTemplate": "jcTpl_TileL1CaloRampMaker.py",
-        "validateJob":           False
+        "validateJob":           True
         },
     }
 

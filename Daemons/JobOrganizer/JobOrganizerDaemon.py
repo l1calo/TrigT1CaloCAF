@@ -22,15 +22,10 @@ class JobOrganizerDaemon(Daemon):
 		#sys.stderr.flush()
 
 		while True:
-			time.sleep(120)
-
 			self.jobOrganizer.updateJobInformationList()
 			self.jobOrganizer.submitBatchJobs()
 			self.jobOrganizer.processBatchJobs()
-
-			#sys.stdout.flush()
-			#sys.stderr.flush()
-
+			time.sleep(120)
 
 if __name__ == "__main__":
 	daemon = JobOrganizerDaemon(os.environ["PWD"]+'/joborganizerdaemon.pid')

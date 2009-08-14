@@ -18,8 +18,11 @@ OutputStageSVCClass = "atlcal"
 BackEnd="CERN"
 BatchQueue="atlaslarcal"
 
-JobScript = "submit.py"
-AthenaLauncher = "athena_launcher.sh"
+JobScript = "submit_and_checkout.py"
+AthenaLauncher = "athena_launcher_checkout.sh"
+Packages = ["Trigger/TrigT1/TrigT1CaloCalibConditions",
+            "Trigger/TrigT1/TrigT1CaloCalibAthenaPool",
+            "Trigger/TrigT1/TrigT1CaloCalibUtils"]
 
 #jo template
 JobOptionTemplate = "#DAEMON_JO_TEMPLATE_DIR#/TileL1CaloRampMaker.tpl"

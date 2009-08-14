@@ -8,8 +8,8 @@ SkipEvents = 0
 
 from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
 #RAW_DATA_SETS#
-FileInput = athenaCommonFlags.BSRDOInput
-athenaCommonFlags.BSRDOInput = ''
+FilesInput = athenaCommonFlags.BSRDOInput()
+#athenaCommonFlags.BSRDOInput = ''
 
 autoConfigPartition = False
 doLAr = False

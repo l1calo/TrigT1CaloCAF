@@ -3,6 +3,8 @@ set CMTSITE CERN
 set SITEROOT /afs/cern.ch
 macro ATLAS_DIST_AREA ${SITEROOT}/atlas/software/dist
 
+#ATLAS_TEST_AREA#
+
 # to use AtlasTier0 cache
 apply_tag AtlasTier0
 apply_tag opt
@@ -17,8 +19,6 @@ apply_tag setup
 #set CMTSTRUCTURINGSTYLE "without_version_directory"
 
 #macro ATLAS_GROUP_AREA "/afs/cern.ch/atlas/maxidisk/d20/Automation"
-
-#macro ATLAS_TEST_AREA "."
 
 #macro ATLAS_SETTINGS_AREA "$(ATLAS_SETTINGS_AREA)" 
 
