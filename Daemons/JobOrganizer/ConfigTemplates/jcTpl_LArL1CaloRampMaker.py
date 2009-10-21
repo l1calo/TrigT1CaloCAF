@@ -41,6 +41,9 @@ LogLevel = 2
 OutputFiles = {
     "L1CaloRampData.pool.root": [(JobRootDir, "L1CaloRampData.pool.root")],
     "PoolFileCatalog.xml": [(JobRootDir, "PoolFileCatalog.xml")],
+    "energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
+    "rampdata.xml": [(JobRootDir, "rampdata.xml")],
+    "graphs.root": [(JobRootDir, "graphs.root")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 

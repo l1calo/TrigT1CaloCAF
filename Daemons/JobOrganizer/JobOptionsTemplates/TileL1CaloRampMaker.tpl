@@ -47,10 +47,11 @@ del ConditionsTag
 
 # auto config
 try: # recent switch from RecExCommon to RecExConfig
-    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo
+    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
 except:
-    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo
+    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
     
+RunNumber = GetRunNumber()
 ConfigureFieldAndGeo()
 
 # database tag
@@ -84,8 +85,10 @@ svcMgr.EventSelector.SkipEvents = athenaCommonFlags.SkipEvents()
 include ("TrigT1CaloByteStream/ReadLVL1CaloBS_jobOptions.py")
 
 # detector description
-include ("CaloDetMgrDetDescrCnv/CaloDetMgrDetDescrCnv_joboptions.py")
+include("CaloDetMgrDetDescrCnv/CaloDetMgrDetDescrCnv_joboptions.py")
 include("LArConditionsCommon/LArConditionsCommon_comm_jobOptions.py")
+include("TileIdCnv/TileIdCnv_jobOptions.py")
+include("TileConditions/TileConditions_jobOptions.py")
 
 # extra LAr setup
 if doLAr:
@@ -131,9 +134,25 @@ topSequence += L1CaloRampMaker()
 topSequence.L1CaloRampMaker.L1TriggerTowerTool = LVL1__L1TriggerTowerTool()
 topSequence.L1CaloRampMaker.DoTile = doTile
 topSequence.L1CaloRampMaker.DoLAr = doLAr
+topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
 
-# configure writing of pool files
+# configure fitting algorithm
+from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloLinearCalibration
+topSequence += L1CaloLinearCalibration()
+
+# configure writing of L1CaloRampData.pool.root
 from RegistrationServices.OutputConditionsAlg import OutputConditionsAlg
 outputConditionsAlg = OutputConditionsAlg("outputConditionsAlg", "L1CaloRampData.pool.root")
 outputConditionsAlg.ObjectList = ["L1CaloRampDataContainer"]
 outputConditionsAlg.WriteIOV = False
+
+# configure writing of calib database
+EnergyScanResultOutput = OutputConditionsAlg("EnergyScanResultOutput", "dummy.root")
+EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/Results/EnergyScanResults"]
+EnergyScanResultOutput.WriteIOV = True
+EnergyScanResultOutput.Run1 = RunNumber
+svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L1CALO"
+
+# configure writing of additional files for the calibration gui
+from TrigT1CaloCalibUtils.L1CaloDumpRampDataAlgorithm import L1CaloDumpRampDataAlgorithm
+topSequence += L1CaloDumpRampDataAlgorithm()
