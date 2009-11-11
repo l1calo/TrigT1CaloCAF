@@ -23,8 +23,6 @@ from AthenaCommon.AlgSequence import AlgSequence
 from AthenaCommon.AppMgr import ToolSvc,theApp,ServiceMgr
 topSequence = AlgSequence()
 
-from AthenaCommon.BeamFlags import jobproperties
-
 # configure database
 include('RecJobTransforms/UseOracle.py')
 
@@ -35,7 +33,6 @@ athenaCommonFlags.SkipEvents = SkipEvents
 athenaCommonFlags.FilesInput = FilesInput
 del SkipEvents
 del EvtMax
-del FilesInput
 
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
@@ -46,13 +43,42 @@ globalflags.ConditionsTag = ConditionsTag if ConditionsTag else 'COMCOND-ES1C-00
 del ConditionsTag
 
 # auto config
-try: # recent switch from RecExCommon to RecExConfig
-    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
-except:
-    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
-    
-RunNumber = GetRunNumber()
-ConfigureFieldAndGeo()
+##############################
+# somehow crashes, workaround below
+##############################
+#try: # recent switch from RecExCommon to RecExConfig
+#    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
+#except:
+#    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
+#    
+#ConfigureFieldAndGeo()
+
+# get run number from input file
+import re
+RunNumber = int(re.search(r"\.[0-9]{8}\.", FilesInput[0]).group(0)[1:-1])
+
+# configure Field (copy from RecExConfig.AutoConfiguration.GetField()
+from AthenaCommon.BFieldFlags import jobproperties
+from CoolConvUtilities.MagFieldUtils import getFieldForRun
+field = getFieldForRun(RunNumber)
+if field.toroidCurrent() > 100:
+    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(True)
+    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(True)
+else:	
+    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(False)
+    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(False)
+
+if field.solenoidCurrent() > 100:
+    jobproperties.BField.solenoidOn.set_Value_and_Lock(True)
+else:
+    jobproperties.BField.solenoidOn.set_Value_and_Lock(False)
+
+globalflags.DetDescrVersion.set_Value_and_Lock('ATLAS-GEO-08-00-00')
+del FilesInput
+##############################
+# end workaround
+##############################
+
 
 # database tag
 from IOVDbSvc.CondDB import conddb
@@ -127,6 +153,8 @@ from TrigT1CaloCondSvc.TrigT1CaloCondSvcConf import L1CaloCondSvc
 ServiceMgr += L1CaloCondSvc()
 from TrigT1CaloTools.TrigT1CaloToolsConf import LVL1__L1TriggerTowerTool
 ToolSvc += LVL1__L1TriggerTowerTool()
+from TrigT1CaloCalibTools.TrigT1CaloCalibToolsConf import L1CaloLArTowerEnergy
+ToolSvc += L1CaloLArTowerEnergy()
 
 # configure actual ramp maker algorithm
 from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloRampMaker
@@ -135,6 +163,7 @@ topSequence.L1CaloRampMaker.L1TriggerTowerTool = LVL1__L1TriggerTowerTool()
 topSequence.L1CaloRampMaker.DoTile = doTile
 topSequence.L1CaloRampMaker.DoLAr = doLAr
 topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
+topSequence.L1CaloRampMaker.IsGain1 = True
 
 # configure fitting algorithm
 from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloLinearCalibration

@@ -1,8 +1,8 @@
-################################################################################
+###############################################################################
 # config
-################################################################################
+###############################################################################
 
-ConditionsTag = 'COMCOND-ES1C-003-00'
+ConditionsTag = 'COMCOND-ES1C-000-00'
 EvtMax = -1
 SkipEvents = 0
 
@@ -11,12 +11,15 @@ from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
 FilesInput = athenaCommonFlags.BSRDOInput()
 
 autoConfigPartition = False
-doLAr = True
+doLAr = False
 doTile = False
 
-################################################################################
+# fix vector<vector<int>> problem by instatiating one
+v = PyAthena.std.vector(PyAthena.std.vector(int))()
+
+###############################################################################
 # actual job options
-################################################################################
+###############################################################################
 
 # initial setup
 from AthenaCommon.AlgSequence import AlgSequence
@@ -33,6 +36,7 @@ athenaCommonFlags.SkipEvents = SkipEvents
 athenaCommonFlags.FilesInput = FilesInput
 del SkipEvents
 del EvtMax
+#del FilesInput
 
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
@@ -47,6 +51,7 @@ del ConditionsTag
 #    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
 #except:
 #    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
+#    
 #RunNumber = GetRunNumber()
 #ConfigureFieldAndGeo()
 
@@ -108,84 +113,69 @@ include ("CaloDetMgrDetDescrCnv/CaloDetMgrDetDescrCnv_joboptions.py")
 # setup lar
 from LArConditionsCommon.LArCondFlags import larCondFlags
 larCondFlags.useShape = False
-#larCondFlags.LArCoolChannelSelection="0,1,3:473"
 
 include("LArConditionsCommon/LArConditionsCommon_comm_jobOptions.py")
+
 # use ofc for calib pulses
 for i in svcMgr.IOVDbSvc.Folders:
     if i.find('PhysWave')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
+#conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/CaliWaves/CaliWaveXtalkCorr<channelSelection>0,1,3:473</channelSelection>')
 conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
 conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-00")
 
-svcMgr.PoolSvc.ReadCatalog += [ "xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000001.lar.COND_castor.xml" ]
+svcMgr.PoolSvc.ReadCatalog += [ "xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/poolcond/PoolCat_comcond_castor.xml" ]
+
+include("LArConditionsCommon/LArIdMap_comm_jobOptions.py")
+include("LArIdCnv/LArIdCnv_joboptions.py")
 
 # extra LAr setup
 if doLAr:
-    include("LArConditionsCommon/LArIdMap_comm_jobOptions.py")
-    include("LArIdCnv/LArIdCnv_joboptions.py")
     svcMgr.ByteStreamAddressProviderSvc.TypeNames += ["LArFebHeaderContainer/LArFebHeader"]
     include("LArROD/LArFebErrorSummaryMaker_jobOptions.py")
 
 # extra Tile setup
 if doTile:
+    include( "TileIdCnv/TileIdCnv_jobOptions.py" )
+    include( "TileConditions/TileConditions_jobOptions.py" )
     # fix some strange bug ...
     from TileConditions.TileInfoConfigurator import TileInfoConfigurator
     tileInfoConfigurator = TileInfoConfigurator()
     tileInfoConfigurator.NSamples = 7
+
+
+# do trigger config
+#from TriggerJobOpts.TriggerFlags import TriggerFlags as tf
+#tf.configForStartup.set_Value_and_Lock("HLTonlineNoL1Thr")
+#tf.configurationSourceList.set_Value_and_Lock(["ds"]) #force xml config
+
+#from TriggerJobOpts.TriggerConfigGetter import TriggerConfigGetter
+#cfg = TriggerConfigGetter()
 
 # reconstruct cells
 from CaloRec.CaloCellGetter import CaloCellGetter
 CaloCellGetter()
 del rec
 
-# setup l1calo database
-L1CaloDbConnection="<dbConnection>sqlite://;schema=calib.sqlite;dbname=L1CALO</dbConnection>"
-L1CaloDbTag = "<tag>HEAD</tag>"
-L1CaloFolderList = []
-L1CaloFolderList += ["/TRIGGER/L1Calo/Configuration/PprChanDefaults"]
-L1CaloFolderList += ["/TRIGGER/L1Calo/Calibration/PprChanCalib"]
-L1CaloFolderList += ["/TRIGGER/L1Calo/Calibration/PpmDeadChannels"]
-for l1calofolder in L1CaloFolderList:
-    if not conddb.folderRequested(l1calofolder):
-        conddb.addFolder("", L1CaloDbConnection + l1calofolder + L1CaloDbTag)
-svcMgr.IOVDbSvc.overrideTags +=  ["<prefix>/CALO/Identifier/CaloTTOnOffIdMapAtlas</prefix> <tag>CALOIdentifierCaloTTOnOffIdMapAtlas-0002</tag>"]
+include("CBNT_Athena/CBNT_AthenaAware_jobOptions.py")
+theApp.HistogramPersistency = "ROOT"
+include("CBNT_Athena/CBNT_EventInfo_jobOptions.py")
 
-# set up tools
-from TrigT1CaloCondSvc.TrigT1CaloCondSvcConf import L1CaloCondSvc
-ServiceMgr += L1CaloCondSvc()
-from TrigT1CaloTools.TrigT1CaloToolsConf import LVL1__L1TriggerTowerTool
-ToolSvc += LVL1__L1TriggerTowerTool()
-from TrigT1CaloCalibTools.TrigT1CaloCalibToolsConf import L1CaloLArTowerEnergy
-ToolSvc += L1CaloLArTowerEnergy()
+#doL1CaloCBNT_JEM = False
+#doL1CaloCBNT_CPM = False
+#doL1CaloCBNT_RODHeader = False
+include("TrigT1CaloCalibTools/CBNT_L1Calo_jobOptions.py")
+CBNT_AthenaAware.CBNT_L1CaloCPM.L1EmTauTool = ""
 
-# configure actual ramp maker algorithm
-from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloRampMaker
-topSequence += L1CaloRampMaker()
-topSequence.L1CaloRampMaker.L1TriggerTowerTool = LVL1__L1TriggerTowerTool()
-topSequence.L1CaloRampMaker.DoTile = doTile
-topSequence.L1CaloRampMaker.DoLAr = doLAr
-topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
-topSequence.L1CaloRampMaker.IsGain1 = True
 
-# configure fitting algorithm
-from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloLinearCalibration
-topSequence += L1CaloLinearCalibration()
+from AthenaCommon.AppMgr import ServiceMgr
+if not hasattr(ServiceMgr, 'THistSvc'):
+    from AthenaCommon import CfgMgr
+    ServiceMgr += CfgMgr.THistSvc()
+ServiceMgr.THistSvc.Output += ["AANT DATAFILE='%s' OPT='RECREATE'" % 'cosmics.ntuple.root']
 
-# configure writing of L1CaloRampData.pool.root file
-from RegistrationServices.OutputConditionsAlg import OutputConditionsAlg
-RampDataOutput = OutputConditionsAlg("RampDataOutput", "L1CaloRampData.pool.root")
-RampDataOutput.ObjectList = ["L1CaloRampDataContainer"]
-RampDataOutput.WriteIOV = False
-
-# configure writing of calib database
-EnergyScanResultOutput = OutputConditionsAlg("EnergyScanResultOutput", "dummy.root")
-EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/Results/EnergyScanResults"]
-EnergyScanResultOutput.WriteIOV = True
-EnergyScanResultOutput.Run1 = RunNumber
-svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L1CALO"
-
-# configure writing of additional files for the calibration gui
-from TrigT1CaloCalibUtils.L1CaloDumpRampDataAlgorithm import L1CaloDumpRampDataAlgorithm
-topSequence += L1CaloDumpRampDataAlgorithm()
-
-print '\n'.join(svcMgr.IOVDbSvc.Folders)
+from AnalysisTools.AthAnalysisToolsConf import AANTupleStream
+theAANTupleStream=AANTupleStream(OutputName='cosmics.ntuple.root')
+theAANTupleStream.WriteInputDataHeader = True
+theAANTupleStream.ExtraRefNames = []
+theAANTupleStream.ExistDataHeader = False
+topSequence += theAANTupleStream

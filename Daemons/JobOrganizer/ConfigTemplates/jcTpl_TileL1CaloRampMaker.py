@@ -1,16 +1,16 @@
 DaemonScriptsDir  = "#DAEMON_SCRIPTS_DIR#"
 DaemonBackEndsDir = "#DAEMON_BACKENDS_DIR#"
 
-JobWorkingDir = "#JOB_WORKING_DIR#"
-JobLogDir     = "#JOB_LOG_DIR#"
-JobRootDir    = "#JOB_ROOT_DIR#"
-JobPoolDir    = ""
-JobConfigDir  = "#JOB_CONFIG_DIR#"
-JobPostDir    = "#JOB_POST_DIR#"
+JobWorkingDir  = "#JOB_WORKING_DIR#"
+JobLogDir      = "#JOB_LOG_DIR#"
+JobRootDir     = "#JOB_ROOT_DIR#"
+JobPoolDir     = ""
+JobConfigDir   = "#JOB_CONFIG_DIR#"
+JobPostDir     =  "#JOB_POST_DIR#"
 
 JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 
-AtlasRelease  = "15.2.0.8"
+AtlasRelease  = "15.5.1.6"
 
 InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
@@ -22,6 +22,7 @@ JobScript = "submit_and_checkout.py"
 AthenaLauncher = "athena_launcher_checkout.sh"
 Packages = ["Trigger/TrigT1/TrigT1CaloCalibConditions",
             "Trigger/TrigT1/TrigT1CaloCalibAthenaPool",
+            "Trigger/TrigT1/TrigT1CaloCalibTools",
             "Trigger/TrigT1/TrigT1CaloCalibUtils"]
 
 #jo template
@@ -39,12 +40,12 @@ LogLevel = 2
 
 #OutputFilesPath={"CBNT":JobRootDir, "POOL":JobPoolDir, "LOG":JobLogDir}
 OutputFiles = {
-    "L1CaloRampData.pool.root": [(JobRootDir, "L1CaloRampData.pool.root")],
-    "PoolFileCatalog.xml": [(JobRootDir, "PoolFileCatalog.xml")],
-    "energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
-    "rampdata.xml": [(JobRootDir, "rampdata.xml")],
-    "graphs.root": [(JobRootDir, "graphs.root")],
-    AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
+    "testarea/L1CaloRampData.pool.root": [(JobRootDir, "L1CaloRampData.pool.root")],
+    "testarea/PoolFileCatalog.xml": [(JobRootDir, "PoolFileCatalog.xml")],
+    "testarea/energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
+    "testarea/rampdata.xml": [(JobRootDir, "rampdata.xml")],
+    "testarea/graphs.root": [(JobRootDir, "graphs.root")],
+    "testarea/" + AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
 JobPostTreatments = [

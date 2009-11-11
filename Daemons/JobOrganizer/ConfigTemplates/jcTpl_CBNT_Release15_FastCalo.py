@@ -13,7 +13,7 @@ JobPostDir    = "#JOB_POST_DIR#"
 #JobCastorDir="#JOB_CASTOR_DIR#"
 JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 
-AtlasRelease  = "15.2.0.8"
+AtlasRelease  = "15.5.1.6"
 
 #InputStageSVCClass = "t0atlas"
 InputStageSVCClass = "atlcal"
@@ -27,7 +27,7 @@ JobScript = "submit.py"
 AthenaLauncher = "athena_launcher.sh"
 
 #jo template
-JobOptionTemplate = "#DAEMON_JO_TEMPLATE_DIR#/RecExCommission_Release15_FastCalo.tpl"
+JobOptionTemplate = "#DAEMON_JO_TEMPLATE_DIR#/Release15_FastCalo.tpl"
 
 #jo name
 JobOptionName    = "#RUN_NUMBER#_#JOB_CONFIGURATION#_jobOptions.py"
