@@ -19,12 +19,12 @@ jobConfigurations = {
     "CBNT": {
         "listeners":             ["LArCalibL1Calo", "TileCalibL1Calo", ],
         "configurationTemplate": "jcTpl_CBNT_FastCalo.py",
-        "validateJob":           False
+        "validateJob":           True
         },
     "CBNT_Release15": {
         "listeners":             ["LArCalibL1Calo", "TileCalibL1Calo", ],
         "configurationTemplate": "jcTpl_CBNT_Release15_FastCalo.py",
-        "validateJob":           True
+        "validateJob":           False
         },
     "L1CaloStandalone": {
         "listeners":             ["L1CaloStandalone", ],
