@@ -24,7 +24,7 @@ BatchQueue="atlaslarcal"
 #BatchQueue="8nm"
 
 JobScript = "submit.py"
-AthenaLauncher = "athena_launcher.sh"
+AthenaLauncher = "athena_launcher_testarea.sh"
 
 #jo template
 JobOptionTemplate = "#DAEMON_JO_TEMPLATE_DIR#/Release15_FastCalo.tpl"

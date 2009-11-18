@@ -2,7 +2,7 @@
 # config
 ################################################################################
 
-ConditionsTag = 'COMCOND-ES1C-000-00'
+ConditionsTag = 'COMCOND-ES1C-003-00'
 EvtMax = -1
 SkipEvents = 0
 
@@ -136,21 +136,10 @@ CaloCellGetter()
 del rec
 
 # setup l1calo database
-from IOVDbSvc.CondDB import conddb
-L1CaloDbConnection="<dbConnection>sqlite://;schema=calib.sqlite;dbname=L1CALO</dbConnection>"
-L1CaloDbTag = "<tag>HEAD</tag>"
-L1CaloFolderList = []
-L1CaloFolderList += ["/TRIGGER/L1Calo/Configuration/PprChanDefaults"]
-L1CaloFolderList += ["/TRIGGER/L1Calo/Calibration/PprChanCalib"]
-L1CaloFolderList += ["/TRIGGER/L1Calo/Calibration/PpmDeadChannels"]
-for l1calofolder in L1CaloFolderList:
-    if not conddb.folderRequested(l1calofolder):
-        conddb.addFolder("", L1CaloDbConnection + l1calofolder + L1CaloDbTag)
+include('TrigT1CaloCalibConditions/L1CaloCalibConditions_jobOptions.py')
 svcMgr.IOVDbSvc.overrideTags +=  ["<prefix>/CALO/Identifier/CaloTTOnOffIdMapAtlas</prefix> <tag>CALOIdentifierCaloTTOnOffIdMapAtlas-0002</tag>"]
 
 # set up tools
-from TrigT1CaloCondSvc.TrigT1CaloCondSvcConf import L1CaloCondSvc
-ServiceMgr += L1CaloCondSvc()
 from TrigT1CaloTools.TrigT1CaloToolsConf import LVL1__L1TriggerTowerTool
 ToolSvc += LVL1__L1TriggerTowerTool()
 from TrigT1CaloCalibTools.TrigT1CaloCalibToolsConf import L1CaloLArTowerEnergy
@@ -177,7 +166,7 @@ outputConditionsAlg.WriteIOV = False
 
 # configure writing of calib database
 EnergyScanResultOutput = OutputConditionsAlg("EnergyScanResultOutput", "dummy.root")
-EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/Results/EnergyScanResults"]
+EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/EnergyScanResults"]
 EnergyScanResultOutput.WriteIOV = True
 EnergyScanResultOutput.Run1 = RunNumber
 svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L1CALO"

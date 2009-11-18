@@ -32,7 +32,7 @@ runListeners = {
                     "cleanstop":True,
                     "hasevents":False,
 
-                    "initialrun":113232,
+                    "initialrun":138000,
 
                     "fileslocations":["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
                 },
@@ -61,7 +61,7 @@ runListeners = {
                    "cleanstop":True,
                    "hasevents":True,
 
-                   "initialrun":104000,
+                   "initialrun":138000,
 
                    "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
                },
@@ -89,7 +89,7 @@ runListeners = {
                     "cleanstop":True,
                     "hasevents":True,
 
-                    "initialrun":113232,
+                    "initialrun":138000,
 
                     "fileslocations":["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
                 }

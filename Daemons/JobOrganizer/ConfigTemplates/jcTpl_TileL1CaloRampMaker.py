@@ -18,12 +18,8 @@ OutputStageSVCClass = "atlcal"
 BackEnd="CERN"
 BatchQueue="atlaslarcal"
 
-JobScript = "submit_and_checkout.py"
-AthenaLauncher = "athena_launcher_checkout.sh"
-Packages = ["Trigger/TrigT1/TrigT1CaloCalibConditions",
-            "Trigger/TrigT1/TrigT1CaloCalibAthenaPool",
-            "Trigger/TrigT1/TrigT1CaloCalibTools",
-            "Trigger/TrigT1/TrigT1CaloCalibUtils"]
+JobScript = "submit.py"
+AthenaLauncher = "athena_launcher_testarea.sh"
 
 #jo template
 JobOptionTemplate = "#DAEMON_JO_TEMPLATE_DIR#/TileL1CaloRampMaker.tpl"
@@ -40,12 +36,12 @@ LogLevel = 2
 
 #OutputFilesPath={"CBNT":JobRootDir, "POOL":JobPoolDir, "LOG":JobLogDir}
 OutputFiles = {
-    "testarea/L1CaloRampData.pool.root": [(JobRootDir, "L1CaloRampData.pool.root")],
-    "testarea/PoolFileCatalog.xml": [(JobRootDir, "PoolFileCatalog.xml")],
-    "testarea/energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
-    "testarea/rampdata.xml": [(JobRootDir, "rampdata.xml")],
-    "testarea/graphs.root": [(JobRootDir, "graphs.root")],
-    "testarea/" + AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
+    "L1CaloRampData.pool.root": [(JobRootDir, "L1CaloRampData.pool.root")],
+    "PoolFileCatalog.xml": [(JobRootDir, "PoolFileCatalog.xml")],
+    "energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
+    "rampdata.xml": [(JobRootDir, "rampdata.xml")],
+    "graphs.root": [(JobRootDir, "graphs.root")],
+    AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
 JobPostTreatments = [
