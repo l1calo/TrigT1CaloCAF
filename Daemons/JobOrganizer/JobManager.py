@@ -586,20 +586,21 @@ class JobManager:
 					###==============================###
 					self.logger.info("backup to castor")
 
-					castorDir = job.jobInformation.jobConfigModule.JobCastorDir +'/'+job.jobInformation.runNumber
-					Tools.createCastorFolder(castorDir)
+					castorDir = job.jobInformation.jobConfigModule.JobCastorDir
+					if castorDir:
+						castorDir +='/'+job.jobInformation.runNumber
+						Tools.createCastorFolder(castorDir)
 
-					self.logger.debug(job.jobInformation.jobConfigModule.JobWorkingDir+" -> "+castorDir)
-					#copy to castor if ok
-					succeed = Tools.castorFolderCopy(job.jobInformation.jobConfigModule.JobWorkingDir, castorDir, job.jobInformation.jobConfiguration.name)
-					if not succeed:
-						self.logger.error("Failed to save job data to castor: " + job.jobInformation.jobConfigModule.JobWorkingDir)
+						self.logger.debug(job.jobInformation.jobConfigModule.JobWorkingDir+" -> "+castorDir)
+					        #copy to castor if ok
+						succeed = Tools.castorFolderCopy(job.jobInformation.jobConfigModule.JobWorkingDir, castorDir, job.jobInformation.jobConfiguration.name)
+						if not succeed:
+							self.logger.error("Failed to save job data to castor: " + job.jobInformation.jobConfigModule.JobWorkingDir)
 
-					#create dummy file in dir for space manager
-					else :
-						cmd = "touch "+ job.jobInformation.jobConfigModule.JobWorkingDir+'/'+"removalok"
-						rawoutput = commands.getoutput(cmd)
-					# touch 'removalok' in job.jobInformation.jobConfigModule.JobWorkingDir
+					        #create dummy file in dir for space manager
+						else:
+							cmd = "touch "+ job.jobInformation.jobConfigModule.JobWorkingDir+'/'+"removalok"
+							rawoutput = commands.getoutput(cmd)
 
 		# remove from the list the job already done or aborted
 		for job in reversed(self.jobList):

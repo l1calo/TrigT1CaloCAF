@@ -117,7 +117,10 @@ for i in svcMgr.IOVDbSvc.Folders:
 conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
 conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-00")
 
-svcMgr.PoolSvc.ReadCatalog += [ "xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000001.lar.COND_castor.xml" ]
+svcMgr.PoolSvc.ReadCatalog += [
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000001.lar.COND_castor.xml",
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000002.lar.COND_castor.xml"
+]
 
 # extra LAr setup
 if doLAr:
@@ -156,6 +159,13 @@ topSequence.L1CaloRampMaker.DoTile = doTile
 topSequence.L1CaloRampMaker.DoLAr = doLAr
 topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
 topSequence.L1CaloRampMaker.IsGain1 = True
+topSequence.L1CaloRampMaker.CheckProvenance = True
+# sick tbb board
+topSequence.L1CaloRampMaker.SpecialChannelRange = {
+	0x1170502 : 100, 0x1170503 : 100, 0x1160402 : 100, 0x1150401 : 100, 0x1160403 : 100, 0x1170403 : 100, 0x1150400 : 100,
+	0x1160500 : 100, 0x1160502 : 100, 0x1140503 : 100, 0x1170400 : 100, 0x1140502 : 100, 0x1170401 : 100, 0x1170402 : 100,
+	0x1160501 : 100, 0x1140500 : 100, 0x1160503 : 100, 0x1160400 : 100, 0x1160401 : 100, 0x1170500 : 100, 0x1170501 : 100,
+	0x1140501 : 100, 0x1150402 : 100, 0x1150403 : 100, 0x1150501 : 100, 0x1150500 : 100, 0x1150502 : 100, 0x1150503 : 100}
 
 # configure fitting algorithm
 from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloLinearCalibration

@@ -2,7 +2,7 @@
 # config
 ###############################################################################
 
-ConditionsTag = 'COMCOND-ES1C-000-00'
+ConditionsTag = 'COMCOND-ES1C-003-00'
 EvtMax = -1
 SkipEvents = 0
 
@@ -43,7 +43,7 @@ from AthenaCommon.GlobalFlags  import globalflags
 globalflags.DetGeo = 'atlas'
 globalflags.DataSource = 'data'
 globalflags.InputFormat = 'bytestream'
-globalflags.ConditionsTag = ConditionsTag if ConditionsTag else 'COMCOND-ES1C-000-00'
+globalflags.ConditionsTag = ConditionsTag if ConditionsTag else 'COMCOND-ES1C-003-00'
 del ConditionsTag
 
 # auto config
@@ -117,12 +117,15 @@ larCondFlags.useShape = False
 include("LArConditionsCommon/LArConditionsCommon_comm_jobOptions.py")
 
 # use ofc for calib pulses
-#for i in svcMgr.IOVDbSvc.Folders:
-#    if i.find('PhysWave')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
-#conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
-#conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-00")
+for i in svcMgr.IOVDbSvc.Folders:
+    if i.find('PhysWave')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
+conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
+conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-00")
 
-#svcMgr.PoolSvc.ReadCatalog += [ "xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/poolcond/PoolCat_comcond_castor.xml" ]
+svcMgr.PoolSvc.ReadCatalog += [
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000001.lar.COND_castor.xml",
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000002.lar.COND_castor.xml"
+]
 
 include("LArConditionsCommon/LArIdMap_comm_jobOptions.py")
 include("LArIdCnv/LArIdCnv_joboptions.py")

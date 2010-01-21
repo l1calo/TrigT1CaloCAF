@@ -42,6 +42,7 @@ OutputFiles = {
     "energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
     "rampdata.xml": [(JobRootDir, "rampdata.xml")],
     "graphs.root": [(JobRootDir, "graphs.root")],
+    "bad-ofciter.txt": [(JobRootDir, "bad-ofciter.txt")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
