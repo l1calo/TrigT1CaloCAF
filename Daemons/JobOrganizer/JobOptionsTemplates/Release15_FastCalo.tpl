@@ -124,7 +124,14 @@ conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOF
 
 svcMgr.PoolSvc.ReadCatalog += [
 	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000001.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000002.lar.COND_castor.xml"
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000002.lar.COND_castor.xml",
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000003.lar.COND_castor.xml",
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000004.lar.COND_castor.xml",
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000001.lar.COND_castor.xml",
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000002.lar.COND_castor.xml",
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000003.lar.COND_castor.xml",
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000004.lar.COND_castor.xml",
+	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000005.lar.COND_castor.xml"
 ]
 
 include("LArConditionsCommon/LArIdMap_comm_jobOptions.py")

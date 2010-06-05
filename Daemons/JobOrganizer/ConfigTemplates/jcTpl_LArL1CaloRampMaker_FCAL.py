@@ -1,16 +1,17 @@
 DaemonScriptsDir  = "#DAEMON_SCRIPTS_DIR#"
 DaemonBackEndsDir = "#DAEMON_BACKENDS_DIR#"
 
-JobWorkingDir = "#JOB_WORKING_DIR#"
-JobLogDir     = "#JOB_LOG_DIR#"
-JobRootDir    = "#JOB_ROOT_DIR#"
-JobPoolDir    = ""
-JobConfigDir  = "#JOB_CONFIG_DIR#"
-JobPostDir    = "#JOB_POST_DIR#"
+JobWorkingDir  = "#JOB_WORKING_DIR#"
+JobLogDir      = "#JOB_LOG_DIR#"
+JobRootDir     = "#JOB_ROOT_DIR#"
+JobTestAreaDir = JobRootDir + "/testarea"
+JobPoolDir     = ""
+JobConfigDir   = "#JOB_CONFIG_DIR#"
+JobPostDir     = "#JOB_POST_DIR#"
 
 JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 
-AtlasRelease  = "15.6.10"
+AtlasRelease  = "15.5.4.13"
 
 InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
@@ -22,10 +23,10 @@ JobScript = "submit.py"
 AthenaLauncher = "athena_launcher_testarea.sh"
 
 #jo template
-JobOptionTemplate = "#DAEMON_JO_TEMPLATE_DIR#/Release15_FastCalo.tpl"
+JobOptionTemplate = "#DAEMON_JO_TEMPLATE_DIR#/LArL1CaloRampMaker_FCAL.tpl"
 
 #jo name
-JobOptionName    = "#RUN_NUMBER#_#JOB_CONFIGURATION#_jobOptions.py"
+JobOptionName = "#RUN_NUMBER#_#JOB_CONFIGURATION#_jobOptions.py"
 
 #Athena log file
 AthenaJobLogFile = JobOptionName.strip("_jobOptions.py")+'Athena.log'
@@ -34,20 +35,20 @@ RawDataFileBasePaths = ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDE
 
 LogLevel = 2
 
-#AdditionalInputFiles = [("#JOB_CONFIG_DIR#/",""),("#JOB_CONFIG_DIR#/","config")]
-
 #OutputFilesPath={"CBNT":JobRootDir, "POOL":JobPoolDir, "LOG":JobLogDir}
-OutputFiles = { "cosmics.ntuple.root":[(JobRootDir, "#RUN_NUMBER#_#JOB_CONFIGURATION#.ntuple.root")],
-				AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
-			  }
+OutputFiles = {
+    "L1CaloRampData.pool.root": [(JobRootDir, "L1CaloRampData.pool.root")],
+    "PoolFileCatalog.xml": [(JobRootDir, "PoolFileCatalog.xml")],
+    "energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
+    "rampdata.xml": [(JobRootDir, "rampdata.xml")],
+    "graphs.root": [(JobRootDir, "graphs.root")],
+    "bad-ofciter.txt": [(JobRootDir, "bad-ofciter.txt")],
+    AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
+    }
 
-
-
-#JobPostTreatments = {"DONE":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"],
-#                     "ABORTED":["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py]"}
-
-JobPostTreatments = [ {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
-					]
+JobPostTreatments = [
+    {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
+    ]
 
 
 #JobPostTreatments = [{"ALL":[,]},
@@ -71,4 +72,4 @@ JobPostTreatments = [ {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
 
 #------------------------------------------------------------------------------------
 # Mailing list
-MailingList = ["prieur@cern.ch", "martin.wessels@cern.ch", "john.morris@cern.ch", "veit.scharf@kip.uni-heidelberg.de"]
+MailingList = ["veit.scharf@kip.uni-heidelberg.de"]

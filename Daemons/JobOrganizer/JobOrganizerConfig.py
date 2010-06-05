@@ -41,9 +41,19 @@ jobConfigurations = {
         "configurationTemplate": "jcTpl_LArL1CaloRampMaker.py",
         "validateJob":           True
         },
+    "LArL1CaloRampMaker_FCAL" : {
+        "listeners":             ["LArCalibL1Calo"],
+        "configurationTemplate": "jcTpl_LArL1CaloRampMaker_FCAL.py",
+        "validateJob":           True
+    },
     "TileL1CaloRampMaker" : {
         "listeners":             ["TileCalibL1Calo"],
         "configurationTemplate": "jcTpl_TileL1CaloRampMaker.py",
+        "validateJob":           True
+        },
+    "Phos4ShapeMaker" : {
+        "listeners":             ["TileCalibL1Calo","LArCalibL1Calo"],
+        "configurationTemplate": "jcTpl_Phos4ShapeMaker.py",
         "validateJob":           True
         },
     }

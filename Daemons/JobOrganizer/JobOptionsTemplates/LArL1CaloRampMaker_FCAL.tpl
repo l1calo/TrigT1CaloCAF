@@ -49,26 +49,6 @@ except:
 RunNumber = GetRunNumber()
 ConfigureFieldAndGeo()
 
-#import re
-#RunNumber = int(re.search(r"\.[0-9]{8}\.", FilesInput[0]).group(0)[1:-1])
-#
-## configure Field (copy from RecExConfig.AutoConfiguration.GetField()
-#from AthenaCommon.BFieldFlags import jobproperties
-#from CoolConvUtilities.MagFieldUtils import getFieldForRun
-#field = getFieldForRun(RunNumber)
-#if field.toroidCurrent() > 100:
-#    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(True)
-#    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(True)
-#else:
-#    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(False)
-#    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(False)
-#    
-#if field.solenoidCurrent() > 100:
-#    jobproperties.BField.solenoidOn.set_Value_and_Lock(True)
-#else:
-#    jobproperties.BField.solenoidOn.set_Value_and_Lock(False)
-#        
-#globalflags.DetDescrVersion.set_Value_and_Lock('ATLAS-GEO-08-00-00')
 del FilesInput
 
 # database tag
@@ -104,30 +84,7 @@ include ("TrigT1CaloByteStream/ReadLVL1CaloBS_jobOptions.py")
 # detector description
 include ("CaloDetMgrDetDescrCnv/CaloDetMgrDetDescrCnv_joboptions.py")
 
-# setup lar
-from LArConditionsCommon.LArCondFlags import larCondFlags
-larCondFlags.useShape = False
-#larCondFlags.LArCoolChannelSelection="0,1,3:473"
-
 include("LArConditionsCommon/LArConditionsCommon_comm_jobOptions.py")
-# use ofc for calib pulses
-for i in svcMgr.IOVDbSvc.Folders:
-    if i.find('PhysWave')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
-conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
-conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-00")
-
-svcMgr.PoolSvc.ReadCatalog += [
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000001.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000002.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000003.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000004.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000001.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000002.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000003.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000004.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000005.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000006.lar.COND_castor.xml"	
-]
 
 # extra LAr setup
 if doLAr:
@@ -165,17 +122,267 @@ topSequence.L1CaloRampMaker.L1TriggerTowerTool = LVL1__L1TriggerTowerTool()
 topSequence.L1CaloRampMaker.DoTile = doTile
 topSequence.L1CaloRampMaker.DoLAr = doLAr
 topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
-topSequence.L1CaloRampMaker.IsGain1 = False
+topSequence.L1CaloRampMaker.IsGain1 = True
 topSequence.L1CaloRampMaker.CheckProvenance = True
 
 # sick tbb board and saturating LAr
 topSequence.L1CaloRampMaker.SpecialChannelRange = {
-	0x1170502 : 100, 0x1170503 : 100, 0x1160402 : 100, 0x1150401 : 100, 0x1160403 : 100, 0x1170403 : 100, 0x1150400 : 100,
-	0x1160500 : 75, 0x1160502 : 75, 0x1140503 : 100, 0x1170400 : 75, 0x1140502 : 100, 0x1170401 : 100, 0x1170402 : 75,
-	0x1160501 : 75, 0x1140500 : 100, 0x1160503 : 75, 0x1160400 : 100, 0x1160401 : 100, 0x1170500 : 100, 0x1170501 : 100,
-	0x1140501 : 100, 0x1150402 : 100, 0x1150403 : 100, 0x1150501 : 100, 0x1150500 : 100, 0x1150502 : 100, 0x1150503 : 100,
-	0x41f0c01 : 70, 0x3130201 : 100, 0x4120603 : 150, 0x4120602 : 150, 0x4130700 : 150, 0x6170503 : 150, 0x41a0800 : 150,
-	0x4120d01 : 150, 0x5120602 : 150, 0x51f0801 : 150
+0x4100001 : 50,
+0x4100901 : 50,
+0x5100500 : 50,
+0x4100101 : 50,
+0x5100c00 : 50,
+0x4100801 : 50,
+0x5100400 : 50,
+0x4100f01 : 50,
+0x5100b00 : 50,
+0x4100701 : 50,
+0x5100300 : 50,
+0x4100e01 : 50,
+0x5100a00 : 50,
+0x4100601 : 50,
+0x5100200 : 50,
+0x4100d01 : 50,
+0x5100900 : 50,
+0x4100501 : 50,
+0x5100100 : 50,
+0x4100c01 : 50,
+0x5100800 : 50,
+0x4100401 : 50,
+0x5100f00 : 50,
+0x5100000 : 50,
+0x4100b01 : 50,
+0x5100700 : 50,
+0x4100301 : 50,
+0x5100e00 : 50,
+0x4100a01 : 50,
+0x5100600 : 50,
+0x4100201 : 50,
+0x5100d00 : 50,
+0x4100202 : 100,
+0x5100603 : 100,
+0x4100900 : 100,
+0x5100d01 : 100,
+0x5180a02 : 100,
+0x5180401 : 100,
+0x4100203 : 100,
+0x4100000 : 100,
+0x5100d02 : 100,
+0x5180101 : 100,
+0x4100002 : 100,
+0x5180a03 : 100,
+0x4100902 : 100,
+0x5100d03 : 100,
+0x4180603 : 100,
+0x5180201 : 100,
+0x4100100 : 100,
+0x5100501 : 100,
+0x4180601 : 100,
+0x4180d02 : 100,
+0x5100502 : 100,
+0x4180301 : 100,
+0x5180203 : 100,
+0x4180d03 : 100,
+0x5180901 : 100,
+0x5100503 : 100,
+0x5100303 : 100,
+0x4100800 : 100,
+0x5100c01 : 100,
+0x5180102 : 100,
+0x4180501 : 100,
+0x5180902 : 100,
+0x5100c02 : 100,
+0x4180c00 : 100,
+0x4100802 : 100,
+0x5100c03 : 100,
+0x4180503 : 100,
+0x4100f00 : 100,
+0x4180602 : 100,
+0x4180c01 : 100,
+0x4100803 : 100,
+0x5100401 : 100,
+0x4180302 : 100,
+0x5180703 : 100,
+0x5180500 : 100,
+0x4180c02 : 100,
+0x5180800 : 100,
+0x4180002 : 100,
+0x5100402 : 100,
+0x5180403 : 100,
+0x5180103 : 100,
+0x4100f02 : 100,
+0x5180200 : 100,
+0x4180c03 : 100,
+0x4180400 : 100,
+0x5180801 : 100,
+0x4180f03 : 100,
+0x4100f03 : 100,
+0x4180d00 : 100,
+0x4100700 : 100,
+0x5100b01 : 100,
+0x4100c02 : 100,
+0x4180401 : 100,
+0x5180802 : 100,
+0x4100003 : 100,
+0x5180f00 : 100,
+0x5100b02 : 100,
+0x4180700 : 100,
+0x4180402 : 100,
+0x5180803 : 100,
+0x4180b00 : 100,
+0x5180f01 : 100,
+0x4100702 : 100,
+0x5100b03 : 100,
+0x4180403 : 100,
+0x5180001 : 100,
+0x4100e00 : 100,
+0x4180b01 : 100,
+0x5180f02 : 100,
+0x4100703 : 100,
+0x5100403 : 100,
+0x5100301 : 100,
+0x4180b02 : 100,
+0x5180f03 : 100,
+0x5100103 : 100,
+0x5100302 : 100,
+0x5180003 : 100,
+0x4100e02 : 100,
+0x4180d01 : 100,
+0x4180b03 : 100,
+0x5180202 : 100,
+0x4180300 : 100,
+0x4100a00 : 100,
+0x5180701 : 100,
+0x4100e03 : 100,
+0x4100903 : 100,
+0x4100600 : 100,
+0x5100a01 : 100,
+0x5180702 : 100,
+0x4180701 : 100,
+0x5180e00 : 100,
+0x5100a02 : 100,
+0x4180a00 : 100,
+0x5180e01 : 100,
+0x4180101 : 100,
+0x4100602 : 100,
+0x5180301 : 100,
+0x5100a03 : 100,
+0x4180303 : 100,
+0x4100d00 : 100,
+0x4180a01 : 100,
+0x5180e02 : 100,
+0x4100603 : 100,
+0x5100201 : 100,
+0x5180e03 : 100,
+0x5180600 : 100,
+0x5100202 : 100,
+0x4180a02 : 100,
+0x4100d02 : 100,
+0x4180a03 : 100,
+0x4180202 : 100,
+0x4180200 : 100,
+0x5180601 : 100,
+0x5100203 : 100,
+0x4180903 : 100,
+0x4100d03 : 100,
+0x4100500 : 100,
+0x5100901 : 100,
+0x4180201 : 100,
+0x5180602 : 100,
+0x4180600 : 100,
+0x5180d00 : 100,
+0x5100902 : 100,
+0x5180300 : 100,
+0x5180603 : 100,
+0x4180900 : 100,
+0x5180000 : 100,
+0x5100903 : 100,
+0x4100c00 : 100,
+0x4180901 : 100,
+0x5180d02 : 100,
+0x4100503 : 100,
+0x5100101 : 100,
+0x4180902 : 100,
+0x5180d03 : 100,
+0x5100102 : 100,
+0x4180500 : 100,
+0x4180100 : 100,
+0x5180501 : 100,
+0x4100c03 : 100,
+0x4100102 : 100,
+0x4100400 : 100,
+0x5100801 : 100,
+0x5180502 : 100,
+0x5180c00 : 100,
+0x5100802 : 100,
+0x4180102 : 100,
+0x5180503 : 100,
+0x5180900 : 100,
+0x4180800 : 100,
+0x5180c01 : 100,
+0x4100402 : 100,
+0x5100803 : 100,
+0x4180103 : 100,
+0x4100b00 : 100,
+0x5100f01 : 100,
+0x4180801 : 100,
+0x5180c02 : 100,
+0x4100403 : 100,
+0x5100001 : 100,
+0x5100f02 : 100,
+0x4180802 : 100,
+0x5180c03 : 100,
+0x5180400 : 100,
+0x4180f00 : 100,
+0x5100002 : 100,
+0x4100b02 : 100,
+0x5100f03 : 100,
+0x4100103 : 100,
+0x4180803 : 100,
+0x4180000 : 100,
+0x4180f01 : 100,
+0x5100003 : 100,
+0x4100b03 : 100,
+0x4100300 : 100,
+0x5100701 : 100,
+0x5180002 : 100,
+0x4180001 : 100,
+0x5180402 : 100,
+0x4180f02 : 100,
+0x5180b00 : 100,
+0x5100702 : 100,
+0x5180d01 : 100,
+0x5180b01 : 100,
+0x4100302 : 100,
+0x5100703 : 100,
+0x5180a00 : 100,
+0x4180003 : 100,
+0x5100e01 : 100,
+0x4180502 : 100,
+0x5180b02 : 100,
+0x5180903 : 100,
+0x5180700 : 100,
+0x4100303 : 100,
+0x5100e02 : 100,
+0x4180702 : 100,
+0x5180b03 : 100,
+0x4180e00 : 100,
+0x5180303 : 100,
+0x5180100 : 100,
+0x4100a02 : 100,
+0x5100e03 : 100,
+0x4180703 : 100,
+0x4180e01 : 100,
+0x4100a03 : 100,
+0x4100200 : 100,
+0x4180203 : 100,
+0x5100601 : 100,
+0x5180302 : 100,
+0x4180e02 : 100,
+0x5100602 : 100,
+0x4180e03 : 100,
+0x4100502 : 100,
+0x5180a01 : 100
 }
 
 # configure fitting algorithm
@@ -198,5 +405,3 @@ svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L
 # configure writing of additional files for the calibration gui
 from TrigT1CaloCalibUtils.L1CaloDumpRampDataAlgorithm import L1CaloDumpRampDataAlgorithm
 topSequence += L1CaloDumpRampDataAlgorithm()
-
-print '\n'.join(svcMgr.IOVDbSvc.Folders)

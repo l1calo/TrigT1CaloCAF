@@ -10,7 +10,6 @@ from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
 #RAW_DATA_SETS#
 FilesInput = athenaCommonFlags.BSRDOInput()
 
-autoConfigPartition = False
 doLAr = False
 doTile = True
 
@@ -43,42 +42,36 @@ globalflags.ConditionsTag = ConditionsTag if ConditionsTag else 'COMCOND-ES1C-00
 del ConditionsTag
 
 # auto config
-##############################
-# somehow crashes, workaround below
-##############################
-#try: # recent switch from RecExCommon to RecExConfig
-#    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
-#except:
-#    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
-#    
-#ConfigureFieldAndGeo()
+try: # recent switch from RecExCommon to RecExConfig
+    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber, ConfigureConditionsTag
+except:
+    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber, ConfigureConditionsTag
+    
+RunNumber = GetRunNumber()
+ConfigureFieldAndGeo()
 
 # get run number from input file
-import re
-RunNumber = int(re.search(r"\.[0-9]{8}\.", FilesInput[0]).group(0)[1:-1])
-
-# configure Field (copy from RecExConfig.AutoConfiguration.GetField()
-from AthenaCommon.BFieldFlags import jobproperties
-from CoolConvUtilities.MagFieldUtils import getFieldForRun
-field = getFieldForRun(RunNumber)
-if field.toroidCurrent() > 100:
-    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(True)
-    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(True)
-else:	
-    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(False)
-    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(False)
-
-if field.solenoidCurrent() > 100:
-    jobproperties.BField.solenoidOn.set_Value_and_Lock(True)
-else:
-    jobproperties.BField.solenoidOn.set_Value_and_Lock(False)
-
-globalflags.DetDescrVersion.set_Value_and_Lock('ATLAS-GEO-08-00-00')
+#import re
+#RunNumber = int(re.search(r"\.[0-9]{8}\.", FilesInput[0]).group(0)[1:-1])
+#
+## configure Field (copy from RecExConfig.AutoConfiguration.GetField()
+#from AthenaCommon.BFieldFlags import jobproperties
+#from CoolConvUtilities.MagFieldUtils import getFieldForRun
+#field = getFieldForRun(RunNumber)
+#if field.toroidCurrent() > 100:
+#    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(True)
+#    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(True)
+#else:	
+#    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(False)
+#    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(False)
+#
+#if field.solenoidCurrent() > 100:
+#    jobproperties.BField.solenoidOn.set_Value_and_Lock(True)
+#else:
+#    jobproperties.BField.solenoidOn.set_Value_and_Lock(False)
+#
+#globalflags.DetDescrVersion.set_Value_and_Lock('ATLAS-GEO-08-00-00')
 del FilesInput
-##############################
-# end workaround
-##############################
-
 
 # database tag
 from IOVDbSvc.CondDB import conddb
@@ -92,10 +85,10 @@ if doTile: DetFlags.detdescr.Tile_setOn()
 
 # needed ....
 from RecExConfig.RecFlags import rec
-rec.doLArg = doLAr
-rec.doTile = doTile
-rec.doCalo = doLAr or doTile
-rec.Commissioning = True
+rec.doLArg.set_Value_and_Lock(doLAr)
+rec.doTile.set_Value_and_Lock(doTile)
+rec.doCalo.set_Value_and_Lock(doLAr or doTile)
+rec.Commissioning.set_Value_and_Lock(True)
 
 # setup geometry
 from AtlasGeoModel import SetGeometryVersion
@@ -115,7 +108,7 @@ include("CaloDetMgrDetDescrCnv/CaloDetMgrDetDescrCnv_joboptions.py")
 include("LArConditionsCommon/LArConditionsCommon_comm_jobOptions.py")
 include("TileIdCnv/TileIdCnv_jobOptions.py")
 include("TileConditions/TileConditions_jobOptions.py")
-
+        
 # extra LAr setup
 if doLAr:
     include("LArConditionsCommon/LArIdMap_comm_jobOptions.py")
@@ -123,12 +116,11 @@ if doLAr:
     svcMgr.ByteStreamAddressProviderSvc.TypeNames += ["LArFebHeaderContainer/LArFebHeader"]
     include("LArROD/LArFebErrorSummaryMaker_jobOptions.py")
 
-# extra Tile setup
-if doTile:
-    # fix some strange bug ...
-    from TileConditions.TileInfoConfigurator import TileInfoConfigurator
-    tileInfoConfigurator = TileInfoConfigurator()
-    tileInfoConfigurator.NSamples = 7
+# cell reconstruction properties
+from CaloRec.CaloCellFlags import jobproperties
+from TileRecUtils.TileRecFlags import jobproperties
+jobproperties.CaloCellFlags.doDeadCellCorr = False
+jobproperties.TileRecFlags.readDigits = True
 
 # reconstruct cells
 from CaloRec.CaloCellGetter import CaloCellGetter
@@ -186,7 +178,9 @@ topSequence.L1CaloRampMaker.SpecialChannelRange = { 0x6130f02 : 150, 0x7100003 :
 	0x7180600 : 150, 0x61f0003 : 150, 0x7100e01 : 150, 0x7180500 : 150, 0x71c0f03 : 150, 0x6170a00 : 150, 0x61b0c02 : 150, 0x61f0101 : 150,
 	0x6170402 : 150, 0x7100402 : 150, 0x6130802 : 150, 0x7100e00 : 150, 0x7140302 : 150, 0x61f0e00 : 150, 0x7180b02 : 150, 0x7180b03 : 150,
 	0x71c0500 : 150, 0x7140101 : 150, 0x6170a01 : 150, 0x7180200 : 150, 0x7180201 : 150, 0x61b0302 : 150, 0x61f0703 : 150, 0x71c0100 : 150,
-	0x7100601 : 150, 0x61f0d00 : 150, 0x61f0d01 : 150}
+	0x7100601 : 150, 0x61f0d00 : 150, 0x61f0d01 : 150,
+	# saturating channels
+	0x7120203 : 100, 0x6170c03 : 50, 0x6150b02 : 100, 0x6180d03 : 150}
 
 # configure fitting algorithm
 from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloLinearCalibration
