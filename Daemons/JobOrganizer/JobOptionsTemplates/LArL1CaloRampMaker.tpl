@@ -2,7 +2,6 @@
 # config
 ################################################################################
 
-ConditionsTag = 'COMCOND-ES1C-003-00'
 EvtMax = -1
 SkipEvents = 0
 
@@ -22,9 +21,6 @@ from AthenaCommon.AlgSequence import AlgSequence
 from AthenaCommon.AppMgr import ToolSvc,theApp,ServiceMgr
 topSequence = AlgSequence()
 
-# configure database
-include('RecJobTransforms/UseOracle.py')
-
 # setup athenaCommonFlags
 from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
 athenaCommonFlags.EvtMax = EvtMax
@@ -32,44 +28,13 @@ athenaCommonFlags.SkipEvents = SkipEvents
 athenaCommonFlags.FilesInput = FilesInput
 del SkipEvents
 del EvtMax
+del FilesInput
 
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
-globalflags.DetGeo = 'atlas'
-globalflags.DataSource = 'data'
-globalflags.InputFormat = 'bytestream'
-globalflags.ConditionsTag = ConditionsTag if ConditionsTag else 'COMCOND-ES1C-000-00'
-del ConditionsTag
 
-# auto config
-try: # recent switch from RecExCommon to RecExConfig
-    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber, ConfigureConditionsTag
-except:
-    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber, ConfigureConditionsTag
-RunNumber = GetRunNumber()
-ConfigureFieldAndGeo()
-
-#import re
-#RunNumber = int(re.search(r"\.[0-9]{8}\.", FilesInput[0]).group(0)[1:-1])
-#
-## configure Field (copy from RecExConfig.AutoConfiguration.GetField()
-#from AthenaCommon.BFieldFlags import jobproperties
-#from CoolConvUtilities.MagFieldUtils import getFieldForRun
-#field = getFieldForRun(RunNumber)
-#if field.toroidCurrent() > 100:
-#    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(True)
-#    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(True)
-#else:
-#    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(False)
-#    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(False)
-#    
-#if field.solenoidCurrent() > 100:
-#    jobproperties.BField.solenoidOn.set_Value_and_Lock(True)
-#else:
-#    jobproperties.BField.solenoidOn.set_Value_and_Lock(False)
-#        
-#globalflags.DetDescrVersion.set_Value_and_Lock('ATLAS-GEO-08-00-00')
-del FilesInput
+from RecExConfig.AutoConfiguration import ConfigureFromListOfKeys, GetRunNumber
+ConfigureFromListOfKeys(['everything'])
 
 # database tag
 from IOVDbSvc.CondDB import conddb
@@ -116,18 +81,10 @@ for i in svcMgr.IOVDbSvc.Folders:
 conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
 conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-00")
 
-svcMgr.PoolSvc.ReadCatalog += [
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000001.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000002.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000003.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000004.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000001.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000002.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000003.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000004.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000005.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000006.lar.COND_castor.xml"	
-]
+from glob import glob
+catalog_files = glob("/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond??_data.??????.lar.COND_castor.xml")
+
+svcMgr.PoolSvc.ReadCatalog += ["xmlcatalog_file:%s" % i for i in catalog_files]
 
 # extra LAr setup
 if doLAr:
@@ -151,6 +108,7 @@ del rec
 # setup l1calo database
 include('TrigT1CaloCalibConditions/L1CaloCalibConditions_jobOptions.py')
 svcMgr.IOVDbSvc.overrideTags +=  ["<prefix>/CALO/Identifier/CaloTTOnOffIdMapAtlas</prefix> <tag>CALOIdentifierCaloTTOnOffIdMapAtlas-0002</tag>"]
+svcMgr.IOVDbSvc.overrideTags += ["<prefix>/LAR/Identifier/LArTTCellMapAtlas</prefix> <tag>LARIdentifierLArTTCellMapAtlas-HadFcalFix2</tag>"]
 
 # set up tools
 from TrigT1CaloTools.TrigT1CaloToolsConf import LVL1__L1TriggerTowerTool
@@ -159,13 +117,16 @@ from TrigT1CaloCalibTools.TrigT1CaloCalibToolsConf import L1CaloLArTowerEnergy
 ToolSvc += L1CaloLArTowerEnergy()
 
 # configure actual ramp maker algorithm
+import TrigT1CaloCalibUtils
+print TrigT1CaloCalibUtils
+
 from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloRampMaker
 topSequence += L1CaloRampMaker()
 topSequence.L1CaloRampMaker.L1TriggerTowerTool = LVL1__L1TriggerTowerTool()
 topSequence.L1CaloRampMaker.DoTile = doTile
 topSequence.L1CaloRampMaker.DoLAr = doLAr
 topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
-topSequence.L1CaloRampMaker.IsGain1 = False
+topSequence.L1CaloRampMaker.IsGain1 = True
 topSequence.L1CaloRampMaker.CheckProvenance = True
 
 # sick tbb board and saturating LAr
@@ -174,8 +135,9 @@ topSequence.L1CaloRampMaker.SpecialChannelRange = {
 	0x1160500 : 75, 0x1160502 : 75, 0x1140503 : 100, 0x1170400 : 75, 0x1140502 : 100, 0x1170401 : 100, 0x1170402 : 75,
 	0x1160501 : 75, 0x1140500 : 100, 0x1160503 : 75, 0x1160400 : 100, 0x1160401 : 100, 0x1170500 : 100, 0x1170501 : 100,
 	0x1140501 : 100, 0x1150402 : 100, 0x1150403 : 100, 0x1150501 : 100, 0x1150500 : 100, 0x1150502 : 100, 0x1150503 : 100,
+	0x21d0400 : 150, 0x21d0401 : 150, 0x21d0402 : 150, 
 	0x41f0c01 : 70, 0x3130201 : 100, 0x4120603 : 150, 0x4120602 : 150, 0x4130700 : 150, 0x6170503 : 150, 0x41a0800 : 150,
-	0x4120d01 : 150, 0x5120602 : 150, 0x51f0801 : 150
+	0x4120d01 : 150, 0x41f0500 : 50, 0x5120602 : 150, 0x51f0801 : 150, 0x5110902 : 50
 }
 
 # configure fitting algorithm
@@ -192,7 +154,7 @@ RampDataOutput.WriteIOV = False
 EnergyScanResultOutput = OutputConditionsAlg("EnergyScanResultOutput", "dummy.root")
 EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/EnergyScanResults"]
 EnergyScanResultOutput.WriteIOV = True
-EnergyScanResultOutput.Run1 = RunNumber
+EnergyScanResultOutput.Run1 = GetRunNumber()
 svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L1CALO"
 
 # configure writing of additional files for the calibration gui

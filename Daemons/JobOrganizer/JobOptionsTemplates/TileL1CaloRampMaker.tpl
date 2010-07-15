@@ -2,7 +2,6 @@
 # config
 ################################################################################
 
-ConditionsTag = 'COMCOND-ES1C-003-00'
 EvtMax = -1
 SkipEvents = 0
 
@@ -22,9 +21,6 @@ from AthenaCommon.AlgSequence import AlgSequence
 from AthenaCommon.AppMgr import ToolSvc,theApp,ServiceMgr
 topSequence = AlgSequence()
 
-# configure database
-include('RecJobTransforms/UseOracle.py')
-
 # setup athenaCommonFlags
 from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
 athenaCommonFlags.EvtMax = EvtMax
@@ -32,46 +28,13 @@ athenaCommonFlags.SkipEvents = SkipEvents
 athenaCommonFlags.FilesInput = FilesInput
 del SkipEvents
 del EvtMax
+del FilesInput
 
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
-globalflags.DetGeo = 'atlas'
-globalflags.DataSource = 'data'
-globalflags.InputFormat = 'bytestream'
-globalflags.ConditionsTag = ConditionsTag if ConditionsTag else 'COMCOND-ES1C-000-00'
-del ConditionsTag
 
-# auto config
-try: # recent switch from RecExCommon to RecExConfig
-    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber, ConfigureConditionsTag
-except:
-    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber, ConfigureConditionsTag
-    
-RunNumber = GetRunNumber()
-ConfigureFieldAndGeo()
-
-# get run number from input file
-#import re
-#RunNumber = int(re.search(r"\.[0-9]{8}\.", FilesInput[0]).group(0)[1:-1])
-#
-## configure Field (copy from RecExConfig.AutoConfiguration.GetField()
-#from AthenaCommon.BFieldFlags import jobproperties
-#from CoolConvUtilities.MagFieldUtils import getFieldForRun
-#field = getFieldForRun(RunNumber)
-#if field.toroidCurrent() > 100:
-#    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(True)
-#    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(True)
-#else:	
-#    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(False)
-#    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(False)
-#
-#if field.solenoidCurrent() > 100:
-#    jobproperties.BField.solenoidOn.set_Value_and_Lock(True)
-#else:
-#    jobproperties.BField.solenoidOn.set_Value_and_Lock(False)
-#
-#globalflags.DetDescrVersion.set_Value_and_Lock('ATLAS-GEO-08-00-00')
-del FilesInput
+from RecExConfig.AutoConfiguration import ConfigureFromListOfKeys, GetRunNumber
+ConfigureFromListOfKeys(['everything'])
 
 # database tag
 from IOVDbSvc.CondDB import conddb
@@ -144,7 +107,7 @@ topSequence.L1CaloRampMaker.L1TriggerTowerTool = LVL1__L1TriggerTowerTool()
 topSequence.L1CaloRampMaker.DoTile = doTile
 topSequence.L1CaloRampMaker.DoLAr = doLAr
 topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
-topSequence.L1CaloRampMaker.IsGain1 = False
+topSequence.L1CaloRampMaker.IsGain1 = True
 # special region 1.3 < |eta| < 1.5, saturation on tile side.
 topSequence.L1CaloRampMaker.SpecialChannelRange = { 0x6130f02 : 150, 0x7100003 : 150, 0x7180f03 : 150, 0x7180303 : 150, 0x7100200 : 150,
 	0x6130601 : 150, 0x6130302 : 150, 0x61f0303 : 150, 0x71c0e00 : 150, 0x71c0a00 : 150, 0x7180501 : 150, 0x6130003 : 150, 0x7140d01 : 150,
@@ -180,7 +143,10 @@ topSequence.L1CaloRampMaker.SpecialChannelRange = { 0x6130f02 : 150, 0x7100003 :
 	0x71c0500 : 150, 0x7140101 : 150, 0x6170a01 : 150, 0x7180200 : 150, 0x7180201 : 150, 0x61b0302 : 150, 0x61f0703 : 150, 0x71c0100 : 150,
 	0x7100601 : 150, 0x61f0d00 : 150, 0x61f0d01 : 150,
 	# saturating channels
-	0x7120203 : 100, 0x6170c03 : 50, 0x6150b02 : 100, 0x6180d03 : 150}
+	0x7120203 : 100, 0x6170c03 : 50, 0x6150b02 : 100, 0x6180d03 : 150, 0x61b0f02 : 100, 0x71d0d02 : 150, 
+	0x61c0a00 : 100, 0x6160f03 : 150, 0x6110901 : 150, 0x6140c02 : 150, 0x61a0e03 : 150, 0x61a0103 : 150,
+	0x61b0f00 : 150, 0x61b0f01 : 150 
+}
 
 # configure fitting algorithm
 from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloLinearCalibration
@@ -196,7 +162,7 @@ outputConditionsAlg.WriteIOV = False
 EnergyScanResultOutput = OutputConditionsAlg("EnergyScanResultOutput", "dummy.root")
 EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/EnergyScanResults"]
 EnergyScanResultOutput.WriteIOV = True
-EnergyScanResultOutput.Run1 = RunNumber
+EnergyScanResultOutput.Run1 = GetRunNumber()
 svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L1CALO"
 
 # configure writing of additional files for the calibration gui

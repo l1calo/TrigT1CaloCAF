@@ -11,7 +11,7 @@ JobPostDir     = "#JOB_POST_DIR#"
 
 JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 
-AtlasRelease  = "15.5.4.13"
+AtlasRelease  = "15.6.9"
 
 InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"

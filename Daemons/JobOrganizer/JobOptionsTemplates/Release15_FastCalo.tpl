@@ -2,7 +2,6 @@
 # config
 ###############################################################################
 
-ConditionsTag = 'COMCOND-ES1C-003-00'
 EvtMax = -1
 SkipEvents = 0
 
@@ -10,7 +9,6 @@ from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
 #RAW_DATA_SETS#
 FilesInput = athenaCommonFlags.BSRDOInput()
 
-autoConfigPartition = False
 doLAr = True
 doTile = True
 
@@ -26,9 +24,6 @@ from AthenaCommon.AlgSequence import AlgSequence
 from AthenaCommon.AppMgr import ToolSvc,theApp,ServiceMgr
 topSequence = AlgSequence()
 
-# configure database
-include('RecJobTransforms/UseOracle.py')
-
 # setup athenaCommonFlags
 from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
 athenaCommonFlags.EvtMax = EvtMax
@@ -36,46 +31,13 @@ athenaCommonFlags.SkipEvents = SkipEvents
 athenaCommonFlags.FilesInput = FilesInput
 del SkipEvents
 del EvtMax
-#del FilesInput
+del FilesInput
 
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
-globalflags.DetGeo = 'atlas'
-globalflags.DataSource = 'data'
-globalflags.InputFormat = 'bytestream'
-globalflags.ConditionsTag = ConditionsTag if ConditionsTag else 'COMCOND-ES1C-003-00'
-del ConditionsTag
 
-# auto config
-#try: # recent switch from RecExCommon to RecExConfig
-#    from RecExConfig.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
-#except:
-#    from RecExCommon.AutoConfiguration import ConfigureFieldAndGeo, GetRunNumber
-#    
-#RunNumber = GetRunNumber()
-#ConfigureFieldAndGeo()
-
-import re
-RunNumber = int(re.search(r"\.[0-9]{8}\.", FilesInput[0]).group(0)[1:-1])
-
-# configure Field (copy from RecExConfig.AutoConfiguration.GetField()
-from AthenaCommon.BFieldFlags import jobproperties
-from CoolConvUtilities.MagFieldUtils import getFieldForRun
-field = getFieldForRun(RunNumber)
-if field.toroidCurrent() > 100:
-    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(True)
-    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(True)
-else:
-    jobproperties.BField.barrelToroidOn.set_Value_and_Lock(False)
-    jobproperties.BField.endcapToroidOn.set_Value_and_Lock(False)
-    
-if field.solenoidCurrent() > 100:
-    jobproperties.BField.solenoidOn.set_Value_and_Lock(True)
-else:
-    jobproperties.BField.solenoidOn.set_Value_and_Lock(False)
-        
-globalflags.DetDescrVersion.set_Value_and_Lock('ATLAS-GEO-08-00-00')
-del FilesInput
+from RecExConfig.AutoConfiguration import ConfigureFromListOfKeys, GetRunNumber
+ConfigureFromListOfKeys(['everything'])
 
 # database tag
 from IOVDbSvc.CondDB import conddb
@@ -117,22 +79,15 @@ larCondFlags.useShape = False
 include("LArConditionsCommon/LArConditionsCommon_comm_jobOptions.py")
 
 # use ofc for calib pulses
-for i in svcMgr.IOVDbSvc.Folders:
-    if i.find('PhysWave')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
-conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
-conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-00")
+#for i in svcMgr.IOVDbSvc.Folders:
+#    if i.find('PhysWave')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
+#conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
+#conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-00")
 
-svcMgr.PoolSvc.ReadCatalog += [
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000001.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000002.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000003.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond09_data.000004.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000001.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000002.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000003.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000004.lar.COND_castor.xml",
-	"xmlcatalog_file:/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond10_data.000005.lar.COND_castor.xml"
-]
+#from glob import glob
+#catalog_files = glob("/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond??_data.??????.lar.COND_castor.xml")
+
+#svcMgr.PoolSvc.ReadCatalog += ["xmlcatalog_file:%s" % i for i in catalog_files]
 
 include("LArConditionsCommon/LArIdMap_comm_jobOptions.py")
 include("LArIdCnv/LArIdCnv_joboptions.py")
@@ -152,18 +107,24 @@ if doTile:
     tileInfoConfigurator.NSamples = 7
 
 
-# do trigger config
-#from TriggerJobOpts.TriggerFlags import TriggerFlags as tf
-#tf.configForStartup.set_Value_and_Lock("HLTonlineNoL1Thr")
-#tf.configurationSourceList.set_Value_and_Lock(["ds"]) #force xml config
-
-#from TriggerJobOpts.TriggerConfigGetter import TriggerConfigGetter
-#cfg = TriggerConfigGetter()
+from CaloRec.CaloCellFlags import jobproperties
+from TileRecUtils.TileRecFlags import jobproperties
+jobproperties.CaloCellFlags.doDeadCellCorr = False
+jobproperties.TileRecFlags.readDigits = False
+jobproperties.CaloCellFlags.doLArCreateMissingCells = False
 
 # reconstruct cells
 from CaloRec.CaloCellGetter import CaloCellGetter
 CaloCellGetter()
 del rec
+
+# setup l1calo database
+include('TrigT1CaloCalibConditions/L1CaloCalibConditions_jobOptions.py')
+svcMgr.IOVDbSvc.overrideTags += ["<prefix>/CALO/Identifier/CaloTTOnOffIdMapAtlas</prefix> <tag>CALOIdentifierCaloTTOnOffIdMapAtlas-0002</tag>"]
+
+# get new LAr fcal fix
+svcMgr.IOVDbSvc.overrideTags += ["<prefix>/LAR/Identifier/LArTTCellMapAtlas</prefix> <tag>LARIdentifierLArTTCellMapAtlas-HadFcalFix2</tag>"]
+
 
 include("CBNT_Athena/CBNT_AthenaAware_jobOptions.py")
 theApp.HistogramPersistency = "ROOT"

@@ -4,10 +4,13 @@
 export STAGE_SVCCLASS=#INPUT_STAGE_SVC_CLASS#
 export ATLAS_RELEASE=#ATLAS_RELEASE#
 source /afs/cern.ch/user/l/l1ccalib/cmthome/setup.sh -tag=AtlasTier0,#ATLAS_RELEASE#,runtime,32
+export CMTHOME=''
 export CORAL_AUTH_PATH=$TestArea:$CORAL_AUTH_PATH
 
 echo "########################################"
 echo "CMTPATH: $CMTPATH"
+export CMTDEBUG=1
+echo "cmt show projects: `cmt show projects`" 
 echo "TestArea: $TestArea"
 echo "CORAL_AUTH_PATH: $CORAL_AUTH_PATH"
 echo "STAGE_SVCCLASS: $STAGE_SVCCLASS"
