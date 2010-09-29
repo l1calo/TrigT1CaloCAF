@@ -71,7 +71,7 @@ include ("CaloDetMgrDetDescrCnv/CaloDetMgrDetDescrCnv_joboptions.py")
 
 # setup lar
 from LArConditionsCommon.LArCondFlags import larCondFlags
-larCondFlags.useShape = False
+larCondFlags.useShape = True
 #larCondFlags.LArCoolChannelSelection="0,1,3:473"
 
 include("LArConditionsCommon/LArConditionsCommon_comm_jobOptions.py")

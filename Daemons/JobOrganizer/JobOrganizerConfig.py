@@ -16,11 +16,6 @@ JobsWorkingDir = DaemonDataDir + '/jobs'
 CastorDataDir = "/castor/cern.ch/grid/atlas/caf/atlcal/perm/l1calo"
 
 jobConfigurations = { 
-    "CBNT": {
-        "listeners":             ["LArCalibL1Calo", "TileCalibL1Calo", ],
-        "configurationTemplate": "jcTpl_CBNT_FastCalo.py",
-        "validateJob":           True
-        },
     "CBNT_Release15": {
         "listeners":             ["LArCalibL1Calo", "TileCalibL1Calo", ],
         "configurationTemplate": "jcTpl_CBNT_Release15_FastCalo.py",
@@ -56,6 +51,11 @@ jobConfigurations = {
         "configurationTemplate": "jcTpl_Phos4ShapeMaker.py",
         "validateJob":           True
         },
+    "L1CaloCalibD3PD" : {
+        "listeners":             ["LArCalibL1Calo", "TileCalibL1Calo"],
+        "configurationTemplate": "jcTpl_L1CaloCalibD3PD.py",
+        "validateJob":           True
+        }
     }
 
 atlaslarcalWatcher = {

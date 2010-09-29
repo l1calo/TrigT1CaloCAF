@@ -108,6 +108,7 @@ topSequence.L1CaloRampMaker.DoTile = doTile
 topSequence.L1CaloRampMaker.DoLAr = doLAr
 topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
 topSequence.L1CaloRampMaker.IsGain1 = True
+topSequence.L1CaloRampMaker.CheckProvenance = False
 # special region 1.3 < |eta| < 1.5, saturation on tile side.
 topSequence.L1CaloRampMaker.SpecialChannelRange = { 0x6130f02 : 150, 0x7100003 : 150, 0x7180f03 : 150, 0x7180303 : 150, 0x7100200 : 150,
 	0x6130601 : 150, 0x6130302 : 150, 0x61f0303 : 150, 0x71c0e00 : 150, 0x71c0a00 : 150, 0x7180501 : 150, 0x6130003 : 150, 0x7140d01 : 150,
