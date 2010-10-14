@@ -87,6 +87,8 @@ class RunParams:
         self.efevents=None
         self.errcode=0
         self.errlist=[]
+        # information to be filled in from L1Calo Conditions
+        self.tierzerotag=None
 
     def addEORInfo(self,stop,totaltime,cleanstop,maxlb):
         self.stop=stop
@@ -158,6 +160,12 @@ class TrigLBParams:
         self.start=start
         self.stop=stop
 
+class L1CaloParams:
+    "Class to hold tierZeroTag from L1Calo conditions folder"
+    def __init__(self,run,end,tierzerotag):
+        self.run=run
+        self.end=end
+        self.tierzerotag=tierzerotag
 
 class coolRunLister:
     """Extract information on ATLAS runs from online COOL information"""
@@ -192,6 +200,7 @@ class coolRunLister:
         self.loglevel=loglevel
         self.coolpath='/TDAQ/RunCtrl'
         self.cooltlbpath='/TRIGGER/LUMI'
+        self.cooll1calopath='/TRIGGER/L1Calo/V1/Conditions'
         self.nowtime=time.time()*1000000000L
         # no restriction on initial selection
         self.onlyRec=False
@@ -203,6 +212,7 @@ class coolRunLister:
         self.lbrunmap={}
         self.runmap={}
         self.triglbmap={}
+        self.l1calomap={}
 
     def close(self):
         "Close the database connections"
@@ -241,6 +251,7 @@ class coolRunLister:
         self.correlateLB()
         if (self.usetrig):
             self.correlateTrigger()
+            self.correlateL1Calo()
 
     def listFromRuns(self,run1=0,run2=(1 << 31)-1):
         "Main entry point - setup and check data given inclusive range of runs"
@@ -263,6 +274,7 @@ class coolRunLister:
         self.correlateLB()
         if (self.usetrig):
             self.correlateTrigger()
+            self.correlateL1Calo()
 
 
     def runsFromTime(self,time1=cool.ValidityKeyMin,time2=cool.ValidityKeyMax):
@@ -455,6 +467,51 @@ class coolRunLister:
         if (self.loglevel>0):
             print "Missing trigger information for %i runs, patched EOR for %i" % (nbad,npatch)
 
+    def correlateL1Calo(self):
+        "Retrieve tierZeroTag information from L1Calo conditions folder and correlate with RunCtrl"
+        srun=-1
+        self.l1calomap={}
+        folderL1CaloCond=self.cooltrigdb.getFolder(self.cooll1calopath+'/DerivedRunPars')
+        itr=folderL1CaloCond.browseObjects((self.minrun << 32),((self.maxrun+1) << 32),cool.ChannelSelection.all())
+        while itr.goToNext():
+            obj=itr.currentRef()
+            since=obj.since()
+            run=since >> 32
+            until=obj.until()
+            end=until >> 32
+            payload=obj.payload()
+            tierzerotag=payload['tierZeroTag']
+            if (run!=srun):
+                # seeing a new run - store old one if needed
+                if (srun>-1):
+                    self.l1calomap[srun]=L1CaloParams(srun,send,stierzerotag)
+                srun=run
+                send=end
+                stierzerotag=tierzerotag
+            else:
+                if (end>send): send=end
+        itr.close()
+        # store last run
+        if (srun>-1):
+            self.l1calomap[srun]=L1CaloParams(srun,send,stierzerotag)
+        if (self.loglevel>0):
+            print "L1Calo map has data for %i runs" % len(self.triglbmap)
+
+        # now loop through primary run list and add L1Calo information
+        nbad=0
+        npatch=0
+        for runp in self.runmap.values():
+            run=runp.run
+            for l1calo in self.l1calomap.values():
+                if (run>=l1calo.run and run<l1calo.end):
+                    if (runp.tierzerotag is None):
+                        runp.tierzerotag=l1calo.tierzerotag
+                        npatch+=1
+                        break
+            nbad+=1
+        if (self.loglevel>0):
+            print "Missing L1Calo information for %i runs, added tierZeroTag for %i" % (nbad,npatch)
+
     def listErrors(self):
         "List runs which have errors to text output"
         nerr=0
@@ -482,7 +539,7 @@ class coolRunLister:
             if ('c' in format):
                 title+=' RunType                  DetectorMask'
             if ('d' in format):
-                title+=' DAQConfiguration     PartitionName    FilenameTag         '
+                title+=' DAQConfiguration     PartitionName      FilenameTag          tierZeroTag'
             print title
         runkeys=self.runmap.keys()
         runkeys.sort(reverse=lastfirst)
@@ -500,7 +557,7 @@ class coolRunLister:
             if ('c' in format):
                 line+=' %-20s %16x' % (runp.runtype,runp.detmask)
             if ('d' in format):
-                line+=' %-20s %-16s %-20s' % (runp.daqconfig,noneStr(runp.partname),runp.filetag)
+                line+=' %-20s %-16s %-20s %-20s' % (runp.daqconfig,noneStr(runp.partname),runp.filetag,runp.tierzerotag)
             print line
 
 
@@ -519,7 +576,7 @@ were recorded with clean stop, <font color=\"FF0000\">red</font> runs were
 recorded without clean stop or RunCtrl EOR record.
 Black runs were not recorded.
 <p>""" % (header,header,self.minrun,self.maxrun,timeRep(self.mintime),timeRep(self.maxtime),timeRep(self.nowtime)))
-        htfile.write("<table border=\"0\">\n<tr align=\"left\"><th>Run</th><th>Events</th><th>L1</th><th>L2</th><th>EF</th><th>MaxLB</th><th>Start time</th><th>Stop time</th><th>Duration</th><th>Rec</th><th>Clean</th><th>RunType</th><th>DetMask</th><th>DAQConfig</th><th>Partition</th><th>FilenameTag</th></tr>\n")
+        htfile.write("<table border=\"0\">\n<tr align=\"left\"><th>Run</th><th>Events</th><th>L1</th><th>L2</th><th>EF</th><th>MaxLB</th><th>Start time</th><th>Stop time</th><th>Duration</th><th>Rec</th><th>Clean</th><th>RunType</th><th>DetMask</th><th>DAQConfig</th><th>Partition</th><th>FilenameTag</th><th>tierZeroTag</th></tr>\n")
         # loop over the runs
         detmasklist=[]
         runkeys=self.runmap.keys()
@@ -556,7 +613,7 @@ Black runs were not recorded.
             else:
                 ldetmask="<a href=#maskdecode%x>" % detmask
                 if (detmask not in detmasklist): detmasklist+=[detmask]
-            htfile.write("<tr style=\"color:#%s\"><td>%i</td><td>%s</td><td>%i</td><td>%i</td><td>%i</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s%x</td><td>%s</td><td>%s</td><td>%s</td></tr>\n" % (col,runp.run,storeevt,noneZero(runp.l1events),noneZero(runp.l2events),noneZero(runp.efevents),maxlb,start,stop,tottime,rec,clean,runp.runtype,ldetmask,detmask,runp.daqconfig,noneStr(runp.partname),runp.filetag))
+            htfile.write("<tr style=\"color:#%s\"><td>%i</td><td>%s</td><td>%i</td><td>%i</td><td>%i</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s%x</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n" % (col,runp.run,storeevt,noneZero(runp.l1events),noneZero(runp.l2events),noneZero(runp.efevents),maxlb,start,stop,tottime,rec,clean,runp.runtype,ldetmask,detmask,runp.daqconfig,noneStr(runp.partname),runp.filetag,runp.tierzerotag))
         htfile.write("</table>\n")
         htfile.write("<p>\nTotal of %i runs analysed\n<p>" % len(self.runmap))
         # add information on decoding the detmask

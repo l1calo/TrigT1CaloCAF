@@ -36,7 +36,8 @@ cursor.execute("CREATE TABLE RUNPARAMS ( \
 				l1events VARCHAR(50), \
 				l2events VARCHAR(50), \
 				efevents VARCHAR(50), \
-				errcode VARCHAR(50) \
+				errcode VARCHAR(50), \
+                                tierzerotag VARCHAR(50) \
 				)")
 
 connection.commit()

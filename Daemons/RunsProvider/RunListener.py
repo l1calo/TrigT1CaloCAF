@@ -47,6 +47,8 @@ class RunListener:
         self.detstatus=""
         self.detstatustag="HEAD"
         self.daqpartition = []
+        self.tierzerotag = []
+        self.NOTtierzerotag = []
 
         self.format="acert"
         self.reverse=False
@@ -90,6 +92,12 @@ class RunListener:
             "daq partition: \n"
             
         for part in self.daqpartition:
+            text = text + ' * '+ part + '\n'
+        text = text + "tierzerotag: \n"
+        for part in self.tierzerotag:
+            text = text + ' * '+ part + '\n'
+        text = text + "NOTtierzerotag: \n"
+        for part in self.NOTtierzerotag:
             text = text + ' * '+ part + '\n'
             
         text = text +  \
@@ -223,7 +231,7 @@ class RunListener:
         if ('c' in format):
             title+=' RunType                  DetectorMask'
         if ('d' in format):
-            title+=' DAQConfiguration     PartitionName    FilenameTag         '
+            title+=' DAQConfiguration     PartitionName      FilenameTag          tierZeroTag'
         #print title
 
 #       runp=self.runMap[irun]
@@ -239,7 +247,7 @@ class RunListener:
         if ('c' in format):
             line+=' %-20s %16x' % (runp.runtype,runp.detmask)
         if ('d' in format):
-            line+=' %-20s %-16s %-20s' % (runp.daqconfig,noneStr(runp.partname),runp.filetag)
+            line+=' %-20s %-16s %-20s %-20s' % (runp.daqconfig,noneStr(runp.partname),runp.filetag,runp.tierzerotag)
         #print line
         return title + '\n' + line + '\n'
 
@@ -300,6 +308,11 @@ class RunListener:
 
         if self.daqpartition!=[]:
             if runp.partname not in self.daqpartition: return False
+
+        if self.tierzerotag!=[]:
+            if runp.tierzerotag not in self.tierzerotag: return False
+        if self.NOTtierzerotag!=[]:
+            if runp.tierzerotag in self.NOTtierzerotag: return False
 
         if self.reconly==True:
             # the logic is inversed so far: True -> not recorded / False->recorded

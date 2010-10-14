@@ -130,6 +130,8 @@ class RunsProvider:
             rl.detstatus = options["detstatus"]
             rl.detstatustag = options["detstatustag"]
             rl.daqpartition = options["daqpartition"]
+            rl.tierzerotag = options["tierzerotag"]
+            rl.NOTtierzerotag = options["NOTtierzerotag"]
 
             rl.format = options["format"]
             rl.reverse = options["reverse"]
@@ -230,7 +232,8 @@ class RunsProvider:
                           str(runp.datasource), str(runp.stop), str(runp.totaltime),
                           str(runp.cleanstop), str(runp.maxlb), str(runp.partname),
                           str(runp.recevents), str(runp.storedevents), str(runp.l1events),
-                          str(runp.l2events), str(runp.efevents), str(runp.errcode) ) )
+                          str(runp.l2events), str(runp.efevents), str(runp.errcode),
+                          str(runp.tierzerotag) ) )
         return rs, rp
 
     def listen(self):
@@ -265,7 +268,7 @@ class RunsProvider:
             rsList, rpList = self.runInfoToDbList(cleanedRunInfoList)
             #connection.executemany("insert into RUNSTATUS(id, run, listener, rawpath, nfiles, rawstatus, status, validated) values (null, ?, ?, ?, ?, ?, ?)", rsList)
             connection.executemany("insert into RUNSTATUS(id, run, listener, status, validated) values (null, ?, ?, ?, ?)", rsList)
-            connection.executemany("insert into RUNPARAMS(id, run, start, runtype, daqconfig, detmask, filetag, rec, datasource, stop, totaltime, cleanstop, maxlb, partname, recevents, storedevents, l1events, l2events, efevents, errcode) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", rpList)
+            connection.executemany("insert into RUNPARAMS(id, run, start, runtype, daqconfig, detmask, filetag, rec, datasource, stop, totaltime, cleanstop, maxlb, partname, recevents, storedevents, l1events, l2events, efevents, errcode, tierzerotag) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", rpList)
 
             #loop on news runs to find where are the datasets and if available
             #ADD rawpath, rawstatus to DB as well
