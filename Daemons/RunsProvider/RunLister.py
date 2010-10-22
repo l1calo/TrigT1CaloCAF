@@ -218,8 +218,10 @@ class coolRunLister:
         "Close the database connections"
         self.cooldb.closeDatabase()
         self.cooltrigdb.closeDatabase()
+        self.coolstatusdb.closeDatabase()
         self.cooldb=None
         self.cooltrigdb=None
+        self.coolstatusdb=None
 
     def setSelection(self,onlyRec=False,mask=0,runType="",filenameTag="",detStatus="",detStatusTag="HEAD"):
         self.onlyRec=onlyRec
@@ -498,19 +500,17 @@ class coolRunLister:
             print "L1Calo map has data for %i runs" % len(self.triglbmap)
 
         # now loop through primary run list and add L1Calo information
-        nbad=0
-        npatch=0
+        ntzt=0
         for runp in self.runmap.values():
             run=runp.run
             for l1calo in self.l1calomap.values():
                 if (run>=l1calo.run and run<l1calo.end):
                     if (runp.tierzerotag is None):
                         runp.tierzerotag=l1calo.tierzerotag
-                        npatch+=1
-                        break
-            nbad+=1
+                        ntzt+=1
+                    break
         if (self.loglevel>0):
-            print "Missing L1Calo information for %i runs, added tierZeroTag for %i" % (nbad,npatch)
+            print "Added tierZeroTag information for %i runs" % ntzt
 
     def listErrors(self):
         "List runs which have errors to text output"

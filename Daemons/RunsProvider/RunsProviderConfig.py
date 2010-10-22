@@ -21,8 +21,6 @@ runListeners = {
                     "tag":"",
                     "detstatus":"",
                     "detstatustag":"HEAD",
-                    #"daqpartition":"",
-                    #"daqpartition":["LArgL1Calo-TTC2LAN"],
                     "daqpartition":["L1CaloCombined", "LArgL1CaloCombined"],
                     "tierzerotag":["L1CaloEnergyScan"],
                     "NOTtierzerotag":[],
@@ -33,6 +31,7 @@ runListeners = {
                     "stoptimestamp":True,
                     "cleanstop":True,
                     "hasevents":False,
+                    "minevents":1800,
 
                     "initialrun":152000,
 
@@ -40,66 +39,66 @@ runListeners = {
                 },
 
                 # Listener for Tile EnergyScan
-               "TileEnergyScan": {
-                   "tdaqdbname":"COOLONL_TDAQ/COMP200",
-                   "trigdbname":"COOLONL_TRIGGER/COMP200",
-                   "statusdbname":"COOLOFL_GLOBAL/COMP200",
+                "TileEnergyScan": {
+                    "tdaqdbname":"COOLONL_TDAQ/COMP200",
+                    "trigdbname":"COOLONL_TRIGGER/COMP200",
+                    "statusdbname":"COOLOFL_GLOBAL/COMP200",
 
-                   "loglevel":0,
-                   "oracle":False,
-                   "reconly":True,
-                   "detmask":0,
-                   "runtype":"cismono",
-                   "tag":"",
-                   "detstatus":"2",
-                   "detstatustag":"HEAD",
-                   #"daqpartition":["L1Calo-TTC2LAN",  "Tile-TTC2LAN", "TileL1Calo-TTC2LAN"],
-                   "daqpartition":["L1CaloCombined", "TileL1CaloCombined"],
-                   "tierzerotag":["L1CaloEnergyScan"],
-                   "NOTtierzerotag":[],
+                    "loglevel":0,
+                    "oracle":False,
+                    "reconly":True,
+                    "detmask":0,
+                    "runtype":"cismono",
+                    "tag":"",
+                    "detstatus":"2",
+                    "detstatustag":"HEAD",
+                    "daqpartition":["L1CaloCombined", "TileL1CaloCombined"],
+                    "tierzerotag":["L1CaloEnergyScan"],
+                    "NOTtierzerotag":[],
 
-                   "format":"acertd",
-                   "reverse":False,
+                    "format":"acertd",
+                    "reverse":False,
 
-                   "stoptimestamp":True,
-                   "cleanstop":True,
-                   "hasevents":True,
+                    "stoptimestamp":True,
+                    "cleanstop":True,
+                    "hasevents":True,
+                    "minevents":1800,
 
-                   "initialrun":152000,
+                    "initialrun":152000,
 
-                   "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
-               },
+                    "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
+                },
 
                 # Listener for Phos4Scan
-               "L1CaloPhos4Scan": {
-                   "tdaqdbname":"COOLONL_TDAQ/COMP200",
-                   "trigdbname":"COOLONL_TRIGGER/COMP200",
-                   "statusdbname":"COOLOFL_GLOBAL/COMP200",
+                "L1CaloPhos4Scan": {
+                    "tdaqdbname":"COOLONL_TDAQ/COMP200",
+                    "trigdbname":"COOLONL_TRIGGER/COMP200",
+                    "statusdbname":"COOLOFL_GLOBAL/COMP200",
 
-                   "loglevel":0,
-                   "oracle":False,
-                   "reconly":True,
-                   "detmask":0,
-                   "runtype":"",
-                   "tag":"",
-                   "detstatus":"2",
-                   "detstatustag":"HEAD",
-                   #"daqpartition":["L1Calo-TTC2LAN",  "Tile-TTC2LAN", "TileL1Calo-TTC2LAN"],
-                   "daqpartition":["L1CaloCombined", "LArgL1CaloCombined", "TileL1CaloCombined"],
-                   "tierzerotag":["L1CaloPprPhos4ScanPars"],
-                   "NOTtierzerotag":[],
+                    "loglevel":0,
+                    "oracle":False,
+                    "reconly":True,
+                    "detmask":0,
+                    "runtype":"",
+                    "tag":"",
+                    "detstatus":"2",
+                    "detstatustag":"HEAD",
+                    "daqpartition":["L1CaloCombined", "LArgL1CaloCombined", "TileL1CaloCombined"],
+                    "tierzerotag":["L1CaloPprPhos4ScanPars"],
+                    "NOTtierzerotag":[],
 
-                   "format":"acertd",
-                   "reverse":False,
+                    "format":"acertd",
+                    "reverse":False,
 
-                   "stoptimestamp":True,
-                   "cleanstop":True,
-                   "hasevents":True,
+                    "stoptimestamp":True,
+                    "cleanstop":True,
+                    "hasevents":True,
+                    "minevents":0,
 
-                   "initialrun":152000,
+                    "initialrun":152000,
 
-                   "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
-               },
+                    "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
+                },
 
                 # Listener for LAr Pulser run - LAr Master
                 "LArCalibL1Calo": {
@@ -127,6 +126,7 @@ runListeners = {
                     "stoptimestamp":True,
                     "cleanstop":True,
                     "hasevents":False,
+                    "minevents":0,
 
                     "initialrun":152000,
 
@@ -134,35 +134,36 @@ runListeners = {
                 },
 
                 # Listener for Tile Pulser run - L1Calo Master
-               "TileCalibL1Calo": {
-                   "tdaqdbname":"COOLONL_TDAQ/COMP200",
-                   "trigdbname":"COOLONL_TRIGGER/COMP200",
-                   "statusdbname":"COOLOFL_GLOBAL/COMP200",
+                "TileCalibL1Calo": {
+                    "tdaqdbname":"COOLONL_TDAQ/COMP200",
+                    "trigdbname":"COOLONL_TRIGGER/COMP200",
+                    "statusdbname":"COOLOFL_GLOBAL/COMP200",
 
-                   "loglevel":0,
-                   "oracle":False,
-                   "reconly":True,
-                   "detmask":0,
-                   "runtype":"cismono",
-                   "tag":"",
-                   "detstatus":"2",
-                   "detstatustag":"HEAD",
-                   #"daqpartition":["L1Calo-TTC2LAN",  "Tile-TTC2LAN", "TileL1Calo-TTC2LAN"],
-                   "daqpartition":["L1CaloCombined", "TileL1CaloCombined"],
-                   "tierzerotag":[],
-                   "NOTtierzerotag":["L1CaloEnergyScan", "L1CaloPprPhos4ScanPars"],
+                    "loglevel":0,
+                    "oracle":False,
+                    "reconly":True,
+                    "detmask":0,
+                    "runtype":"cismono",
+                    "tag":"",
+                    "detstatus":"2",
+                    "detstatustag":"HEAD",
+                    #"daqpartition":["L1Calo-TTC2LAN",  "Tile-TTC2LAN", "TileL1Calo-TTC2LAN"],
+                    "daqpartition":["L1CaloCombined", "TileL1CaloCombined"],
+                    "tierzerotag":[],
+                    "NOTtierzerotag":["L1CaloEnergyScan", "L1CaloPprPhos4ScanPars"],
 
-                   "format":"acertd",
-                   "reverse":False,
+                    "format":"acertd",
+                    "reverse":False,
 
-                   "stoptimestamp":True,
-                   "cleanstop":True,
-                   "hasevents":True,
+                    "stoptimestamp":True,
+                    "cleanstop":True,
+                    "hasevents":True,
+                    "minevents":0,
 
-                   "initialrun":152000,
+                    "initialrun":152000,
 
-                   "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
-               },
+                    "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
+                },
 
                 # Listener for Standalone L1Calo runs
                 "L1CaloStandalone": {
@@ -188,6 +189,7 @@ runListeners = {
                     "stoptimestamp":True,
                     "cleanstop":True,
                     "hasevents":True,
+                    "minevents":0,
 
                     "initialrun":152000,
 

@@ -424,11 +424,12 @@ class JobOrganizer:
 
 						jobInfo.status = 'NEW'
 
-						self.logger.info("validate job: "+str(jobConfig.validateJob))
-						if jobConfig.validateJob:
-							jobInfo.validation = 'WAITING'
+						needsValidation = (jobConfig.validateJob or runInfo.validated)
+						self.logger.info("validate job: "+str(needsValidation))
+						if needsValidation:
+						        jobInfo.validation = 'WAITING'
 						else:
-							jobInfo.validation = 'NONE'
+						        jobInfo.validation = 'NONE'
 
 						self.logger.info("jobInfo.validation: "+jobInfo.validation)
 

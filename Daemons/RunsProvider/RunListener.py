@@ -56,6 +56,7 @@ class RunListener:
         self.stoptimestamp = None
         self.cleanstop = None
         self.hasevents = None
+        self.minevents = 0
 
         self.runlisttool = None
 
@@ -107,6 +108,7 @@ class RunListener:
             "stoptimestamp: " + str(self.stoptimestamp) + '\n' + \
             "cleanstop: " + str(self.cleanstop) + '\n' + \
             "hasevents: " + str(self.hasevents) + '\n' + \
+            "minevents: " + str(self.minevents) + '\n' + \
             "last valid run known: " + str(self.lastKnownRun) + '\n'
             #"files locations: " + self.fileslocations + '\n'
             
@@ -311,6 +313,7 @@ class RunListener:
 
         if self.tierzerotag!=[]:
             if runp.tierzerotag not in self.tierzerotag: return False
+
         if self.NOTtierzerotag!=[]:
             if runp.tierzerotag in self.NOTtierzerotag: return False
 

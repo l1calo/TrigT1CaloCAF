@@ -139,6 +139,7 @@ class RunsProvider:
             rl.stoptimestamp = options["stoptimestamp"]
             rl.cleanstop = options["cleanstop"]
             rl.hasevents = options["hasevents"]
+            rl.minevents = options["minevents"]
 
             rl.initialRun =  options["initialrun"]
             # if ==0, then get last run from DB
@@ -205,6 +206,8 @@ class RunsProvider:
                 rawPath, fileList = self.findRawDataFiles(rl, str(irun))
                 runInfo.rawPath = rawPath
                 runInfo.nFiles = len(fileList)
+                if runp.storedevents<rl.minevents:
+                    runInfo.validated = True
 
                 # if no files put it in run DB wiht special status (not NEW) for later check
                 #runInfo.rawStatus = NOTRDY
