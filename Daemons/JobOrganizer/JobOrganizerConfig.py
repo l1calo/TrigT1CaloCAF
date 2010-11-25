@@ -16,11 +16,11 @@ JobsWorkingDir = DaemonDataDir + '/jobs'
 CastorDataDir = "/castor/cern.ch/grid/atlas/caf/atlcal/perm/l1calo"
 
 jobConfigurations = { 
-    "CBNT_Release15": {
-        "listeners":             ["LArCalibL1Calo", "TileCalibL1Calo", "LArEnergyScan", "TileEnergyScan", "L1CaloPhos4Scan"],
-        "configurationTemplate": "jcTpl_CBNT_Release15_FastCalo.py",
-        "validateJob":           False
-        },
+    #"CBNT_Release15": {
+    #    "listeners":             ["LArCalibL1Calo", "TileCalibL1Calo", "LArEnergyScan", "TileEnergyScan", "L1CaloPhos4Scan"],
+    #    "configurationTemplate": "jcTpl_CBNT_Release15_FastCalo.py",
+    #    "validateJob":           False
+    #    },
     "L1CaloStandalone": {
         "listeners":             ["L1CaloStandalone"],
         "configurationTemplate": "jcTpl_CBNT_L1CaloOnly.py",
@@ -36,11 +36,11 @@ jobConfigurations = {
         "configurationTemplate": "jcTpl_LArL1CaloRampMaker.py",
         "validateJob":           False
         },
-    "LArL1CaloRampMaker_FCAL" : {
-        "listeners":             ["LArEnergyScan"],
-        "configurationTemplate": "jcTpl_LArL1CaloRampMaker_FCAL.py",
-        "validateJob":           False
-    },
+    #"LArL1CaloRampMaker_FCAL" : {
+    #    "listeners":             ["LArEnergyScan"],
+    #    "configurationTemplate": "jcTpl_LArL1CaloRampMaker_FCAL.py",
+    #    "validateJob":           False
+    #},
     "TileL1CaloRampMaker" : {
         "listeners":             ["TileEnergyScan"],
         "configurationTemplate": "jcTpl_TileL1CaloRampMaker.py",

@@ -110,7 +110,7 @@ if doTile:
 from CaloRec.CaloCellFlags import jobproperties
 from TileRecUtils.TileRecFlags import jobproperties
 jobproperties.CaloCellFlags.doDeadCellCorr = False
-jobproperties.TileRecFlags.readDigits = False
+#jobproperties.TileRecFlags.readDigits = False
 jobproperties.CaloCellFlags.doLArCreateMissingCells = False
 
 # reconstruct cells
