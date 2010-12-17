@@ -16,7 +16,9 @@ InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
 
 BackEnd="CERN"
-BatchQueue="atlaslarcal"
+BatchQueue="atlasb1"
+BatchGroup="u_ATLASLARCAL"
+#BatchQueue="atlaslarcal"
 
 JobScript = "submit.py"
 AthenaLauncher = "athena_launcher_testarea.sh"
@@ -46,8 +48,8 @@ OutputFiles = { "cosmics.ntuple.root":[(JobRootDir, "#RUN_NUMBER#_#JOB_CONFIGURA
 #JobPostTreatments = {"DONE":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"],
 #                     "ABORTED":["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py]"}
 
-JobPostTreatments = [ {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
-					]
+#JobPostTreatments = [ {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
+#					]
 
 
 #JobPostTreatments = [{"ALL":[,]},

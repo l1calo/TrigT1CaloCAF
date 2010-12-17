@@ -17,7 +17,9 @@ InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
 
 BackEnd="CERN"
-BatchQueue="atlaslarcal"
+BatchQueue="atlasb1"
+BatchGroup="u_ATLASLARCAL"
+#BatchQueue="atlaslarcal"
 
 JobScript = "submit.py"
 AthenaLauncher = "athena_launcher_testarea.sh"
@@ -43,12 +45,17 @@ OutputFiles = {
     "rampdata.xml": [(JobRootDir, "rampdata.xml")],
     "graphs.root": [(JobRootDir, "graphs.root")],
     "bad-ofciter.txt": [(JobRootDir, "bad-ofciter.txt")],
+    "Gains.ps":  [(JobRootDir, "Gains.ps")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
-JobPostTreatments = [
-    {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
-    ]
+#JobPostTreatments = [
+#    {"DONE":  ["#DAEMON_SCRIPTS_DIR#/PlotCalibrationGains.py"],
+#     "ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
+#    ]
+JobPostTreatments = {
+    "DONE": ["#DAEMON_SCRIPTS_DIR#/PlotCalibrationGains.sh"],
+    "ALL":  ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"] }
 
 
 #JobPostTreatments = [{"ALL":[,]},
@@ -72,4 +79,5 @@ JobPostTreatments = [
 
 #------------------------------------------------------------------------------------
 # Mailing list
-MailingList = ["veit.scharf@kip.uni-heidelberg.de"]
+#MailingList = ["veit.scharf@kip.uni-heidelberg.de"]
+MailingList = ["pjwf@hep.ph.bham.ac.uk"]

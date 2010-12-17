@@ -59,10 +59,11 @@ jobConfigurations = {
     }
 
 atlaslarcalWatcher = {
-    "queue":"atlaslarcal",
+    #"queue":"atlaslarcal",
+    "queue":"atlasb1",
     "account":"l1ccalib",
     "joblimit":15,
-    "ncpu":44
+    "ncpu":200
     }
 
 noWatcher = {

@@ -19,6 +19,7 @@ StageSVCClass = "default"
 BackEnd="CERN"
 #BatchQueue="atlaslarcal"
 BatchQueue="8nm"
+BatchGroup=""
 
 JobScript = "submit.py"
 AthenaLauncher = "athena_launcher.sh"
@@ -49,8 +50,8 @@ OutputFiles = { "cosmics.ntuple.root":[(JobRootDir, "#RUN_NUMBER#_#JOB_CONFIGURA
 #JobPostTreatments = {"DONE":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"],
 #                     "ABORTED":["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py]"}
 
-JobPostTreatments = [ {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
-					]
+#JobPostTreatments = [ {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
+#					]
 
 
 #JobPostTreatments = [{"ALL":[,]},

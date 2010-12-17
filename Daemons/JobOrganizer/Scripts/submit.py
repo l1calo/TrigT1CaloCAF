@@ -1,6 +1,7 @@
-#!/usr/bin/env python
+#!/afs/cern.ch/sw/lcg/external/Python/2.5.4/i686-slc5-gcc43-opt/bin/python
+###!/usr/bin/env python
 
-import os, shutil, threading
+import os, shutil, threading, commands
 
 
 class Listener(threading.Thread):
@@ -84,6 +85,11 @@ if __name__ == "__main__":
 
 
 	# do post processing if needed
+	for status, cmds in cfModule.JobPostTreatments.items():
+	        for cmd in cmds:
+	                rawoutput = commands.getoutput(cmd)
+	                print cmd
+	                print rawoutput
 
 
 	# copy back output files

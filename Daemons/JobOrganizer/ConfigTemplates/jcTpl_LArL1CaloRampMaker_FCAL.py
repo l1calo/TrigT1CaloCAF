@@ -17,7 +17,9 @@ InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
 
 BackEnd="CERN"
-BatchQueue="atlaslarcal"
+BatchQueue="atlasb1"
+BatchGroup="u_ATLASLARCAL"
+#BatchQueue="atlaslarcal"
 
 JobScript = "submit.py"
 AthenaLauncher = "athena_launcher_testarea.sh"
@@ -46,9 +48,9 @@ OutputFiles = {
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
-JobPostTreatments = [
-    {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
-    ]
+#JobPostTreatments = [
+#    {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
+#    ]
 
 
 #JobPostTreatments = [{"ALL":[,]},

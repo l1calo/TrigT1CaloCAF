@@ -357,7 +357,10 @@ class Job:
 		scriptName = self.jobInformation.jobConfigModule.JobConfigDir+'/'+self.jobInformation.jobConfigModule.JobScript
 
 		print scriptName
-		cmd = 'bsub -q' + self.jobInformation.jobConfigModule.BatchQueue + ' -o ' + self.jobInformation.jobConfigModule.JobLogDir + '/' + jobName+'.out' + ' -J' + jobName + ' ' + scriptName 
+		if self.jobInformation.jobConfigModule.BatchGroup=='':
+		        cmd = 'bsub -q' + self.jobInformation.jobConfigModule.BatchQueue + ' -o ' + self.jobInformation.jobConfigModule.JobLogDir + '/' + jobName+'.out' + ' -J' + jobName + ' ' + scriptName 
+		else:
+		        cmd = 'bsub -q' + self.jobInformation.jobConfigModule.BatchQueue + ' -G ' + self.jobInformation.jobConfigModule.BatchGroup + ' -o ' + self.jobInformation.jobConfigModule.JobLogDir + '/' + jobName+'.out' + ' -J' + jobName + ' ' + scriptName
 		rawOutput = commands.getoutput(cmd).splitlines()[0]
 		self.logger.debug("submitting job:")
 		self.logger.debug(cmd)

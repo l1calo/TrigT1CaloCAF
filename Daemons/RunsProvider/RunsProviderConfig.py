@@ -31,7 +31,7 @@ runListeners = {
                     "stoptimestamp":True,
                     "cleanstop":True,
                     "hasevents":False,
-                    "minevents":1800,
+                    "minevents":1700,
 
                     "initialrun":152000,
 
@@ -62,7 +62,7 @@ runListeners = {
                     "stoptimestamp":True,
                     "cleanstop":True,
                     "hasevents":True,
-                    "minevents":1800,
+                    "minevents":1700,
 
                     "initialrun":152000,
 

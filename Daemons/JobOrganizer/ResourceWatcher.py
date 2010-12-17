@@ -164,7 +164,8 @@ class ResourceWatcher:
 
 if __name__ == "__main__":
 
-	x = ResourceWatcher('atlaslarcal','l1ccalib')
+	x = ResourceWatcher('atlasb1','l1ccalib')
+	#x = ResourceWatcher('atlaslarcal','l1ccalib')
 	#bj = x.listJobsPerAccount('larcalib')
 	bj = x.listJobsAllAccount()
 
