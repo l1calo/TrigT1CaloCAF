@@ -43,6 +43,7 @@ OutputFiles = {
     "energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
     "rampdata.xml": [(JobRootDir, "rampdata.xml")],
     "graphs.root": [(JobRootDir, "graphs.root")],
+    "Gains.ps":  [(JobRootDir, "Gains.ps")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
