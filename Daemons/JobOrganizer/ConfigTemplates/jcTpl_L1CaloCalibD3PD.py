@@ -43,6 +43,8 @@ OutputFiles = { "L1CaloCalibD3PD.root" : [(JobRootDir, "#RUN_NUMBER#_#JOB_CONFIG
 				AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
 			  }
 
+JobPostTreatments = {
+    "ALL":  ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"] }
 
 
 #JobPostTreatments = {"DONE":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"],

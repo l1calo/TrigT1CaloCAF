@@ -43,6 +43,8 @@ OutputFiles = { "cosmics.ntuple.root":[(JobRootDir, "#RUN_NUMBER#_#JOB_CONFIGURA
 				AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
 			  }
 
+JobPostTreatments = {
+    "ALL":  ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"] }
 
 
 #JobPostTreatments = {"DONE":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"],

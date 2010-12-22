@@ -44,6 +44,9 @@ OutputFiles = {
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
+JobPostTreatments = {
+    "ALL":  ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"] }
+
 #JobPostTreatments = [
 #    {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
 #    ]
