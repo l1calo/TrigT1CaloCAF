@@ -10,7 +10,8 @@ JobPostDir     =  "#JOB_POST_DIR#"
 
 JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 
-AtlasRelease  = "15.6.9"
+#AtlasRelease  = "15.6.9"
+AtlasRelease  = "16.0.3.3"
 
 InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
@@ -38,6 +39,10 @@ LogLevel = 2
 
 OutputFiles = {
     "pprPhos4FullDelayData.txt": [(JobRootDir, "pprPhos4FullDelayData.txt")],
+    "pprPhos4RawMaxFullDelayData.txt": [(JobRootDir, "pprPhos4RawMaxFullDelayData.txt")],
+    "pprPhos4RawFitFullDelayData.txt": [(JobRootDir, "pprPhos4RawFitFullDelayData.txt")],
+    "pprPhos4ProcessedMaxFullDelayData.txt": [(JobRootDir, "pprPhos4ProcessedMaxFullDelayData.txt")],
+    "pprPhos4ProcessedFitFullDelayData.txt": [(JobRootDir, "pprPhos4ProcessedFitFullDelayData.txt")],
     "pprPhos4ProcessedSignalShapes.ps": [(JobRootDir, "pprPhos4ProcessedSignalShapes.ps")],
     "pprPhos4RawSignalShapes.ps": [(JobRootDir, "pprPhos4RawSignalShapes.ps")],
     "pprPhos4SignalShapes.root": [(JobRootDir, "pprPhos4SignalShapes.root")],

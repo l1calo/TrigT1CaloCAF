@@ -169,3 +169,6 @@ svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L
 # configure writing of additional files for the calibration gui
 from TrigT1CaloCalibUtils.L1CaloDumpRampDataAlgorithm import L1CaloDumpRampDataAlgorithm
 topSequence += L1CaloDumpRampDataAlgorithm()
+
+# turn off masking of bad channels
+ToolSvc.TileCellBuilder.maskBadChannels = False
