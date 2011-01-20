@@ -4,6 +4,7 @@
 from ROOT import *
 import sys
 import time
+import os
 
 from PyCool import cool
 from optparse import OptionParser
@@ -12,11 +13,14 @@ from coolTools import *
 
 class L1CaloMap:
  
-     def __init__(self,title):
+     def __init__(self,title,XaxisTitle="",YaxisTitle=""):
          self.h_1 = TH2F("GainTTsMap" ,title, 50,-25-0.5,24+0.5,64,-0.5,63.5)     
          self.h_2 = TH2F("GainTTsMap2",title, 31,-31.5,30.5,32,-1.,63.)
          self.h_3 = TH2F("GainTTsMap3",title, 64,-32.5,31.5,32,-1.,63.)
          self.h_4 = TH2F("GainTTsMap4",title, 24,-48.5,47.5,16,-1.,63.)
+	 
+         self.h_4.GetXaxis().SetTitle(XaxisTitle)
+         self.h_4.GetYaxis().SetTitle(YaxisTitle)
 	 
      def Draw(self):
          self.h_4.SetStats(0)	 
@@ -28,6 +32,8 @@ class L1CaloMap:
          self.h_3.Draw("colz same")
          self.h_2.Draw("colz same")
          self.h_1.Draw("colz same")
+
+         gPad.RedrawAxis()
 	 
      def Fill(self,eta,phi,gain=1):
          if eta>= -25 and eta <= 24:
@@ -58,7 +64,7 @@ class L1CaloGeometryConvertor:
 
      def __init__(self):
           input = open('/afs/cern.ch/user/l/l1ccalib/jb/COOLIdDump.txt')
-
+#          input = open('COOLIdDump.txt')
           self.list_of_channels_em={}
           self.list_of_channels_had={}
 
@@ -177,6 +183,8 @@ class GainReader:
 
           self.measured_gains={}
           self.reference_gains={}
+          self.measured_chi2={}
+          self.measured_offset={}
           self.UNIX2COOL = 1000000000
 
      def LoadGainsXml(self,name):
@@ -238,7 +246,9 @@ class GainReader:
        for row in itr:
          CoolId = hex(int(row.channelId()))
          payload = row.payload()
-         self.measured_gains[CoolId]=payload['Slope']
+         self.measured_gains[CoolId]  = payload['Slope']
+         self.measured_chi2[CoolId]   = payload['Chi2']
+         self.measured_offset[CoolId] = payload['Offset']
   
 #       print self.measured_gains
        # close database
@@ -333,6 +343,19 @@ class GainReader:
              return float(self.measured_gains[coolId])
            else:
              return ''
+ 
+     def getChi2(self,coolId):
+           if (coolId in self.measured_chi2):
+             return float(self.measured_chi2[coolId])
+           else:
+             return ''
+
+     def getOffset(self,coolId):
+           if (coolId in self.measured_offset):
+             return float(self.measured_offset[coolId])
+           else:
+             return ''
+
 
      def getReferenceGain(self,coolId):
            if (coolId in self.reference_gains):
@@ -343,7 +366,7 @@ class GainReader:
 
 class EmPartitionPlots:
   
-     def __init__(self,name,nbins=40,minimum=0.,maximum=2.):
+     def __init__(self,name,nbins=40,minimum=0.,maximum=2.,XaxisTitle="",YaxisTitle=""):
      
        self.nPartitions=5
        self.ext  = ["all","00_15","15_25","25_32","32_50"]
@@ -354,6 +377,12 @@ class EmPartitionPlots:
 
        for i_em_partition in range(0,self.nPartitions):
          self.his_partitions.append(TH1F("GainTTEm"+self.ext[i_em_partition],name+" for "+self.name[i_em_partition],nbins,minimum,maximum))
+
+       for i_em_partition in range(0,self.nPartitions):
+         self.his_partitions[i_em_partition].GetXaxis().SetTitle(XaxisTitle)
+         self.his_partitions[i_em_partition].GetYaxis().SetTitle(YaxisTitle)
+
+
 
      def get_partition_number(self,eta_bin):
 
@@ -386,7 +415,7 @@ class EmPartitionPlots:
 
 class HadPartitionPlots:
   
-     def __init__(self,name,nbins=40,minimum=0.,maximum=2.):
+     def __init__(self,name,nbins=40,minimum=0.,maximum=2.,XaxisTitle="",YaxisTitle=""):
      
        self.nPartitions=6
        self.ext = ["all","00_09","09_15","15_25","25_32","32_50"]
@@ -397,6 +426,9 @@ class HadPartitionPlots:
        for i_had_partition in range(0,self.nPartitions):
          self.his_partitions.append(TH1F("GainTTHad"+self.ext[i_had_partition],name+" for "+self.name[i_had_partition],nbins,minimum,maximum))
        
+       for i_had_partition in range(0,self.nPartitions):
+         self.his_partitions[i_had_partition].GetXaxis().SetTitle(XaxisTitle)
+         self.his_partitions[i_had_partition].GetYaxis().SetTitle(YaxisTitle)
 
      def get_partition_number(self,eta_bin):
 
@@ -448,22 +480,37 @@ if __name__ == "__main__":
   gStyle.SetPalette(1)
   gStyle.SetOptStat(111111)
   c1 = TCanvas('c1','Example',200,10,700,500)
+  c2 = TCanvas('c2','Example Partitions',200,10,700,500)
+  c2.Divide(3,2)
 
-  h_gains_em  = L1CaloMap("Eta-phi map of EM gains")
-  h_gains_had = L1CaloMap("Eta-phi map of HAD gains")
+  h_gains_em  = L1CaloMap("Eta-phi map of EM gains","#eta bin","#phi bin")
+  h_gains_had = L1CaloMap("Eta-phi map of HAD gains","#eta bin","#phi bin")
 
-  h_unfitted_em  = L1CaloMap("Eta-phi map of EM failed fits")
-  h_unfitted_had = L1CaloMap("Eta-phi map of HAD failed fits")
+  h_chi2_em  = L1CaloMap("Eta-phi map of EM Chi2","#eta bin","#phi bin")
+  h_chi2_had = L1CaloMap("Eta-phi map of HAD Chi2","#eta bin","#phi bin")
 
-  h_gains_em_reference  = L1CaloMap("Eta-phi map of EM gains (gain-reference)")
-  h_gains_had_reference = L1CaloMap("Eta-phi map of HAD gains (gain-reference)")
+  h_offset_em  = L1CaloMap("Eta-phi map of EM offsets","#eta bin","#phi bin")
+  h_offset_had = L1CaloMap("Eta-phi map of HAD offsets","#eta bin","#phi bin")
 
-  em_partition_gains = EmPartitionPlots(" EM gains",40,0.6,1.4)
-  had_partition_gains = HadPartitionPlots(" HAD gains",40,0.5,2.5)
 
-  em_partition_gains_ref = EmPartitionPlots(" EM gains - reference",40,-0.2,0.2)
-  had_partition_gains_ref = HadPartitionPlots(" HAD gains - reference",40,-1.,1.)
+  h_unfitted_em  = L1CaloMap("Eta-phi map of EM failed fits","#eta bin","#phi bin")
+  h_unfitted_had = L1CaloMap("Eta-phi map of HAD failed fits","#eta bin","#phi bin")
 
+  h_gains_em_reference  = L1CaloMap("Eta-phi map of EM gains (gain-reference)","#eta bin","#phi bin")
+  h_gains_had_reference = L1CaloMap("Eta-phi map of HAD gains (gain-reference)","#eta bin","#phi bin")
+
+  h_gains_em_reference_rel  = L1CaloMap("Eta-phi map of EM gains: (gain-reference)/reference","#eta bin","#phi bin")
+  h_gains_had_reference_rel = L1CaloMap("Eta-phi map of HAD gains: (gain-reference)/reference","#eta bin","#phi bin")
+
+
+  em_partition_gains = EmPartitionPlots(" EM gains",40,0.6,1.4,"gain","N")
+  had_partition_gains = HadPartitionPlots(" HAD gains",40,0.5,2.5,"gain","N")
+
+  em_partition_gains_ref = EmPartitionPlots(" EM gains - reference",40,-0.2,0.2,"gain-reference","N")
+  had_partition_gains_ref = HadPartitionPlots(" HAD gains - reference",40,-1.,1.,"gain-reference","N")
+
+  em_partition_gains_ref_rel = EmPartitionPlots(" EM gains-reference / reference",40,-0.2,0.2,"(gain-reference)/reference","N")
+  had_partition_gains_ref_rel = HadPartitionPlots(" HAD gains-reference / reference",40,-1.,1.,"(gain-reference)/reference","N")
 
   geometry_convertor = L1CaloGeometryConvertor()
   receiver_gains     = GainReader()
@@ -503,46 +550,89 @@ if __name__ == "__main__":
        
        if not coolEm == '':                           # there is a channel for this eta-phi
        
-         gain = receiver_gains.getGain(coolEm)
+         gain   = receiver_gains.getGain(coolEm)
+         chi2   = receiver_gains.getChi2(coolEm)
+         offset = receiver_gains.getOffset(coolEm)
          reference_gain = receiver_gains.getReferenceGain(coolEm)
 
          if (not gain == '') and (not reference_gain == ''):        # both  gains should be available
 	 
-           em_partition_gains.Fill(i_eta,gain)           
            h_gains_em.Fill(i_eta,i_phi,gain)
            if gain == -1. :
              h_unfitted_em.Fill(i_eta,i_phi)  
            else:
+             h_chi2_em.Fill(i_eta,i_phi,chi2)
+             h_offset_em.Fill(i_eta,i_phi,offset)   
+             em_partition_gains.Fill(i_eta,gain)           
              em_partition_gains_ref.Fill(i_eta,gain-reference_gain)  
              h_gains_em_reference.Fill(i_eta,i_phi,gain-reference_gain)
+             em_partition_gains_ref_rel.Fill(i_eta,(gain-reference_gain)/reference_gain)  
+             h_gains_em_reference_rel.Fill(i_eta,i_phi,(gain-reference_gain)/reference_gain)
+
 
        if not coolHad == '':                         # there is a channel for this eta-phi
 
          gain = receiver_gains.getGain(coolHad)
+         chi2   = receiver_gains.getChi2(coolHad)
+         offset = receiver_gains.getOffset(coolHad)	 
          reference_gain = receiver_gains.getReferenceGain(coolHad)
 
          if (not gain == '') and (not reference_gain == ''):       # both gains should be available
 
-           had_partition_gains.Fill(i_eta,gain)
            h_gains_had.Fill(i_eta,i_phi,gain)
            if gain == -1. :
              h_unfitted_had.Fill(i_eta,i_phi)  
            else:
+             h_chi2_had.Fill(i_eta,i_phi,chi2)
+             h_offset_had.Fill(i_eta,i_phi,offset)
+             had_partition_gains.Fill(i_eta,gain)
              had_partition_gains_ref.Fill(i_eta,gain-reference_gain)
              h_gains_had_reference.Fill(i_eta,i_phi,gain-reference_gain)
+             had_partition_gains_ref_rel.Fill(i_eta,(gain-reference_gain)/reference_gain)
+             h_gains_had_reference_rel.Fill(i_eta,i_phi,(gain-reference_gain)/reference_gain)
 	    
 
 	   
 #print measured_gains	 
   c1.cd()
-  h_gains_em.SetMinimum(0.8)
-  h_gains_em.SetMaximum(1.2)
+  gPad.SetLogy(0)
+
+  h_gains_em.SetMinimum(0.6)
+  h_gains_em.SetMaximum(1.4)
   h_gains_em.Draw()
   c1.Print("Gains.ps(")
 
   h_gains_had.SetMinimum(0.6)
   h_gains_had.SetMaximum(1.4)
   h_gains_had.Draw()
+  c1.Print("Gains.ps")
+
+  c1.cd()
+  gPad.SetLogy(0)
+  h_chi2_em.SetMinimum(0.1)
+  h_chi2_em.SetMaximum(100)
+  h_chi2_em.Draw()
+  c1.Print("Gains.ps")
+
+  c1.cd()
+  gPad.SetLogy(0)
+  h_chi2_had.SetMinimum(0.1)
+  h_chi2_had.SetMaximum(100)
+  h_chi2_had.Draw()
+  c1.Print("Gains.ps")
+
+  c1.cd()
+  gPad.SetLogy(0)
+  h_offset_em.SetMinimum(-1.)
+  h_offset_em.SetMaximum(1.)
+  h_offset_em.Draw()
+  c1.Print("Gains.ps")
+
+  c1.cd()
+  gPad.SetLogy(0)
+  h_offset_had.SetMinimum(-1.)
+  h_offset_had.SetMaximum(1.)
+  h_offset_had.Draw()
   c1.Print("Gains.ps")
 
   c1.cd()
@@ -558,43 +648,86 @@ if __name__ == "__main__":
   h_gains_had_reference.Draw()
   c1.Print("Gains.ps")
 
-
   c1.cd()
+  gPad.SetLogy(0)
+
+  h_gains_em_reference_rel.SetMinimum(-0.5)
+  h_gains_em_reference_rel.SetMaximum(0.5)
+  h_gains_em_reference_rel.Draw()
+  c1.Print("Gains.ps")
+
+  h_gains_had_reference_rel.SetMinimum(-0.5)
+  h_gains_had_reference_rel.SetMaximum(0.5)
+  h_gains_had_reference_rel.Draw()
+  c1.Print("Gains.ps")
+
+  #c2.cd()
   for i_p in range(0,em_partition_gains.nPartitions):
+    c2.cd(i_p+1)
     if em_partition_gains.his_partitions[i_p].GetEntries() > 0:
       gPad.SetLogy()
     else:
       gPad.SetLogy(0)
     em_partition_gains.his_partitions[i_p].Draw()
-    c1.Print("Gains.ps")
   
-  c1.cd()
+  c2.Print("Gains.ps")
+  
+  #c2.cd()
   for i_p in range(0,had_partition_gains.nPartitions):
+    c2.cd(i_p+1)
     if had_partition_gains.his_partitions[i_p].GetEntries() > 0:
       gPad.SetLogy()
     else:
       gPad.SetLogy(0)
     had_partition_gains.his_partitions[i_p].Draw()
-    c1.Print("Gains.ps")
+  
+  c2.Print("Gains.ps")
   
   
-  c1.cd()
+  #c2.cd()
   for i_p in range(0,em_partition_gains_ref.nPartitions):
+    c2.cd(i_p+1)
     if em_partition_gains_ref.his_partitions[i_p].GetEntries() > 0:
       gPad.SetLogy()
     else:
       gPad.SetLogy(0)
     em_partition_gains_ref.his_partitions[i_p].Draw()
-    c1.Print("Gains.ps")
   
-  c1.cd()
+  c2.Print("Gains.ps")
+  
+  #c2.cd()
   for i_p in range(0,had_partition_gains_ref.nPartitions):
+    c2.cd(i_p+1)
     if had_partition_gains_ref.his_partitions[i_p].GetEntries() > 0:
       gPad.SetLogy()
     else:
       gPad.SetLogy(0)
     had_partition_gains_ref.his_partitions[i_p].Draw()
-    c1.Print("Gains.ps")
+  
+  c2.Print("Gains.ps")
+
+  #c2.cd()
+  for i_p in range(0,em_partition_gains_ref_rel.nPartitions):
+    c2.cd(i_p+1)
+    if em_partition_gains_ref_rel.his_partitions[i_p].GetEntries() > 0:
+      gPad.SetLogy()
+    else:
+      gPad.SetLogy(0)
+    em_partition_gains_ref_rel.his_partitions[i_p].Draw()
+  
+  c2.Print("Gains.ps")
+  
+  #c2.cd()
+  for i_p in range(0,had_partition_gains_ref_rel.nPartitions):
+    c2.cd(i_p+1)
+    if had_partition_gains_ref_rel.his_partitions[i_p].GetEntries() > 0:
+      gPad.SetLogy()
+    else:
+      gPad.SetLogy(0)
+    had_partition_gains_ref_rel.his_partitions[i_p].Draw()
+  
+  c2.Print("Gains.ps")
+
 
   c1.cd()
   gPad.SetLogy(0)
@@ -604,5 +737,7 @@ if __name__ == "__main__":
 
   h_unfitted_had.Draw()
   c1.Print("Gains.ps)")
+
+  os.system("ps2pdf Gains.ps")
 
   print "finished!"
