@@ -47,6 +47,7 @@ OutputFiles = {
     "graphs.root": [(JobRootDir, "graphs.root")],
     "bad-ofciter.txt": [(JobRootDir, "bad-ofciter.txt")],
     "Gains.ps":  [(JobRootDir, "Gains.ps")],
+    "Gains.pdf":  [(JobRootDir, "Gains.pdf")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 

@@ -39,5 +39,6 @@ echo "ls -ltr: `ls -lts`"
 echo "########################################"
 
 # run athena
-athena.py jobo.py | grep -v -e 'Py:Cmt            WARNING' -e 'ERROR in TileROD_Decoder ---- Unknown frag type' | tee #JOB_LOG_NAME#
+#athena.py jobo.py | grep -v -e 'Py:Cmt            WARNING' -e 'ERROR in TileROD_Decoder ---- Unknown frag type' | tee #JOB_LOG_NAME#
+athena.py jobo.py | grep -v -e 'Py:Cmt            WARNING' | tee #JOB_LOG_NAME#
 #athena.py jobo.py | tee #JOB_LOG_NAME#

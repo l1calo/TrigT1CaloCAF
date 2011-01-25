@@ -43,8 +43,8 @@ OutputFiles = {
     "pprPhos4RawFitFullDelayData.txt": [(JobRootDir, "pprPhos4RawFitFullDelayData.txt")],
     "pprPhos4ProcessedMaxFullDelayData.txt": [(JobRootDir, "pprPhos4ProcessedMaxFullDelayData.txt")],
     "pprPhos4ProcessedFitFullDelayData.txt": [(JobRootDir, "pprPhos4ProcessedFitFullDelayData.txt")],
-    "pprPhos4ProcessedSignalShapes.ps": [(JobRootDir, "pprPhos4ProcessedSignalShapes.ps")],
-    "pprPhos4RawSignalShapes.ps": [(JobRootDir, "pprPhos4RawSignalShapes.ps")],
+    "pprPhos4ProcessedSignalShapes.ps.gz": [(JobRootDir, "pprPhos4ProcessedSignalShapes.ps.gz")],
+    "pprPhos4RawSignalShapes.ps.gz": [(JobRootDir, "pprPhos4RawSignalShapes.ps.gz")],
     "pprPhos4SignalShapes.root": [(JobRootDir, "pprPhos4SignalShapes.root")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }

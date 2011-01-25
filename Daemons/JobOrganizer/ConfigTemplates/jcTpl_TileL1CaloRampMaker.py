@@ -45,6 +45,7 @@ OutputFiles = {
     "rampdata.xml": [(JobRootDir, "rampdata.xml")],
     "graphs.root": [(JobRootDir, "graphs.root")],
     "Gains.ps":  [(JobRootDir, "Gains.ps")],
+    "Gains.pdf":  [(JobRootDir, "Gains.pdf")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
