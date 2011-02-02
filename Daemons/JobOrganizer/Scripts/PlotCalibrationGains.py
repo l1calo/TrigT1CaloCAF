@@ -9,7 +9,7 @@ import os
 from PyCool import cool
 from optparse import OptionParser
 
-from coolTools import *
+#from coolTools import *
 
 class L1CaloMap:
  
@@ -196,9 +196,19 @@ class GainReader:
             if parts[0] == '<Channel':
               list_cool=parts[1].split('\'')
               cool_id=list_cool[1]
+
               list_gain=parts[2].split('\'')
               gain=list_gain[1]
               self.measured_gains[cool_id]=gain
+
+              list_offset=parts[3].split('\'')
+              offset=list_offset[1]
+              self.measured_offset[cool_id]=offset
+
+              list_chi2=parts[4].split('\'')
+              chi2=list_chi2[1]
+              self.measured_chi2[cool_id]=chi2
+
 
           input_file.close()
 
@@ -211,9 +221,11 @@ class GainReader:
             if parts[0] == '<Channel':
               list_cool=parts[1].split('\'')
               cool_id=list_cool[1]
+              
               list_gain=parts[2].split('\'')
               gain=list_gain[1]
               self.reference_gains[cool_id]=gain
+              
 
      def LoadGainsSqlite(self,name):
 
@@ -363,6 +375,14 @@ class GainReader:
            else:
              return ''  
 
+     def passesSelection(self,coolId):
+           if ((coolId in self.measured_gains) and 
+               (self.getGain(coolId) > 0.5 and self.getGain(coolId)<1.6) and
+               (self.getOffset(coolId) > -2 and self.getOffset(coolId) < 2)):
+             return True	   
+           else:	   
+             return False
+
 
 class EmPartitionPlots:
   
@@ -479,12 +499,17 @@ if __name__ == "__main__":
   
   gStyle.SetPalette(1)
   gStyle.SetOptStat(111111)
+  gStyle.SetCanvasColor(10)
+  
   c1 = TCanvas('c1','Example',200,10,700,500)
   c2 = TCanvas('c2','Example Partitions',200,10,700,500)
   c2.Divide(3,2)
 
   h_gains_em  = L1CaloMap("Eta-phi map of EM gains","#eta bin","#phi bin")
   h_gains_had = L1CaloMap("Eta-phi map of HAD gains","#eta bin","#phi bin")
+
+  h_gains_em_fselect  = L1CaloMap("Eta-phi map of EM gains that failed selection","#eta bin","#phi bin")
+  h_gains_had_fselect = L1CaloMap("Eta-phi map of HAD gains that failed selection","#eta bin","#phi bin")
 
   h_chi2_em  = L1CaloMap("Eta-phi map of EM Chi2","#eta bin","#phi bin")
   h_chi2_had = L1CaloMap("Eta-phi map of HAD Chi2","#eta bin","#phi bin")
@@ -514,6 +539,8 @@ if __name__ == "__main__":
 
   geometry_convertor = L1CaloGeometryConvertor()
   receiver_gains     = GainReader()
+
+  bad_gain_file = open('bad_gains.txt','w')
 
   if options.isInputXml == True:
     print "Taking input from xml file: ", options.input_file_name
@@ -554,13 +581,18 @@ if __name__ == "__main__":
          chi2   = receiver_gains.getChi2(coolEm)
          offset = receiver_gains.getOffset(coolEm)
          reference_gain = receiver_gains.getReferenceGain(coolEm)
+         passes_selection = receiver_gains.passesSelection(coolEm)
 
          if (not gain == '') and (not reference_gain == ''):        # both  gains should be available
 	 
-           h_gains_em.Fill(i_eta,i_phi,gain)
            if gain == -1. :
              h_unfitted_em.Fill(i_eta,i_phi)  
+             bad_gain_file.write('%s gain= %s \n' % (coolEm,gain) ) 
+           elif passes_selection == False:
+             h_gains_em_fselect.Fill(i_eta,i_phi)
+             bad_gain_file.write('%s  gain= %s  chi2= %s offset= %s \n' %  (coolEm,gain,chi2,offset) ) 
            else:
+             h_gains_em.Fill(i_eta,i_phi,gain)
              h_chi2_em.Fill(i_eta,i_phi,chi2)
              h_offset_em.Fill(i_eta,i_phi,offset)   
              em_partition_gains.Fill(i_eta,gain)           
@@ -576,13 +608,18 @@ if __name__ == "__main__":
          chi2   = receiver_gains.getChi2(coolHad)
          offset = receiver_gains.getOffset(coolHad)	 
          reference_gain = receiver_gains.getReferenceGain(coolHad)
+         passes_selection = receiver_gains.passesSelection(coolHad)
 
          if (not gain == '') and (not reference_gain == ''):       # both gains should be available
 
-           h_gains_had.Fill(i_eta,i_phi,gain)
            if gain == -1. :
              h_unfitted_had.Fill(i_eta,i_phi)  
+             bad_gain_file.write('%s gain= %s \n' % (coolHad,gain))
+           elif passes_selection == False:
+             h_gains_had_fselect.Fill(i_eta,i_phi)
+             bad_gain_file.write( '%s  gain= %s  chi2= %s offset= %s \n' % (coolHad,gain, chi2,offset)) 
            else:
+             h_gains_had.Fill(i_eta,i_phi,gain)
              h_chi2_had.Fill(i_eta,i_phi,chi2)
              h_offset_had.Fill(i_eta,i_phi,offset)
              had_partition_gains.Fill(i_eta,gain)
@@ -732,6 +769,13 @@ if __name__ == "__main__":
   c1.cd()
   gPad.SetLogy(0)
 
+  h_gains_em_fselect.Draw()
+  c1.Print("Gains.ps")
+
+  h_gains_had_fselect.Draw()
+  c1.Print("Gains.ps")
+
+
   h_unfitted_em.Draw()
   c1.Print("Gains.ps")
 
@@ -739,5 +783,7 @@ if __name__ == "__main__":
   c1.Print("Gains.ps)")
 
   os.system("ps2pdf Gains.ps")
-
+  
+  bad_gain_file.close()
+  
   print "finished!"
