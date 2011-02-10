@@ -109,7 +109,7 @@ del rec
 include('TrigT1CaloCalibConditions/L1CaloCalibConditions_jobOptions.py')
 svcMgr.IOVDbSvc.overrideTags +=  ["<prefix>/CALO/Identifier/CaloTTOnOffIdMapAtlas</prefix> <tag>CALOIdentifierCaloTTOnOffIdMapAtlas-0002</tag>"]
 svcMgr.IOVDbSvc.overrideTags += ["<prefix>/LAR/Identifier/LArTTCellMapAtlas</prefix> <tag>LARIdentifierLArTTCellMapAtlas-HadFcalFix2</tag>"]
-conddb.addFolder("TRIGGER", "/TRIGGER/Receivers/Conditions/Strategy")
+#conddb.addFolder("TRIGGER", "/TRIGGER/Receivers/Conditions/Strategy")
 
 # set up tools
 from TrigT1CaloTools.TrigT1CaloToolsConf import LVL1__L1TriggerTowerTool

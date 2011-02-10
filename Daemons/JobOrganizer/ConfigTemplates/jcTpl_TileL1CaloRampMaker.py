@@ -44,8 +44,11 @@ OutputFiles = {
     "energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
     "rampdata.xml": [(JobRootDir, "rampdata.xml")],
     "graphs.root": [(JobRootDir, "graphs.root")],
-    "Gains.ps":  [(JobRootDir, "Gains.ps")],
-    "Gains.pdf":  [(JobRootDir, "Gains.pdf")],
+    "bad_gains.txt": [(JobRootDir, "bad_gains.txt")],
+    "Gains.ps":  [(JobRootDir, "Gains_#RUN_NUMBER#.ps")],
+    "Gains.pdf":  [(JobRootDir, "Gains_#RUN_NUMBER#.pdf")],
+    "rampPlots.ps":  [(JobRootDir, "rampPlots_#RUN_NUMBER#.ps")],
+    "rampPlots.pdf":  [(JobRootDir, "rampPlots_#RUN_NUMBER#.pdf")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
