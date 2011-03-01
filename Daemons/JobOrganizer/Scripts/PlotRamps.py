@@ -4,7 +4,7 @@ import os
 from optparse import OptionParser
 
 def passesSelection(gain,offset):
-    if  ((gain > 0.5 and gain <1.6) and (offset > -2 and offset < 2)):
+    if  ((gain > 0.5 and gain <1.6) and (offset > -10 and offset < 10)):
         return True	   
     else:	   
         return False
