@@ -59,7 +59,6 @@ class L1CaloMap:
          self.h_2.SetMaximum(maximum)
          self.h_1.SetMaximum(maximum)
 
-
 class L1CaloGeometryConvertor:
 
      def __init__(self):
@@ -124,12 +123,40 @@ class L1CaloGeometryConvertor:
        if self.receiver_to_ppm_map.has_key(ReceiverId):
          return self.receiver_to_ppm_map[ReceiverId]
        else:
-         return ''	 
+         return None	 
 
-     def getReceiverfromPPM(self,PPMId):
+     def getReceiverfromPPM(self,PPMId,strategy_string=None):
         
        ReceiverChannels = [item[0] for item in self.receiver_to_ppm_map.items() if item[1]==PPMId]       
-       return ReceiverChannels
+
+       if strategy_string == None:
+         print " Warning! in getReceiverfromPPM no runtype given, using default!"
+         return ReceiverChannels[0]
+
+       if self.isPPMFCAL(PPMId) and self.isCoolHad(PPMId):      # pick correct FCAL23 channel
+
+         if strategy_string == "GainOneOvEmbFcalHighEta":
+           for channel in ReceiverChannels:
+             if self.getFCAL23RecEta(channel) == 'HighEta':
+                return channel
+         if strategy_string == "GainOneOvEmecFcalLowEta":
+           for channel in ReceiverChannels:
+             if self.getFCAL23RecEta(channel) == 'LowEta':
+                return channel
+
+       elif self.isPPMOverlap(PPMId):
+
+         if strategy_string == "GainOneOvEmbFcalHighEta":
+           for channel in ReceiverChannels:
+             if self.getOverlapLayer(channel) == 'EMB':
+                return channel
+         if strategy_string == "GainOneOvEmecFcalLowEta":
+           for channel in ReceiverChannels:
+             if self.getOverlapLayer(channel) == 'EMEC':
+                return channel
+
+       else:
+         return ReceiverChannels[0]
 	 
 
      def getCoolEm(self,eta,phi):
@@ -177,6 +204,91 @@ class L1CaloGeometryConvertor:
           else:
             return -1
 
+     def getMissingReceiverChannels(self, channel_list):
+
+       missing_channels= [channel for channel in self.receiver_to_ppm_map.keys() if channel not in channel_list]
+       return missing_channels
+
+
+     def getReceiverCMCP(self,ReceiverId):
+     
+       recI=int(ReceiverId,16)
+
+       crate = recI/1024
+       recI = recI - crate*1024
+
+       module = recI/64
+       recI = recI - module*64
+
+       conn = recI/16
+       recI = recI - conn*16
+
+       pair = recI
+
+       return [crate,module,conn,pair]
+     
+     def isPPMFCAL(self,CoolId):
+     
+       eta_bin = self.getEtaBin(CoolId)  
+
+       if eta_bin >= 32 or eta_bin <= -36:
+         return True
+       else:
+         return False
+
+
+     def isPPMOverlap(self,CoolId):
+
+       eta_bin = self.getEtaBin(CoolId)  
+       if self.isCoolEm(CoolId) == True and (eta_bin == 14 or eta_bin == -15):
+         return True
+       else:
+         return False
+
+     def getOverlapLayer(self,RecCoolId):
+
+       ppm_id = self.getPPMfromReceiver(RecCoolId)
+
+       if not self.isPPMOverlap(ppm_id):
+         return None
+
+       cabling = self.getReceiverCMCP(RecCoolId)
+       if cabling[0] < 2:                 # unconnected channel has barrel crate nr.
+         return 'Unconnected'
+       elif cabling[2] == 0:
+         return 'EMEC'
+       elif cabling[2] == 2:
+         return 'EMB'
+       else:
+         print "Error in GetOverlapLayer, can't determine layer!"
+         return None        
+
+     def getFCAL23RecEta(self,RecCoolId):
+
+       ppm_id = self.getPPMfromReceiver(RecCoolId)
+
+       if (not self.isPPMFCAL(ppm_id)) or (not self.isCoolHad(ppm_id)):
+         return None
+       eta_bin = self.getEtaBin(ppm_id)  
+
+       RecCoolInt = int(RecCoolId,16)
+       if RecCoolInt%2 == 1:
+         isRecOdd = True
+       else:
+         isRecOdd = False
+
+       if eta_bin>0:
+         if isRecOdd:
+           return 'LowEta'
+         else:
+           return 'HighEta'
+       else:
+         if isRecOdd:
+           return 'HighEta'
+         else:
+           return 'LowEta' 
+        
+
 class GainReader:	  
 
      def __init__(self):	  	  	  
@@ -186,6 +298,9 @@ class GainReader:
           self.measured_chi2={}
           self.measured_offset={}
           self.UNIX2COOL = 1000000000
+
+          self.run_nr=None
+          self.strategy=None	  
 
      def LoadGainsXml(self,name):
      
@@ -263,6 +378,22 @@ class GainReader:
          self.measured_offset[CoolId] = payload['Offset']
   
 #       print self.measured_gains
+
+       folder_gen_name = '/TRIGGER/L1Calo/V1/Results/EnergyScanRunInfo'
+       folder_gen=db.getFolder(folder_gen_name)
+
+       try:
+         itr=folder_gen.browseObjects(startValKey, endValKey, chsel)
+         for row in itr:
+           payload = row.payload()
+           self.run_nr   = payload['RunNumber']
+           self.strategy = payload['GainStrategy']
+         print "Run nr. = ", self.run_nr , " Strategy = ", self.strategy
+
+       except:                                     # Doesn't seem to catch C++ exceptions :-(
+         print "Warning, in LoadGainsSqlite can't get runtype info! Hope this is not serious!"
+
+
        # close database
        db.closeDatabase()
 
@@ -304,7 +435,7 @@ class GainReader:
        db.closeDatabase()
 
 
-     def LoadReferenceOracle(self,mapping_tool,flag='loweta'):
+     def LoadReferenceOracle(self,mapping_tool):
 
        # get database service and open database
        dbSvc = cool.DatabaseSvcFactory.databaseService()
@@ -337,13 +468,17 @@ class GainReader:
          PPMId = mapping_tool.getPPMfromReceiver(ReceiverId)
          payload = row.payload()
          gain = payload['factor']
- # JB : here I need to do something for double gain channels!	for these channels there are more then
- #      one receiver channels available, one of them should be picked depending on the value
- #      of chsel flag 
 
-#         print  "ReceiverId=", ReceiverId," PPM Id=",  PPMId, "getReceiverfromPPM()=",mapping_tool.getReceiverfromPPM(PPMId)
-#	 print "  gain = " , gain
-         self.reference_gains[PPMId]=gain
+         if not PPMId == None:
+           if self.strategy == None:                 #run type not known
+             self.reference_gains[PPMId]=gain
+           else:
+             if mapping_tool.getReceiverfromPPM(PPMId,self.strategy) == ReceiverId:  # correct receiver?
+#               print "Using receiver nr.", ReceiverId, "for PPM nr.",PPMId
+               self.reference_gains[PPMId]=gain
+#             else:
+#               print "Skipping receiver nr.", ReceiverId, "for PPM nr.",PPMId
+   
   
  #      print self.reference_gains
        # close database
@@ -378,7 +513,8 @@ class GainReader:
      def passesSelection(self,coolId):
            if ((coolId in self.measured_gains) and 
                (self.getGain(coolId) > 0.5 and self.getGain(coolId)<1.6) and
-               (self.getOffset(coolId) > -2 and self.getOffset(coolId) < 2)):
+#               (self.getOffset(coolId) > -2 and self.getOffset(coolId) < 2)):
+               (self.getOffset(coolId) > -10 and self.getOffset(coolId) < 10)):
              return True	   
            else:	   
              return False
@@ -587,10 +723,14 @@ if __name__ == "__main__":
 	 
            if gain == -1. :
              h_unfitted_em.Fill(i_eta,i_phi)  
-             bad_gain_file.write('%s gain= %s \n' % (coolEm,gain) ) 
+             bad_gain_file.write('%i %i %s gain= %s \n' % (i_eta,i_phi,coolEm,gain) ) 
+             h_gains_em_reference.Fill(i_eta,i_phi,-100.)
+             h_gains_em_reference_rel.Fill(i_eta,i_phi,-100.)	     
            elif passes_selection == False:
              h_gains_em_fselect.Fill(i_eta,i_phi)
-             bad_gain_file.write('%s  gain= %s  chi2= %s offset= %s \n' %  (coolEm,gain,chi2,offset) ) 
+             bad_gain_file.write('%i %i %s  gain= %s  chi2= %s offset= %s \n' %  (i_eta,i_phi,coolEm,gain,chi2,offset) ) 
+             h_gains_em_reference.Fill(i_eta,i_phi,-100.)
+             h_gains_em_reference_rel.Fill(i_eta,i_phi,-100.)	     
            else:
              h_gains_em.Fill(i_eta,i_phi,gain)
              h_chi2_em.Fill(i_eta,i_phi,chi2)
@@ -614,10 +754,14 @@ if __name__ == "__main__":
 
            if gain == -1. :
              h_unfitted_had.Fill(i_eta,i_phi)  
-             bad_gain_file.write('%s gain= %s \n' % (coolHad,gain))
+             bad_gain_file.write('%i %i %s gain= %s \n' % (i_eta,i_phi,coolHad,gain))
+             h_gains_had_reference.Fill(i_eta,i_phi,-100.)
+             h_gains_had_reference_rel.Fill(i_eta,i_phi,-100.)
            elif passes_selection == False:
              h_gains_had_fselect.Fill(i_eta,i_phi)
-             bad_gain_file.write( '%s  gain= %s  chi2= %s offset= %s \n' % (coolHad,gain, chi2,offset)) 
+             bad_gain_file.write( '%i %i %s  gain= %s  chi2= %s offset= %s \n' % (i_eta,i_phi,coolHad,gain, chi2,offset)) 
+             h_gains_had_reference.Fill(i_eta,i_phi,-100.)
+             h_gains_had_reference_rel.Fill(i_eta,i_phi,-100.)
            else:
              h_gains_had.Fill(i_eta,i_phi,gain)
              h_chi2_had.Fill(i_eta,i_phi,chi2)
@@ -677,11 +821,16 @@ if __name__ == "__main__":
 
   h_gains_em_reference.SetMinimum(-0.5)
   h_gains_em_reference.SetMaximum(0.5)
+
   h_gains_em_reference.Draw()
   c1.Print("Gains.ps")
 
   h_gains_had_reference.SetMinimum(-0.5)
   h_gains_had_reference.SetMaximum(0.5)
+
+#  h_gains_had_reference.SetMinimum(-0.2)
+#  h_gains_had_reference.SetMaximum(0.2)
+
   h_gains_had_reference.Draw()
   c1.Print("Gains.ps")
 
