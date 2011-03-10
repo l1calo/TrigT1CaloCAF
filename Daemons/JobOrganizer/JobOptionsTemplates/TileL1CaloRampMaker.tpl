@@ -161,7 +161,8 @@ outputConditionsAlg.WriteIOV = False
 
 # configure writing of calib database
 EnergyScanResultOutput = OutputConditionsAlg("EnergyScanResultOutput", "dummy.root")
-EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/EnergyScanResults"]
+EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/EnergyScanResults",
+                                     "AthenaAttributeList#/TRIGGER/L1Calo/V1/Results/EnergyScanRunInfo"]
 EnergyScanResultOutput.WriteIOV = True
 EnergyScanResultOutput.Run1 = GetRunNumber()
 svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L1CALO"

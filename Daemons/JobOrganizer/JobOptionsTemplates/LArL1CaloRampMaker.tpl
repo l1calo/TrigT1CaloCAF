@@ -44,7 +44,7 @@ conddb.setGlobalTag(globalflags.ConditionsTag())
 import DetDescrCnvSvc.DetStoreConfig
 from AthenaCommon.DetFlags import DetFlags
 if doLAr: DetFlags.detdescr.LAr_setOn()
-if doTile: DetFlags.detdescr.Tile_setOn()
+if doLAr or doTile: DetFlags.detdescr.Tile_setOn()
 
 # needed ....
 from RecExConfig.RecFlags import rec
@@ -68,6 +68,8 @@ include ("TrigT1CaloByteStream/ReadLVL1CaloBS_jobOptions.py")
 
 # detector description
 include ("CaloDetMgrDetDescrCnv/CaloDetMgrDetDescrCnv_joboptions.py")
+# needed by TrigT1CaloCalibTools/TriggerTowerTools:
+include("TileConditions/TileConditions_jobOptions.py")
 
 # setup lar
 from LArConditionsCommon.LArCondFlags import larCondFlags
@@ -109,7 +111,6 @@ del rec
 include('TrigT1CaloCalibConditions/L1CaloCalibConditions_jobOptions.py')
 svcMgr.IOVDbSvc.overrideTags +=  ["<prefix>/CALO/Identifier/CaloTTOnOffIdMapAtlas</prefix> <tag>CALOIdentifierCaloTTOnOffIdMapAtlas-0002</tag>"]
 svcMgr.IOVDbSvc.overrideTags += ["<prefix>/LAR/Identifier/LArTTCellMapAtlas</prefix> <tag>LARIdentifierLArTTCellMapAtlas-HadFcalFix2</tag>"]
-#conddb.addFolder("TRIGGER", "/TRIGGER/Receivers/Conditions/Strategy")
 
 # set up tools
 from TrigT1CaloTools.TrigT1CaloToolsConf import LVL1__L1TriggerTowerTool
@@ -153,7 +154,8 @@ RampDataOutput.WriteIOV = False
 
 # configure writing of calib database
 EnergyScanResultOutput = OutputConditionsAlg("EnergyScanResultOutput", "dummy.root")
-EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/EnergyScanResults"]
+EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/EnergyScanResults",
+                                     "AthenaAttributeList#/TRIGGER/L1Calo/V1/Results/EnergyScanRunInfo"]
 EnergyScanResultOutput.WriteIOV = True
 EnergyScanResultOutput.Run1 = GetRunNumber()
 svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L1CALO"

@@ -45,13 +45,9 @@ OutputFiles = {
     "rawShapes_#RUN_NUMBER_PADDED_8#.ps.gz": [(JobRootDir, "rawShapes_#RUN_NUMBER_PADDED_8#.ps.gz")],
     "processedShapes_#RUN_NUMBER_PADDED_8#.ps.gz": [(JobRootDir, "processedShapes_#RUN_NUMBER_PADDED_8#.ps.gz")],
     "shapeMakerData_#RUN_NUMBER_PADDED_8#.root": [(JobRootDir, "shapeMakerData_#RUN_NUMBER_PADDED_8#.root")],
-    "rawMax.txt": [(JobRootDir, "rawMax_#RUN_NUMBER_PADDED_8#.txt")],
-    "rawFit.txt": [(JobRootDir, "rawFit_#RUN_NUMBER_PADDED_8#.txt")],
-    "processedMax.txt": [(JobRootDir, "processedMax_#RUN_NUMBER_PADDED_8#.txt")],
-    "processedFit.txt": [(JobRootDir, "processedFit_#RUN_NUMBER_PADDED_8#.txt")],
-    "rawShapes.ps.gz": [(JobRootDir, "rawShapes_#RUN_NUMBER_PADDED_8#.ps.gz")],
-    "processedShapes.ps.gz": [(JobRootDir, "processedShapes_#RUN_NUMBER_PADDED_8#.ps.gz")],
-    "shapeMakerData.root": [(JobRootDir, "shapeMakerData_#RUN_NUMBER_PADDED_8#.root")],
+    "summary_#RUN_NUMBER_PADDED_8#.ps.gz": [(JobRootDir, "summary_#RUN_NUMBER_PADDED_8#.ps.gz")],
+    "summary_#RUN_NUMBER_PADDED_8#.pdf": [(JobRootDir, "summary_#RUN_NUMBER_PADDED_8#.pdf")],
+    "summary_#RUN_NUMBER_PADDED_8#.root": [(JobRootDir, "summary_#RUN_NUMBER_PADDED_8#.root")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
