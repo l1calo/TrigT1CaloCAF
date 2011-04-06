@@ -62,8 +62,8 @@ class L1CaloMap:
 class L1CaloGeometryConvertor:
 
      def __init__(self):
-          input = open('/afs/cern.ch/user/l/l1ccalib/jb/COOLIdDump.txt')
-#          input = open('COOLIdDump.txt')
+#          input = open('/afs/cern.ch/user/l/l1ccalib/jb/COOLIdDump.txt')
+          input = open('COOLIdDump.txt')
           self.list_of_channels_em={}
           self.list_of_channels_had={}
 
@@ -738,8 +738,9 @@ if __name__ == "__main__":
              em_partition_gains.Fill(i_eta,gain)           
              em_partition_gains_ref.Fill(i_eta,gain-reference_gain)  
              h_gains_em_reference.Fill(i_eta,i_phi,gain-reference_gain)
-             em_partition_gains_ref_rel.Fill(i_eta,(gain-reference_gain)/reference_gain)  
-             h_gains_em_reference_rel.Fill(i_eta,i_phi,(gain-reference_gain)/reference_gain)
+             if reference_gain > 0:
+               em_partition_gains_ref_rel.Fill(i_eta,(gain-reference_gain)/reference_gain)  
+               h_gains_em_reference_rel.Fill(i_eta,i_phi,(gain-reference_gain)/reference_gain)
 
 
        if not coolHad == '':                         # there is a channel for this eta-phi
@@ -769,8 +770,9 @@ if __name__ == "__main__":
              had_partition_gains.Fill(i_eta,gain)
              had_partition_gains_ref.Fill(i_eta,gain-reference_gain)
              h_gains_had_reference.Fill(i_eta,i_phi,gain-reference_gain)
-             had_partition_gains_ref_rel.Fill(i_eta,(gain-reference_gain)/reference_gain)
-             h_gains_had_reference_rel.Fill(i_eta,i_phi,(gain-reference_gain)/reference_gain)
+             if reference_gain > 0:
+               had_partition_gains_ref_rel.Fill(i_eta,(gain-reference_gain)/reference_gain)
+               h_gains_had_reference_rel.Fill(i_eta,i_phi,(gain-reference_gain)/reference_gain)
 	    
 
 	   
