@@ -15,9 +15,10 @@ class BatchJob:
 
 class ResourceWatcher:
 
-	def __init__(self, queue, account, limit=15, ncpu=44):
+	def __init__(self, queue, account, group, limit=15, ncpu=44):
 		self.queue = queue
 		self.account = account
+		self.group = group
 		self.max_jobs = limit
 		self.n_cpu = ncpu
 
@@ -73,8 +74,11 @@ class ResourceWatcher:
 
 	def listJobsAllAccount(self):
 
-		cmd = 'bjobs -u all  -w | grep ' + self.queue
+		#cmd = 'bjobs -u all  -w | grep ' + self.queue
+		cmd = 'bjobs -u ' + self.group + '  -w | grep ' + self.queue
 		rawoutput = commands.getoutput(cmd)
+		if rawoutput.splitlines()[0]=='No unfinished job found':
+			return []
 		# no need to skip the first line of the output here
 		# JOBID USER STAT QUEUE FROM_HOST EXEC_HOST JOB_NAME SUBMIT_TIME
 		jobList = rawoutput.splitlines()
@@ -164,7 +168,7 @@ class ResourceWatcher:
 
 if __name__ == "__main__":
 
-	x = ResourceWatcher('atlasb1','l1ccalib')
+	x = ResourceWatcher('atlasb1','l1ccalib','u_ATLASLARCAL')
 	#x = ResourceWatcher('atlaslarcal','l1ccalib')
 	#bj = x.listJobsPerAccount('larcalib')
 	bj = x.listJobsAllAccount()

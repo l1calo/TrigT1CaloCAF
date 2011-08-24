@@ -62,8 +62,9 @@ atlaslarcalWatcher = {
     #"queue":"atlaslarcal",
     "queue":"atlasb1",
     "account":"l1ccalib",
+    "group":"u_ATLASLARCAL",
     "joblimit":15,
-    "ncpu":200
+    "ncpu":44
     }
 
 noWatcher = {

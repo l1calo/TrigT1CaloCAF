@@ -32,6 +32,7 @@ del FilesInput
 
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPST-004-07")
 
 from RecExConfig.AutoConfiguration import ConfigureFromListOfKeys, GetRunNumber
 ConfigureFromListOfKeys(['everything'])
@@ -79,9 +80,9 @@ larCondFlags.useShape = True
 include("LArConditionsCommon/LArConditionsCommon_comm_jobOptions.py")
 # use ofc for calib pulses
 for i in svcMgr.IOVDbSvc.Folders:
-    if i.find('PhysWave')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
+    if i.find('OFC')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
 conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
-conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-00")
+conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-01")
 
 from glob import glob
 catalog_files = glob("/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond??_data.??????.lar.COND_castor.xml")

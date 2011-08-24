@@ -453,7 +453,8 @@ class JobManager:
 			self.initDbParameters()
 
 			#self.resourceWatcher = ResourceWatcher('atlaslarcal','l1ccalib',15)
-			self.resourceWatcher = ResourceWatcher(self.configModule.ResourceWatcher["queue"],self.configModule.ResourceWatcher["account"],self.configModule.ResourceWatcher["joblimit"], self.configModule.ResourceWatcher["ncpu"])
+			#self.resourceWatcher = ResourceWatcher(self.configModule.ResourceWatcher["queue"],self.configModule.ResourceWatcher["account"],self.configModule.ResourceWatcher["joblimit"], self.configModule.ResourceWatcher["ncpu"])
+			self.resourceWatcher = ResourceWatcher(self.configModule.ResourceWatcher["queue"],self.configModule.ResourceWatcher["account"],self.configModule.ResourceWatcher["group"],self.configModule.ResourceWatcher["joblimit"], self.configModule.ResourceWatcher["ncpu"])
 
 		else:
 			self.logger.error("init file "+ self.sConfigFile + " was not found !")

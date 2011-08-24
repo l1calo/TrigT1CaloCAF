@@ -63,7 +63,7 @@ class L1CaloGeometryConvertor:
 
      def __init__(self):
           input = open('/afs/cern.ch/user/l/l1ccalib/jb/COOLIdDump.txt')
-#          input = open('COOLIdDump.txt')
+          #input = open('COOLIdDump.txt')
           self.list_of_channels_em={}
           self.list_of_channels_had={}
 
