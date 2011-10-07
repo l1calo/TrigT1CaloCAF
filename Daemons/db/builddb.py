@@ -38,6 +38,7 @@ cursor.execute("CREATE TABLE RUNPARAMS ( \
 				efevents VARCHAR(50), \
 				errcode VARCHAR(50), \
                                 tierzerotag VARCHAR(50) \
+                                gainstrategy VARCHAR(50) \
 				)")
 
 connection.commit()

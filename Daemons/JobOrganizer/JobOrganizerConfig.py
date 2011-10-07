@@ -46,6 +46,11 @@ jobConfigurations = {
         "configurationTemplate": "jcTpl_TileL1CaloRampMaker.py",
         "validateJob":           False
         },
+    "LArL1CaloHV" : {
+        "listeners":             ["LArEnergyScanHV"],
+        "configurationTemplate": "jcTpl_LArL1CaloHV.py",
+        "validateJob":           False
+        },
     "Phos4ShapeMaker" : {
         "listeners":             ["L1CaloPhos4Scan"],
         "configurationTemplate": "jcTpl_Phos4ShapeMaker.py",

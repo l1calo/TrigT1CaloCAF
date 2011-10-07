@@ -2,7 +2,8 @@
 # config
 ################################################################################
 
-EvtMax = -1
+#EvtMax = -1
+EvtMax = 1
 SkipEvents = 0
 
 from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
@@ -10,7 +11,7 @@ from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
 FilesInput = athenaCommonFlags.BSRDOInput()
 
 doLAr = True
-doTile = False
+doTile = True
 
 ################################################################################
 # actual job options
@@ -99,19 +100,14 @@ if doLAr:
 # cell reconstruction properties
 from CaloRec.CaloCellFlags import jobproperties
 from TileRecUtils.TileRecFlags import jobproperties
-jobproperties.CaloCellFlags.doDeadCellCorr = True
+jobproperties.CaloCellFlags.doDeadCellCorr = False
 jobproperties.TileRecFlags.readDigits = False
-jobproperties.CaloCellFlags.doLArCreateMissingCells = False
-#JB 20/9/2011
-jobproperties.CaloCellFlags.doLArSporadicMasking.set_Value_and_Lock(False)
+#jobproperties.CaloCellFlags.doLArCreateMissingCells = False
 
 # reconstruct cells
 from CaloRec.CaloCellGetter import CaloCellGetter
 CaloCellGetter()
 del rec
-
-#JB 20/9/2011
-ToolSvc.LArNoiseMasker.ProblemsToMask= ["deadReadout","deadPhys"]
 
 # setup l1calo database
 include('TrigT1CaloCalibConditions/L1CaloCalibConditions_jobOptions.py')
@@ -120,54 +116,29 @@ svcMgr.IOVDbSvc.overrideTags += ["<prefix>/LAR/Identifier/LArTTCellMapAtlas</pre
 
 # set up tools
 from TrigT1CaloTools.TrigT1CaloToolsConf import LVL1__L1TriggerTowerTool
-ToolSvc += LVL1__L1TriggerTowerTool()
+ToolSvc += LVL1__L1TriggerTowerTool("L1TriggerTowerTool")
 from TrigT1CaloCalibTools.TrigT1CaloCalibToolsConf import LVL1__L1CaloLArTowerEnergy
-ToolSvc += LVL1__L1CaloLArTowerEnergy()
+ToolSvc += LVL1__L1CaloLArTowerEnergy("L1CaloLArTowerEnergy")
+from TrigT1CaloCalibTools.TrigT1CaloCalibToolsConf import LVL1__L1CaloCells2TriggerTowers
+ToolSvc += LVL1__L1CaloCells2TriggerTowers("L1CaloCells2TriggerTowers")
+from TrigT1CaloCalibTools.TrigT1CaloCalibToolsConf import LVL1__L1CaloOfflineTriggerTowerTools
+ToolSvc += LVL1__L1CaloOfflineTriggerTowerTools("L1CaloOfflineTriggerTowerTools")
 
-# configure actual ramp maker algorithm
-import TrigT1CaloCalibUtils
-print TrigT1CaloCalibUtils
-
-from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloRampMaker
-topSequence += L1CaloRampMaker()
-topSequence.L1CaloRampMaker.L1TriggerTowerTool = LVL1__L1TriggerTowerTool()
-topSequence.L1CaloRampMaker.DoTile = doTile
-topSequence.L1CaloRampMaker.DoLAr = doLAr
-topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
-topSequence.L1CaloRampMaker.IsGain1 = True
-topSequence.L1CaloRampMaker.CheckProvenance = True
-
-# sick tbb board and saturating LAr
-topSequence.L1CaloRampMaker.SpecialChannelRange = {
-	0x1170502 : 100, 0x1170503 : 100, 0x1160402 : 100, 0x1150401 : 100, 0x1160403 : 100, 0x1170403 : 100, 0x1150400 : 100,
-	0x1160500 : 75, 0x1160502 : 75, 0x1140503 : 100, 0x1170400 : 75, 0x1140502 : 100, 0x1170401 : 100, 0x1170402 : 75,
-	0x1160501 : 75, 0x1140500 : 100, 0x1160503 : 75, 0x1160400 : 100, 0x1160401 : 100, 0x1170500 : 100, 0x1170501 : 100,
-	0x1140501 : 100, 0x1150402 : 100, 0x1150403 : 100, 0x1150501 : 100, 0x1150500 : 100, 0x1150502 : 100, 0x1150503 : 100,
-	0x21d0400 : 150, 0x21d0401 : 150, 0x21d0402 : 150, 
-	0x41f0c01 : 70, 0x3130201 : 100, 0x4120603 : 150, 0x4120602 : 150, 0x4130700 : 150, 0x6170503 : 150, 0x41a0800 : 150,
-	0x4120d01 : 150, 0x41f0500 : 50, 0x5120602 : 150, 0x51f0801 : 150, 0x5110902 : 50
-}
-
-# configure fitting algorithm
-from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloLinearCalibration
-topSequence += L1CaloLinearCalibration()
-
-# configure writing of L1CaloRampData.pool.root file
-from RegistrationServices.OutputConditionsAlg import OutputConditionsAlg
-RampDataOutput = OutputConditionsAlg("RampDataOutput", "L1CaloRampData.pool.root")
-RampDataOutput.ObjectList = ["L1CaloRampDataContainer"]
-RampDataOutput.WriteIOV = False
+# configure actual db maker algorithm
+from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloHVCorrectionsForDB
+topSequence += L1CaloHVCorrectionsForDB()
+from LArRecUtils.LArHVCorrToolDefault import LArHVCorrToolDefault
+theLArHVCorrTool = LArHVCorrToolDefault()
+ToolSvc += theLArHVCorrTool
+topSequence.L1CaloHVCorrectionsForDB.LArHVCorrTool = theLArHVCorrTool
 
 # configure writing of calib database
-EnergyScanResultOutput = OutputConditionsAlg("EnergyScanResultOutput", "dummy.root")
-EnergyScanResultOutput.ObjectList = ["CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/EnergyScanResults",
-                                     "AthenaAttributeList#/TRIGGER/L1Calo/V1/Results/EnergyScanRunInfo"]
-EnergyScanResultOutput.WriteIOV = True
-EnergyScanResultOutput.Run1 = GetRunNumber()
-svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L1CALO"
-
-# configure writing of additional files for the calibration gui
-from TrigT1CaloCalibUtils.L1CaloDumpRampDataAlgorithm import L1CaloDumpRampDataAlgorithm
-topSequence += L1CaloDumpRampDataAlgorithm()
+from RegistrationServices.OutputConditionsAlg import OutputConditionsAlg
+HVCorrectionsOutput = OutputConditionsAlg("HVCorrectionsOutput", "dummy.root")
+HVCorrectionsOutput.ObjectList = [ "CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/RxLayers",
+				   "CondAttrListCollection#/TRIGGER/L1Calo/V1/Results/HVCorrections"]
+HVCorrectionsOutput.WriteIOV = True
+HVCorrectionsOutput.Run1 = GetRunNumber()
+svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=hvcorrections.sqlite;dbname=L1CALO"
 
 print '\n'.join(svcMgr.IOVDbSvc.Folders)

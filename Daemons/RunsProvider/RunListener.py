@@ -49,6 +49,7 @@ class RunListener:
         self.daqpartition = []
         self.tierzerotag = []
         self.NOTtierzerotag = []
+        self.gainstrategy = []
 
         self.format="acert"
         self.reverse=False
@@ -99,6 +100,9 @@ class RunListener:
             text = text + ' * '+ part + '\n'
         text = text + "NOTtierzerotag: \n"
         for part in self.NOTtierzerotag:
+            text = text + ' * '+ part + '\n'
+        text = text + "gainstrategy: \n"
+        for part in self.gainstrategy:
             text = text + ' * '+ part + '\n'
             
         text = text +  \
@@ -191,22 +195,22 @@ class RunListener:
 
         return cleanedRunList
 
-        self.runMap = cleanedRunList
+#       self.runMap = cleanedRunList
 
 #       print self.runMap
 ##      return False
         # return True si runMap not empty
         # set new lat runs
-        if self.runMap!=None:
-            if len(self.runMap)!=0:
-                self.lastKnownRun = self.maxRunIndex(self.runMap)
-                self.logger.info(" *** new valid runs found. New last valid run: "+ str(self.lastKnownRun) )
-                return True
-            else:
-                self.logger.info(" no new valid runs found.")
-                return False
-        self.logger.error("self.runMap not defined - Should not happen")
-        return False
+#       if self.runMap!=None:
+#           if len(self.runMap)!=0:
+#               self.lastKnownRun = self.maxRunIndex(self.runMap)
+#               self.logger.info(" *** new valid runs found. New last valid run: "+ str(self.lastKnownRun) )
+#               return True
+#           else:
+#               self.logger.info(" no new valid runs found.")
+#               return False
+#       self.logger.error("self.runMap not defined - Should not happen")
+#       return False
 
     def listNewRuns(self):
         return sorted(self.runMap.iterkeys())
@@ -233,7 +237,7 @@ class RunListener:
         if ('c' in format):
             title+=' RunType                  DetectorMask'
         if ('d' in format):
-            title+=' DAQConfiguration     PartitionName      FilenameTag          tierZeroTag'
+            title+=' DAQConfiguration     PartitionName      FilenameTag          tierZeroTag         GainStrategy'
         #print title
 
 #       runp=self.runMap[irun]
@@ -249,7 +253,7 @@ class RunListener:
         if ('c' in format):
             line+=' %-20s %16x' % (runp.runtype,runp.detmask)
         if ('d' in format):
-            line+=' %-20s %-16s %-20s %-20s' % (runp.daqconfig,noneStr(runp.partname),runp.filetag,runp.tierzerotag)
+            line+=' %-20s %-16s %-20s %-20s %-20s' % (runp.daqconfig,noneStr(runp.partname),runp.filetag,runp.tierzerotag,runp.gainstrategy)
         #print line
         return title + '\n' + line + '\n'
 
@@ -316,6 +320,9 @@ class RunListener:
 
         if self.NOTtierzerotag!=[]:
             if runp.tierzerotag in self.NOTtierzerotag: return False
+
+        if self.gainstrategy!=[]:
+            if runp.gainstrategy not in self.gainstrategy: return False
 
         if self.reconly==True:
             # the logic is inversed so far: True -> not recorded / False->recorded

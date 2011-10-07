@@ -4,14 +4,14 @@ DaemonBackEndsDir = "#DAEMON_BACKENDS_DIR#"
 JobWorkingDir  = "#JOB_WORKING_DIR#"
 JobLogDir      = "#JOB_LOG_DIR#"
 JobRootDir     = "#JOB_ROOT_DIR#"
+JobTestAreaDir = JobRootDir + "/testarea"
 JobPoolDir     = ""
 JobConfigDir   = "#JOB_CONFIG_DIR#"
-JobPostDir     =  "#JOB_POST_DIR#"
+JobPostDir     = "#JOB_POST_DIR#"
 
 JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 
 #AtlasRelease  = "15.6.9"
-#AtlasRelease  = "16.0.3.3"
 AtlasRelease  = "17.0.3.4"
 
 InputStageSVCClass = "atlcal"
@@ -26,7 +26,7 @@ JobScript = "submit.py"
 AthenaLauncher = "athena_launcher_testarea.sh"
 
 #jo template
-JobOptionTemplate = "#DAEMON_JO_TEMPLATE_DIR#/TileL1CaloRampMaker.tpl"
+JobOptionTemplate = "#DAEMON_JO_TEMPLATE_DIR#/LArL1CaloHV.tpl"
 
 #jo name
 JobOptionName = "#RUN_NUMBER#_#JOB_CONFIGURATION#_jobOptions.py"
@@ -40,27 +40,20 @@ LogLevel = 2
 
 #OutputFilesPath={"CBNT":JobRootDir, "POOL":JobPoolDir, "LOG":JobLogDir}
 OutputFiles = {
-    "L1CaloRampData.pool.root": [(JobRootDir, "L1CaloRampData.pool.root")],
-    "PoolFileCatalog.xml": [(JobRootDir, "PoolFileCatalog.xml")],
-    "energyscanresults.sqlite": [(JobRootDir, "energyscanresults.sqlite")],
-    "rampdata.xml": [(JobRootDir, "rampdata.xml")],
-    "graphs.root": [(JobRootDir, "graphs.root")],
-    "bad_gains.txt": [(JobRootDir, "bad_gains.txt")],
-    "drifted_towers.txt": [(JobRootDir, "drifted_towers.txt")],
-    "Gains.ps":  [(JobRootDir, "Gains_#RUN_NUMBER#.ps")],
-    "Gains.pdf":  [(JobRootDir, "Gains_#RUN_NUMBER#.pdf")],
-    "rampPlots.ps":  [(JobRootDir, "rampPlots_#RUN_NUMBER#.ps")],
-    "rampPlots.pdf":  [(JobRootDir, "rampPlots_#RUN_NUMBER#.pdf")],
+    "hvcorrections.sqlite": [(JobRootDir, "hvcorrections.sqlite")],
+    "large_hv_corr.txt":    [(JobRootDir, "large_hv_corr.txt")],
+    "HVStatus.ps":   [(JobRootDir, "HVStatus_#RUN_NUMBER#.ps")],
+    "HVStatus.pdf":  [(JobRootDir, "HVStatus_#RUN_NUMBER#.pdf")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
-JobPostTreatments = {
-    "DONE": ["#DAEMON_SCRIPTS_DIR#/PlotCalibrationGains.sh"],
-    "ALL":  ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"] }
-
 #JobPostTreatments = [
-#    {"ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
+#    {"DONE":  ["#DAEMON_SCRIPTS_DIR#/PlotCalibrationGains.py"],
+#     "ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
 #    ]
+JobPostTreatments = {
+    "DONE": ["#DAEMON_SCRIPTS_DIR#/PlotCalibrationHV.sh"],
+    "ALL":  ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"] }
 
 
 #JobPostTreatments = [{"ALL":[,]},
@@ -84,4 +77,5 @@ JobPostTreatments = {
 
 #------------------------------------------------------------------------------------
 # Mailing list
-MailingList = ["veit.scharf@kip.uni-heidelberg.de"]
+#MailingList = ["veit.scharf@kip.uni-heidelberg.de"]
+MailingList = ["pjwf@hep.ph.bham.ac.uk"]

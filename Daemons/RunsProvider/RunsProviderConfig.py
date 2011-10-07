@@ -24,6 +24,7 @@ runListeners = {
                     "daqpartition":["L1CaloCombined", "LArgL1CaloCombined"],
                     "tierzerotag":["L1CaloEnergyScan"],
                     "NOTtierzerotag":[],
+                    "gainstrategy":[],
 
                     "format":"acertd",
                     "reverse":False,
@@ -33,7 +34,8 @@ runListeners = {
                     "hasevents":False,
                     "minevents":1700,
 
-                    "initialrun":152000,
+                    #"initialrun":152000,
+                    "initialrun":190000,
 
                     "fileslocations":["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
                 },
@@ -55,6 +57,7 @@ runListeners = {
                     "daqpartition":["L1CaloCombined", "TileL1CaloCombined"],
                     "tierzerotag":["L1CaloEnergyScan"],
                     "NOTtierzerotag":[],
+                    "gainstrategy":[],
 
                     "format":"acertd",
                     "reverse":False,
@@ -64,9 +67,43 @@ runListeners = {
                     "hasevents":True,
                     "minevents":1700,
 
-                    "initialrun":152000,
+                    #"initialrun":152000,
+                    "initialrun":190000,
 
                     "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
+                },
+
+                # Listener for LAr EnergyScan HV
+                "LArEnergyScanHV": {
+                    "tdaqdbname":"COOLONL_TDAQ/COMP200",
+                    "trigdbname":"COOLONL_TRIGGER/COMP200",
+                    "statusdbname":"COOLOFL_GLOBAL/COMP200",
+
+                    "loglevel":0,
+                    "oracle":False,
+                    "reconly":True,
+                    "detmask":0,
+                    "runtype":"LarCalibL1Calo",
+                    "tag":"",
+                    "detstatus":"",
+                    "detstatustag":"HEAD",
+                    "daqpartition":["L1CaloCombined", "LArgL1CaloCombined"],
+                    "tierzerotag":["L1CaloEnergyScan"],
+                    "NOTtierzerotag":[],
+                    "gainstrategy":["CalibGainsEt"],
+
+                    "format":"acertd",
+                    "reverse":False,
+
+                    "stoptimestamp":True,
+                    "cleanstop":True,
+                    "hasevents":False,
+                    "minevents":1700,
+
+                    #"initialrun":152000,
+                    "initialrun":190000,
+
+                    "fileslocations":["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
                 },
 
                 # Listener for Phos4Scan
@@ -86,6 +123,7 @@ runListeners = {
                     "daqpartition":["L1CaloCombined", "LArgL1CaloCombined", "TileL1CaloCombined"],
                     "tierzerotag":["L1CaloPprPhos4ScanPars"],
                     "NOTtierzerotag":[],
+                    "gainstrategy":[],
 
                     "format":"acertd",
                     "reverse":False,
@@ -95,7 +133,8 @@ runListeners = {
                     "hasevents":True,
                     "minevents":0,
 
-                    "initialrun":152000,
+                    #"initialrun":152000,
+                    "initialrun":190000,
 
                     "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
                 },
@@ -119,6 +158,7 @@ runListeners = {
                     "daqpartition":["L1CaloCombined", "LArgL1CaloCombined"],
                     "tierzerotag":[],
                     "NOTtierzerotag":["L1CaloEnergyScan", "L1CaloPprPhos4ScanPars"],
+                    "gainstrategy":[],
 
                     "format":"acertd",
                     "reverse":False,
@@ -128,7 +168,8 @@ runListeners = {
                     "hasevents":False,
                     "minevents":0,
 
-                    "initialrun":152000,
+                    #"initialrun":152000,
+                    "initialrun":190000,
 
                     "fileslocations":["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
                 },
@@ -151,6 +192,7 @@ runListeners = {
                     "daqpartition":["L1CaloCombined", "TileL1CaloCombined"],
                     "tierzerotag":[],
                     "NOTtierzerotag":["L1CaloEnergyScan", "L1CaloPprPhos4ScanPars"],
+                    "gainstrategy":[],
 
                     "format":"acertd",
                     "reverse":False,
@@ -160,7 +202,8 @@ runListeners = {
                     "hasevents":True,
                     "minevents":0,
 
-                    "initialrun":152000,
+                    #"initialrun":152000,
+                    "initialrun":190000,
 
                     "fileslocations": ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
                 },
@@ -182,6 +225,7 @@ runListeners = {
                     "daqpartition":["L1CaloStandalone", "L1CaloCalibration"],
                     "tierzerotag":[],
                     "NOTtierzerotag":[],
+                    "gainstrategy":[],
 
                     "format":"acertd",
                     "reverse":False,
@@ -191,7 +235,8 @@ runListeners = {
                     "hasevents":True,
                     "minevents":0,
 
-                    "initialrun":152000,
+                    #"initialrun":152000,
+                    "initialrun":190000,
 
                     "fileslocations":["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
                 }

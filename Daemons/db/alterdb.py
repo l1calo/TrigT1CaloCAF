@@ -4,7 +4,8 @@ connection = sqlite.connect('rundb.db')
 #memoryConnection = sqlite.connect(':memory:')
 
 cursor = connection.cursor()
-cursor.execute("ALTER TABLE RUNPARAMS ADD COLUMN tierzerotag VARCHAR(50)")
+#cursor.execute("ALTER TABLE RUNPARAMS ADD COLUMN tierzerotag VARCHAR(50)")
+cursor.execute("ALTER TABLE RUNPARAMS ADD COLUMN gainstrategy VARCHAR(50)")
 
 connection.commit()
 

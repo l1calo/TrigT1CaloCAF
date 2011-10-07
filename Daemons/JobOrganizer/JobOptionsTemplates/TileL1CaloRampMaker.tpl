@@ -97,8 +97,8 @@ svcMgr.IOVDbSvc.overrideTags +=  ["<prefix>/CALO/Identifier/CaloTTOnOffIdMapAtla
 # set up tools
 from TrigT1CaloTools.TrigT1CaloToolsConf import LVL1__L1TriggerTowerTool
 ToolSvc += LVL1__L1TriggerTowerTool()
-from TrigT1CaloCalibTools.TrigT1CaloCalibToolsConf import L1CaloLArTowerEnergy
-ToolSvc += L1CaloLArTowerEnergy()
+from TrigT1CaloCalibTools.TrigT1CaloCalibToolsConf import LVL1__L1CaloLArTowerEnergy
+ToolSvc += LVL1__L1CaloLArTowerEnergy()
 
 # configure actual ramp maker algorithm
 from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloRampMaker

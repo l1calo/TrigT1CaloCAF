@@ -12,7 +12,8 @@ JobPostDir     = "#JOB_POST_DIR#"
 JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 
 #AtlasRelease  = "15.6.9"
-AtlasRelease  = "16.6.7.3"
+#AtlasRelease  = "16.6.7.3"
+AtlasRelease  = "17.0.3.4"
 
 InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
@@ -47,6 +48,7 @@ OutputFiles = {
     "graphs.root": [(JobRootDir, "graphs.root")],
     "bad-ofciter.txt": [(JobRootDir, "bad-ofciter.txt")],
     "bad_gains.txt": [(JobRootDir, "bad_gains.txt")],
+    "drifted_towers.txt": [(JobRootDir, "drifted_towers.txt")],
     "Gains.ps":  [(JobRootDir, "Gains_#RUN_NUMBER#.ps")],
     "Gains.pdf":  [(JobRootDir, "Gains_#RUN_NUMBER#.pdf")],
     "rampPlots.ps":  [(JobRootDir, "rampPlots_#RUN_NUMBER#.ps")],

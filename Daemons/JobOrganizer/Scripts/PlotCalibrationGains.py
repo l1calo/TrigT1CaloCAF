@@ -6,6 +6,8 @@ import sys
 import time
 import os
 
+from array import *
+
 from PyCool import cool
 from optparse import OptionParser
 
@@ -14,56 +16,52 @@ from optparse import OptionParser
 class L1CaloMap:
  
      def __init__(self,title,XaxisTitle="",YaxisTitle=""):
-         self.h_1 = TH2F("GainTTsMap" ,title, 50,-25-0.5,24+0.5,64,-0.5,63.5)     
-         self.h_2 = TH2F("GainTTsMap2",title, 31,-31.5,30.5,32,-1.,63.)
-         self.h_3 = TH2F("GainTTsMap3",title, 64,-32.5,31.5,32,-1.,63.)
-         self.h_4 = TH2F("GainTTsMap4",title, 24,-48.5,47.5,16,-1.,63.)
+
+         self.nxbins = 66;
+         self.xbins = array('d',[-49.5,-44.5,-40.50,-36.5,-32.5,-31.5,-29.5,
+                                 -27.5,-25.5,-24.5,-23.5,-22.5,-21.5,-20.5,-19.5,
+                                 -18.5,-17.5,-16.5,-15.5,-14.5,-13.5,-12.5,-11.5,
+                                 -10.5,-9.5,-8.5,-7.5,-6.5,-5.5,-4.5,-3.5,
+                                  -2.5,-1.5,-0.5,0.5,1.5,2.5,3.5,4.5,5.5,6.5,
+                                   7.5,8.5,9.5,10.5,11.5,12.5,13.5,14.5,15.5,16.5,
+                                  17.5,18.5,19.5,20.5,21.5,22.5,23.5,24.5,26.5,28.5,
+                                  30.5,31.5,35.5,39.5,43.5,47.5])
+
+         self.h_1 = TH2F("GainTTsMap" ,title, self.nxbins,self.xbins,64,0.,64)     
 	 
-         self.h_4.GetXaxis().SetTitle(XaxisTitle)
-         self.h_4.GetYaxis().SetTitle(YaxisTitle)
+         self.h_1.GetXaxis().SetTitle(XaxisTitle)
+         self.h_1.GetYaxis().SetTitle(YaxisTitle)
 	 
      def Draw(self):
-         self.h_4.SetStats(0)	 
-         self.h_3.SetStats(0)
-         self.h_2.SetStats(0)
          self.h_1.SetStats(0)
-
-         self.h_4.Draw("colz")	 
-         self.h_3.Draw("colz same")
-         self.h_2.Draw("colz same")
-         self.h_1.Draw("colz same")
-
+         self.h_1.Draw("colz")	 
          gPad.RedrawAxis()
 	 
      def Fill(self,eta,phi,gain=1):
-         if eta>= -25 and eta <= 24:
-              self.h_1.Fill(eta,phi,gain)
-         elif eta >= -31 and eta <= 29:
-              self.h_2.Fill(eta,phi,gain)
-         elif eta >= -32 and eta <= 31:
-              self.h_3.Fill(eta,phi,gain)
-         elif eta >= -49 and eta <= 44:
-              self.h_4.Fill(eta+1,phi,gain)
-         else:
-              print " Take it easy, such eta doesn't exist!"
+
+         if eta >= 32 or eta < -32:
+           self.h_1.Fill(eta,phi+3.5,gain) 
+           self.h_1.Fill(eta,phi+2.5,gain) 
+           self.h_1.Fill(eta,phi+1.5,gain) 
+           self.h_1.Fill(eta,phi+0.5,gain) 
+         elif eta >= 25 or eta < -25:
+           self.h_1.Fill(eta,phi+1.5,gain) 
+           self.h_1.Fill(eta,phi+0.5,gain) 
+         else:	 
+           self.h_1.Fill(eta,phi+0.5,gain) 
+
 	      
      def SetMinimum(self,minimum):
-         self.h_4.SetMinimum(minimum)	 
-         self.h_3.SetMinimum(minimum)
-         self.h_2.SetMinimum(minimum)
          self.h_1.SetMinimum(minimum)
      	                          
      def SetMaximum(self,maximum):
-         self.h_4.SetMaximum(maximum)	 
-         self.h_3.SetMaximum(maximum)
-         self.h_2.SetMaximum(maximum)
          self.h_1.SetMaximum(maximum)
 
 class L1CaloGeometryConvertor:
 
      def __init__(self):
           input = open('/afs/cern.ch/user/l/l1ccalib/jb/COOLIdDump.txt')
-          #input = open('COOLIdDump.txt')
+#          input = open('COOLIdDump.txt')
           self.list_of_channels_em={}
           self.list_of_channels_had={}
 
@@ -159,7 +157,7 @@ class L1CaloGeometryConvertor:
          return ReceiverChannels[0]
 	 
 
-     def getCoolEm(self,eta,phi):
+     def getCoolEm(self,i_eta,i_phi):
           if self.list_of_channels_em.has_key((str(i_eta),str(i_phi))) == True:
               cool = self.list_of_channels_em[(str(i_eta),str(i_phi))]
               cool.rstrip()
@@ -169,7 +167,7 @@ class L1CaloGeometryConvertor:
               return ('')         
      
      
-     def getCoolHad(self,eta,phi):
+     def getCoolHad(self,i_eta,i_phi):
           if self.list_of_channels_had.has_key((str(i_eta),str(i_phi))) == True:
               cool = self.list_of_channels_had[(str(i_eta),str(i_phi))]
               cool.rstrip()
@@ -513,6 +511,7 @@ class GainReader:
      def passesSelection(self,coolId):
            if ((coolId in self.measured_gains) and 
                (self.getGain(coolId) > 0.5 and self.getGain(coolId)<1.6) and
+#               (self.getGain(coolId) > 0.5 and self.getGain(coolId)<2.1) and
 #               (self.getOffset(coolId) > -2 and self.getOffset(coolId) < 2)):
                (self.getOffset(coolId) > -10 and self.getOffset(coolId) < 10)):
              return True	   
@@ -657,6 +656,10 @@ if __name__ == "__main__":
   h_unfitted_em  = L1CaloMap("Eta-phi map of EM failed fits","#eta bin","#phi bin")
   h_unfitted_had = L1CaloMap("Eta-phi map of HAD failed fits","#eta bin","#phi bin")
 
+  h_drifted_em  = L1CaloMap("EM TTs that drifted more then 10 %","#eta bin","#phi bin")
+  h_drifted_had = L1CaloMap("HAD TTs that drifted more then 10 %","#eta bin","#phi bin")
+
+
   h_gains_em_reference  = L1CaloMap("Eta-phi map of EM gains (gain-reference)","#eta bin","#phi bin")
   h_gains_had_reference = L1CaloMap("Eta-phi map of HAD gains (gain-reference)","#eta bin","#phi bin")
 
@@ -677,7 +680,8 @@ if __name__ == "__main__":
   receiver_gains     = GainReader()
 
   bad_gain_file = open('bad_gains.txt','w')
-
+  drifted_towers_file = open('drifted_towers.txt','w')
+  
   if options.isInputXml == True:
     print "Taking input from xml file: ", options.input_file_name
     receiver_gains.LoadGainsXml(options.input_file_name)
@@ -723,12 +727,7 @@ if __name__ == "__main__":
 	 
            if gain == -1. :
              h_unfitted_em.Fill(i_eta,i_phi)  
-             bad_gain_file.write('%i %i %s gain= %s \n' % (i_eta,i_phi,coolEm,gain) ) 
-             h_gains_em_reference.Fill(i_eta,i_phi,-100.)
-             h_gains_em_reference_rel.Fill(i_eta,i_phi,-100.)	     
-           elif passes_selection == False:
-             h_gains_em_fselect.Fill(i_eta,i_phi)
-             bad_gain_file.write('%i %i %s  gain= %s  chi2= %s offset= %s \n' %  (i_eta,i_phi,coolEm,gain,chi2,offset) ) 
+             bad_gain_file.write('%i %i %s EM gain= %.3f \n' % (i_eta,i_phi,coolEm,float(gain))) 
              h_gains_em_reference.Fill(i_eta,i_phi,-100.)
              h_gains_em_reference_rel.Fill(i_eta,i_phi,-100.)	     
            else:
@@ -738,9 +737,21 @@ if __name__ == "__main__":
              em_partition_gains.Fill(i_eta,gain)           
              em_partition_gains_ref.Fill(i_eta,gain-reference_gain)  
              h_gains_em_reference.Fill(i_eta,i_phi,gain-reference_gain)
+
+             if passes_selection == False:
+               h_gains_em_fselect.Fill(i_eta,i_phi)
+               bad_gain_file.write('%i %i %s  EM gain= %.3f  chi2= %.3f offset= %.3f \n' %  (i_eta,i_phi,coolEm,float(gain),float(chi2),float(offset))) 
+#               h_gains_em_reference.Fill(i_eta,i_phi,-100.)
+#               h_gains_em_reference_rel.Fill(i_eta,i_phi,-100.)	              
+
              if reference_gain > 0:
                em_partition_gains_ref_rel.Fill(i_eta,(gain-reference_gain)/reference_gain)  
                h_gains_em_reference_rel.Fill(i_eta,i_phi,(gain-reference_gain)/reference_gain)
+               if (gain-reference_gain)/reference_gain > 0.1 or (gain-reference_gain)/reference_gain < -0.1:
+                 h_drifted_em.Fill(i_eta,i_phi)
+                 drifted_towers_file.write('%i %i %s  EM gain= %.3f   refGain= %.3f  \n' %  (i_eta,i_phi,coolEm,float(gain),float(reference_gain))) 
+
+
 
 
        if not coolHad == '':                         # there is a channel for this eta-phi
@@ -755,12 +766,7 @@ if __name__ == "__main__":
 
            if gain == -1. :
              h_unfitted_had.Fill(i_eta,i_phi)  
-             bad_gain_file.write('%i %i %s gain= %s \n' % (i_eta,i_phi,coolHad,gain))
-             h_gains_had_reference.Fill(i_eta,i_phi,-100.)
-             h_gains_had_reference_rel.Fill(i_eta,i_phi,-100.)
-           elif passes_selection == False:
-             h_gains_had_fselect.Fill(i_eta,i_phi)
-             bad_gain_file.write( '%i %i %s  gain= %s  chi2= %s offset= %s \n' % (i_eta,i_phi,coolHad,gain, chi2,offset)) 
+             bad_gain_file.write('%i %i %s HAD gain= %.3f \n' % (i_eta,i_phi,coolHad,float(gain)))
              h_gains_had_reference.Fill(i_eta,i_phi,-100.)
              h_gains_had_reference_rel.Fill(i_eta,i_phi,-100.)
            else:
@@ -770,9 +776,19 @@ if __name__ == "__main__":
              had_partition_gains.Fill(i_eta,gain)
              had_partition_gains_ref.Fill(i_eta,gain-reference_gain)
              h_gains_had_reference.Fill(i_eta,i_phi,gain-reference_gain)
+
+             if passes_selection == False:
+               h_gains_had_fselect.Fill(i_eta,i_phi)
+               bad_gain_file.write( '%i %i %s  HAD gain= %.3f  chi2= %.3f offset= %.3f \n' % (i_eta,i_phi,coolHad,float(gain),float(chi2),float(offset))) 
+#               h_gains_had_reference.Fill(i_eta,i_phi,-100.)
+#               h_gains_had_reference_rel.Fill(i_eta,i_phi,-100.)
+
              if reference_gain > 0:
                had_partition_gains_ref_rel.Fill(i_eta,(gain-reference_gain)/reference_gain)
                h_gains_had_reference_rel.Fill(i_eta,i_phi,(gain-reference_gain)/reference_gain)
+               if (gain-reference_gain)/reference_gain > 0.1 or (gain-reference_gain)/reference_gain < -0.1:
+                 h_drifted_had.Fill(i_eta,i_phi)
+                 drifted_towers_file.write('%i %i %s  HAD gain= %.3f   refGain= %.3f \n' %  (i_eta,i_phi,coolHad,float(gain),float(reference_gain))) 
 	    
 
 	   
@@ -782,12 +798,76 @@ if __name__ == "__main__":
 
   h_gains_em.SetMinimum(0.6)
   h_gains_em.SetMaximum(1.4)
+#  h_gains_em.SetMaximum(2.1)
   h_gains_em.Draw()
   c1.Print("Gains.ps(")
 
   h_gains_had.SetMinimum(0.6)
   h_gains_had.SetMaximum(1.4)
   h_gains_had.Draw()
+  c1.Print("Gains.ps")
+
+  h_drifted_em.Draw()
+  c1.Print("Gains.ps")
+  
+  h_drifted_had.Draw()
+  c1.Print("Gains.ps")
+
+
+  c1.cd()
+  gPad.SetLogy(0)
+
+  h_gains_em_reference_rel.SetMinimum(-0.5)
+  h_gains_em_reference_rel.SetMaximum(0.5)
+  h_gains_em_reference_rel.Draw()
+  c1.Print("Gains.ps")
+
+  h_gains_had_reference_rel.SetMinimum(-0.5)
+  h_gains_had_reference_rel.SetMaximum(0.5)
+  h_gains_had_reference_rel.Draw()
+  c1.Print("Gains.ps")
+
+#  gPad.SetRightMargin(0.01)
+  h_gains_em_reference_rel.SetMinimum(-0.1)
+  h_gains_em_reference_rel.SetMaximum(0.1)
+  h_gains_em_reference_rel.Draw()
+  c1.Update()
+  palette = h_gains_em_reference_rel.h_1.GetListOfFunctions().FindObject("palette")
+  if palette:
+    palette.SetLabelSize(0.025)
+
+  h_gains_em_reference_rel.Draw()
+  c1.Print("Gains.ps")
+
+  h_gains_had_reference_rel.SetMinimum(-0.1)
+  h_gains_had_reference_rel.SetMaximum(0.1)
+  h_gains_had_reference_rel.Draw()
+  c1.Update()
+
+  palette = h_gains_had_reference_rel.h_1.GetListOfFunctions().FindObject("palette")
+  if palette:
+    palette.SetLabelSize(0.025)
+    
+  h_gains_had_reference_rel.Draw()
+  c1.Print("Gains.ps")
+
+
+  c1.cd()
+  gPad.SetLogy(0)
+
+  h_gains_em_reference.SetMinimum(-0.5)
+  h_gains_em_reference.SetMaximum(0.5)
+
+  h_gains_em_reference.Draw()
+  c1.Print("Gains.ps")
+
+  h_gains_had_reference.SetMinimum(-0.5)
+  h_gains_had_reference.SetMaximum(0.5)
+
+#  h_gains_had_reference.SetMinimum(-0.2)
+#  h_gains_had_reference.SetMaximum(0.2)
+
+  h_gains_had_reference.Draw()
   c1.Print("Gains.ps")
 
   c1.cd()
@@ -818,38 +898,10 @@ if __name__ == "__main__":
   h_offset_had.Draw()
   c1.Print("Gains.ps")
 
-  c1.cd()
-  gPad.SetLogy(0)
-
-  h_gains_em_reference.SetMinimum(-0.5)
-  h_gains_em_reference.SetMaximum(0.5)
-
-  h_gains_em_reference.Draw()
-  c1.Print("Gains.ps")
-
-  h_gains_had_reference.SetMinimum(-0.5)
-  h_gains_had_reference.SetMaximum(0.5)
-
-#  h_gains_had_reference.SetMinimum(-0.2)
-#  h_gains_had_reference.SetMaximum(0.2)
-
-  h_gains_had_reference.Draw()
-  c1.Print("Gains.ps")
-
-  c1.cd()
-  gPad.SetLogy(0)
-
-  h_gains_em_reference_rel.SetMinimum(-0.5)
-  h_gains_em_reference_rel.SetMaximum(0.5)
-  h_gains_em_reference_rel.Draw()
-  c1.Print("Gains.ps")
-
-  h_gains_had_reference_rel.SetMinimum(-0.5)
-  h_gains_had_reference_rel.SetMaximum(0.5)
-  h_gains_had_reference_rel.Draw()
-  c1.Print("Gains.ps")
 
   #c2.cd()
+  c2.Clear()
+  c2.Divide(3,2)
   for i_p in range(0,em_partition_gains.nPartitions):
     c2.cd(i_p+1)
     if em_partition_gains.his_partitions[i_p].GetEntries() > 0:
@@ -861,6 +913,8 @@ if __name__ == "__main__":
   c2.Print("Gains.ps")
   
   #c2.cd()
+  c2.Clear()
+  c2.Divide(3,2)
   for i_p in range(0,had_partition_gains.nPartitions):
     c2.cd(i_p+1)
     if had_partition_gains.his_partitions[i_p].GetEntries() > 0:
@@ -873,6 +927,8 @@ if __name__ == "__main__":
   
   
   #c2.cd()
+  c2.Clear()
+  c2.Divide(3,2)
   for i_p in range(0,em_partition_gains_ref.nPartitions):
     c2.cd(i_p+1)
     if em_partition_gains_ref.his_partitions[i_p].GetEntries() > 0:
@@ -884,6 +940,8 @@ if __name__ == "__main__":
   c2.Print("Gains.ps")
   
   #c2.cd()
+  c2.Clear()
+  c2.Divide(3,2)
   for i_p in range(0,had_partition_gains_ref.nPartitions):
     c2.cd(i_p+1)
     if had_partition_gains_ref.his_partitions[i_p].GetEntries() > 0:
@@ -895,6 +953,8 @@ if __name__ == "__main__":
   c2.Print("Gains.ps")
 
   #c2.cd()
+  c2.Clear()
+  c2.Divide(3,2)
   for i_p in range(0,em_partition_gains_ref_rel.nPartitions):
     c2.cd(i_p+1)
     if em_partition_gains_ref_rel.his_partitions[i_p].GetEntries() > 0:
@@ -906,6 +966,8 @@ if __name__ == "__main__":
   c2.Print("Gains.ps")
   
   #c2.cd()
+  c2.Clear()
+  c2.Divide(3,2)
   for i_p in range(0,had_partition_gains_ref_rel.nPartitions):
     c2.cd(i_p+1)
     if had_partition_gains_ref_rel.his_partitions[i_p].GetEntries() > 0:
@@ -936,5 +998,6 @@ if __name__ == "__main__":
   os.system("ps2pdf Gains.ps")
   
   bad_gain_file.close()
-  
+  drifted_towers_file.close()  
+
   print "finished!"
