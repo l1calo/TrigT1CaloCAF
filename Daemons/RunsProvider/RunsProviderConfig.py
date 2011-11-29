@@ -1,7 +1,8 @@
 dbConnection = "/afs/cern.ch/user/l/l1ccalib/testarea/15.2.0/Trigger/TrigT1/TrigT1CaloCAF/Daemons/db/rundb.db"
 
 # MailingList = ["veit.scharf@kip.uni-heidelberg.de"]
-MailingList = ["prieur@cern.ch", "martin.wessels@cern.ch", "john.morris@cern.ch", "veit.scharf@kip.uni-heidelberg.de", "murrough.landon@cern.ch", "jb@hep.ph.bham.ac.uk", "pjwf@hep.ph.bham.ac.uk"]
+#MailingList = ["prieur@cern.ch", "martin.wessels@cern.ch", "john.morris@cern.ch", "veit.scharf@kip.uni-heidelberg.de", "murrough.landon@cern.ch", "jb@hep.ph.bham.ac.uk", "pjwf@hep.ph.bham.ac.uk"]
+MailingList = ["martin.wessels@cern.ch", "murrough.landon@cern.ch", "Bruce.Barnett@cern.ch", "jb@hep.ph.bham.ac.uk", "pjwf@hep.ph.bham.ac.uk"]
 
 RawDataFileBasePaths = ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
 
