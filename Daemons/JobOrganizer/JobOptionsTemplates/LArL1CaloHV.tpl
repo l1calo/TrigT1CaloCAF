@@ -33,10 +33,10 @@ del FilesInput
 
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPST-005-04")
+#globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPST-005-04")
 
 from RecExConfig.AutoConfiguration import ConfigureFromListOfKeys, GetRunNumber
-ConfigureFromListOfKeys(['everything'])
+ConfigureFromListOfKeys(['everything','ConditionsTag=COMCOND-BLKP*-005-08'])
 
 # database tag
 from IOVDbSvc.CondDB import conddb

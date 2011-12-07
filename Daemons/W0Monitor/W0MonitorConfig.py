@@ -12,4 +12,4 @@ RemovalOk=False
 # Mailing list
 
 #MailingList=["prieur@cern.ch", "martin.wessels@cern.ch", "john.morris@cern.ch", "veit.scharf@kip.uni-heidelberg.de"]
-MailingList=["l1ccalib@cern.ch"]
+MailingList=["l1ccalib@cern.ch", "pjwf@hep.ph.bham.ac.uk"]
