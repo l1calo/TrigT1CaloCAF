@@ -37,7 +37,7 @@ cursor.execute("CREATE TABLE RUNPARAMS ( \
 				l2events VARCHAR(50), \
 				efevents VARCHAR(50), \
 				errcode VARCHAR(50), \
-                                tierzerotag VARCHAR(50) \
+                                tierzerotag VARCHAR(50), \
                                 gainstrategy VARCHAR(50) \
 				)")
 
