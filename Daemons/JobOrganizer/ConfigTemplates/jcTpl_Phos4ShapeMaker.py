@@ -34,7 +34,7 @@ JobOptionName = "#RUN_NUMBER#_#JOB_CONFIGURATION#_jobOptions.py"
 #Athena log file
 AthenaJobLogFile = JobOptionName.strip("_jobOptions.py")+'Athena.log'
 
-RawDataFileBasePaths = ["/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED_8#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
+RawDataFileBasePaths = ["/castor/cern.ch/grid/atlas/DAQ/l1calo/2012/#RUN_NUMBER_PADDED_8#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED_8#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
 
 LogLevel = 2
 

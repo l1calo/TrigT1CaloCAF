@@ -33,8 +33,22 @@ del FilesInput
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
 
+# temporary fix for data12
+from RecExConfig.RecFlags import rec
+rec.projectName.set_Value_and_Lock("data11_calib")
+
+import sys
+sys.path.append('/afs/cern.ch/user/a/atlcond/utils/python/') # CERN
+#sys.path.append('/home/atdata5/pjwf/atlcond/utils/python') # Brum
+from AtlCoolBKLib import resolveAlias
+conditionsTag = resolveAlias.getCurrent()
+
+from AthenaCommon.BeamFlags import jobproperties
+jobproperties.Beam.beamType.set_Value_and_Lock('cosmics')
+
 from RecExConfig.AutoConfiguration import ConfigureFromListOfKeys, GetRunNumber
-ConfigureFromListOfKeys(['everything'])
+ConfigureFromListOfKeys(['everything','ConditionsTag='+conditionsTag])
+#ConfigureFromListOfKeys(['everything','ConditionsTag=COMCOND-BLKP*-005-08'])
 
 # database tag
 from IOVDbSvc.CondDB import conddb
@@ -47,7 +61,7 @@ if doLAr: DetFlags.detdescr.LAr_setOn()
 if doTile: DetFlags.detdescr.Tile_setOn()
 
 # needed ....
-from RecExConfig.RecFlags import rec
+#from RecExConfig.RecFlags import rec
 rec.doLArg.set_Value_and_Lock(doLAr)
 rec.doTile.set_Value_and_Lock(doTile)
 rec.doCalo.set_Value_and_Lock(doLAr or doTile)
@@ -78,17 +92,39 @@ if doLAr:
     include("LArIdCnv/LArIdCnv_joboptions.py")
     svcMgr.ByteStreamAddressProviderSvc.TypeNames += ["LArFebHeaderContainer/LArFebHeader"]
     include("LArROD/LArFebErrorSummaryMaker_jobOptions.py")
+    # cell reconstruction properties
+    from CaloRec.CaloCellFlags import jobproperties
+    # reconstruct cells
+    from CaloRec.CaloCellGetter import CaloCellGetter
+    CaloCellGetter()
 
-# cell reconstruction properties
-from CaloRec.CaloCellFlags import jobproperties
-from TileRecUtils.TileRecFlags import jobproperties
-jobproperties.CaloCellFlags.doDeadCellCorr = False
-jobproperties.TileRecFlags.readDigits = True
+else:
 
-# reconstruct cells
-from CaloRec.CaloCellGetter import CaloCellGetter
-CaloCellGetter()
-del rec
+    from TileRecUtils.TileRecFlags import jobproperties
+    jobproperties.TileRecFlags.doTileOpt2=True
+    jobproperties.TileRecFlags.readDigits=True
+    jobproperties.TileRecFlags.noiseFilter=0
+    jobproperties.TileRecFlags.TileRunType=8
+    jobproperties.TileRecFlags.calibrateEnergy=False
+    jobproperties.TileRecFlags.OfcFromCOOL=False
+    jobproperties.TileRecFlags.BestPhaseFromCOOL=False
+    jobproperties.TileRecFlags.correctTime=False
+    jobproperties.TileRecFlags.correctAmplitude=False
+
+    from TileConditions.TileCondToolConf import *
+    tileInfoConfigurator.TileCondToolTiming = getTileCondToolTiming( 'COOL','CIS')
+
+    tileCondToolOfcCool = getTileCondToolOfcCool('COOL', 'CISPULSE100')
+    from AthenaCommon.AppMgr import ToolSvc
+    ToolSvc += tileCondToolOfcCool
+
+    from TileConditions.TileConditionsConf import TileCondToolOfc
+    tileCondToolOfc = TileCondToolOfc()
+    tileCondToolOfc.TileCondToolPulseShape = getTileCondToolPulseShape('COOL','CISPULSE100')
+
+    include( "TileRec/TileRec_jobOptions.py" )
+    include( "TileRec/TileCellMaker_jobOptions.py" )
+
 
 # setup l1calo database
 include('TrigT1CaloCalibConditions/L1CaloCalibConditions_jobOptions.py')
@@ -144,9 +180,9 @@ topSequence.L1CaloRampMaker.SpecialChannelRange = { 0x6130f02 : 150, 0x7100003 :
 	0x71c0500 : 150, 0x7140101 : 150, 0x6170a01 : 150, 0x7180200 : 150, 0x7180201 : 150, 0x61b0302 : 150, 0x61f0703 : 150, 0x71c0100 : 150,
 	0x7100601 : 150, 0x61f0d00 : 150, 0x61f0d01 : 150,
 	# saturating channels
-	0x7120203 : 100, 0x6170c03 : 50, 0x6150b02 : 100, 0x6180d03 : 150, 0x61b0f02 : 100, 0x71d0d02 : 150, 
-	0x61c0a00 : 100, 0x6160f03 : 150, 0x6110901 : 150, 0x6140c02 : 150, 0x61a0e03 : 150, 0x61a0103 : 150,
-	0x61b0f00 : 150, 0x61b0f01 : 150 
+	#0x7120203 : 100, 0x6170c03 : 50, 0x6150b02 : 100, 0x6180d03 : 150, 0x61b0f02 : 100, 0x71d0d02 : 150, 
+	#0x61c0a00 : 100, 0x6160f03 : 150, 0x6110901 : 150, 0x6140c02 : 150, 0x61a0e03 : 150, 0x61a0103 : 150,
+	#0x61b0f00 : 150, 0x61b0f01 : 150 
 }
 
 # configure fitting algorithm

@@ -57,7 +57,7 @@ jobConfigurations = {
         "validateJob":           False
         },
     "L1CaloCalibD3PD" : {
-        "listeners":             ["LArCalibL1Calo", "TileCalibL1Calo", "LArEnergyScan", "TileEnergyScan", "L1CaloPhos4Scan"],
+        "listeners":             ["LArCalibL1Calo", "TileCalibL1Calo", "LArEnergyScan", "TileEnergyScan", "L1CaloPhos4Scan", "L1CaloStandalone"],
         "configurationTemplate": "jcTpl_L1CaloCalibD3PD.py",
         "validateJob":           True
         }

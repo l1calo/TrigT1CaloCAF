@@ -16,6 +16,8 @@ rec.doLArg.set_Value_and_Lock(False)
 rec.doTile.set_Value_and_Lock(False)
 #rec.oldFlagLandMine.set_Value_and_Lock(True)
 rec.doTrigger.set_Value_and_Lock(True)
+# temporary fix for data12
+rec.projectName.set_Value_and_Lock("data11_calib")
 
 disableRecJobOpts = ('abortOnUncheckedStatusCode','doWriteESD','doTruth', 'doAOD','doAODCaloCells',
           'doAODall','doCBNT','CBNTAthenaAware','doPerfMon','oldFlagTopSteering','doHist',

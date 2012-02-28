@@ -35,6 +35,8 @@ from RecExConfig.RecFlags import rec
 rec.DPDMakerScripts.append( "L1CaloD3PDMaker/L1CaloD3PD_RAW_prodJobOFragment.py" )
 rec.doCalo.set_Value_and_Lock( True )
 rec.Commissioning.set_Value_and_Lock(True)
+# temporary fix for data12
+rec.projectName.set_Value_and_Lock("data11_calib")
 
 disableRecJobOpts = ('doAOD', 'doAODCaloCells', 'doAODall', 'doAlfa', 'doApplyAODFix', 'doCBNT', 'doCheckDictionary',
                     'doCheckJOT',  'doDetStatus', 'doDetailedAuditor', 'doDetailedPerfMon', 'doDumpMC',

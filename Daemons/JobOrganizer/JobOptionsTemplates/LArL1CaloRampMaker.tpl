@@ -34,6 +34,10 @@ del FilesInput
 from AthenaCommon.GlobalFlags  import globalflags
 #globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPST-005-04")
 
+# temporary fix for data12
+from RecExConfig.RecFlags import rec
+rec.projectName.set_Value_and_Lock("data11_calib")
+
 from RecExConfig.AutoConfiguration import ConfigureFromListOfKeys, GetRunNumber
 ConfigureFromListOfKeys(['everything','ConditionsTag=COMCOND-BLKP*-005-08'])
 
@@ -48,7 +52,7 @@ if doLAr: DetFlags.detdescr.LAr_setOn()
 if doLAr or doTile: DetFlags.detdescr.Tile_setOn()
 
 # needed ....
-from RecExConfig.RecFlags import rec
+#from RecExConfig.RecFlags import rec
 rec.doLArg.set_Value_and_Lock(doLAr)
 rec.doTile.set_Value_and_Lock(doTile)
 rec.doCalo.set_Value_and_Lock(doLAr or doTile)
