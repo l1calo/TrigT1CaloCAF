@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/afs/cern.ch/sw/lcg/external/Python/2.6.5/i686-slc5-gcc43-opt/bin/python
+###!/usr/bin/env python
 
 import os, shutil, threading, commands
 
@@ -49,7 +50,7 @@ def copyFile(inputPath, outputPath):
 def launchAthena(athenaLauncher):
 
 	# launch Athena
-	import subprocess
+	import subprocess, time
 	cmd = 'source ./' + athenaLauncher
 	child = subprocess.Popen([cmd], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
 	                         stderr=subprocess.STDOUT, close_fds=True, shell=True)
@@ -59,6 +60,7 @@ def launchAthena(athenaLauncher):
 	a.start()
 	child.wait()
 	a.stop()
+	time.sleep(60)
 
 	status = child.stdout.close()
 	if status is not None:

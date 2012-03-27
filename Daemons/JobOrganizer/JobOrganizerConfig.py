@@ -1,9 +1,10 @@
 import os
 
-dbconnection ="/afs/cern.ch/user/l/l1ccalib/testarea/17.1.2.1/Trigger/TrigT1/TrigT1CaloCAF/Daemons/db/rundb.db"
+dbconnection ="/afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/TrigT1CaloCAF/Daemons/db/rundb.db"
 
 DaemonInstallDir = os.environ["PWD"]
 DaemonDataDir = os.environ["HOME"]+'/w0/DaemonData'
+#DaemonDataDir = os.environ["HOME"]+'/w0/DaemonDataTest'
 ConfigTemplateDir = DaemonInstallDir + '/ConfigTemplates'
 JobOptionsTemplateDir = DaemonInstallDir + '/JobOptionsTemplates'
 ScriptsDir = DaemonInstallDir + '/Scripts'
@@ -26,11 +27,11 @@ jobConfigurations = {
         "configurationTemplate": "jcTpl_CBNT_L1CaloOnly.py",
         "validateJob":           True
         },
-    "L1CaloStandalone_Release15": {
-        "listeners":             ["L1CaloStandalone"],
-        "configurationTemplate": "jcTpl_CBNT_Release15_L1CaloOnly.py",
-        "validateJob":           True
-        },
+    #"L1CaloStandalone_Release15": {
+    #    "listeners":             ["L1CaloStandalone"],
+    #    "configurationTemplate": "jcTpl_CBNT_Release15_L1CaloOnly.py",
+    #    "validateJob":           True
+    #    },
     "LArL1CaloRampMaker" : {
         "listeners":             ["LArEnergyScan"],
         "configurationTemplate": "jcTpl_LArL1CaloRampMaker.py",

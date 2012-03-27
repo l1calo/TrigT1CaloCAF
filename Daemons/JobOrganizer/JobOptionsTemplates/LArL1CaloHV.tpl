@@ -34,13 +34,15 @@ del FilesInput
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
 #globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPST-005-04")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-01")
 
 # temporary fix for data12
-from RecExConfig.RecFlags import rec
-rec.projectName.set_Value_and_Lock("data11_calib")
+#from RecExConfig.RecFlags import rec
+#rec.projectName.set_Value_and_Lock("data11_calib")
 
 from RecExConfig.AutoConfiguration import ConfigureFromListOfKeys, GetRunNumber
-ConfigureFromListOfKeys(['everything','ConditionsTag=COMCOND-BLKP*-005-08'])
+#ConfigureFromListOfKeys(['everything','ConditionsTag=COMCOND-BLKP*-005-08'])
+ConfigureFromListOfKeys(['everything'])
 
 # database tag
 from IOVDbSvc.CondDB import conddb
@@ -53,7 +55,7 @@ if doLAr: DetFlags.detdescr.LAr_setOn()
 if doLAr or doTile: DetFlags.detdescr.Tile_setOn()
 
 # needed ....
-#from RecExConfig.RecFlags import rec
+from RecExConfig.RecFlags import rec
 rec.doLArg.set_Value_and_Lock(doLAr)
 rec.doTile.set_Value_and_Lock(doTile)
 rec.doCalo.set_Value_and_Lock(doLAr or doTile)
@@ -89,10 +91,13 @@ for i in svcMgr.IOVDbSvc.Folders:
 conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
 conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-01")
 
+# CERN
 from glob import glob
 catalog_files = glob("/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond??_data.??????.lar.COND_castor.xml")
 
 svcMgr.PoolSvc.ReadCatalog += ["xmlcatalog_file:%s" % i for i in catalog_files]
+# Brum
+#svcMgr.PoolSvc.ReadCatalog += ["xmlcatalog_file:/home/atdata5/pjwf/condcalib/PoolFileCatalog.xml"]
 
 # extra LAr setup
 if doLAr:
@@ -107,6 +112,8 @@ from TileRecUtils.TileRecFlags import jobproperties
 jobproperties.CaloCellFlags.doDeadCellCorr = False
 jobproperties.TileRecFlags.readDigits = False
 #jobproperties.CaloCellFlags.doLArCreateMissingCells = False
+# needed for 17.2.0.2
+jobproperties.CaloCellFlags.doPileupOffsetBCIDCorr = False
 
 # reconstruct cells
 from CaloRec.CaloCellGetter import CaloCellGetter

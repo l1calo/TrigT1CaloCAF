@@ -7,6 +7,7 @@ SkipEvents = 0
 
 from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
 #RAW_DATA_SETS#
+
 FilesInput = athenaCommonFlags.BSRDOInput()
 
 doLAr = False
@@ -34,8 +35,10 @@ del FilesInput
 from AthenaCommon.GlobalFlags  import globalflags
 
 # temporary fix for data12
-from RecExConfig.RecFlags import rec
-rec.projectName.set_Value_and_Lock("data11_calib")
+#from RecExConfig.RecFlags import rec
+#rec.projectName.set_Value_and_Lock("data11_calib")
+
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-01")
 
 import sys
 sys.path.append('/afs/cern.ch/user/a/atlcond/utils/python/') # CERN
@@ -47,8 +50,9 @@ from AthenaCommon.BeamFlags import jobproperties
 jobproperties.Beam.beamType.set_Value_and_Lock('cosmics')
 
 from RecExConfig.AutoConfiguration import ConfigureFromListOfKeys, GetRunNumber
-ConfigureFromListOfKeys(['everything','ConditionsTag='+conditionsTag])
+#ConfigureFromListOfKeys(['everything','ConditionsTag='+conditionsTag])
 #ConfigureFromListOfKeys(['everything','ConditionsTag=COMCOND-BLKP*-005-08'])
+ConfigureFromListOfKeys(['everything'])
 
 # database tag
 from IOVDbSvc.CondDB import conddb
@@ -143,6 +147,7 @@ topSequence.L1CaloRampMaker.L1TriggerTowerTool = LVL1__L1TriggerTowerTool()
 topSequence.L1CaloRampMaker.DoTile = doTile
 topSequence.L1CaloRampMaker.DoLAr = doLAr
 topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
+topSequence.L1CaloRampMaker.NumberOfEnergySteps = 9
 topSequence.L1CaloRampMaker.IsGain1 = True
 topSequence.L1CaloRampMaker.CheckProvenance = False
 # special region 1.3 < |eta| < 1.5, saturation on tile side.

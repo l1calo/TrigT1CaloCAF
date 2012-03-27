@@ -144,7 +144,8 @@ class ResourceWatcher:
 		if rawoutput.find('not found')!=-1:
 			return None
 
-		job = rawoutput.splitlines()[1]
+		#job = rawoutput.splitlines()[1]
+		job = rawoutput.splitlines()[-1]
 		parameters = job.split()
 #		if parameters[0]!= str(jobId):
 #			return None

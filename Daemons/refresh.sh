@@ -3,8 +3,10 @@ actualnode=`hostname`
 if [ "x$actualnode" = "x$wantednode" ]
   then
   echo "Re-starting daemons on $wantednode"
-  export DAEMONDIR=/afs/cern.ch/user/l/l1ccalib/testarea/17.1.2.1/Trigger/TrigT1/TrigT1CaloCAF/Daemons
+  export DAEMONDIR=/afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/TrigT1CaloCAF/Daemons
   source $DAEMONDIR/setup.sh
+  CORAL_AUTH_PATH=/afs/cern.ch/atlas/software/builds/AtlasCore/17.2.0/InstallArea/XML/AtlasAuthentication:$CORAL_AUTH_PATH
+  CORAL_DBLOOKUP_PATH=/afs/cern.ch/atlas/software/builds/AtlasCore/17.2.0/InstallArea/XML/AtlasAuthentication:$CORAL_DBLOOKUP_PATH
 
   cd $DAEMONDIR/RunsProvider
   $DAEMONDIR/RunsProvider/RunsProviderDaemon.py restart

@@ -92,7 +92,8 @@ class Stager:
 			output= 'STAGEIN'
 
 		else:
-			output= 'STAGEUDF'
+			#output= 'STAGEUDF'
+			output= 'NOTSTAGED' # STAGEUDF just causes crash, but is this safe?
 
 		if self.stager!="":
 			#cmd = "export STAGE_SVCCLASS="+self.stager

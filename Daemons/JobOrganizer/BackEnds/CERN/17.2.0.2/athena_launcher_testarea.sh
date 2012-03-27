@@ -1,15 +1,18 @@
+#!/bin/bash
 # script to launch athena using the testarea in the l1ccalib home directory
 
 # set up env. variables and source athena software
 export STAGE_SVCCLASS=#INPUT_STAGE_SVC_CLASS#
-export ATLAS_RELEASE=#ATLAS_RELEASE#
-source /afs/cern.ch/user/l/l1ccalib/cmthome/setup.sh -tag=AtlasTier0,#ATLAS_RELEASE#,runtime,32
-export CMTHOME=''
+export AtlasSetup=/afs/cern.ch/atlas/software/releases/#ATLAS_RELEASE_NOCACHE#/AtlasSetup
+source $AtlasSetup/scripts/asetup.sh #ATLAS_RELEASE# --testarea /afs/cern.ch/user/l/l1ccalib/testarea --multi
+#export CMTHOME=''
 export CORAL_AUTH_PATH=$TestArea:$CORAL_AUTH_PATH
 
 echo "########################################"
+printenv
+echo "########################################"
 echo "CMTPATH: $CMTPATH"
-export CMTDEBUG=1
+#export CMTDEBUG=1
 echo "cmt show projects: `cmt show projects`" 
 echo "TestArea: $TestArea"
 echo "CORAL_AUTH_PATH: $CORAL_AUTH_PATH"
@@ -36,4 +39,6 @@ echo "ls -ltr: `ls -lts`"
 echo "########################################"
 
 # run athena
+#athena.py jobo.py | grep -v -e 'Py:Cmt            WARNING' -e 'ERROR in TileROD_Decoder ---- Unknown frag type' | tee #JOB_LOG_NAME#
+#athena.py jobo.py | grep -v -e 'Py:Cmt            WARNING' | tee #JOB_LOG_NAME#
 athena.py jobo.py | tee #JOB_LOG_NAME#
