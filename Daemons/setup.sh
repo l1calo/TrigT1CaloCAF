@@ -1,2 +1,3 @@
-source /afs/cern.ch/user/l/l1ccalib/cmthome/setup.sh -tag=15.2.0,32,opt
+export AtlasSetup=/afs/cern.ch/atlas/software/releases/17.1.2/AtlasSetup
+source $AtlasSetup/scripts/asetup.sh 17.1.2.1,32
 export STAGE_SVCCLASS=atlcal

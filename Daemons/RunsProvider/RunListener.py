@@ -127,10 +127,13 @@ class RunListener:
     def initRunListener(self):
         self.logger.info("===> from initRunListener <===")
         self.dumpConfig()
-        self.runlisttool = coolRunLister(self.tdaqdbname,self.trigdbname,self.statusdbname,self.oracle,self.loglevel)
-        self.runlisttool.setSelection(self.reconly,self.detmask,self.runtype,self.tag,self.detstatus,self.detstatustag)
+        #self.runlisttool = coolRunLister(self.tdaqdbname,self.trigdbname,self.statusdbname,self.oracle,self.loglevel)
+        #self.runlisttool.setSelection(self.reconly,self.detmask,self.runtype,self.tag,self.detstatus,self.detstatustag)
 
         if self.initialRun==0:
+
+            self.runlisttool = coolRunLister(self.tdaqdbname,self.trigdbname,self.statusdbname,self.oracle,self.loglevel)
+            self.runlisttool.setSelection(self.reconly,self.detmask,self.runtype,self.tag,self.detstatus,self.detstatustag)
 
             nhours = 6
             tsnow = int(time.time())*1000000000L

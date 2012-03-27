@@ -297,19 +297,16 @@ class JobOrganizer:
 		sInputPath = self.configModule.ConfigTemplateDir+'/'+sConfigTpl
 
 		#need to check or create folders
-		#sOutputPath = self.configModule.TmpInstallDir+'/jobConfig/'+sConfigModule
-		sOutputPath = 'tmp/jobConfig/'+sConfigModule
-		#sOutputPath = os.environ['PWD']+'/tmp/jobConfig'
-		#jobInformation.jobConfigModulePath = sOutputPath+'/'+sConfigModule
+		sTmpModulePath = self.configModule.TmpInstallDir+'/jobConfig'
+		sOutputPath = sTmpModulePath+'/'+sConfigModule
 		jobInformation.jobConfigModulePath = sOutputPath
 
-		#replaceTag(sInputPath, jobInformation.jobConfigModulePath, jobInformation.placeHolders)
 		replaceTag(sInputPath, sOutputPath, jobInformation.placeHolders)
 
-		#print sOutputPath
-		#os.chdir(sOutputPath)
-		jobInformation.jobConfigModule = __import__(sOutputPath.strip(".py"))
-		#jobInformation.jobConfigModule = __import__('tmp/jobConfig/'+sConfigModule.strip(".py"))
+		if not sTmpModulePath in sys.path:
+		    sys.path.append(sTmpModulePath)
+
+		jobInformation.jobConfigModule = __import__(sConfigModule.strip(".py"))
 
 		return
 

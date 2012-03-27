@@ -1,4 +1,4 @@
-export DAEMONDIR=/afs/cern.ch/user/l/l1ccalib/testarea/15.2.0/Trigger/TrigT1/TrigT1CaloCAF/Daemons
+export DAEMONDIR=/afs/cern.ch/user/l/l1ccalib/testarea/17.1.2.1/Trigger/TrigT1/TrigT1CaloCAF/Daemons
 source $DAEMONDIR/setup.sh
 
 cd $DAEMONDIR/RunsProvider

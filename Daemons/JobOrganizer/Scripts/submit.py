@@ -1,5 +1,4 @@
-#!/afs/cern.ch/sw/lcg/external/Python/2.5.4/i686-slc5-gcc43-opt/bin/python
-###!/usr/bin/env python
+#!/usr/bin/env python
 
 import os, shutil, threading, commands
 
@@ -15,8 +14,8 @@ class Listener(threading.Thread):
 		naptime = 1
 		while not self._stopevent.isSet():
 			while True:
-				self.process.fromchild.flush()
-				line = self.process.fromchild.readline()
+				self.process.stdout.flush()
+				line = self.process.stdout.readline()
 				if not line:
 					break
 				print line[:-1]
@@ -50,17 +49,18 @@ def copyFile(inputPath, outputPath):
 def launchAthena(athenaLauncher):
 
 	# launch Athena
-	import popen2
+	import subprocess
 	cmd = 'source ./' + athenaLauncher
-	child = popen2.Popen4(cmd)
+	child = subprocess.Popen([cmd], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+	                         stderr=subprocess.STDOUT, close_fds=True, shell=True)
 
 	a = Listener(child)
-	child.tochild.close()
+	child.stdin.close()
 	a.start()
 	child.wait()
 	a.stop()
 
-	status = child.fromchild.close()
+	status = child.stdout.close()
 	if status is not None:
 		print "status: ", status
 

@@ -72,7 +72,13 @@ class Stager:
 
 		# get gile information
 		cmd =  "stager_qry -M "+ path
-		rawOutput = commands.getoutput(cmd).splitlines()[1]
+		#rawOutput = commands.getoutput(cmd).splitlines()[1]
+		rawOutputList = commands.getoutput(cmd).splitlines()
+		rawOutput = ""
+		if len(rawOutputList) > 1:
+			rawOutput = rawOutputList[1]
+		else:
+			rawOutput = rawOutputList[0]
 		#print rawOutput
 
 		output = ""
@@ -224,8 +230,8 @@ class Job:
 
 		athenaSetupDir = self.jobInformation.jobConfigModule.DaemonBackEndsDir+'/'+self.jobInformation.jobConfigModule.BackEnd+'/'+self.jobInformation.jobConfigModule.AtlasRelease
 
-		bStatus &= Tools.copyFile(athenaSetupDir+'/requirements', self.jobInformation.jobConfigModule.JobConfigDir)
-		if not bStatus: self.logger.warning("Copying files from %s to %s failed." % (athenaSetupDir+'/requirements', self.jobInformation.jobConfigModule.JobConfigDir))
+		#bStatus &= Tools.copyFile(athenaSetupDir+'/requirements', self.jobInformation.jobConfigModule.JobConfigDir)
+		#if not bStatus: self.logger.warning("Copying files from %s to %s failed." % (athenaSetupDir+'/requirements', self.jobInformation.jobConfigModule.JobConfigDir))
 
 		# add a few tag required by localAthena_setup.sh
 		atlasRelease = self.jobInformation.jobConfigModule.AtlasRelease
