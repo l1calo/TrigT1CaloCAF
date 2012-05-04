@@ -38,13 +38,14 @@ from AthenaCommon.GlobalFlags  import globalflags
 #from RecExConfig.RecFlags import rec
 #rec.projectName.set_Value_and_Lock("data11_calib")
 
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-01")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-04")
 
 import sys
 sys.path.append('/afs/cern.ch/user/a/atlcond/utils/python/') # CERN
 #sys.path.append('/home/atdata5/pjwf/atlcond/utils/python') # Brum
 from AtlCoolBKLib import resolveAlias
 conditionsTag = resolveAlias.getCurrent()
+print conditionsTag
 
 from AthenaCommon.BeamFlags import jobproperties
 jobproperties.Beam.beamType.set_Value_and_Lock('cosmics')
@@ -185,6 +186,7 @@ topSequence.L1CaloRampMaker.SpecialChannelRange = { 0x6130f02 : 150, 0x7100003 :
 	0x71c0500 : 150, 0x7140101 : 150, 0x6170a01 : 150, 0x7180200 : 150, 0x7180201 : 150, 0x61b0302 : 150, 0x61f0703 : 150, 0x71c0100 : 150,
 	0x7100601 : 150, 0x61f0d00 : 150, 0x61f0d01 : 150,
 	# saturating channels
+	0x7120203 : 100
 	#0x7120203 : 100, 0x6170c03 : 50, 0x6150b02 : 100, 0x6180d03 : 150, 0x61b0f02 : 100, 0x71d0d02 : 150, 
 	#0x61c0a00 : 100, 0x6160f03 : 150, 0x6110901 : 150, 0x6140c02 : 150, 0x61a0e03 : 150, 0x61a0103 : 150,
 	#0x61b0f00 : 150, 0x61b0f01 : 150 

@@ -34,7 +34,7 @@ del FilesInput
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
 #globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPST-005-04")
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-01")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-04")
 
 # temporary fix for data12
 #from RecExConfig.RecFlags import rec
@@ -90,6 +90,7 @@ for i in svcMgr.IOVDbSvc.Folders:
     if i.find('OFC')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
 conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
 conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-01")
+conddb.addOverride("/LAR/ElecCalibOfl/uA2MeV/Symmetry","LARuA2MeV-Rep2011")
 
 # CERN
 from glob import glob

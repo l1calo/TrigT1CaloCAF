@@ -33,7 +33,7 @@ del FilesInput
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
 #globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPST-005-04")
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-01")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-04")
 
 # temporary fix for data12
 #from RecExConfig.RecFlags import rec
@@ -89,6 +89,7 @@ for i in svcMgr.IOVDbSvc.Folders:
     if i.find('OFC')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
 conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
 conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-01")
+conddb.addOverride("/LAR/ElecCalibOfl/uA2MeV/Symmetry","LARuA2MeV-Rep2011")
 
 # CERN
 from glob import glob
@@ -151,14 +152,17 @@ topSequence.L1CaloRampMaker.CheckProvenance = True
 
 # sick tbb board and saturating LAr
 topSequence.L1CaloRampMaker.SpecialChannelRange = {
-	0x1170502 : 100, 0x1170503 : 100, 0x1160402 : 100, 0x1150401 : 100, 0x1160403 : 100, 0x1170403 : 100, 0x1150400 : 100,
-	0x1160500 : 75, 0x1160502 : 75, 0x1140503 : 100, 0x1170400 : 75, 0x1140502 : 100, 0x1170401 : 100, 0x1170402 : 75,
-	0x1160501 : 75, 0x1140500 : 100, 0x1160503 : 75, 0x1160400 : 100, 0x1160401 : 100, 0x1170500 : 100, 0x1170501 : 100,
-	0x1140501 : 100, 0x1150402 : 100, 0x1150403 : 100, 0x1150501 : 100, 0x1150500 : 100, 0x1150502 : 100, 0x1150503 : 100,
-	0x21d0400 : 150, 0x21d0401 : 150, 0x21d0402 : 150, 
-	0x41f0c01 : 70, 0x3130201 : 100, 0x4120603 : 150, 0x4120602 : 150, 0x4130700 : 150, 0x6170503 : 150, 0x41a0800 : 150,
-	0x4120d01 : 150, 0x41f0500 : 50, 0x5120602 : 150, 0x51f0801 : 150, 0x5110902 : 50
+        0x41f0c01 : 70, 0x41f0500 : 50
 }
+#topSequence.L1CaloRampMaker.SpecialChannelRange = {
+#	0x1170502 : 100, 0x1170503 : 100, 0x1160402 : 100, 0x1150401 : 100, 0x1160403 : 100, 0x1170403 : 100, 0x1150400 : 100,
+#	0x1160500 : 75, 0x1160502 : 75, 0x1140503 : 100, 0x1170400 : 75, 0x1140502 : 100, 0x1170401 : 100, 0x1170402 : 75,
+#	0x1160501 : 75, 0x1140500 : 100, 0x1160503 : 75, 0x1160400 : 100, 0x1160401 : 100, 0x1170500 : 100, 0x1170501 : 100,
+#	0x1140501 : 100, 0x1150402 : 100, 0x1150403 : 100, 0x1150501 : 100, 0x1150500 : 100, 0x1150502 : 100, 0x1150503 : 100,
+#	0x21d0400 : 150, 0x21d0401 : 150, 0x21d0402 : 150, 
+#	0x41f0c01 : 70, 0x3130201 : 100, 0x4120603 : 150, 0x4120602 : 150, 0x4130700 : 150, 0x6170503 : 150, 0x41a0800 : 150,
+#	0x4120d01 : 150, 0x41f0500 : 50, 0x5120602 : 150, 0x51f0801 : 150, 0x5110902 : 50
+#}
 
 # configure fitting algorithm
 from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloLinearCalibration
