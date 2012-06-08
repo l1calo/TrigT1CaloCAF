@@ -77,13 +77,15 @@ class ResourceWatcher:
 		#cmd = 'bjobs -u all  -w | grep ' + self.queue
 		cmd = 'bjobs -u ' + self.group + '  -w | grep ' + self.queue
 		rawoutput = commands.getoutput(cmd)
-		if rawoutput.splitlines()[0]=='No unfinished job found':
-			return []
+		#if rawoutput.splitlines()[0]=='No unfinished job found':
+		#	return []
 		# no need to skip the first line of the output here
 		# JOBID USER STAT QUEUE FROM_HOST EXEC_HOST JOB_NAME SUBMIT_TIME
 		jobList = rawoutput.splitlines()
 
 		if jobList == []:
+			return []
+		if jobList[0]=='No unfinished job found':
 			return []
 
 		batchJobList = []
