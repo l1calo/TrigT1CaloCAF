@@ -57,11 +57,15 @@ def isEmMiddle(layerName,isOverlap):
 
 def isEmBack(layerName,isOverlap):
 
-# layer number 3 in EMB and overlap, layer number 7 in EMEC
+# layer number 3 in EMB and overlap, layer number 7 in EMEC, layer nr. 5 in overlap
    isAccepted = False
     
-   if layerName == 3 or layerName == 7:
-     isAccepted = True	
+   if isOverlap:
+     if layerName == 5:
+       isAccepted = True
+   else:
+     if layerName == 3 or layerName == 7:
+       isAccepted = True	
 	    
    return isAccepted
 
@@ -311,6 +315,7 @@ if __name__ == "__main__":
   parser.add_option("-f","--InputFile",action="store",type="string",dest="input_file_name",help="Name of input file")
 
   HVCutAverage = 1.05          # lower cut on TT-averaged HV corrections
+#  HVCutAverage = 1.01          # lower cut on TT-averaged HV corrections
   HVCutLayers  = 1.001         # lower cut on layer-by-layer corrections
    
   (options, args) = parser.parse_args()
