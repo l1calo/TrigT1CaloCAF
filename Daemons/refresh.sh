@@ -1,4 +1,5 @@
-wantednode="lxplus427.cern.ch"
+# ML (28-Sep-2012): change node to lxplus404 as old node lxplus427 seems to be out of production.
+wantednode="lxplus404.cern.ch"
 actualnode=`hostname`
 if [ "x$actualnode" = "x$wantednode" ]
   then

@@ -15,7 +15,9 @@ JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 #AtlasRelease  = "15.6.9"
 #AtlasRelease  = "16.6.7.3"
 #AtlasRelease  = "17.0.3.4"
-AtlasRelease  = "17.2.0.2"
+#AtlasRelease  = "17.2.0.2"
+#AtlasRelease  = "17.2.4.4"
+AtlasRelease  = "17.2.6.2"
 
 InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
@@ -55,6 +57,9 @@ OutputFiles = {
     "Gains.pdf":  [(JobRootDir, "Gains_#RUN_NUMBER#.pdf")],
     "rampPlots.ps":  [(JobRootDir, "rampPlots_#RUN_NUMBER#.ps")],
     "rampPlots.pdf":  [(JobRootDir, "rampPlots_#RUN_NUMBER#.pdf")],
+    "CalibrationTimingPlots.ps":  [(JobRootDir, "CalibrationTimingPlots_#RUN_NUMBER#.ps")],
+    "CalibrationTimingPlots.pdf":  [(JobRootDir, "CalibrationTimingPlots_#RUN_NUMBER#.pdf")],
+    "EnergyScanResults.map.xml":  [(JobRootDir, "EnergyScanResults.map.xml")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }
 
@@ -63,7 +68,8 @@ OutputFiles = {
 #     "ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
 #    ]
 JobPostTreatments = {
-    "DONE": ["#DAEMON_SCRIPTS_DIR#/PlotCalibrationGains.sh"],
+    "DONE": ["#DAEMON_SCRIPTS_DIR#/RunPlotCalibrationGains.sh",
+             "#DAEMON_SCRIPTS_DIR#/CreateMapXml.sh"],
     "ALL":  ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"] }
 
 

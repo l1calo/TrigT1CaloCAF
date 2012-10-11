@@ -2,7 +2,7 @@ dbConnection = "/afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/Tr
 
 # MailingList = ["veit.scharf@kip.uni-heidelberg.de"]
 #MailingList = ["prieur@cern.ch", "martin.wessels@cern.ch", "john.morris@cern.ch", "veit.scharf@kip.uni-heidelberg.de", "murrough.landon@cern.ch", "jb@hep.ph.bham.ac.uk", "pjwf@hep.ph.bham.ac.uk"]
-MailingList = ["martin.wessels@cern.ch", "murrough.landon@cern.ch", "Bruce.Barnett@cern.ch", "jb@hep.ph.bham.ac.uk", "pjwf@hep.ph.bham.ac.uk"]
+MailingList = ["martin.wessels@cern.ch", "murrough.landon@cern.ch", "Bruce.Barnett@cern.ch", "jb@hep.ph.bham.ac.uk", "pjwf@hep.ph.bham.ac.uk", "c.wiglesworth@qmul.ac.uk"]
 #MailingList = ["pjwf@hep.ph.bham.ac.uk"]
 
 # Paths don't appear to be used anymore in RunsProvider

@@ -1,0 +1,9 @@
+# Restart daemons twice a day on a particular lxplus node (which may have to change from time to time)
+00 00 * * * lxplus404 /afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/TrigT1CaloCAF/Daemons/refresh.sh
+00 12 * * * lxplus404 /afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/TrigT1CaloCAF/Daemons/refresh.sh
+#
+# Run separate script every 15 minutes to recreate PHP files for web display (can be run on any lxplus node).
+05 * * * * lxplus /afs/cern.ch/user/l/l1ccalib/public/ml/RunJobList2PhpMain.sh
+20 * * * * lxplus /afs/cern.ch/user/l/l1ccalib/public/ml/RunJobList2PhpMain.sh
+35 * * * * lxplus /afs/cern.ch/user/l/l1ccalib/public/ml/RunJobList2PhpMain.sh
+50 * * * * lxplus /afs/cern.ch/user/l/l1ccalib/public/ml/RunJobList2PhpMain.sh

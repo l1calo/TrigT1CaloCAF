@@ -1,3 +1,7 @@
+2012-10-11  Peter Faulkner  <pjwf@hep.ph.bham.ac.uk>
+        * Tag as TrigT1CaloCAF-00-02-01
+        * Status at move of jobs to 17.2.6.2
+
 2012-07-05  Peter Faulkner  <pjwf@hep.ph.bham.ac.uk>
         * Bugfix in PlotCalibrationHV.py
 

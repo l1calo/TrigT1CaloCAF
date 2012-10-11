@@ -14,7 +14,9 @@ JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 
 #AtlasRelease  = "15.6.9"
 #AtlasRelease  = "17.0.3.4"
-AtlasRelease  = "17.2.0.2"
+#AtlasRelease  = "17.2.0.2"
+#AtlasRelease  = "17.2.4.4"
+AtlasRelease  = "17.2.6.2"
 
 InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
@@ -54,7 +56,7 @@ OutputFiles = {
 #     "ALL":   ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"]},
 #    ]
 JobPostTreatments = {
-    "DONE": ["#DAEMON_SCRIPTS_DIR#/PlotCalibrationHV.sh"],
+    "DONE": ["#DAEMON_SCRIPTS_DIR#/RunPlotCalibrationHV.sh"],
     "ALL":  ["#DAEMON_SCRIPTS_DIR#/ScanLogFiles.py"] }
 
 

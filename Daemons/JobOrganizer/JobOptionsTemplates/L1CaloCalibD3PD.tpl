@@ -59,4 +59,63 @@ for p in disableRecJobOpts:
   #except ValueError:
     #pass
 
+# setup globalflags
+from AthenaCommon.GlobalFlags  import globalflags
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-05")
+
+# setup lar
+from LArConditionsCommon.LArCondFlags import larCondFlags
+larCondFlags.useShape = True
+
+# cell reconstruction properties
+from CaloRec.CaloCellFlags import jobproperties
+jobproperties.CaloCellFlags.doDeadCellCorr = True
+jobproperties.CaloCellFlags.doLArCreateMissingCells = False
+#JB 20/9/2011
+jobproperties.CaloCellFlags.doLArSporadicMasking.set_Value_and_Lock(False)
+
+# tile
+from TileRecUtils.TileRecFlags import jobproperties
+jobproperties.TileRecFlags.doTileOpt2=True
+jobproperties.TileRecFlags.readDigits=True
+jobproperties.TileRecFlags.noiseFilter=0
+jobproperties.TileRecFlags.TileRunType=8
+jobproperties.TileRecFlags.calibrateEnergy=False
+jobproperties.TileRecFlags.OfcFromCOOL=False
+jobproperties.TileRecFlags.BestPhaseFromCOOL=False
+jobproperties.TileRecFlags.correctTime=False
+jobproperties.TileRecFlags.correctAmplitude=False
+
 include ("RecExCommon/RecExCommon_topOptions.py")
+
+# use ofc for calib pulses
+for i in svcMgr.IOVDbSvc.Folders:
+    if i.find('OFC')> 0: svcMgr.IOVDbSvc.Folders.remove(i)
+conddb.addFolder("LAR_OFL", '/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr')
+conddb.addOverride("/LAR/ElecCalibOfl/OFC/CaliWaveXtalkCorr", "LARElecCalibOflOFCCaliWaveXtalkCorr-UPD3-01")
+conddb.addOverride("/LAR/ElecCalibOfl/uA2MeV/Symmetry","LARuA2MeV-Rep2011")
+
+# CERN
+from glob import glob
+catalog_files = glob("/afs/cern.ch/atlas/conditions/poolcond/catalogue/fragments/PoolCat_cond??_data.??????.lar.COND_castor.xml")
+
+svcMgr.PoolSvc.ReadCatalog += ["xmlcatalog_file:%s" % i for i in catalog_files]
+# Brum
+#svcMgr.PoolSvc.ReadCatalog += ["xmlcatalog_file:/home/atdata5/pjwf/condcalib/PoolFileCatalog.xml"]
+
+#JB 20/9/2011
+ToolSvc.LArNoiseMasker.ProblemsToMask= ["deadReadout","deadPhys"]
+
+from TileConditions.TileCondToolConf import *
+tileInfoConfigurator.TileCondToolTiming = getTileCondToolTiming( 'COOL','CIS')
+
+tileCondToolOfcCool = getTileCondToolOfcCool('COOL', 'CISPULSE100')
+from AthenaCommon.AppMgr import ToolSvc
+ToolSvc += tileCondToolOfcCool
+
+from TileConditions.TileConditionsConf import TileCondToolOfc
+tileCondToolOfc = TileCondToolOfc()
+tileCondToolOfc.TileCondToolPulseShape = getTileCondToolPulseShape('COOL','CISPULSE100')
+
+# turn off masking of bad channels
+ToolSvc.TileCellBuilder.maskBadChannels = False

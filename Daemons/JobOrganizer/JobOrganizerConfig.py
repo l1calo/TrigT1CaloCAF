@@ -11,7 +11,8 @@ ScriptsDir = DaemonInstallDir + '/Scripts'
 BackEndsDir = DaemonInstallDir + '/BackEnds'
 DaemonLogDir = DaemonInstallDir + '/logs'
 TmpDataDir = DaemonDataDir + '/tmp'
-TmpInstallDir = DaemonInstallDir + '/tmp'
+#TmpInstallDir = DaemonInstallDir + '/tmp'
+TmpInstallDir = TmpDataDir
 JobsWorkingDir = DaemonDataDir + '/jobs'
 # make sure that the stager is set to 'atlcal' !!!
 CastorDataDir = "/castor/cern.ch/grid/atlas/caf/atlcal/perm/l1calo"

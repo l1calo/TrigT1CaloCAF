@@ -34,7 +34,7 @@ del FilesInput
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
 #globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPST-005-04")
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-04")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-05")
 
 # temporary fix for data12
 #from RecExConfig.RecFlags import rec

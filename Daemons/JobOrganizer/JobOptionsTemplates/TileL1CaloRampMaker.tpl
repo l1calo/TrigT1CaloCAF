@@ -38,7 +38,7 @@ from AthenaCommon.GlobalFlags  import globalflags
 #from RecExConfig.RecFlags import rec
 #rec.projectName.set_Value_and_Lock("data11_calib")
 
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-04")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-05")
 
 import sys
 sys.path.append('/afs/cern.ch/user/a/atlcond/utils/python/') # CERN
@@ -213,6 +213,25 @@ svcMgr.IOVDbSvc.dbConnection="sqlite://;schema=energyscanresults.sqlite;dbname=L
 # configure writing of additional files for the calibration gui
 from TrigT1CaloCalibUtils.L1CaloDumpRampDataAlgorithm import L1CaloDumpRampDataAlgorithm
 topSequence += L1CaloDumpRampDataAlgorithm()
+
+# run finetime
+from TrigT1CaloCalibUtils.TrigT1CaloCalibUtilsConf import L1CaloPprMonitoring
+topSequence += L1CaloPprMonitoring("L1CaloPprMonitoring",
+				   lumiBlockMax = 2,
+				   ppmADCMinValue = 80,
+				   ppmADCMaxValue = 963,
+				   doFineTimePlots = True,
+				   doPedestalPlots = False,
+				   doEtCorrelationPlots = False
+                                  )
+from TrigT1CaloMonitoringTools.TrigT1CaloMonitoringToolsConf import TrigT1CaloLWHistogramTool
+ToolSvc += TrigT1CaloLWHistogramTool("TrigT1CaloLWHistogramTool",
+                                     LVL1ConfigSvc = ""
+                                    )
+from GaudiSvc.GaudiSvcConf import THistSvc
+ServiceMgr += THistSvc()
+ServiceMgr.THistSvc.Output = ["AANT DATAFILE='output.root' OPT='RECREATE'"]
+svcMgr.IOVDbSvc.Folders += ["<dbConnection>sqlite://;schema=/afs/cern.ch/user/l/l1ccalib/w0/DaemonData/reference/calibReferences.sqlite;dbname=L1CALO</dbConnection>/TRIGGER/L1Calo/V1/References/FineTimeReferences"]
 
 # turn off masking of bad channels
 ToolSvc.TileCellBuilder.maskBadChannels = False
