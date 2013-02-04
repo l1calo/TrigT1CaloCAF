@@ -61,7 +61,7 @@ for p in disableRecJobOpts:
 
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-05")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-07")
 
 # setup lar
 from LArConditionsCommon.LArCondFlags import larCondFlags

@@ -2,7 +2,8 @@
 # config
 ################################################################################
 
-EvtMax = -1
+#EvtMax = -1
+EvtMax = 2500
 SkipEvents = 0
 
 from AthenaCommon.AthenaCommonFlags  import athenaCommonFlags
@@ -38,7 +39,7 @@ from AthenaCommon.GlobalFlags  import globalflags
 #from RecExConfig.RecFlags import rec
 #rec.projectName.set_Value_and_Lock("data11_calib")
 
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-05")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-07")
 
 import sys
 sys.path.append('/afs/cern.ch/user/a/atlcond/utils/python/') # CERN
@@ -148,9 +149,11 @@ topSequence.L1CaloRampMaker.L1TriggerTowerTool = LVL1__L1TriggerTowerTool()
 topSequence.L1CaloRampMaker.DoTile = doTile
 topSequence.L1CaloRampMaker.DoLAr = doLAr
 topSequence.L1CaloRampMaker.EventsPerEnergyStep = 200
-topSequence.L1CaloRampMaker.NumberOfEnergySteps = 9
+#topSequence.L1CaloRampMaker.NumberOfEnergySteps = 9
+topSequence.L1CaloRampMaker.NumberOfEnergySteps = 11
 topSequence.L1CaloRampMaker.IsGain1 = True
 topSequence.L1CaloRampMaker.CheckProvenance = False
+topSequence.L1CaloRampMaker.TileSaturationCut = 255.
 # special region 1.3 < |eta| < 1.5, saturation on tile side.
 topSequence.L1CaloRampMaker.SpecialChannelRange = { 0x6130f02 : 150, 0x7100003 : 150, 0x7180f03 : 150, 0x7180303 : 150, 0x7100200 : 150,
 	0x6130601 : 150, 0x6130302 : 150, 0x61f0303 : 150, 0x71c0e00 : 150, 0x71c0a00 : 150, 0x7180501 : 150, 0x6130003 : 150, 0x7140d01 : 150,
@@ -222,7 +225,8 @@ topSequence += L1CaloPprMonitoring("L1CaloPprMonitoring",
 				   ppmADCMaxValue = 963,
 				   doFineTimePlots = True,
 				   doPedestalPlots = False,
-				   doEtCorrelationPlots = False
+				   doEtCorrelationPlots = False,
+				   doCaloQualCut = False
                                   )
 from TrigT1CaloMonitoringTools.TrigT1CaloMonitoringToolsConf import TrigT1CaloLWHistogramTool
 ToolSvc += TrigT1CaloLWHistogramTool("TrigT1CaloLWHistogramTool",

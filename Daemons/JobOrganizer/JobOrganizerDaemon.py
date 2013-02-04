@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import sys, time, os
+import sys, time, os, commands
 from Daemon import Daemon
 from JobOrganizer import JobOrganizer
 
@@ -20,6 +20,13 @@ class JobOrganizerDaemon(Daemon):
 
 		#sys.stdout.flush()
 		#sys.stderr.flush()
+		cmd = 'klist'
+		rawoutput = commands.getoutput(cmd)
+		print rawoutput
+		cmd = 'tokens'
+		rawoutput = commands.getoutput(cmd)
+		print rawoutput
+		sys.stdout.flush()
 
 		while True:
 			self.jobOrganizer.updateJobInformationList()

@@ -1,5 +1,6 @@
+# PF (31 Oct 2012): change to lxplus445
 # ML (28-Sep-2012): change node to lxplus404 as old node lxplus427 seems to be out of production.
-wantednode="lxplus404.cern.ch"
+wantednode="lxplus445.cern.ch"
 actualnode=`hostname`
 if [ "x$actualnode" = "x$wantednode" ]
   then
@@ -8,6 +9,11 @@ if [ "x$actualnode" = "x$wantednode" ]
   source $DAEMONDIR/setup.sh
   CORAL_AUTH_PATH=/afs/cern.ch/atlas/software/builds/AtlasCore/17.2.0/InstallArea/XML/AtlasAuthentication:$CORAL_AUTH_PATH
   CORAL_DBLOOKUP_PATH=/afs/cern.ch/atlas/software/builds/AtlasCore/17.2.0/InstallArea/XML/AtlasAuthentication:$CORAL_DBLOOKUP_PATH
+  # acrontab deletes credential cache when this script exits so make a copy
+  PATH=$PATH:/usr/kerberos/bin
+  krbFile=`klist|grep FILE|sed "s/Ticket cache: FILE://"`>& /dev/null
+  cp $krbFile /tmp/l1ccalib/krbFile
+  export KRB5CCNAME='FILE:/tmp/l1ccalib/krbFile'
 
   cd $DAEMONDIR/RunsProvider
   $DAEMONDIR/RunsProvider/RunsProviderDaemon.py restart

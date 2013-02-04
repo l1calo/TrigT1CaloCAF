@@ -11,12 +11,7 @@ JobPostDir     =  "#JOB_POST_DIR#"
 JobCastorDir="#CASTOR_DATA_DIR#/elecCalib/reconstruction"
 #JobCastorDir=""
 
-#AtlasRelease  = "15.6.9"
-#AtlasRelease  = "16.0.3.3"
-#AtlasRelease  = "17.0.3.4"
-#AtlasRelease  = "17.2.0.2"
-#AtlasRelease  = "17.2.4.4"
-AtlasRelease  = "17.2.6.2"
+AtlasRelease  = "17.2.8.7"
 
 InputStageSVCClass = "atlcal"
 OutputStageSVCClass = "atlcal"
@@ -38,7 +33,7 @@ JobOptionName = "#RUN_NUMBER#_#JOB_CONFIGURATION#_jobOptions.py"
 #Athena log file
 AthenaJobLogFile = JobOptionName.strip("_jobOptions.py")+'Athena.log'
 
-RawDataFileBasePaths = ["/castor/cern.ch/grid/atlas/DAQ/l1calo/2012/#RUN_NUMBER_PADDED_8#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED_8#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
+RawDataFileBasePaths = ["/castor/cern.ch/grid/atlas/DAQ/l1calo/2013/#RUN_NUMBER_PADDED_8#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/2012/#RUN_NUMBER_PADDED_8#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED_8#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER_PADDED#", "/castor/cern.ch/grid/atlas/DAQ/l1calo/#RUN_NUMBER#", "/castor/cern.ch/grid/atlas/DAQ/l1calo"]
 
 LogLevel = 2
 
@@ -57,6 +52,7 @@ OutputFiles = {
     "rampPlots.pdf":  [(JobRootDir, "rampPlots_#RUN_NUMBER#.pdf")],
     "CalibrationTimingPlots.ps":  [(JobRootDir, "CalibrationTimingPlots_#RUN_NUMBER#.ps")],
     "CalibrationTimingPlots.pdf":  [(JobRootDir, "CalibrationTimingPlots_#RUN_NUMBER#.pdf")],
+    "output.root":  [(JobRootDir, "CalibrationTiming.root")],
     "EnergyScanResults.map.xml":  [(JobRootDir, "EnergyScanResults.map.xml")],
     AthenaJobLogFile:[(JobLogDir, AthenaJobLogFile)]
     }

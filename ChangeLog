@@ -1,3 +1,8 @@
+2013-02-04  Peter Faulkner  <pjwf@hep.ph.bham.ac.uk>
+        * Tag as TrigT1CaloCAF-00-02-02
+        * Final status at shutdown Feb 2013.
+        * Jobs now use 17.2.8.7
+
 2012-10-11  Peter Faulkner  <pjwf@hep.ph.bham.ac.uk>
         * Tag as TrigT1CaloCAF-00-02-01
         * Status at move of jobs to 17.2.6.2

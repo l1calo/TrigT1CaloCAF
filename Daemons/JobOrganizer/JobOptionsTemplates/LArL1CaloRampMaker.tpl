@@ -33,7 +33,7 @@ del FilesInput
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
 #globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPST-005-04")
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-05")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-07")
 
 # temporary fix for data12
 #from RecExConfig.RecFlags import rec
@@ -194,7 +194,8 @@ topSequence += L1CaloPprMonitoring("L1CaloPprMonitoring",
 				   ppmADCMaxValue = 963,
 				   doFineTimePlots = True,
 				   doPedestalPlots = False,
-				   doEtCorrelationPlots = False
+				   doEtCorrelationPlots = False,
+				   doCaloQualCut = False
                                   )
 from TrigT1CaloMonitoringTools.TrigT1CaloMonitoringToolsConf import TrigT1CaloLWHistogramTool
 ToolSvc += TrigT1CaloLWHistogramTool("TrigT1CaloLWHistogramTool",
