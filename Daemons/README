@@ -1,0 +1,150 @@
+
+
+ whole software is currently (feb 2014) at:
+
+/afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/TrigT1CaloCAF
+
+and running ATHENA version 17.2.0.2
+ 
+
+ Cron jobs running daemons:
+------------------------------
+
+Daemons are regularly restarted via acrontab job running on one specified lxplus machine (currently lxplus0044).
+Current settings from acrontab are in file acrontab.txt .
+
+Checking status of acrontab: acrontab -l
+Updating acrontab status:  acrontab < acrontab.txt
+Warning:     acrontab (without any parameters) starts interactive update of acrontab setup,
+quiting this with ctrl-D leads to update with empty job list.It is much better to
+write complete nonsense there, this fails during parsing (while empty line is interpreted
+as no jobs)
+
+arontab job runs script refresh.sh  , this script checks the node on which it is running,
+update kerberos kredentials and restarts all daemons.
+
+
+NOTE: changing lxplus node means updating refresh.sh and acrontab 
+
+NOTE: to check that daemons are running one can log into daemon node and type "ps x", there 
+three daemons should be visible. For example:
+
+  PID TTY      STAT   TIME COMMAND
+ 3675 ?        S      0:01 sshd: l1ccalib@pts/1
+ 3676 pts/1    Ss     0:00 -zsh
+ 4941 pts/1    R+     0:00 ps x
+18831 ?        SN    96:59 python /afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/TrigT1CaloCAF/Daemons/RunsProvider/RunsProviderDaemon.py restart
+18839 ?        SN    47:26 python /afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/TrigT1CaloCAF/Daemons/JobOrganizer/JobOrganizerDaemon.py restart
+18843 ?        SN     0:00 python /afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/TrigT1CaloCAF/Daemons/W0Monitor/W0MonitorDaemon.py restart
+
+
+
+ Daemons:
+------------
+
+There are three daemons, all of them are written in python, and inherit from basic class called Daemon. This basic class 
+does demonization of process (double fork black magic). PIDs of running jobs are saved in local files *.pid (for example
+joborganizerdaemon.pid in directory /afs/cern.ch/user/l/l1ccalib/testarea/17.2.0.2/Trigger/TrigT1/TrigT1CaloCAF/Daemons/JobOrganizer .
+These files contain PID and node on which jobs are running, if they disappear, it is necessary to do manual cleanup
+(kill processes). 
+
+Logfiles from daemons are in individual logs directory, very useful to look into them in case of problems.
+Some output that doesn't make it to the logfiles can be found in stdout and stderr files in /tmp/l1ccalib on daemon node.
+
+
+W0monitor   - checks space in the account and deletes oldest files
+
+RunsProvider  - looks at ATLAS COOL run database and searches for new files, then puts info into L1Calo run database
+
+JobOrganizer - looks at L1Calo run database, and submits jobs
+
+    More details about individual daemons are given below.
+
+
+
+ Run database:
+----------------
+
+local run database is stored in file rundb.db in directory  TrigT1CaloCAF/Daemons/db   . This is an sqlite database
+that contains some information about runs that were processed.
+
+DB is organized into three folders, RUNSTATUS, RUNPARAMS and JOBSTATUS. 
+More de
+In general, RunsProvider looks into ATLAS Cool run database and copies data from there to
+folder RUNPARAMS, depending on decision of individual listeners, and fills RUNSTATUS fields.
+These data are picked up by JobOrganizer and this one fills in fields in JOBSTATUS.
+
+
+Useful scripts: 
+
+ listdb.py    : dumps several useful columns from the database
+ alterdb.py   : changes DB content by adding additional column(s) to tables
+ builddb.py   : creates new DB file from scratch
+
+
+ Calibration jobs on CAF:
+----------------------------
+
+to see running jobs (all lsf batch system jobs from current user):
+
+bjobs                                 list jobs
+bjobs -p                              gives reasons why jobs are pending
+bkill                                 allows to kill jobs
+bsub                                  used to submit jobs 
+
+proper way to restart calibration jobs is to change their status in calibration 
+database. This is done using scripts:
+
+ResetJob.py    : reverts a jobs status to NEW so it will be rerun
+StartJob.py    : allows a job which is WAITING for validation to run
+HoldJob.py     : puts a job into WAITING for validation state
+
+
+  RunsProvider:
+-------------------
+
+    RunsProvider takes configuration from file RunsProviderConfig.py . This file contains definition
+of "run listeners", this is a python class containing a dictionary that defines under what conditions runs should be
+copied into L1Calo run database (see below).
+
+Each run listener is itself a dictionary, listing DB fields that need to be matched. Crucial are parameters like run type, daq partition, tierzero tag and gain strategy. For example:
+
+"LArEnergyScan": {
+...  
+                "runtype":"LarCalibL1Calo",
+                "tag":"",
+...
+                 "daqpartition":["L1CaloCombined", "LArgL1CaloCombined"],
+                 "tierzerotag":["L1CaloEnergyScan"],
+                 "NOTtierzerotag":[],
+	         "gainstrategy":["GainOneOvEmecFcalLowEta", "GainOneOvEmbFcalHighEta"],
+...	
+                 "initialrun":195000,
+...
+}
+
+    "NOTtierzerotag" defines what tier zero tag shouldn't be. "initial run" defines earliest run in CoolDB that needs to be checked, it is useful to update it from time to time so that daemons don't take too much time to run.
+
+   Listeners also define minimum number of events for a run to be accepted and location of data files.
+If the number of events is below the minimum the run is flagged as needing validation before any jobs can be run.
+
+    Listeners need to be exclusive, meaning one run shouldn't be accepted by more than one listener,
+that may lead to problems.
+
+
+  JobOrganizer:
+-----------------
+
+ This daemon looks into L1Calo database and submits jobs based on which run listeners found the run.
+It also looks at their status (?) and updates corresponding entries when jobs are finished.
+
+It also puts together job options from templates (using function replaceTag in Tools.py).
+
+
+
+
+
+
+
+
+

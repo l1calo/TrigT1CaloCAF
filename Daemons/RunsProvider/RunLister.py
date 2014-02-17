@@ -564,6 +564,18 @@ class coolRunLister:
                 if (start>=l1calogain.start and start<l1calogain.stop):
                     if (runp.gainstrategy is None):
                         runp.gainstrategy=l1calogain.gainstrategy
+                        if (run == 219978): runp.gainstrategy="GainOneOvEmecFcalLowEta"
+                        if (run == 219979): runp.gainstrategy="GainOneOvEmbFcalHighEta"
+                        if (run == 219980): runp.gainstrategy="CalibGainsEt"
+                        if (run == 220013): runp.gainstrategy="GainOneOvEmecFcalLowEta"
+                        if (run == 220014): runp.gainstrategy="GainOneOvEmbFcalHighEta"
+                        if (run == 220015): runp.gainstrategy="CalibGainsEt"
+                        if (run == 222871): runp.gainstrategy="GainOne"
+                        if (run == 222872): runp.gainstrategy="GainOne"
+                        if (run == 222873): runp.gainstrategy="GainOne"
+                        if (run == 223073): runp.gainstrategy="GainOne"
+                        if (run == 223074): runp.gainstrategy="GainOne"
+                        if (run == 223075): runp.gainstrategy="GainOne"
                         ntzt+=1
                     break
         if (self.loglevel>0):

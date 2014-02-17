@@ -61,7 +61,8 @@ for p in disableRecJobOpts:
 
 # setup globalflags
 from AthenaCommon.GlobalFlags  import globalflags
-globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-07")
+#globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-006-07")
+globalflags.ConditionsTag.set_Value_and_Lock("COMCOND-BLKPA-RUN1-01")
 
 # setup lar
 from LArConditionsCommon.LArCondFlags import larCondFlags
@@ -119,3 +120,6 @@ tileCondToolOfc.TileCondToolPulseShape = getTileCondToolPulseShape('COOL','CISPU
 
 # turn off masking of bad channels
 ToolSvc.TileCellBuilder.maskBadChannels = False
+
+# for runs with missing mag field info
+svcMgr.MagFieldAthenaSvc.UseDCS = False

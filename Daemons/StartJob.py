@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 __doc__ = """
-ResetJob.py
+StartJob.py
 
-Usage: python ResetJob.py RUNNUMBER JOBTYPE
+Usage: python StartJob.py RUNNUMBER JOBTYPE
 
-e.g.: python ResetJob.py 144830 Phos4ShapeMaker
+e.g.: python StartJob.py 144830 Phos4ShapeMaker
 """
 
 import os, sys, traceback

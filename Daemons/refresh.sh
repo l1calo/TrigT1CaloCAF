@@ -1,6 +1,8 @@
 # PF (31 Oct 2012): change to lxplus445
 # ML (28-Sep-2012): change node to lxplus404 as old node lxplus427 seems to be out of production.
-wantednode="lxplus445.cern.ch"
+# JB (3-feb2-2014): change node to lxplus0044
+# wantednode="lxplus0044.cern.ch"
+wantednode="lxplus0044"
 actualnode=`hostname`
 if [ "x$actualnode" = "x$wantednode" ]
   then

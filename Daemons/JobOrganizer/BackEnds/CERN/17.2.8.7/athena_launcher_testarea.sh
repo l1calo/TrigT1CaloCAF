@@ -4,7 +4,7 @@
 # set up env. variables and source athena software
 export STAGE_SVCCLASS=#INPUT_STAGE_SVC_CLASS#
 export AtlasSetup=/afs/cern.ch/atlas/software/releases/#ATLAS_RELEASE_NOCACHE#/AtlasSetup
-source $AtlasSetup/scripts/asetup.sh #ATLAS_RELEASE# --testarea /afs/cern.ch/user/l/l1ccalib/testarea --multi
+source $AtlasSetup/scripts/asetup.sh #ATLAS_RELEASE#,slc5 --testarea /afs/cern.ch/user/l/l1ccalib/testarea --multi
 #export CMTHOME=''
 export CORAL_AUTH_PATH=$TestArea:$CORAL_AUTH_PATH
 
